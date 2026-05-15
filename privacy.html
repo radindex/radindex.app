@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Rad Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F6F3;
+      --surface: #FFFFFF;
+      --text: #1A1A1A;
+      --text-secondary: #6B6B6B;
+      --accent: #1B4B8A;
+      --accent-light: #E8EFF8;
+      --border: #E5E2DC;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 4px;
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 3px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-btn {
+      padding: 5px 12px;
+      border: none;
+      background: transparent;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .lang-btn.active {
+      background: var(--surface);
+      color: var(--accent);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 36px;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .page-meta span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 32px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .section-header {
+      padding: 18px 24px;
+      background: var(--accent-light);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-number {
+      width: 26px;
+      height: 26px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .section-body {
+      padding: 20px 24px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .section-body p { margin-bottom: 12px; }
+    .section-body p:last-child { margin-bottom: 0; }
+
+    .section-body ul {
+      padding-left: 20px;
+      margin: 8px 0 12px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin: 12px 0;
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-card {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Language sections */
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+
+    @media (max-width: 600px) {
+      .page-title { font-size: 28px; }
+      .section-body { padding: 16px 18px; }
+      .section-header { padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+    </div>
+    <span class="logo-name">Rad Index</span>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('it')">IT</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════════════════════════════════════ ITALIANO ══ -->
+  <div class="lang-content active" id="lang-it">
+    <div class="page-header">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-meta">Applicazione <span>Rad Index</span> · Ultimo aggiornamento: maggio 2026</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">1</div>
+        <div class="section-title">Titolare del trattamento</div>
+      </div>
+      <div class="section-body">
+        <p>Il titolare del trattamento dei dati personali è lo sviluppatore indipendente dell'applicazione Rad Index, raggiungibile all'indirizzo email indicato nella sezione Contatti.</p>
+        <div class="contact-card">
+          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
+          🌐 <a href="https://radindex.app">radindex.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">2</div>
+        <div class="section-title">Dati raccolti</div>
+      </div>
+      <div class="section-body">
+        <p><strong>Rad Index non raccoglie, trasmette né condivide dati personali degli utenti.</strong></p>
+        <p>Tutti i dati generati dall'utilizzo dell'app (note personali, preferite, schede recenti) sono salvati <strong>esclusivamente sul dispositivo dell'utente</strong> tramite la memoria locale del dispositivo stesso e non vengono mai trasmessi a server esterni.</p>
+        <div class="highlight-box">
+          ✓ Nessun account richiesto · Nessun dato inviato a server · Nessuna pubblicità · Nessun tracciamento
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">3</div>
+        <div class="section-title">Dati di acquisto (In-App Purchase)</div>
+      </div>
+      <div class="section-body">
+        <p>L'acquisto della versione completa dell'app avviene tramite <strong>Apple App Store</strong> o <strong>Google Play Store</strong>. I dati di pagamento sono gestiti esclusivamente da Apple o Google secondo le rispettive privacy policy. Il titolare dell'app non ha accesso ai dati di pagamento.</p>
+        <p>Per la gestione degli acquisti in-app viene utilizzato il servizio <strong>RevenueCat</strong>, che può raccogliere dati anonimi sull'attivazione degli acquisti. Per maggiori informazioni: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">4</div>
+        <div class="section-title">Dati degli store (Apple/Google)</div>
+      </div>
+      <div class="section-body">
+        <p>Apple App Store e Google Play Store possono raccogliere dati statistici anonimi sull'utilizzo dell'app (download, crash report, valutazioni) secondo le rispettive policy. Questi dati sono aggregati e anonimi e vengono utilizzati esclusivamente per migliorare l'applicazione.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">5</div>
+        <div class="section-title">Finalità medica e disclaimer</div>
+      </div>
+      <div class="section-body">
+        <p>Rad Index è uno strumento di consultazione didattica destinato a professionisti sanitari qualificati (TSRM) e studenti del settore. Il contenuto non sostituisce i protocolli clinici aziendali, le linee guida istituzionali né il giudizio clinico del professionista.</p>
+        <p>L'autore declina ogni responsabilità per usi impropri dei contenuti dell'applicazione.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">6</div>
+        <div class="section-title">Diritti dell'utente (GDPR)</div>
+      </div>
+      <div class="section-body">
+        <p>In conformità al Regolamento UE 2016/679 (GDPR), l'utente ha il diritto di:</p>
+        <ul>
+          <li>Accedere ai propri dati personali</li>
+          <li>Richiedere la rettifica o la cancellazione dei dati</li>
+          <li>Opporsi al trattamento</li>
+          <li>Richiedere la portabilità dei dati</li>
+        </ul>
+        <p>Poiché l'app non raccoglie dati personali su server, tutti i dati locali possono essere eliminati disinstallando l'applicazione dal dispositivo.</p>
+        <p>Per qualsiasi richiesta: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">7</div>
+        <div class="section-title">Modifiche alla Privacy Policy</div>
+      </div>
+      <div class="section-body">
+        <p>Il titolare si riserva il diritto di modificare la presente Privacy Policy. Le modifiche saranno pubblicate su questa pagina con aggiornamento della data. L'uso continuato dell'app dopo la pubblicazione delle modifiche costituisce accettazione delle stesse.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════ ENGLISH ══ -->
+  <div class="lang-content" id="lang-en">
+    <div class="page-header">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-meta"><span>Rad Index</span> App · Last updated: May 2026</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">1</div>
+        <div class="section-title">Data Controller</div>
+      </div>
+      <div class="section-body">
+        <p>The data controller is the independent developer of the Rad Index application, reachable at the email address listed in the Contact section.</p>
+        <div class="contact-card">
+          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
+          🌐 <a href="https://radindex.app">radindex.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">2</div>
+        <div class="section-title">Data Collected</div>
+      </div>
+      <div class="section-body">
+        <p><strong>Rad Index does not collect, transmit or share any personal data.</strong></p>
+        <p>All data generated by use of the app (personal notes, favorites, recent cards) is saved <strong>exclusively on the user's device</strong> via local storage and is never transmitted to external servers.</p>
+        <div class="highlight-box">
+          ✓ No account required · No data sent to servers · No advertising · No tracking
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">3</div>
+        <div class="section-title">Purchase Data (In-App Purchase)</div>
+      </div>
+      <div class="section-body">
+        <p>Purchases of the full version are processed through <strong>Apple App Store</strong> or <strong>Google Play Store</strong>. Payment data is handled exclusively by Apple or Google under their respective privacy policies. The app developer has no access to payment data.</p>
+        <p>In-app purchase management uses <strong>RevenueCat</strong>, which may collect anonymous data related to purchase activation. More info: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">4</div>
+        <div class="section-title">Store Data (Apple/Google)</div>
+      </div>
+      <div class="section-body">
+        <p>Apple App Store and Google Play Store may collect anonymous statistical data about app usage (downloads, crash reports, ratings) under their respective policies. This data is aggregated and anonymous and is used solely to improve the application.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">5</div>
+        <div class="section-title">Medical Purpose and Disclaimer</div>
+      </div>
+      <div class="section-body">
+        <p>Rad Index is an educational reference tool intended for qualified healthcare professionals (radiographers) and students in the field. The content does not replace institutional clinical protocols, guidelines, or the professional's clinical judgment.</p>
+        <p>The author disclaims all liability for improper use of the application's content.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">6</div>
+        <div class="section-title">User Rights (GDPR)</div>
+      </div>
+      <div class="section-body">
+        <p>In accordance with EU Regulation 2016/679 (GDPR), users have the right to:</p>
+        <ul>
+          <li>Access their personal data</li>
+          <li>Request rectification or deletion of data</li>
+          <li>Object to processing</li>
+          <li>Request data portability</li>
+        </ul>
+        <p>Since the app does not collect personal data on servers, all local data can be deleted by uninstalling the app from the device.</p>
+        <p>For any request: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">7</div>
+        <div class="section-title">Changes to Privacy Policy</div>
+      </div>
+      <div class="section-body">
+        <p>The developer reserves the right to modify this Privacy Policy. Changes will be posted on this page with an updated date. Continued use of the app after changes are published constitutes acceptance of those changes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════ ESPAÑOL ══ -->
+  <div class="lang-content" id="lang-es">
+    <div class="page-header">
+      <h1 class="page-title">Política de Privacidad</h1>
+      <p class="page-meta">Aplicación <span>Rad Index</span> · Última actualización: mayo 2026</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">1</div>
+        <div class="section-title">Responsable del tratamiento</div>
+      </div>
+      <div class="section-body">
+        <p>El responsable del tratamiento de datos personales es el desarrollador independiente de la aplicación Rad Index, accesible en la dirección de correo electrónico indicada en la sección Contacto.</p>
+        <div class="contact-card">
+          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
+          🌐 <a href="https://radindex.app">radindex.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">2</div>
+        <div class="section-title">Datos recopilados</div>
+      </div>
+      <div class="section-body">
+        <p><strong>Rad Index no recopila, transmite ni comparte datos personales de los usuarios.</strong></p>
+        <p>Todos los datos generados por el uso de la app (notas personales, favoritos, fichas recientes) se guardan <strong>exclusivamente en el dispositivo del usuario</strong> mediante almacenamiento local y nunca se transmiten a servidores externos.</p>
+        <div class="highlight-box">
+          ✓ Sin cuenta requerida · Sin datos enviados a servidores · Sin publicidad · Sin rastreo
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">3</div>
+        <div class="section-title">Datos de compra (In-App Purchase)</div>
+      </div>
+      <div class="section-body">
+        <p>La compra de la versión completa se realiza a través de <strong>Apple App Store</strong> o <strong>Google Play Store</strong>. Los datos de pago son gestionados exclusivamente por Apple o Google según sus respectivas políticas de privacidad. El desarrollador de la app no tiene acceso a los datos de pago.</p>
+        <p>Para la gestión de compras integradas se utiliza <strong>RevenueCat</strong>, que puede recopilar datos anónimos sobre la activación de compras. Más información: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">4</div>
+        <div class="section-title">Datos de las tiendas (Apple/Google)</div>
+      </div>
+      <div class="section-body">
+        <p>Apple App Store y Google Play Store pueden recopilar datos estadísticos anónimos sobre el uso de la app (descargas, informes de errores, valoraciones) según sus respectivas políticas. Estos datos son agregados y anónimos y se utilizan exclusivamente para mejorar la aplicación.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">5</div>
+        <div class="section-title">Finalidad médica y aviso legal</div>
+      </div>
+      <div class="section-body">
+        <p>Rad Index es una herramienta de consulta didáctica destinada a profesionales sanitarios cualificados (técnicos en radiodiagnóstico) y estudiantes del sector. El contenido no sustituye los protocolos clínicos institucionales, las guías de práctica clínica ni el juicio clínico del profesional.</p>
+        <p>El autor declina toda responsabilidad por usos indebidos del contenido de la aplicación.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">6</div>
+        <div class="section-title">Derechos del usuario (GDPR)</div>
+      </div>
+      <div class="section-body">
+        <p>De conformidad con el Reglamento UE 2016/679 (GDPR), el usuario tiene derecho a:</p>
+        <ul>
+          <li>Acceder a sus datos personales</li>
+          <li>Solicitar la rectificación o eliminación de datos</li>
+          <li>Oponerse al tratamiento</li>
+          <li>Solicitar la portabilidad de los datos</li>
+        </ul>
+        <p>Dado que la app no recopila datos personales en servidores, todos los datos locales pueden eliminarse desinstalando la aplicación del dispositivo.</p>
+        <p>Para cualquier solicitud: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">7</div>
+        <div class="section-title">Cambios en la Política de Privacidad</div>
+      </div>
+      <div class="section-body">
+        <p>El desarrollador se reserva el derecho de modificar esta Política de Privacidad. Los cambios se publicarán en esta página con la fecha actualizada. El uso continuado de la app tras la publicación de los cambios implica la aceptación de los mismos.</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Rad Index · <a href="mailto:info@radindex.app" style="color:inherit">info@radindex.app</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelector('[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+    document.documentElement.lang = lang;
+  }
+
+  // Auto-detect browser language
+  const browserLang = navigator.language.substring(0, 2);
+  if (['it', 'en', 'es'].includes(browserLang)) setLang(browserLang);
+</script>
+
+</body>
+</html>

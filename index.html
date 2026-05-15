@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Rad Index</title>
+  <title>Rad Index — Manuale proiezioni radiografiche</title>
+  <meta name="description" content="Rad Index è il manuale di riferimento per TSRM e studenti di radiologia. 141 proiezioni con parametri DR/CR, calcolatori tecnici, flashcard e molto altro.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #F7F6F3;
+      --blue:    #007AFF;
+      --blue-dk: #0055CC;
+      --bg:      #F2F2F7;
       --surface: #FFFFFF;
-      --text: #1A1A1A;
-      --text-secondary: #6B6B6B;
-      --accent: #1B4B8A;
-      --accent-light: #E8EFF8;
-      --border: #E5E2DC;
-      --radius: 12px;
+      --text:    #1C1C1E;
+      --text2:   #636366;
+      --text3:   #AEAEB2;
+      --border:  #E5E5EA;
+      --radius:  16px;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -23,16 +25,19 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
+      font-family: 'Inter', -apple-system, sans-serif;
       -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
-    header {
-      background: var(--surface);
+    /* ── NAV ── */
+    nav {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
-      padding: 20px 24px;
+      padding: 0 24px;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -41,521 +46,810 @@
       z-index: 100;
     }
 
-    .logo {
+    .nav-logo {
       display: flex;
       align-items: center;
       gap: 10px;
+      text-decoration: none;
     }
 
-    .logo-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--accent);
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--blue);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 18px;
+      line-height: 1;
     }
 
-    .logo-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: white;
-    }
-
-    .logo-name {
-      font-family: 'DM Serif Display', serif;
-      font-size: 20px;
+    .nav-logo-name {
+      font-size: 17px;
+      font-weight: 700;
       color: var(--text);
       letter-spacing: -0.3px;
     }
 
-    .lang-switcher {
+    .nav-links {
       display: flex;
-      gap: 4px;
-      background: var(--bg);
-      border-radius: 8px;
-      padding: 3px;
-      border: 1px solid var(--border);
+      align-items: center;
+      gap: 24px;
     }
 
-    .lang-btn {
-      padding: 5px 12px;
-      border: none;
-      background: transparent;
-      border-radius: 6px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
+    .nav-links a {
+      font-size: 14px;
       font-weight: 500;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.15s;
+      color: var(--text2);
+      text-decoration: none;
+      transition: color 0.15s;
     }
 
-    .lang-btn.active {
-      background: var(--surface);
-      color: var(--accent);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
+    .nav-links a:hover { color: var(--blue); }
 
-    main {
-      max-width: 720px;
+    /* ── HERO ── */
+    .hero {
+      padding: 80px 24px 64px;
+      text-align: center;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 40px 24px 80px;
     }
 
-    .page-header {
-      margin-bottom: 40px;
-      padding-bottom: 32px;
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,122,255,0.1);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 64px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--blue), #5856D6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text2);
+      max-width: 480px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-store {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-store.apple {
+      background: var(--text);
+      color: white;
+    }
+
+    .btn-store.apple:hover { background: #333; transform: translateY(-1px); }
+
+    .btn-store.google {
+      background: var(--surface);
+      color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-store.google:hover { border-color: var(--blue); transform: translateY(-1px); }
+
+    .btn-store .store-icon { font-size: 22px; line-height: 1; }
+
+    .btn-store .store-label { display: flex; flex-direction: column; text-align: left; }
+
+    .btn-store .store-label small {
+      font-size: 10px;
+      font-weight: 400;
+      opacity: 0.75;
+      line-height: 1;
+      margin-bottom: 1px;
+    }
+
+    .coming-soon-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+    }
+
+    .stats-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      padding: 8px 16px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child { border-right: none; }
+
+    .stat-value {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--blue);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-top: 3px;
+    }
+
+    /* ── MOCKUP SECTION ── */
+    .mockup-section {
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      font-size: 16px;
+      color: var(--text2);
+      max-width: 480px;
+      margin: 0 auto 48px;
+    }
+
+    .phones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .phone-frame {
+      width: 200px;
+      height: 390px;
+      background: #1C1C1E;
+      border-radius: 36px;
+      padding: 10px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08);
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Screen 1 — Home */
+    .screen-home {
+      background: #F2F2F7;
+    }
+    .screen-home .s-header {
+      padding: 16px 14px 8px;
+      background: #F2F2F7;
+    }
+    .screen-home .s-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1C1C1E;
+      letter-spacing: -0.3px;
+    }
+    .screen-home .s-sub {
+      font-size: 8px;
+      color: #636366;
+      margin-top: 1px;
+    }
+    .screen-home .s-search {
+      margin: 0 14px 10px;
+      background: white;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 8px;
+      color: #AEAEB2;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .zone-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      padding: 0 14px;
+    }
+    .zone-chip {
+      background: white;
+      border-radius: 8px;
+      padding: 6px 2px;
+      text-align: center;
+    }
+    .zone-chip .z-icon { font-size: 12px; }
+    .zone-chip .z-name { font-size: 6px; font-weight: 600; color: #1C1C1E; margin-top: 2px; }
+    .zone-chip .z-count { font-size: 5px; color: #AEAEB2; }
+
+    /* Screen 2 — Scheda */
+    .screen-scheda { background: #F2F2F7; }
+    .s-card-header {
+      padding: 14px;
+      background: #0C447C;
+      color: white;
+    }
+    .s-card-name { font-size: 11px; font-weight: 700; }
+    .s-card-type { font-size: 8px; opacity: 0.8; margin-top: 2px; }
+    .s-card-body { padding: 10px 12px; flex: 1; }
+    .s-row { margin-bottom: 8px; }
+    .s-row-label { font-size: 6px; font-weight: 700; color: #007AFF; text-transform: uppercase; letter-spacing: 0.3px; }
+    .s-row-val { font-size: 7px; color: #1C1C1E; margin-top: 2px; line-height: 1.4; }
+    .s-params {
+      background: white;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 6px;
+    }
+    .s-param-row { display: flex; justify-content: space-between; font-size: 6px; color: #636366; padding: 2px 0; border-bottom: 0.5px solid #F2F2F7; }
+    .s-param-row:last-child { border-bottom: none; }
+    .s-param-row strong { color: #1C1C1E; font-weight: 600; }
+
+    /* Screen 3 — Dark mode */
+    .screen-dark { background: #000; }
+    .screen-dark .s-header { padding: 16px 14px 8px; background: #000; }
+    .screen-dark .s-title { font-size: 13px; font-weight: 800; color: white; letter-spacing: -0.3px; }
+    .screen-dark .s-sub { font-size: 8px; color: #636366; margin-top: 1px; }
+    .screen-dark .s-search { margin: 0 14px 10px; background: #1C1C1E; border-radius: 8px; padding: 6px 10px; font-size: 8px; color: #636366; display: flex; align-items: center; gap: 5px; }
+    .zone-grid-dark { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; padding: 0 14px; }
+    .zone-chip-dark { background: #1C1C1E; border-radius: 8px; padding: 6px 2px; text-align: center; }
+    .zone-chip-dark .z-name { font-size: 6px; font-weight: 600; color: white; margin-top: 2px; }
+    .zone-chip-dark .z-count { font-size: 5px; color: #48484A; }
+
+    .phone-frame.center-phone {
+      transform: scale(1.08);
+      z-index: 2;
+    }
+
+    /* ── FEATURES ── */
+    .features-section {
+      background: var(--surface);
+      padding: 72px 24px;
+      border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
 
-    .page-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 36px;
-      color: var(--text);
-      letter-spacing: -0.5px;
-      margin-bottom: 8px;
+    .features-inner {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .page-meta {
-      font-size: 14px;
-      color: var(--text-secondary);
+    .features-header {
+      text-align: center;
+      margin-bottom: 52px;
     }
 
-    .page-meta span {
-      color: var(--accent);
-      font-weight: 500;
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
-    .section {
-      margin-bottom: 32px;
-      background: var(--surface);
+    .feature-card {
+      background: var(--bg);
       border-radius: var(--radius);
+      padding: 24px;
       border: 1px solid var(--border);
-      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .section-header {
-      padding: 18px 24px;
-      background: var(--accent-light);
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .feature-desc {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+
+    /* ── FOR WHO ── */
+    .forwho-section {
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .forwho-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .forwho-cards {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .forwho-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      flex: 1;
+      min-width: 200px;
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .forwho-card .fw-icon { font-size: 32px; margin-bottom: 12px; }
+    .forwho-card .fw-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .forwho-card .fw-desc { font-size: 13px; color: var(--text2); }
+
+    /* ── PRICING ── */
+    .pricing-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .price-card {
+      max-width: 380px;
+      margin: 40px auto 0;
+      background: var(--bg);
+      border: 1.5px solid var(--blue);
+      border-radius: 24px;
+      padding: 36px 32px;
+      position: relative;
+    }
+
+    .price-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--blue);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+    }
+
+    .price-value {
+      font-size: 52px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+
+    .price-value sup { font-size: 22px; font-weight: 600; letter-spacing: 0; vertical-align: super; }
+    .price-sub { font-size: 14px; color: var(--text2); margin-top: 6px; margin-bottom: 28px; }
+
+    .price-features { text-align: left; list-style: none; }
+    .price-features li {
+      font-size: 14px;
+      color: var(--text);
+      padding: 7px 0;
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
-    .section-number {
-      width: 26px;
-      height: 26px;
-      background: var(--accent);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 600;
-      color: white;
+    .price-features li:last-child { border-bottom: none; }
+    .price-features li::before {
+      content: '✓';
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 14px;
       flex-shrink: 0;
     }
 
-    .section-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    .section-body {
-      padding: 20px 24px;
-      font-size: 15px;
-      color: var(--text);
-      line-height: 1.75;
-    }
-
-    .section-body p { margin-bottom: 12px; }
-    .section-body p:last-child { margin-bottom: 0; }
-
-    .section-body ul {
-      padding-left: 20px;
-      margin: 8px 0 12px;
-    }
-
-    .section-body ul li {
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-
-    .highlight-box {
-      background: var(--accent-light);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 8px 8px 0;
-      padding: 14px 16px;
-      margin: 12px 0;
-      font-size: 14px;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .contact-card {
-      background: var(--bg);
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-top: 12px;
-      border: 1px solid var(--border);
-    }
-
-    .contact-card a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact-card a:hover { text-decoration: underline; }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
+    .price-trial {
+      margin-top: 20px;
       font-size: 13px;
-      color: var(--text-secondary);
+      color: var(--text2);
+      background: rgba(0,122,255,0.07);
+      padding: 10px 16px;
+      border-radius: 10px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 40px 24px;
+      text-align: center;
       border-top: 1px solid var(--border);
     }
 
-    /* Language sections */
-    .lang-content { display: none; }
-    .lang-content.active { display: block; }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
 
-    @media (max-width: 600px) {
-      .page-title { font-size: 28px; }
-      .section-body { padding: 16px 18px; }
-      .section-header { padding: 14px 18px; }
+    .footer-logo-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--blue);
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .footer-logo-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text2);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--blue); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero { padding: 56px 20px 48px; }
+      .stat { min-width: 80px; padding: 8px 10px; }
+      .stat-value { font-size: 20px; }
+      .phones { gap: 10px; }
+      .phone-frame { width: 160px; height: 312px; border-radius: 30px; padding: 8px; }
+      .phone-frame.center-phone { transform: scale(1.06); }
+      .nav-links { gap: 14px; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <div class="logo-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-    </div>
-    <span class="logo-name">Rad Index</span>
+<!-- ── NAV ── -->
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">☢</div>
+    <span class="nav-logo-name">Rad Index</span>
+  </a>
+  <div class="nav-links">
+    <a href="mailto:info@radindex.app">Contatti</a>
+    <a href="/privacy.html">Privacy</a>
   </div>
-  <div class="lang-switcher">
-    <button class="lang-btn active" onclick="setLang('it')">IT</button>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('es')">ES</button>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-badge">☢ Per TSRM e studenti di radiologia</div>
+  <h1>Il tuo<br><span>manuale RX</span><br>sempre con te</h1>
+  <p class="hero-sub">141 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità e note pratiche. In tasca, sempre aggiornato.</p>
+  <div class="hero-cta">
+    <a href="#" class="btn-store apple">
+      <span class="store-icon">🍎</span>
+      <span class="store-label">
+        <small>Scarica su</small>
+        App Store
+      </span>
+    </a>
+    <a href="#" class="btn-store google">
+      <span class="store-icon">▶</span>
+      <span class="store-label">
+        <small>Disponibile su</small>
+        Google Play
+      </span>
+    </a>
   </div>
-</header>
+  <p class="coming-soon-note">Disponibile presto · 30 giorni di prova gratuita</p>
+</section>
 
-<main>
-
-  <!-- ══════════════════════════════════════════ ITALIANO ══ -->
-  <div class="lang-content active" id="lang-it">
-    <div class="page-header">
-      <h1 class="page-title">Privacy Policy</h1>
-      <p class="page-meta">Applicazione <span>Rad Index</span> · Ultimo aggiornamento: maggio 2026</p>
+<!-- ── STATS ── -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-value">141</div>
+      <div class="stat-label">Proiezioni</div>
     </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">1</div>
-        <div class="section-title">Titolare del trattamento</div>
-      </div>
-      <div class="section-body">
-        <p>Il titolare del trattamento dei dati personali è lo sviluppatore indipendente dell'applicazione Rad Index, raggiungibile all'indirizzo email indicato nella sezione Contatti.</p>
-        <div class="contact-card">
-          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
-          🌐 <a href="https://radindex.app">radindex.app</a>
-        </div>
-      </div>
+    <div class="stat">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Lingue</div>
     </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">2</div>
-        <div class="section-title">Dati raccolti</div>
-      </div>
-      <div class="section-body">
-        <p><strong>Rad Index non raccoglie, trasmette né condivide dati personali degli utenti.</strong></p>
-        <p>Tutti i dati generati dall'utilizzo dell'app (note personali, preferite, schede recenti) sono salvati <strong>esclusivamente sul dispositivo dell'utente</strong> tramite la memoria locale del dispositivo stesso e non vengono mai trasmessi a server esterni.</p>
-        <div class="highlight-box">
-          ✓ Nessun account richiesto · Nessun dato inviato a server · Nessuna pubblicità · Nessun tracciamento
-        </div>
-      </div>
+    <div class="stat">
+      <div class="stat-value">5</div>
+      <div class="stat-label">Calcolatori</div>
     </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">3</div>
-        <div class="section-title">Dati di acquisto (In-App Purchase)</div>
-      </div>
-      <div class="section-body">
-        <p>L'acquisto della versione completa dell'app avviene tramite <strong>Apple App Store</strong> o <strong>Google Play Store</strong>. I dati di pagamento sono gestiti esclusivamente da Apple o Google secondo le rispettive privacy policy. Il titolare dell'app non ha accesso ai dati di pagamento.</p>
-        <p>Per la gestione degli acquisti in-app viene utilizzato il servizio <strong>RevenueCat</strong>, che può raccogliere dati anonimi sull'attivazione degli acquisti. Per maggiori informazioni: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">4</div>
-        <div class="section-title">Dati degli store (Apple/Google)</div>
-      </div>
-      <div class="section-body">
-        <p>Apple App Store e Google Play Store possono raccogliere dati statistici anonimi sull'utilizzo dell'app (download, crash report, valutazioni) secondo le rispettive policy. Questi dati sono aggregati e anonimi e vengono utilizzati esclusivamente per migliorare l'applicazione.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">5</div>
-        <div class="section-title">Finalità medica e disclaimer</div>
-      </div>
-      <div class="section-body">
-        <p>Rad Index è uno strumento di consultazione didattica destinato a professionisti sanitari qualificati (TSRM) e studenti del settore. Il contenuto non sostituisce i protocolli clinici aziendali, le linee guida istituzionali né il giudizio clinico del professionista.</p>
-        <p>L'autore declina ogni responsabilità per usi impropri dei contenuti dell'applicazione.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">6</div>
-        <div class="section-title">Diritti dell'utente (GDPR)</div>
-      </div>
-      <div class="section-body">
-        <p>In conformità al Regolamento UE 2016/679 (GDPR), l'utente ha il diritto di:</p>
-        <ul>
-          <li>Accedere ai propri dati personali</li>
-          <li>Richiedere la rettifica o la cancellazione dei dati</li>
-          <li>Opporsi al trattamento</li>
-          <li>Richiedere la portabilità dei dati</li>
-        </ul>
-        <p>Poiché l'app non raccoglie dati personali su server, tutti i dati locali possono essere eliminati disinstallando l'applicazione dal dispositivo.</p>
-        <p>Per qualsiasi richiesta: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">7</div>
-        <div class="section-title">Modifiche alla Privacy Policy</div>
-      </div>
-      <div class="section-body">
-        <p>Il titolare si riserva il diritto di modificare la presente Privacy Policy. Le modifiche saranno pubblicate su questa pagina con aggiornamento della data. L'uso continuato dell'app dopo la pubblicazione delle modifiche costituisce accettazione delle stesse.</p>
-      </div>
+    <div class="stat">
+      <div class="stat-value">DR/CR</div>
+      <div class="stat-label">Separati</div>
     </div>
   </div>
+</div>
 
-  <!-- ══════════════════════════════════════════ ENGLISH ══ -->
-  <div class="lang-content" id="lang-en">
-    <div class="page-header">
-      <h1 class="page-title">Privacy Policy</h1>
-      <p class="page-meta"><span>Rad Index</span> App · Last updated: May 2026</p>
-    </div>
+<!-- ── MOCKUP ── -->
+<section class="mockup-section">
+  <p class="section-tag">L'app</p>
+  <h2 class="section-title">Progettata per chi lavora</h2>
+  <p class="section-sub">Interfaccia rapida, dark mode completa, ricerca istantanea. Pensata per la sala radiologica.</p>
 
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">1</div>
-        <div class="section-title">Data Controller</div>
-      </div>
-      <div class="section-body">
-        <p>The data controller is the independent developer of the Rad Index application, reachable at the email address listed in the Contact section.</p>
-        <div class="contact-card">
-          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
-          🌐 <a href="https://radindex.app">radindex.app</a>
+  <div class="phones">
+
+    <!-- Phone 1: scheda dettaglio -->
+    <div class="phone-frame">
+      <div class="phone-screen screen-scheda">
+        <div class="s-card-header">
+          <div class="s-card-name">RX Torace PA</div>
+          <div class="s-card-type">Postero-anteriore · Standard</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-row">
+            <div class="s-row-label">Obiettivo</div>
+            <div class="s-row-val">Campi polmonari, mediastino, diaframma e scheletro toracico.</div>
+          </div>
+          <div class="s-row">
+            <div class="s-row-label">Centratura</div>
+            <div class="s-row-val">T7, linea mediana</div>
+          </div>
+          <div class="s-params">
+            <div class="s-param-row"><span>DR</span><strong>100–125 kV · 3–5 mAs</strong></div>
+            <div class="s-param-row"><span>DFD</span><strong>~150–180 cm</strong></div>
+            <div class="s-param-row"><span>CR</span><strong>90–110 kV · 5–8 mAs</strong></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">2</div>
-        <div class="section-title">Data Collected</div>
-      </div>
-      <div class="section-body">
-        <p><strong>Rad Index does not collect, transmit or share any personal data.</strong></p>
-        <p>All data generated by use of the app (personal notes, favorites, recent cards) is saved <strong>exclusively on the user's device</strong> via local storage and is never transmitted to external servers.</p>
-        <div class="highlight-box">
-          ✓ No account required · No data sent to servers · No advertising · No tracking
+    <!-- Phone 2: home (center, larger) -->
+    <div class="phone-frame center-phone">
+      <div class="phone-screen screen-home">
+        <div class="s-header">
+          <div class="s-title">Rad Index</div>
+          <div class="s-sub">Manuale proiezioni RX</div>
+        </div>
+        <div class="s-search">🔍 Cerca proiezione…</div>
+        <div class="zone-grid">
+          <div class="zone-chip"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11 proj.</div></div>
+          <div class="zone-chip"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9 proj.</div></div>
         </div>
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">3</div>
-        <div class="section-title">Purchase Data (In-App Purchase)</div>
-      </div>
-      <div class="section-body">
-        <p>Purchases of the full version are processed through <strong>Apple App Store</strong> or <strong>Google Play Store</strong>. Payment data is handled exclusively by Apple or Google under their respective privacy policies. The app developer has no access to payment data.</p>
-        <p>In-app purchase management uses <strong>RevenueCat</strong>, which may collect anonymous data related to purchase activation. More info: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">4</div>
-        <div class="section-title">Store Data (Apple/Google)</div>
-      </div>
-      <div class="section-body">
-        <p>Apple App Store and Google Play Store may collect anonymous statistical data about app usage (downloads, crash reports, ratings) under their respective policies. This data is aggregated and anonymous and is used solely to improve the application.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">5</div>
-        <div class="section-title">Medical Purpose and Disclaimer</div>
-      </div>
-      <div class="section-body">
-        <p>Rad Index is an educational reference tool intended for qualified healthcare professionals (radiographers) and students in the field. The content does not replace institutional clinical protocols, guidelines, or the professional's clinical judgment.</p>
-        <p>The author disclaims all liability for improper use of the application's content.</p>
+    <!-- Phone 3: dark mode -->
+    <div class="phone-frame">
+      <div class="phone-screen screen-dark">
+        <div class="s-header">
+          <div class="s-title">Rad Index</div>
+          <div class="s-sub">Manuale proiezioni RX</div>
+        </div>
+        <div class="s-search">🔍 Cerca proiezione…</div>
+        <div class="zone-grid-dark">
+          <div class="zone-chip-dark"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9 proj.</div></div>
+        </div>
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">6</div>
-        <div class="section-title">User Rights (GDPR)</div>
-      </div>
-      <div class="section-body">
-        <p>In accordance with EU Regulation 2016/679 (GDPR), users have the right to:</p>
-        <ul>
-          <li>Access their personal data</li>
-          <li>Request rectification or deletion of data</li>
-          <li>Object to processing</li>
-          <li>Request data portability</li>
-        </ul>
-        <p>Since the app does not collect personal data on servers, all local data can be deleted by uninstalling the app from the device.</p>
-        <p>For any request: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
-      </div>
-    </div>
+  </div>
+</section>
 
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">7</div>
-        <div class="section-title">Changes to Privacy Policy</div>
+<!-- ── FEATURES ── -->
+<section class="features-section">
+  <div class="features-inner">
+    <div class="features-header">
+      <p class="section-tag">Funzionalità</p>
+      <h2 class="section-title">Tutto quello che serve</h2>
+      <p class="section-sub">Nessuna funzionalità superflua. Solo quello che serve davvero in sala radiologica.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#E6F1FB">📋</div>
+        <div class="feature-title">DR e CR separati</div>
+        <div class="feature-desc">Parametri tecnici distinti per rivelatore digitale diretto e per lastra CR/PSP. Con DFD, griglia e target EI.</div>
       </div>
-      <div class="section-body">
-        <p>The developer reserves the right to modify this Privacy Policy. Changes will be posted on this page with an updated date. Continued use of the app after changes are published constitutes acceptance of those changes.</p>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#EAF3DE">🧮</div>
+        <div class="feature-title">5 calcolatori tecnici</div>
+        <div class="feature-desc">mAs, legge degli inversi del quadrato, fattore griglia, regola del 15% kVp e calcolo del tempo di esposizione.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#EEEDFE">🃏</div>
+        <div class="feature-title">Flashcard</div>
+        <div class="feature-desc">Studia con la ripetizione spaziata. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizione.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#FCEBEB">📖</div>
+        <div class="feature-title">Glossario RX</div>
+        <div class="feature-desc">Termini tecnici e anatomici con definizioni chiare. Tab Tutti / Tecnici / Anatomia per navigazione rapida.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#FAEEDA">📄</div>
+        <div class="feature-title">Esporta in PDF</div>
+        <div class="feature-desc">Genera e condividi la scheda di ogni proiezione come PDF A4 con header colorato per zona anatomica.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#E8F4F8">✅</div>
+        <div class="feature-title">Checklist ALARA</div>
+        <div class="feature-desc">10 punti interattivi per la verifica pre-esame secondo il principio ALARA. Con barra di avanzamento e disclaimer normativo.</div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ══════════════════════════════════════════ ESPAÑOL ══ -->
-  <div class="lang-content" id="lang-es">
-    <div class="page-header">
-      <h1 class="page-title">Política de Privacidad</h1>
-      <p class="page-meta">Aplicación <span>Rad Index</span> · Última actualización: mayo 2026</p>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">1</div>
-        <div class="section-title">Responsable del tratamiento</div>
+<!-- ── FOR WHO ── -->
+<section class="forwho-section">
+  <div class="forwho-inner">
+    <p class="section-tag">Per chi è</p>
+    <h2 class="section-title">Fatto da un TSRM, per i TSRM</h2>
+    <p class="section-sub">Contenuto clinico revisionato, linguaggio professionale, nessun compromesso sulla qualità.</p>
+    <div class="forwho-cards">
+      <div class="forwho-card">
+        <div class="fw-icon">👨‍⚕️</div>
+        <div class="fw-title">TSRM</div>
+        <div class="fw-desc">Riferimento rapido durante il turno o per aggiornamento professionale</div>
       </div>
-      <div class="section-body">
-        <p>El responsable del tratamiento de datos personales es el desarrollador independiente de la aplicación Rad Index, accesible en la dirección de correo electrónico indicada en la sección Contacto.</p>
-        <div class="contact-card">
-          📧 <a href="mailto:info@radindex.app">info@radindex.app</a><br>
-          🌐 <a href="https://radindex.app">radindex.app</a>
-        </div>
+      <div class="forwho-card">
+        <div class="fw-icon">🎓</div>
+        <div class="fw-title">Studenti</div>
+        <div class="fw-desc">Studio sistematico con flashcard e glossario per prepararsi agli esami</div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">2</div>
-        <div class="section-title">Datos recopilados</div>
-      </div>
-      <div class="section-body">
-        <p><strong>Rad Index no recopila, transmite ni comparte datos personales de los usuarios.</strong></p>
-        <p>Todos los datos generados por el uso de la app (notas personales, favoritos, fichas recientes) se guardan <strong>exclusivamente en el dispositivo del usuario</strong> mediante almacenamiento local y nunca se transmiten a servidores externos.</p>
-        <div class="highlight-box">
-          ✓ Sin cuenta requerida · Sin datos enviados a servidores · Sin publicidad · Sin rastreo
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">3</div>
-        <div class="section-title">Datos de compra (In-App Purchase)</div>
-      </div>
-      <div class="section-body">
-        <p>La compra de la versión completa se realiza a través de <strong>Apple App Store</strong> o <strong>Google Play Store</strong>. Los datos de pago son gestionados exclusivamente por Apple o Google según sus respectivas políticas de privacidad. El desarrollador de la app no tiene acceso a los datos de pago.</p>
-        <p>Para la gestión de compras integradas se utiliza <strong>RevenueCat</strong>, que puede recopilar datos anónimos sobre la activación de compras. Más información: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">4</div>
-        <div class="section-title">Datos de las tiendas (Apple/Google)</div>
-      </div>
-      <div class="section-body">
-        <p>Apple App Store y Google Play Store pueden recopilar datos estadísticos anónimos sobre el uso de la app (descargas, informes de errores, valoraciones) según sus respectivas políticas. Estos datos son agregados y anónimos y se utilizan exclusivamente para mejorar la aplicación.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">5</div>
-        <div class="section-title">Finalidad médica y aviso legal</div>
-      </div>
-      <div class="section-body">
-        <p>Rad Index es una herramienta de consulta didáctica destinada a profesionales sanitarios cualificados (técnicos en radiodiagnóstico) y estudiantes del sector. El contenido no sustituye los protocolos clínicos institucionales, las guías de práctica clínica ni el juicio clínico del profesional.</p>
-        <p>El autor declina toda responsabilidad por usos indebidos del contenido de la aplicación.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">6</div>
-        <div class="section-title">Derechos del usuario (GDPR)</div>
-      </div>
-      <div class="section-body">
-        <p>De conformidad con el Reglamento UE 2016/679 (GDPR), el usuario tiene derecho a:</p>
-        <ul>
-          <li>Acceder a sus datos personales</li>
-          <li>Solicitar la rectificación o eliminación de datos</li>
-          <li>Oponerse al tratamiento</li>
-          <li>Solicitar la portabilidad de los datos</li>
-        </ul>
-        <p>Dado que la app no recopila datos personales en servidores, todos los datos locales pueden eliminarse desinstalando la aplicación del dispositivo.</p>
-        <p>Para cualquier solicitud: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">7</div>
-        <div class="section-title">Cambios en la Política de Privacidad</div>
-      </div>
-      <div class="section-body">
-        <p>El desarrollador se reserva el derecho de modificar esta Política de Privacidad. Los cambios se publicarán en esta página con la fecha actualizada. El uso continuado de la app tras la publicación de los cambios implica la aceptación de los mismos.</p>
+      <div class="forwho-card">
+        <div class="fw-icon">🏥</div>
+        <div class="fw-title">Tirocinanti</div>
+        <div class="fw-desc">Supporto pratico durante il tirocinio con parametri e posizionamento</div>
       </div>
     </div>
   </div>
+</section>
 
-</main>
+<!-- ── PRICING ── -->
+<section class="pricing-section">
+  <p class="section-tag">Prezzi</p>
+  <h2 class="section-title">Semplice e trasparente</h2>
+  <p class="section-sub">Nessun abbonamento. Paghi una volta sola.</p>
+  <div class="price-card">
+    <div class="price-badge">Accesso completo</div>
+    <div class="price-value"><sup>€</sup>5,99</div>
+    <div class="price-sub">Pagamento unico · Nessun abbonamento</div>
+    <ul class="price-features">
+      <li>141 proiezioni complete</li>
+      <li>Parametri DR e CR per ogni proiezione</li>
+      <li>5 calcolatori tecnici</li>
+      <li>Flashcard con ripetizione spaziata</li>
+      <li>Glossario RX</li>
+      <li>Esportazione PDF</li>
+      <li>Dark mode e selezione lingua</li>
+      <li>Aggiornamenti inclusi</li>
+    </ul>
+    <div class="price-trial">🎁 30 giorni di prova gratuita — nessuna carta richiesta</div>
+  </div>
+</section>
 
+<!-- ── FOOTER ── -->
 <footer>
-  © 2026 Rad Index · <a href="mailto:info@radindex.app" style="color:inherit">info@radindex.app</a>
+  <div class="footer-logo">
+    <div class="footer-logo-icon">☢</div>
+    <span class="footer-logo-name">Rad Index</span>
+  </div>
+  <div class="footer-links">
+    <a href="mailto:info@radindex.app">info@radindex.app</a>
+    <a href="/privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-copy">© 2026 Rad Index · Sviluppato da un TSRM per i TSRM</div>
 </footer>
-
-<script>
-  function setLang(lang) {
-    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-    document.getElementById('lang-' + lang).classList.add('active');
-    document.querySelector('[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
-    document.documentElement.lang = lang;
-  }
-
-  // Auto-detect browser language
-  const browserLang = navigator.language.substring(0, 2);
-  if (['it', 'en', 'es'].includes(browserLang)) setLang(browserLang);
-</script>
 
 </body>
 </html>
