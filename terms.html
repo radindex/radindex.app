@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rad Index — Termini di utilizzo</title>
+  <style>
+    :root {
+      --primary: #007AFF;
+      --bg: #f5f5f7;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: #d2d2d7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
+    .brand-icon { width: 36px; height: 36px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; }
+    .brand-name { font-size: 17px; font-weight: 600; }
+    .lang-switcher { display: flex; gap: 8px; }
+    .lang-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--muted); }
+    .lang-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.4px; margin-bottom: 6px; }
+    .meta { font-size: 13px; color: var(--muted); margin-bottom: 36px; }
+    h2 { font-size: 15px; font-weight: 700; margin: 28px 0 10px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); }
+    p { font-size: 15px; color: var(--text); margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { font-size: 15px; margin-bottom: 6px; }
+    .notice { background: #FFF3CD; border: 1px solid #FFEAA0; border-radius: 10px; padding: 14px 16px; margin: 24px 0; font-size: 14px; }
+    a { color: var(--primary); text-decoration: none; }
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="https://radindex.app">
+    <div class="brand-icon">Ri</div>
+    <span class="brand-name">Rad Index</span>
+  </a>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 IT</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
+    <button class="lang-btn" onclick="setLang('es')">🇪🇸 ES</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ── ITALIANO ── -->
+<div class="lang-content active" id="lang-it">
+  <h1>Termini di utilizzo</h1>
+  <p class="meta">Ultimo aggiornamento: maggio 2026 · <a href="https://radindex.app/privacy.html">Privacy Policy</a></p>
+
+  <div class="notice">
+    <strong>Strumento professionale, non dispositivo medico.</strong> Rad Index è uno strumento di riferimento tecnico per professionisti della radiologia. Non è un dispositivo medico ai sensi del Regolamento (UE) 2017/745. Non sostituisce il giudizio clinico né i protocolli istituzionali.
+  </div>
+
+  <h2>1. Accettazione</h2>
+  <p>Scaricando o utilizzando l'applicazione Rad Index ("l'App"), l'utente accetta i presenti Termini. Se non li accetta, non utilizzi l'App.</p>
+
+  <h2>2. Licenza d'uso</h2>
+  <p>Simone Zen concede all'utente una licenza personale, non esclusiva, non trasferibile e revocabile per utilizzare l'App sul proprio dispositivo, nei limiti previsti dai presenti Termini e dalle condizioni della piattaforma di distribuzione (App Store / Google Play).</p>
+  <p>L'utente non può: copiare, modificare, distribuire, vendere, noleggiare o concedere sublicenze dell'App; effettuare reverse engineering o tentare di estrarre il codice sorgente; rimuovere avvisi di copyright o marchi presenti nell'App.</p>
+
+  <h2>3. Natura dello strumento</h2>
+  <p>L'App fornisce informazioni di riferimento tecnico per TSRM (Tecnici Sanitari di Radiologia Medica) e studenti del settore. In particolare:</p>
+  <ul>
+    <li>Le schede di posizionamento radiografico sono linee guida di riferimento generale, non protocolli clinici vincolanti.</li>
+    <li>Le formule tecniche sono valori di riferimento; la loro applicazione pratica richiede verifica con i protocolli dipartimentali vigenti.</li>
+    <li>La checklist ALARA ha scopo formativo; è subordinata alle indicazioni del Medico Radiologo prescrivente.</li>
+    <li>I parametri tecnici (kVp, mAs, DFD) sono indicativi; i valori definitivi sono stabiliti dal TSRM responsabile dell'esame.</li>
+  </ul>
+
+  <h2>4. Limitazione di responsabilità</h2>
+  <p>Nei limiti consentiti dalla legge applicabile, Simone Zen non sarà responsabile per danni indiretti, incidentali o consequenziali derivanti dall'uso dell'App. Questa limitazione non si applica in caso di morte o lesioni personali causate da negligenza, né esclude i diritti inderogabili previsti dal D.Lgs. 206/2005 (Codice del Consumo).</p>
+  <p>L'utente professionista è responsabile di verificare l'adeguatezza delle informazioni al proprio contesto clinico specifico prima di applicarle.</p>
+
+  <h2>5. Proprietà intellettuale</h2>
+  <p>Tutti i contenuti dell'App (testi, design, database clinico, traduzioni, codice) sono di proprietà di Simone Zen e protetti dalla normativa sul diritto d'autore. Il marchio "Rad Index" è di proprietà di Simone Zen.</p>
+
+  <h2>6. Acquisto e rimborsi</h2>
+  <p>L'App prevede un periodo di prova gratuito di 30 giorni, al termine del quale è richiesto un acquisto unico. Le condizioni di acquisto e rimborso sono regolate dalle politiche di Apple App Store o Google Play Store applicabili nel paese dell'utente.</p>
+
+  <h2>7. Aggiornamenti e modifiche</h2>
+  <p>Simone Zen si riserva il diritto di modificare i presenti Termini. Le modifiche sostanziali saranno comunicate con un aggiornamento della data in cima a questa pagina. L'utilizzo continuato dell'App dopo tale data costituisce accettazione delle modifiche.</p>
+
+  <h2>8. Legge applicabile e foro</h2>
+  <p>I presenti Termini sono regolati dalla legge italiana. Per gli utenti consumatori in Italia si applicano le disposizioni inderogabili del D.Lgs. 206/2005. Per eventuali controversie è competente il Tribunale del luogo di residenza dell'utente consumatore.</p>
+
+  <h2>9. Contatti</h2>
+  <p>Per qualsiasi richiesta relativa ai presenti Termini: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+</div>
+
+<!-- ── ENGLISH ── -->
+<div class="lang-content" id="lang-en">
+  <h1>Terms of Use</h1>
+  <p class="meta">Last updated: May 2026 · <a href="https://radindex.app/privacy.html">Privacy Policy</a></p>
+
+  <div class="notice">
+    <strong>Professional reference tool, not a medical device.</strong> Rad Index is a technical reference tool for radiology professionals. It is not a medical device under Regulation (EU) 2017/745. It does not replace clinical judgment or institutional protocols.
+  </div>
+
+  <h2>1. Acceptance</h2>
+  <p>By downloading or using the Rad Index application ("the App"), you accept these Terms. If you do not accept them, do not use the App.</p>
+
+  <h2>2. Licence</h2>
+  <p>Simone Zen grants you a personal, non-exclusive, non-transferable, revocable licence to use the App on your device, subject to these Terms and the applicable platform terms (App Store / Google Play).</p>
+  <p>You may not: copy, modify, distribute, sell, rent or sublicence the App; reverse-engineer or attempt to extract source code; remove any copyright notices or marks.</p>
+
+  <h2>3. Nature of the Tool</h2>
+  <p>The App provides technical reference information for radiographers (TSRM) and students. Specifically:</p>
+  <ul>
+    <li>Radiographic positioning guides are general reference guidelines, not binding clinical protocols.</li>
+    <li>Technical formulas are reference values; their practical application requires verification against current departmental protocols.</li>
+    <li>The ALARA checklist is for educational purposes and is subject to the prescribing Radiologist's instructions.</li>
+    <li>Technical parameters (kVp, mAs, SID) are indicative; final values are determined by the radiographer responsible for the examination.</li>
+  </ul>
+
+  <h2>4. Limitation of Liability</h2>
+  <p>To the extent permitted by applicable law, Simone Zen shall not be liable for indirect, incidental or consequential damages arising from use of the App. This limitation does not apply to death or personal injury caused by negligence, nor does it exclude mandatory statutory rights under applicable consumer protection legislation.</p>
+  <p>Professional users are responsible for verifying the suitability of information to their specific clinical context before applying it.</p>
+
+  <h2>5. Intellectual Property</h2>
+  <p>All App content (text, design, clinical database, translations, code) is owned by Simone Zen and protected by copyright law. The "Rad Index" mark is owned by Simone Zen.</p>
+
+  <h2>6. Purchase and Refunds</h2>
+  <p>The App includes a 30-day free trial, after which a one-time purchase is required. Purchase and refund conditions are governed by the Apple App Store or Google Play Store policies applicable in your country.</p>
+
+  <h2>7. Changes</h2>
+  <p>Simone Zen reserves the right to modify these Terms. Material changes will be notified by updating the date at the top of this page. Continued use of the App after that date constitutes acceptance of the changes.</p>
+
+  <h2>8. Governing Law</h2>
+  <p>These Terms are governed by Italian law. Mandatory provisions of applicable consumer protection legislation are unaffected. For consumers, disputes shall be resolved before the court of the consumer's place of residence.</p>
+
+  <h2>9. Contact</h2>
+  <p>For any enquiries regarding these Terms: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+</div>
+
+<!-- ── ESPAÑOL ── -->
+<div class="lang-content" id="lang-es">
+  <h1>Términos de uso</h1>
+  <p class="meta">Última actualización: mayo 2026 · <a href="https://radindex.app/privacy.html">Política de privacidad</a></p>
+
+  <div class="notice">
+    <strong>Herramienta de referencia profesional, no dispositivo médico.</strong> Rad Index es una herramienta de referencia técnica para profesionales de la radiología. No es un dispositivo médico conforme al Reglamento (UE) 2017/745. No sustituye el juicio clínico ni los protocolos institucionales.
+  </div>
+
+  <h2>1. Aceptación</h2>
+  <p>Al descargar o utilizar la aplicación Rad Index ("la App"), el usuario acepta los presentes Términos. Si no los acepta, no utilice la App.</p>
+
+  <h2>2. Licencia de uso</h2>
+  <p>Simone Zen concede al usuario una licencia personal, no exclusiva, no transferible y revocable para utilizar la App en su dispositivo, sujeta a los presentes Términos y a las condiciones de la plataforma de distribución (App Store / Google Play).</p>
+  <p>El usuario no podrá: copiar, modificar, distribuir, vender, alquilar ni sublicenciar la App; realizar ingeniería inversa o intentar extraer el código fuente; eliminar avisos de copyright o marcas presentes en la App.</p>
+
+  <h2>3. Naturaleza de la herramienta</h2>
+  <p>La App proporciona información de referencia técnica para TSRM (Técnicos en Radiología Médica) y estudiantes. En particular:</p>
+  <ul>
+    <li>Las fichas de posicionamiento radiográfico son directrices de referencia general, no protocolos clínicos vinculantes.</li>
+    <li>Las fórmulas técnicas son valores de referencia; su aplicación práctica requiere verificación con los protocolos departamentales vigentes.</li>
+    <li>La lista de verificación ALARA tiene fines formativos y está subordinada a las indicaciones del Médico Radiólogo prescriptor.</li>
+    <li>Los parámetros técnicos (kVp, mAs, DFR) son indicativos; los valores definitivos son establecidos por el TSRM responsable del examen.</li>
+  </ul>
+
+  <h2>4. Limitación de responsabilidad</h2>
+  <p>En la medida permitida por la legislación aplicable, Simone Zen no será responsable de daños indirectos, incidentales o consecuentes derivados del uso de la App. Esta limitación no se aplica en caso de muerte o lesiones personales causadas por negligencia, ni excluye los derechos irrenunciables reconocidos por la legislación de protección al consumidor aplicable.</p>
+  <p>El usuario profesional es responsable de verificar la adecuación de la información a su contexto clínico específico antes de aplicarla.</p>
+
+  <h2>5. Propiedad intelectual</h2>
+  <p>Todos los contenidos de la App (textos, diseño, base de datos clínica, traducciones, código) son propiedad de Simone Zen y están protegidos por la normativa de derechos de autor. La marca "Rad Index" es propiedad de Simone Zen.</p>
+
+  <h2>6. Compra y reembolsos</h2>
+  <p>La App incluye un período de prueba gratuito de 30 días, tras el cual se requiere una compra única. Las condiciones de compra y reembolso se rigen por las políticas de Apple App Store o Google Play Store aplicables en el país del usuario.</p>
+
+  <h2>7. Modificaciones</h2>
+  <p>Simone Zen se reserva el derecho de modificar los presentes Términos. Los cambios sustanciales se comunicarán actualizando la fecha en la parte superior de esta página. El uso continuado de la App tras dicha fecha constituye aceptación de los cambios.</p>
+
+  <h2>8. Ley aplicable</h2>
+  <p>Los presentes Términos se rigen por la ley italiana. Las disposiciones imperativas de la legislación de protección al consumidor aplicable quedan inalteradas. Para los consumidores, las controversias se resolverán ante los tribunales del lugar de residencia del consumidor.</p>
+
+  <h2>9. Contacto</h2>
+  <p>Para cualquier consulta sobre los presentes Términos: <a href="mailto:info@radindex.app">info@radindex.app</a></p>
+</div>
+
+</main>
+
+<footer>
+  © 2026 Simone Zen · <a href="https://radindex.app">radindex.app</a> · <a href="https://radindex.app/privacy.html">Privacy Policy</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.textContent.toLowerCase().includes(lang)) btn.classList.add('active');
+    });
+  }
+  const browserLang = navigator.language.slice(0, 2);
+  if (['en', 'es'].includes(browserLang)) setLang(browserLang);
+</script>
+
+</body>
+</html>
