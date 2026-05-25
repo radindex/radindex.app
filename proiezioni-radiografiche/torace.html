@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiezione Radiografica Torace PA — Posizionamento e Parametri | Rad Index</title>
+  <meta name="description" content="Guida completa alla proiezione radiografica del torace PA: posizionamento paziente, kV e mAs DR/CR, raggio centrale, criteri di qualità e note pratiche per TSRM.">
+  <link rel="canonical" href="https://radindex.app/proiezioni-radiografiche/torace.html">
+  <meta property="og:title" content="Proiezione Radiografica Torace PA — Guida TSRM">
+  <meta property="og:description" content="Posizionamento, parametri DR/CR, criteri di qualità per la proiezione torace PA. Scritto da TSRM per TSRM.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://radindex.app/proiezioni-radiografiche/torace.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:    #007AFF;
+      --blue-dk: #0055CC;
+      --bg:      #F2F2F7;
+      --surface: #FFFFFF;
+      --text:    #1C1C1E;
+      --text2:   #636366;
+      --text3:   #AEAEB2;
+      --border:  #E5E5EA;
+      --radius:  16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+    }
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--blue);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .nav-links { display: flex; gap: 20px; align-items: center; }
+    .nav-links a {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--blue); }
+
+    .page-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--text3);
+      margin-bottom: 16px;
+    }
+    .breadcrumb a { color: var(--blue); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .page-hero h1 {
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .page-hero h1 span { color: var(--blue); }
+    .page-hero .meta {
+      font-size: 13px;
+      color: var(--text3);
+      margin-bottom: 12px;
+    }
+    .page-hero .subtitle {
+      font-size: 16px;
+      color: var(--text2);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .content-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .param-table {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+    .param-table-header {
+      background: var(--blue);
+      color: #fff;
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .param-row {
+      display: flex;
+      align-items: baseline;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 12px;
+    }
+    .param-row:last-child { border-bottom: none; }
+    .param-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+    .param-value {
+      font-size: 15px;
+      color: var(--text);
+    }
+    .param-value strong { color: var(--blue); }
+    .param-value .sub { display: block; font-size: 13px; color: var(--text2); margin-top: 2px; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .section-heading {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .prose {
+      font-size: 15px;
+      color: var(--text2);
+      margin-bottom: 32px;
+    }
+    .prose p { margin-bottom: 12px; }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose strong { color: var(--text); }
+
+    .checklist-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .checklist-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .checklist-card ul { list-style: none; padding: 0; }
+    .checklist-card li {
+      font-size: 14px;
+      color: var(--text2);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .checklist-card li:last-child { border-bottom: none; }
+    .check-icon { color: var(--blue); font-weight: 700; flex-shrink: 0; }
+
+    .note-card {
+      background: #FFF8E7;
+      border: 1px solid #FFD60A;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .note-card .note-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #B8860B;
+      margin-bottom: 8px;
+    }
+    .note-card p {
+      font-size: 14px;
+      color: #5C4A00;
+      line-height: 1.6;
+    }
+
+    .proiezioni-correlate {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .proj-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .proj-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 4px 16px rgba(0,122,255,.08);
+    }
+    .proj-card-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .proj-card-desc { font-size: 12px; color: var(--text3); }
+
+    .cta-block {
+      background: linear-gradient(135deg, #007AFF 0%, #0055CC 100%);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-block h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .cta-block p { font-size: 15px; opacity: .85; margin-bottom: 24px; }
+    .cta-block a {
+      display: inline-block;
+      background: #fff;
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+    }
+    .cta-block a:hover { opacity: .9; }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-icon {
+      width: 28px; height: 28px;
+      background: var(--blue);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .footer-logo-name { font-weight: 700; font-size: 15px; }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--blue); }
+    .footer-copy { font-size: 12px; color: var(--text3); }
+
+    @media (max-width: 640px) {
+      .page-hero { padding: 36px 20px 32px; }
+      .content-wrap { padding: 32px 16px 60px; }
+      .param-row { flex-direction: column; gap: 4px; }
+      .param-label { min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">☢</div>
+    <span>Rad Index</span>
+  </a>
+  <div class="nav-links">
+    <a href="/proiezioni-radiografiche/">Proiezioni</a>
+    <a href="/privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="/">Rad Index</a> / <a href="/proiezioni-radiografiche/">Proiezioni</a> / Torace
+  </div>
+  <h1>Proiezione Radiografica<br><span>Torace PA</span></h1>
+  <div class="meta">Postero-anteriore · Distretto toracico</div>
+  <div class="subtitle">Posizionamento, parametri DR/CR, criteri di qualità e note pratiche per TSRM e studenti di tecniche radiologiche.</div>
+</div>
+
+<div class="content-wrap">
+
+  <!-- PARAMETRI -->
+  <div class="section-label">Parametri tecnici</div>
+  <div class="section-heading">DR e CR a confronto</div>
+
+  <div class="param-table">
+    <div class="param-table-header">🫁 Torace PA — Parametri di esposizione</div>
+    <div class="param-row">
+      <div class="param-label">Tipo</div>
+      <div class="param-value">Postero-anteriore (PA)</div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">DR</div>
+      <div class="param-value">
+        <strong>110–125 kV · 4–6 mAs</strong>
+        <span class="sub">DFD 180 cm · con griglia</span>
+      </div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">CR</div>
+      <div class="param-value">
+        <strong>110–125 kV · 8–12 mAs</strong>
+        <span class="sub">DFD 180 cm · con griglia</span>
+      </div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">DFD</div>
+      <div class="param-value">180 cm (standard) — riduce ingrandimento cardiaco</div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">Griglia</div>
+      <div class="param-value">Sì · rapporto 10:1 o 12:1</div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">Raggio centrale</div>
+      <div class="param-value">Perpendicolare al detettore · centrato su T7 (tra le scapole)</div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">Respiro</div>
+      <div class="param-value">Inspirazione profonda e trattenuta</div>
+    </div>
+  </div>
+
+  <!-- POSIZIONAMENTO -->
+  <div class="section-label">Posizionamento paziente</div>
+  <div class="section-heading">Come eseguire la proiezione PA</div>
+
+  <div class="prose">
+    <p>
+      Il paziente è in <strong>stazione eretta</strong>, fronte al bucky verticale. I piedi leggermente divaricati per la stabilità. Le <strong>mani appoggiate ai fianchi con i pollici in fuori</strong>, gomiti flessi e portati avanti: questo "abbraccia" il bucky e ruota le scapole lateralmente, liberando i campi polmonari dalla sovrapposizione delle ali scapolari.
+    </p>
+    <p>
+      Il <strong>mento è sollevato</strong> e appoggiato al bordo superiore del bucky, per evitare che si sovrapponga agli apici polmonari. Le spalle sono abbassate, simmetriche e a contatto con il detettore. Il piano mediosagittale del paziente è perpendicolare al bucky, centrato sul suo asse verticale.
+    </p>
+    <p>
+      Il <strong>campo di collimazione</strong> include: da 3–4 cm sopra le clavicole agli angoli costofrenici inferiori, lateralmente fino al limite esterno della gabbia toracica. Il campo è visibile sui quattro lati dell'immagine come riferimento di collimazione adeguata.
+    </p>
+  </div>
+
+  <!-- CRITERI DI QUALITÀ -->
+  <div class="section-label">Criteri di qualità</div>
+  <div class="section-heading">Cosa deve mostrare l'immagine</div>
+
+  <div class="checklist-card">
+    <h3>Checklist criteri diagnostici</h3>
+    <ul>
+      <li><span class="check-icon">✓</span> Entrambi i campi polmonari visibili nella loro interezza, angoli costofrenici inclusi</li>
+      <li><span class="check-icon">✓</span> Scapole proiettate fuori dai campi polmonari (rotazione corretta delle braccia)</li>
+      <li><span class="check-icon">✓</span> Simmetria delle clavicole rispetto alla colonna vertebrale (assenza di rotazione del paziente)</li>
+      <li><span class="check-icon">✓</span> Almeno 10 archi costali posteriori visibili al di sopra del diaframma (inspirazione adeguata)</li>
+      <li><span class="check-icon">✓</span> Colonna vertebrale toracica appena visibile in trasparenza al mediastino</li>
+      <li><span class="check-icon">✓</span> Apici polmonari liberi da sovrapposizione del mento</li>
+      <li><span class="check-icon">✓</span> Trachea in asse (o lieve deviazione fisiologica a destra in T4)</li>
+      <li><span class="check-icon">✓</span> Assenza di artefatti da oggetti metallici (bottoni, reggiseno — da rimuovere)</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <div class="note-label">⚠ Nota pratica</div>
+    <p>
+      Un errore frequente è eseguire il torace in <strong>espirazione</strong>: le basi polmonari appaiono opache e falsano la diagnosi (pseudo-infiltrati, falso ingrandimento cardiaco). Assicurarsi sempre che l'esposizione avvenga a <strong>inspirazione profonda e trattenuta</strong>: istruire il paziente prima di posizionarlo e ripetere il comando verbale chiaramente ("respiri a fondo, trattenga, non respiri").
+    </p>
+  </div>
+
+  <!-- AP BED-SIDE -->
+  <div class="section-label">Variante AP</div>
+  <div class="section-heading">Torace AP (paziente non deambulante)</div>
+
+  <div class="prose">
+    <p>
+      Quando il paziente <strong>non può stare in piedi o seduto</strong> — reparto, pronto soccorso, terapia intensiva — si esegue la proiezione antero-posteriore (AP) con detettore posto posteriormente al paziente.
+    </p>
+    <p>
+      Le conseguenze tecniche sono importanti: la <strong>DFD si riduce a 100–115 cm</strong> (portatile), il cuore appare ingrandito del 15–20% rispetto alla PA (maggiore distanza fuoco-cuore), le scapole non possono essere ruotate in avanti e rimangono sovrapposte ai campi polmonari laterali. Il referto radiologico va sempre contestualizzato con "proiezione AP al letto".
+    </p>
+    <p>
+      Parametri AP portátile (DR): <strong>90–110 kV · 6–10 mAs</strong>, senza griglia se DFD &lt; 120 cm oppure con griglia mobile se disponibile.
+    </p>
+  </div>
+
+  <!-- PROIEZIONI CORRELATE -->
+  <div class="section-label">Stesso distretto</div>
+  <div class="section-heading">Altre proiezioni del torace</div>
+
+  <div class="proiezioni-correlate">
+    <a href="/proiezioni-radiografiche/torace.html" class="proj-card">
+      <div class="proj-card-name">Torace LL</div>
+      <div class="proj-card-desc">Laterale sinistra standard</div>
+    </a>
+    <a href="/proiezioni-radiografiche/torace.html" class="proj-card">
+      <div class="proj-card-name">Torace AP</div>
+      <div class="proj-card-desc">Bed-side, non deambulante</div>
+    </a>
+    <a href="/proiezioni-radiografiche/torace.html" class="proj-card">
+      <div class="proj-card-name">Torace in espirio</div>
+      <div class="proj-card-desc">Ricerca pneumotorace</div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="proj-card">
+      <div class="proj-card-name">← Tutti i distretti</div>
+      <div class="proj-card-desc">Torna all'indice</div>
+    </a>
+  </div>
+
+  <div class="cta-block">
+    <h2>Tutte le proiezioni nell'app</h2>
+    <p>Questa è solo una delle 141 schede presenti in Rad Index. Ogni scheda include parametri DR/CR, posizionamento, criteri di qualità e note pratiche. Disponibile su iOS e Android.</p>
+    <a href="/">Provala gratis per 14 giorni →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <div class="footer-logo-icon">☢</div>
+    <span class="footer-logo-name">Rad Index</span>
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/proiezioni-radiografiche/">Proiezioni</a>
+    <a href="mailto:info@radindex.app">info@radindex.app</a>
+    <a href="https://t.me/radindexapp" target="_blank">Telegram</a>
+    <a href="/privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-copy">© 2026 Rad Index · Sviluppato da un TSRM per i TSRM</div>
+</footer>
+
+</body>
+</html>

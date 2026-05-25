@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiezioni Radiografiche — Guida completa per TSRM | Rad Index</title>
+  <meta name="description" content="Guida completa alle proiezioni radiografiche: posizionamento, parametri DR/CR, criteri di qualità. Per TSRM e studenti di tecniche radiologiche.">
+  <link rel="canonical" href="https://radindex.app/proiezioni-radiografiche/">
+  <meta property="og:title" content="Proiezioni Radiografiche — Guida completa per TSRM">
+  <meta property="og:description" content="Posizionamento, parametri DR/CR, criteri di qualità per le principali proiezioni radiografiche standard. Scritto da TSRM per TSRM.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://radindex.app/proiezioni-radiografiche/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:    #007AFF;
+      --blue-dk: #0055CC;
+      --bg:      #F2F2F7;
+      --surface: #FFFFFF;
+      --text:    #1C1C1E;
+      --text2:   #636366;
+      --text3:   #AEAEB2;
+      --border:  #E5E5EA;
+      --radius:  16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+    }
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--blue);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .nav-links { display: flex; gap: 20px; align-items: center; }
+    .nav-links a {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--blue); }
+
+    .page-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--text3);
+      margin-bottom: 16px;
+    }
+    .breadcrumb a { color: var(--blue); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .page-hero h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .page-hero h1 span { color: var(--blue); }
+    .page-hero p {
+      font-size: 17px;
+      color: var(--text2);
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+    .cta-badge {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .cta-badge:hover { background: var(--blue-dk); }
+
+    .content-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-block {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 40px;
+      border: 1px solid var(--border);
+    }
+    .intro-block h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .intro-block p {
+      color: var(--text2);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .intro-block p:last-child { margin-bottom: 0; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .section-heading {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .section-sub {
+      font-size: 15px;
+      color: var(--text2);
+      margin-bottom: 28px;
+    }
+
+    .grid-districts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .district-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color .15s, box-shadow .15s;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .district-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 4px 16px rgba(0,122,255,.1);
+    }
+    .district-icon {
+      font-size: 24px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .district-body {}
+    .district-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .district-count {
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    @media (max-width: 580px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .info-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+    .info-card ul { list-style: none; padding: 0; }
+    .info-card li {
+      font-size: 14px;
+      color: var(--text2);
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-card li:last-child { border-bottom: none; }
+    .info-card li::before { content: "→ "; color: var(--blue); font-weight: 600; }
+
+    .cta-block {
+      background: linear-gradient(135deg, #007AFF 0%, #0055CC 100%);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-block h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .cta-block p { font-size: 15px; opacity: .85; margin-bottom: 24px; }
+    .cta-block a {
+      display: inline-block;
+      background: #fff;
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+    .cta-block a:hover { opacity: .9; }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-icon {
+      width: 28px; height: 28px;
+      background: var(--blue);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .footer-logo-name { font-weight: 700; font-size: 15px; }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--blue); }
+    .footer-copy { font-size: 12px; color: var(--text3); }
+
+    @media (max-width: 640px) {
+      .page-hero { padding: 40px 20px 36px; }
+      .content-wrap { padding: 32px 16px 60px; }
+      .intro-block, .cta-block { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">☢</div>
+    <span>Rad Index</span>
+  </a>
+  <div class="nav-links">
+    <a href="mailto:info@radindex.app">Contatti</a>
+    <a href="/privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">Rad Index</a> / Proiezioni radiografiche</div>
+  <h1>Proiezioni<br><span>radiografiche</span></h1>
+  <p>Posizionamento, parametri DR/CR, criteri di qualità e note pratiche. Tutto quello che serve a un TSRM, in un unico posto.</p>
+  <a href="/" class="cta-badge">Scarica l'app — 14 giorni gratis</a>
+</div>
+
+<div class="content-wrap">
+
+  <div class="intro-block">
+    <h2>Cos'è una proiezione radiografica?</h2>
+    <p>
+      Una <strong>proiezione radiografica</strong> è la tecnica standardizzata con cui un Tecnico Sanitario di Radiologia Medica (TSRM) posiziona il paziente, orienta il tubo RX e imposta i parametri di esposizione per ottenere un'immagine diagnostica riproducibile e di qualità.
+    </p>
+    <p>
+      Ogni proiezione è definita da: distretto anatomico, incidenza del raggio centrale (RC), distanza fuoco-detettore (DFD), kV e mAs indicativi per DR (digitale diretto) e CR (computed radiography), posizione del paziente e criteri di qualità dell'immagine risultante.
+    </p>
+    <p>
+      La corretta esecuzione riduce le ripetizioni, abbassa la dose al paziente (principio ALARA) e produce immagini interpretabili dal radiologo senza artefatti di posizionamento. La standardizzazione è la base del referto accurato.
+    </p>
+  </div>
+
+  <div class="section-label">Distretti anatomici</div>
+  <div class="section-heading">Esplora per distretto</div>
+  <div class="section-sub">Seleziona il distretto per leggere le proiezioni standard, i parametri e le note pratiche.</div>
+
+  <div class="grid-districts">
+    <a href="/proiezioni-radiografiche/torace.html" class="district-card">
+      <div class="district-icon">🫁</div>
+      <div class="district-body">
+        <div class="district-name">Torace</div>
+        <div class="district-count">PA, LL, AP, espirio</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🦴</div>
+      <div class="district-body">
+        <div class="district-name">Colonna vertebrale</div>
+        <div class="district-count">Cervicale, dorsale, lombare</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🦷</div>
+      <div class="district-body">
+        <div class="district-name">Cranio e massiccio facciale</div>
+        <div class="district-count">PA, LL, Towne, seni, orbite</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🫀</div>
+      <div class="district-body">
+        <div class="district-name">Addome</div>
+        <div class="district-count">AP ortostático, decubito laterale</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🦾</div>
+      <div class="district-body">
+        <div class="district-name">Arto superiore</div>
+        <div class="district-count">Mano, polso, avambraccio, spalla</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🦵</div>
+      <div class="district-body">
+        <div class="district-name">Arto inferiore</div>
+        <div class="district-count">Piede, caviglia, ginocchio, femore</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🦻</div>
+      <div class="district-body">
+        <div class="district-name">Pelvi e anca</div>
+        <div class="district-count">AP pelvi, frog-leg, assiale</div>
+      </div>
+    </a>
+    <a href="/proiezioni-radiografiche/" class="district-card">
+      <div class="district-icon">🩻</div>
+      <div class="district-body">
+        <div class="district-name">Scoliosi e ortostático</div>
+        <div class="district-count">Colonna intera, bending</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-label">Parametri tecnici</div>
+  <div class="section-heading">DR vs CR — cosa cambia?</div>
+  <div class="section-sub">I parametri di esposizione differiscono tra sistemi digitali diretti e a storage phosphor.</div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>DR — Digitale Diretto</h3>
+      <ul>
+        <li>Flat panel detector (TFT/CsI)</li>
+        <li>Latitudine di esposizione elevata</li>
+        <li>kV tendenzialmente più alto</li>
+        <li>mAs ridotti rispetto a CR</li>
+        <li>Immagine disponibile in 3–5 secondi</li>
+        <li>AEC integrato nella maggior parte dei sistemi</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>CR — Computed Radiography</h3>
+      <ul>
+        <li>Storage phosphor plate (PSP)</li>
+        <li>Lettura separata con scanner laser</li>
+        <li>Più suscettibile all'overexposure silenzioso</li>
+        <li>kV leggermente inferiori rispetto a DR</li>
+        <li>Richiede cancellazione dopo lettura</li>
+        <li>Flessibilità geometrica (cassette portatile)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label">Principi fondamentali</div>
+  <div class="section-heading">Cosa determina la qualità dell'immagine</div>
+  <div class="section-sub">Quattro fattori che ogni TSRM deve controllare prima di ogni esposizione.</div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Geometria</h3>
+      <ul>
+        <li>DFD: distanza fuoco-detettore standard</li>
+        <li>Raggio centrale perpendicolare o angolato</li>
+        <li>Ingrandimento controllato</li>
+        <li>Distorsione minimizzata</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Esposizione</h3>
+      <ul>
+        <li>kV: contrasto e penetrazione</li>
+        <li>mAs: densità ottica / dose</li>
+        <li>Regola 15%: ±15 kV = doppio/metà mAs</li>
+        <li>AEC: camera ionizzazione standard</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Collimazione</h3>
+      <ul>
+        <li>Riduce radiazione diffusa</li>
+        <li>Migliora contrasto immagine</li>
+        <li>Rispetta ALARA (specialmente pediatrico)</li>
+        <li>Campo visibile sui quattro lati</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Posizionamento</h3>
+      <ul>
+        <li>Paziente in posizione standardizzata</li>
+        <li>Strutture d'interesse al centro</li>
+        <li>Rotazioni assenti o controllate</li>
+        <li>Assenza di artefatti nel campo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h2>141 proiezioni nell'app</h2>
+    <p>Ogni scheda contiene posizionamento completo, parametri DR/CR, criteri di qualità e note pratiche. Disponibile su iOS e Android.</p>
+    <a href="/">Provala gratis per 14 giorni →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <div class="footer-logo-icon">☢</div>
+    <span class="footer-logo-name">Rad Index</span>
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/proiezioni-radiografiche/">Proiezioni</a>
+    <a href="mailto:info@radindex.app">info@radindex.app</a>
+    <a href="https://t.me/radindexapp" target="_blank">Telegram</a>
+    <a href="/privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-copy">© 2026 Rad Index · Sviluppato da un TSRM per i TSRM</div>
+</footer>
+
+</body>
+</html>
