@@ -598,7 +598,21 @@
       color: var(--text3);
     }
 
-    /* ── RESPONSIVE ── */
+    /* ── DESKTOP ── */
+    @media (min-width: 900px) {
+      nav { padding: 0 48px; }
+      .hero { padding: 100px 48px 80px; max-width: 780px; }
+      .mockup-section { padding: 96px 48px; }
+      .features-section { padding: 96px 48px; }
+      .features-inner { max-width: 1100px; }
+      .forwho-section { padding: 96px 48px; }
+      .forwho-inner { max-width: 900px; }
+      .pricing-section { padding: 96px 48px; }
+      .phone-frame { width: 220px; height: 430px; }
+      .phones { gap: 28px; }
+    }
+
+    /* ── MOBILE ── */
     @media (max-width: 640px) {
       .hero { padding: 56px 20px 48px; }
       .stat { min-width: 80px; padding: 8px 10px; }
