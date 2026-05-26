@@ -56,7 +56,19 @@
       font-weight: 700;
       font-size: 17px;
     }
-    .nav-logo img { height: 30px; width: auto; display: block; }
+    .nav-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      display: block;
+      flex-shrink: 0;
+    }
+    .nav-name {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text);
+    }
     .nav-links { display: flex; gap: 20px; align-items: center; }
     .nav-links a {
       color: var(--text2);
@@ -297,7 +309,8 @@
 
 <nav>
   <a href="/" class="nav-logo">
-    <img src="../assets/logo_chiaro.png" alt="Rad Index">
+    <img class="nav-icon" src="../assets/logo_icona.png" alt="">
+    <span class="nav-name">Rad Index</span>
   </a>
   <div class="nav-links">
     <a href="/proiezioni-radiografiche/">Proiezioni</a>

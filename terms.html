@@ -17,7 +17,19 @@
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
     header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
     .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
-    .brand img { height: 28px; width: auto; display: block; }
+    .nav-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      display: block;
+      flex-shrink: 0;
+    }
+    .nav-name {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text);
+    }
     .lang-switcher { display: flex; gap: 8px; }
     .lang-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--muted); }
     .lang-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
@@ -39,7 +51,8 @@
 
 <header>
   <a class="brand" href="https://radindex.app">
-    <img src="assets/logo_chiaro.png" alt="Rad Index">
+    <img class="nav-icon" src="assets/logo_icona.png" alt="">
+    <span class="nav-name">Rad Index</span>
   </a>
   <div class="lang-switcher">
     <button class="lang-btn active" onclick="setLang('it')">🇮🇹 IT</button>

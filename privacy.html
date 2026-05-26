@@ -47,10 +47,18 @@
       gap: 10px;
     }
 
-    .logo img {
-      height: 30px;
-      width: auto;
+    .nav-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
       display: block;
+      flex-shrink: 0;
+    }
+    .nav-name {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text);
     }
 
     .lang-switcher {
@@ -218,7 +226,8 @@
 
 <header>
   <div class="logo">
-    <img src="assets/logo_chiaro.png" alt="Rad Index">
+    <img class="nav-icon" src="assets/logo_icona.png" alt="">
+    <span class="nav-name">Rad Index</span>
   </div>
   <div class="lang-switcher">
     <button class="lang-btn active" onclick="setLang('it')">IT</button>
