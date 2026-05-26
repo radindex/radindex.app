@@ -14,8 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --blue:    #007AFF;
-      --blue-dk: #0055CC;
+      --blue:    #416DBE;
+      --blue-dk: #2D4E8A;
       --bg:      #F2F2F7;
       --surface: #FFFFFF;
       --text:    #1C1C1E;
@@ -56,16 +56,7 @@
       font-weight: 700;
       font-size: 17px;
     }
-    .nav-logo-icon {
-      width: 32px;
-      height: 32px;
-      background: var(--blue);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
+    .nav-logo img { height: 30px; width: auto; display: block; }
     .nav-links { display: flex; gap: 20px; align-items: center; }
     .nav-links a {
       color: var(--text2);
@@ -223,7 +214,7 @@
     .info-card li::before { content: "→ "; color: var(--blue); font-weight: 600; }
 
     .cta-block {
-      background: linear-gradient(135deg, #007AFF 0%, #0055CC 100%);
+      background: linear-gradient(135deg, #416DBE 0%, #2D4E8A 100%);
       border-radius: var(--radius);
       padding: 40px 32px;
       text-align: center;
@@ -257,14 +248,7 @@
       gap: 8px;
       margin-bottom: 16px;
     }
-    .footer-logo-icon {
-      width: 28px; height: 28px;
-      background: var(--blue);
-      border-radius: 7px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px;
-    }
-    .footer-logo-name { font-weight: 700; font-size: 15px; }
+    .footer-logo img { height: 26px; width: auto; display: block; }
     .footer-links {
       display: flex;
       flex-wrap: wrap;
@@ -291,8 +275,7 @@
 
 <nav>
   <a href="/" class="nav-logo">
-    <div class="nav-logo-icon">☢</div>
-    <span>Rad Index</span>
+    <img src="../assets/logo_chiaro.png" alt="Rad Index">
   </a>
   <div class="nav-links">
     <a href="mailto:info@radindex.app">Contatti</a>
@@ -467,8 +450,7 @@
 
 <footer>
   <div class="footer-logo">
-    <div class="footer-logo-icon">☢</div>
-    <span class="footer-logo-name">Rad Index</span>
+    <img src="../assets/logo_chiaro.png" alt="Rad Index">
   </div>
   <div class="footer-links">
     <a href="/">Home</a>

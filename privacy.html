@@ -47,27 +47,10 @@
       gap: 10px;
     }
 
-    .logo-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--accent);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .logo-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: white;
-    }
-
-    .logo-name {
-      font-family: 'DM Serif Display', serif;
-      font-size: 20px;
-      color: var(--text);
-      letter-spacing: -0.3px;
+    .logo img {
+      height: 30px;
+      width: auto;
+      display: block;
     }
 
     .lang-switcher {
@@ -235,10 +218,7 @@
 
 <header>
   <div class="logo">
-    <div class="logo-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-    </div>
-    <span class="logo-name">Rad Index</span>
+    <img src="assets/logo_chiaro.png" alt="Rad Index">
   </div>
   <div class="lang-switcher">
     <button class="lang-btn active" onclick="setLang('it')">IT</button>
