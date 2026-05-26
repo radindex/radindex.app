@@ -62,14 +62,22 @@
       background: rgba(255,255,255,0.92);
       border-bottom-color: var(--border);
     }
-    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .nav-icon { width: 34px; height: 34px; border-radius: 8px; display: block; flex-shrink: 0; }
-    .nav-name {
-      font-size: 17px; font-weight: 700; letter-spacing: -0.3px;
-      color: rgba(255,255,255,0.92);
-      transition: color 0.35s;
+    .nav-logo { display: flex; align-items: center; text-decoration: none; position: relative; }
+    .nav-wordmark {
+      height: 28px;
+      width: auto;
+      display: block;
+      transition: opacity 0.35s;
     }
-    nav.scrolled .nav-name { color: var(--text); }
+    .nav-wordmark--dark {
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      pointer-events: none;
+    }
+    nav.scrolled .nav-wordmark--light { opacity: 0; pointer-events: none; }
+    nav.scrolled .nav-wordmark--dark  { opacity: 1; pointer-events: auto; }
     .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a {
       font-size: 14px; font-weight: 500;
@@ -558,8 +566,8 @@
 <!-- ═══════════════════════════════════════════════════ NAV -->
 <nav id="main-nav">
   <a href="/" class="nav-logo">
-    <img class="nav-icon" src="assets/logo_icona.png" alt="">
-    <span class="nav-name">Rad Index</span>
+    <img class="nav-wordmark nav-wordmark--light" src="assets/logo_chiaro.png" alt="Rad Index" height="28">
+    <img class="nav-wordmark nav-wordmark--dark"  src="assets/logo_scuro.png"  alt="Rad Index" height="28">
   </a>
   <div class="nav-links">
     <a href="/proiezioni-radiografiche/">Proiezioni</a>
