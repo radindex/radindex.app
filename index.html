@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rad Index — Manuale proiezioni radiografiche</title>
-  <meta name="description" content="Rad Index è il manuale di riferimento per TSRM e studenti di radiologia. 141 proiezioni con parametri DR/CR, flashcard, glossario e molto altro.">
+  <title>Rad Index — Proiezioni radiografiche per TSRM</title>
+  <meta name="description" content="141 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. L'app professionale per TSRM e studenti di radiologia.">
   <meta name="google-site-verification" content="ueZbxEd9cg4XKGRWozkoi58KaOCwOJu8zWR0-j7Y8EA" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="icon" type="image/png" href="assets/logo_icona.png">
   <link rel="apple-touch-icon" href="assets/logo_icona.png">
-  <meta property="og:title" content="Rad Index — Manuale proiezioni radiografiche">
-  <meta property="og:description" content="141 proiezioni radiografiche con parametri DR/CR, flashcard SM-2, glossario e checklist ALARA. Per TSRM e studenti di radiologia.">
+  <meta property="og:title" content="Rad Index — Il manuale RX per TSRM">
+  <meta property="og:description" content="141 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. Scritto da un TSRM per i TSRM.">
   <meta property="og:image" content="https://radindex.app/assets/logo_icona.png">
   <meta property="og:url" content="https://radindex.app">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://radindex.app/assets/logo_icona.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --blue:    #416DBE;
       --blue-dk: #2D4E8A;
+      --blue-lt: #E8F0FB;
       --bg:      #F2F2F7;
       --surface: #FFFFFF;
       --text:    #1C1C1E;
@@ -29,10 +30,10 @@
       --text3:   #AEAEB2;
       --border:  #E5E5EA;
       --radius:  16px;
+      --hero-bg: #060A14;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
+    html { scroll-behavior: smooth; }
     body {
       background: var(--bg);
       color: var(--text);
@@ -41,586 +42,516 @@
       line-height: 1.6;
     }
 
-    /* ── NAV ── */
+    /* ══════════════════════════════════════════ NAV */
     nav {
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      height: 56px;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      padding: 0 32px;
+      background: rgba(6,10,20,0.6);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: background 0.35s, border-color 0.35s;
     }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
+    nav.scrolled {
+      background: rgba(255,255,255,0.92);
+      border-bottom-color: var(--border);
     }
-
-    .nav-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 9px;
-      display: block;
-      flex-shrink: 0;
-    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-icon { width: 34px; height: 34px; border-radius: 8px; display: block; flex-shrink: 0; }
     .nav-name {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      color: var(--text);
+      font-size: 17px; font-weight: 700; letter-spacing: -0.3px;
+      color: rgba(255,255,255,0.92);
+      transition: color 0.35s;
     }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
-
+    nav.scrolled .nav-name { color: var(--text); }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text2);
-      text-decoration: none;
-      transition: color 0.15s;
+      font-size: 14px; font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none; transition: color 0.15s;
     }
+    nav.scrolled .nav-links a { color: var(--text2); }
+    .nav-links a:hover { color: #fff; }
+    nav.scrolled .nav-links a:hover { color: var(--blue); }
+    .nav-cta {
+      background: var(--blue) !important;
+      color: #fff !important;
+      padding: 7px 18px;
+      border-radius: 20px;
+      font-weight: 600 !important;
+      font-size: 13px !important;
+      transition: background 0.15s, transform 0.15s !important;
+    }
+    .nav-cta:hover { background: var(--blue-dk) !important; transform: translateY(-1px); }
 
-    .nav-links a:hover { color: var(--blue); }
-
-    /* ── HERO ── */
-    .hero {
-      padding: 80px 24px 64px;
+    /* ══════════════════════════════════════════ HERO */
+    .hero-section {
+      background: var(--hero-bg);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      max-width: 680px;
-      margin: 0 auto;
+      padding: 100px 24px 88px;
+      position: relative;
+      overflow: hidden;
     }
-
+    /* radial glow */
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(65,109,190,0.2) 0%, transparent 62%);
+      pointer-events: none;
+    }
+    /* second glow, offset */
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 35%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(100,80,200,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      animation: heroIn 0.9s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    @keyframes heroIn {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-app-icon {
+      width: 124px; height: 124px;
+      border-radius: 28px;
+      margin: 0 auto 32px;
+      display: block;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.08),
+        0 24px 64px rgba(65,109,190,0.5),
+        0 0 120px rgba(65,109,190,0.18);
+    }
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: rgba(0,122,255,0.1);
-      color: var(--blue);
-      font-size: 12px;
+      gap: 8px;
+      background: rgba(65,109,190,0.14);
+      border: 1px solid rgba(65,109,190,0.32);
+      color: #7AAAE0;
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.4px;
-      padding: 5px 12px;
+      letter-spacing: 0.9px;
+      padding: 5px 16px;
       border-radius: 20px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       text-transform: uppercase;
     }
-
+    .hero-badge span { color: rgba(245,245,247,0.88); }
     .hero h1 {
-      font-size: clamp(40px, 8vw, 64px);
+      font-size: clamp(46px, 8.5vw, 80px);
       font-weight: 800;
-      letter-spacing: -1.5px;
-      line-height: 1.05;
-      color: var(--text);
-      margin-bottom: 20px;
+      letter-spacing: -2.5px;
+      line-height: 1.0;
+      color: #F5F5F7;
+      margin-bottom: 24px;
     }
-
-    .hero h1 span {
-      background: linear-gradient(135deg, var(--blue), #5856D6);
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(118deg, #6B9FE4 0%, #9B7CF8 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
     .hero-sub {
-      font-size: 18px;
+      font-size: clamp(16px, 2.2vw, 18px);
       font-weight: 400;
-      color: var(--text2);
-      max-width: 480px;
-      margin: 0 auto 40px;
-      line-height: 1.65;
+      color: rgba(245,245,247,0.48);
+      max-width: 520px;
+      margin: 0 auto 44px;
+      line-height: 1.75;
     }
-
+    .hero-sub strong { color: rgba(245,245,247,0.82); font-weight: 500; }
     .hero-cta {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: flex; gap: 12px;
+      justify-content: center; flex-wrap: wrap;
+      margin-bottom: 22px;
     }
-
     .btn-store {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 13px 22px;
-      border-radius: 14px;
-      font-size: 15px;
-      font-weight: 600;
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 13px 22px; border-radius: 14px;
+      font-size: 15px; font-weight: 600;
       text-decoration: none;
-      transition: all 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.15s;
     }
-
     .btn-store.apple {
-      background: var(--text);
-      color: white;
+      background: #ffffff; color: #0A0A0A;
     }
-
-    .btn-store.apple:hover { background: #333; transform: translateY(-1px); }
-
+    .btn-store.apple:hover { background: #e6e6e6; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
     .btn-store.google {
-      background: var(--surface);
-      color: var(--text);
-      border: 1.5px solid var(--border);
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.88);
     }
-
-    .btn-store.google:hover { border-color: var(--blue); transform: translateY(-1px); }
-
+    .btn-store.google:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); }
     .btn-store .store-icon { font-size: 22px; line-height: 1; }
-
     .btn-store .store-label { display: flex; flex-direction: column; text-align: left; }
-
-    .btn-store .store-label small {
-      font-size: 10px;
-      font-weight: 400;
-      opacity: 0.75;
-      line-height: 1;
-      margin-bottom: 1px;
-    }
-
-    .coming-soon-note {
-      margin-top: 14px;
+    .btn-store .store-label small { font-size: 10px; font-weight: 400; opacity: 0.65; line-height: 1; margin-bottom: 1px; }
+    .hero-trust {
       font-size: 12px;
-      color: var(--text3);
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.2px;
     }
+    .hero-trust span { color: rgba(255,255,255,0.5); }
+    /* scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 28px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column;
+      align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.22);
+      font-size: 10px; letter-spacing: 0.8px; text-transform: uppercase;
+      animation: fadeInUp 2s ease 1.8s both;
+    }
+    .scroll-hint svg { animation: scrollBounce 2s ease infinite; }
+    @keyframes scrollBounce { 0%,100%{transform:translateY(0)} 55%{transform:translateY(5px)} }
+    @keyframes fadeInUp { from{opacity:0;transform:translateX(-50%) translateY(8px)} to{opacity:1;transform:translateX(-50%) translateY(0)} }
 
-    /* ── STATS ── */
-    .stats {
+    /* ══════════════════════════════════════════ STATS */
+    .stats-band {
       background: var(--surface);
-      border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 20px 24px;
+      padding: 26px 24px;
     }
-
     .stats-inner {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      gap: 0;
+      max-width: 920px; margin: 0 auto;
+      display: flex; justify-content: center;
       flex-wrap: wrap;
     }
-
     .stat {
-      flex: 1;
-      min-width: 120px;
+      flex: 1; min-width: 120px;
       text-align: center;
-      padding: 8px 16px;
+      padding: 10px 20px;
       border-right: 1px solid var(--border);
     }
-
     .stat:last-child { border-right: none; }
-
     .stat-value {
-      font-size: 26px;
-      font-weight: 800;
-      color: var(--blue);
-      letter-spacing: -0.5px;
-      line-height: 1.1;
+      font-size: 30px; font-weight: 800;
+      color: var(--blue); letter-spacing: -0.8px; line-height: 1;
     }
-
     .stat-label {
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--text2);
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      margin-top: 3px;
+      font-size: 11px; font-weight: 500;
+      color: var(--text2); text-transform: uppercase;
+      letter-spacing: 0.4px; margin-top: 4px;
     }
 
-    /* ── MOCKUP SECTION ── */
-    .mockup-section {
-      padding: 72px 24px;
+    /* ══════════════════════════════════════════ PHONES SECTION */
+    .phones-section {
+      background: var(--bg);
+      padding: 88px 24px 80px;
       text-align: center;
     }
-
     .section-tag {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--blue);
-      letter-spacing: 1px;
+      font-size: 11px; font-weight: 700;
+      color: var(--blue); letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      display: block; margin-bottom: 10px;
     }
-
     .section-title {
-      font-size: clamp(26px, 5vw, 38px);
-      font-weight: 800;
-      letter-spacing: -0.8px;
-      color: var(--text);
+      font-size: clamp(28px, 4.5vw, 42px);
+      font-weight: 800; letter-spacing: -1px;
+      color: var(--text); line-height: 1.1;
       margin-bottom: 12px;
     }
-
     .section-sub {
-      font-size: 16px;
-      color: var(--text2);
-      max-width: 480px;
-      margin: 0 auto 48px;
+      font-size: 16px; color: var(--text2);
+      max-width: 500px; margin: 0 auto 52px;
     }
-
     .phones {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      display: flex; justify-content: center;
+      gap: 24px; flex-wrap: wrap; align-items: center;
     }
-
     .phone-frame {
-      width: 200px;
-      height: 390px;
+      width: 210px; height: 420px;
       background: #1C1C1E;
-      border-radius: 36px;
-      padding: 10px;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08);
-      position: relative;
-      flex-shrink: 0;
+      border-radius: 42px; padding: 10px;
+      box-shadow:
+        0 32px 80px rgba(0,0,0,0.2),
+        0 0 0 1px rgba(255,255,255,0.06);
+      position: relative; flex-shrink: 0;
     }
-
     .phone-screen {
-      width: 100%;
-      height: 100%;
-      border-radius: 28px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      width: 100%; height: 100%;
+      border-radius: 33px; overflow: hidden;
+      display: flex; flex-direction: column;
     }
-
-    /* Screen 1 — Home */
-    .screen-home {
-      background: #F2F2F7;
-    }
-    .screen-home .s-header {
-      padding: 16px 14px 8px;
-      background: #F2F2F7;
-    }
-    .screen-home .s-title {
-      font-size: 13px;
-      font-weight: 800;
-      color: #1C1C1E;
-      letter-spacing: -0.3px;
-    }
-    .screen-home .s-sub {
-      font-size: 8px;
-      color: #636366;
-      margin-top: 1px;
-    }
+    /* ── Phone: Home light */
+    .screen-home { background: #F2F2F7; }
+    .screen-home .s-header { padding: 18px 14px 8px; }
+    .screen-home .s-title { font-size: 14px; font-weight: 800; color: #1C1C1E; letter-spacing: -0.3px; }
+    .screen-home .s-sub { font-size: 8px; color: #636366; margin-top: 2px; }
     .screen-home .s-search {
-      margin: 0 14px 10px;
-      background: white;
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 8px;
-      color: #AEAEB2;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      margin: 0 14px 12px;
+      background: white; border-radius: 10px;
+      padding: 7px 10px; font-size: 8px; color: #AEAEB2;
+      display: flex; align-items: center; gap: 5px;
     }
-    .zone-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 5px;
-      padding: 0 14px;
-    }
-    .zone-chip {
-      background: white;
-      border-radius: 8px;
-      padding: 6px 2px;
-      text-align: center;
-    }
-    .zone-chip .z-icon { font-size: 12px; }
-    .zone-chip .z-name { font-size: 6px; font-weight: 600; color: #1C1C1E; margin-top: 2px; }
-    .zone-chip .z-count { font-size: 5px; color: #AEAEB2; }
-
-    /* Screen 2 — Scheda */
+    .zone-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 5px; padding: 0 14px; }
+    .zone-chip { background: white; border-radius: 10px; padding: 8px 2px; text-align: center; }
+    .zone-chip .z-icon { font-size: 14px; }
+    .zone-chip .z-name { font-size: 6.5px; font-weight: 600; color: #1C1C1E; margin-top: 3px; }
+    .zone-chip .z-count { font-size: 5px; color: #AEAEB2; margin-top: 1px; }
+    /* ── Phone: Scheda */
     .screen-scheda { background: #F2F2F7; }
-    .s-card-header {
-      padding: 14px;
-      background: #0C447C;
-      color: white;
-    }
+    .s-card-header { padding: 14px; background: #0C447C; color: white; }
     .s-card-name { font-size: 11px; font-weight: 700; }
-    .s-card-type { font-size: 8px; opacity: 0.8; margin-top: 2px; }
-    .s-card-body { padding: 10px 12px; flex: 1; }
-    .s-row { margin-bottom: 8px; }
-    .s-row-label { font-size: 6px; font-weight: 700; color: #416DBE; text-transform: uppercase; letter-spacing: 0.3px; }
-    .s-row-val { font-size: 7px; color: #1C1C1E; margin-top: 2px; line-height: 1.4; }
-    .s-params {
-      background: white;
-      border-radius: 8px;
-      padding: 8px;
-      margin-top: 6px;
-    }
-    .s-param-row { display: flex; justify-content: space-between; font-size: 6px; color: #636366; padding: 2px 0; border-bottom: 0.5px solid #F2F2F7; }
+    .s-card-type { font-size: 7.5px; opacity: 0.75; margin-top: 2px; }
+    .s-card-body { padding: 11px 13px; flex: 1; overflow: hidden; }
+    .s-row { margin-bottom: 9px; }
+    .s-row-label { font-size: 6px; font-weight: 700; color: #416DBE; text-transform: uppercase; letter-spacing: 0.4px; }
+    .s-row-val { font-size: 7.5px; color: #1C1C1E; margin-top: 2px; line-height: 1.45; }
+    .s-params { background: white; border-radius: 9px; padding: 9px; margin-top: 7px; }
+    .s-param-row { display: flex; justify-content: space-between; font-size: 6.5px; color: #636366; padding: 2.5px 0; border-bottom: 0.5px solid #F2F2F7; }
     .s-param-row:last-child { border-bottom: none; }
     .s-param-row strong { color: #1C1C1E; font-weight: 600; }
-
-    /* Screen 3 — Dark mode */
+    /* ── Phone: Dark */
     .screen-dark { background: #000; }
-    .screen-dark .s-header { padding: 16px 14px 8px; background: #000; }
-    .screen-dark .s-title { font-size: 13px; font-weight: 800; color: white; letter-spacing: -0.3px; }
-    .screen-dark .s-sub { font-size: 8px; color: #636366; margin-top: 1px; }
-    .screen-dark .s-search { margin: 0 14px 10px; background: #1C1C1E; border-radius: 8px; padding: 6px 10px; font-size: 8px; color: #636366; display: flex; align-items: center; gap: 5px; }
-    .zone-grid-dark { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; padding: 0 14px; }
-    .zone-chip-dark { background: #1C1C1E; border-radius: 8px; padding: 6px 2px; text-align: center; }
-    .zone-chip-dark .z-name { font-size: 6px; font-weight: 600; color: white; margin-top: 2px; }
-    .zone-chip-dark .z-count { font-size: 5px; color: #48484A; }
+    .screen-dark .s-header { padding: 18px 14px 8px; background: #000; }
+    .screen-dark .s-title { font-size: 14px; font-weight: 800; color: white; letter-spacing: -0.3px; }
+    .screen-dark .s-sub { font-size: 8px; color: #636366; margin-top: 2px; }
+    .screen-dark .s-search { margin: 0 14px 12px; background: #1C1C1E; border-radius: 10px; padding: 7px 10px; font-size: 8px; color: #636366; display: flex; align-items: center; gap: 5px; }
+    .zone-grid-dark { display: grid; grid-template-columns: repeat(4,1fr); gap: 5px; padding: 0 14px; }
+    .zone-chip-dark { background: #1C1C1E; border-radius: 10px; padding: 8px 2px; text-align: center; }
+    .zone-chip-dark .z-name { font-size: 6.5px; font-weight: 600; color: white; margin-top: 3px; }
+    .zone-chip-dark .z-count { font-size: 5px; color: #48484A; margin-top: 1px; }
+    .phone-frame.center-phone { transform: scale(1.09); z-index: 2; }
 
-    .phone-frame.center-phone {
-      transform: scale(1.08);
-      z-index: 2;
-    }
-
-    /* ── FEATURES ── */
+    /* ══════════════════════════════════════════ FEATURES */
     .features-section {
       background: var(--surface);
-      padding: 72px 24px;
+      padding: 88px 24px;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
-
-    .features-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .features-header {
-      text-align: center;
-      margin-bottom: 52px;
-    }
-
+    .features-inner { max-width: 980px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 52px; }
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-
     .feature-card {
       background: var(--bg);
-      border-radius: var(--radius);
-      padding: 24px;
       border: 1px solid var(--border);
-      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 20px; padding: 28px;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     }
-
     .feature-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+      border-color: rgba(65,109,190,0.28);
     }
-
     .feature-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
+      width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; margin-bottom: 18px;
+    }
+    .feature-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 7px; }
+    .feature-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
+
+    /* ══════════════════════════════════════════ HOW IT WORKS */
+    .how-section { padding: 88px 24px; background: var(--bg); }
+    .how-inner { max-width: 880px; margin: 0 auto; }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      margin-top: 52px;
+    }
+    .how-step { background: var(--surface); padding: 36px 28px; }
+    .step-num {
+      font-size: 52px; font-weight: 900;
+      color: var(--blue-lt);
+      letter-spacing: -2px; line-height: 1;
       margin-bottom: 16px;
     }
+    .step-title { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .step-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
 
-    .feature-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-
-    .feature-desc {
-      font-size: 13px;
-      color: var(--text2);
-      line-height: 1.6;
-    }
-
-    /* ── FOR WHO ── */
+    /* ══════════════════════════════════════════ FOR WHO */
     .forwho-section {
-      padding: 72px 24px;
-      text-align: center;
-    }
-
-    .forwho-inner {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .forwho-cards {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .forwho-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      flex: 1;
-      min-width: 200px;
-      max-width: 220px;
-      text-align: center;
-    }
-
-    .forwho-card .fw-icon { font-size: 32px; margin-bottom: 12px; }
-    .forwho-card .fw-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-    .forwho-card .fw-desc { font-size: 13px; color: var(--text2); }
-
-    /* ── PRICING ── */
-    .pricing-section {
       background: var(--surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 72px 24px;
+      padding: 88px 24px;
+    }
+    .forwho-inner { max-width: 920px; margin: 0 auto; }
+    .forwho-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 52px;
+    }
+    .forwho-card {
+      border: 1px solid var(--border); border-radius: 20px;
+      padding: 32px 24px; background: var(--bg);
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .forwho-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(65,109,190,0.1);
+    }
+    .fw-icon { font-size: 36px; margin-bottom: 14px; }
+    .fw-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .fw-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
+
+    /* ══════════════════════════════════════════ QUOTE */
+    .quote-section {
+      background: var(--hero-bg);
+      padding: 88px 24px;
       text-align: center;
     }
-
-    .price-card {
-      max-width: 380px;
-      margin: 40px auto 0;
-      background: var(--bg);
-      border: 1.5px solid var(--blue);
-      border-radius: 24px;
-      padding: 36px 32px;
-      position: relative;
+    .quote-inner { max-width: 620px; margin: 0 auto; }
+    .quote-mark {
+      font-size: 72px; line-height: 0.8;
+      color: rgba(65,109,190,0.35);
+      font-family: Georgia, 'Times New Roman', serif;
+      margin-bottom: 8px;
     }
-
-    .price-badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--blue);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: 20px;
-      white-space: nowrap;
+    .quote-text {
+      font-size: clamp(18px, 3vw, 24px);
+      font-weight: 500;
+      color: rgba(245,245,247,0.85);
+      line-height: 1.6;
+      letter-spacing: -0.2px;
+      margin-bottom: 28px;
+    }
+    .quote-text em { font-style: normal; color: #8AADDE; }
+    .quote-author {
+      font-size: 13px;
+      color: rgba(255,255,255,0.32);
       letter-spacing: 0.3px;
     }
 
-    .price-value {
-      font-size: 52px;
-      font-weight: 800;
-      color: var(--text);
-      letter-spacing: -2px;
-      line-height: 1;
+    /* ══════════════════════════════════════════ PRICING */
+    .pricing-section {
+      background: var(--bg);
+      padding: 88px 24px;
+      text-align: center;
+      border-top: 1px solid var(--border);
     }
-
-    .price-value sup { font-size: 22px; font-weight: 600; letter-spacing: 0; vertical-align: super; }
-    .price-sub { font-size: 14px; color: var(--text2); margin-top: 6px; margin-bottom: 28px; }
-
+    .price-card {
+      max-width: 400px; margin: 52px auto 0;
+      background: var(--surface);
+      border: 1.5px solid var(--blue);
+      border-radius: 28px; padding: 40px 36px;
+      position: relative;
+      box-shadow: 0 4px 48px rgba(65,109,190,0.14);
+    }
+    .price-badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--blue); color: white;
+      font-size: 11px; font-weight: 700;
+      padding: 5px 18px; border-radius: 20px;
+      white-space: nowrap; letter-spacing: 0.4px;
+    }
+    .price-value {
+      font-size: 64px; font-weight: 800;
+      color: var(--text); letter-spacing: -3px; line-height: 1;
+    }
+    .price-value sup { font-size: 26px; font-weight: 600; letter-spacing: 0; vertical-align: super; }
+    .price-sub { font-size: 14px; color: var(--text2); margin-top: 8px; margin-bottom: 32px; }
     .price-features { text-align: left; list-style: none; }
     .price-features li {
-      font-size: 14px;
-      color: var(--text);
-      padding: 7px 0;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 14px; color: var(--text);
+      padding: 9px 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
     }
     .price-features li:last-child { border-bottom: none; }
     .price-features li::before {
-      content: '✓';
-      color: var(--blue);
-      font-weight: 700;
-      font-size: 14px;
-      flex-shrink: 0;
+      content: '✓'; color: var(--blue);
+      font-weight: 700; font-size: 14px; flex-shrink: 0;
     }
-
     .price-trial {
-      margin-top: 20px;
-      font-size: 13px;
-      color: var(--text2);
-      background: rgba(0,122,255,0.07);
-      padding: 10px 16px;
-      border-radius: 10px;
+      margin-top: 24px; font-size: 13px; color: var(--text2);
+      background: var(--blue-lt);
+      padding: 12px 18px; border-radius: 12px;
     }
-
-    /* ── FOOTER ── */
-    footer {
-      padding: 40px 24px;
-      text-align: center;
-      border-top: 1px solid var(--border);
-    }
-
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-
-    .footer-logo img {
-      height: 26px;
-      width: auto;
-      display: block;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 16px;
-    }
-
-    .footer-links a {
-      font-size: 13px;
-      color: var(--text2);
+    .price-cta {
+      display: block; margin-top: 16px;
+      background: var(--blue); color: white;
+      font-size: 15px; font-weight: 700;
+      padding: 15px 24px; border-radius: 14px;
       text-decoration: none;
-      transition: color 0.15s;
+      transition: background 0.15s, transform 0.15s;
     }
+    .price-cta:hover { background: var(--blue-dk); transform: translateY(-1px); }
 
+    /* ══════════════════════════════════════════ FOOTER */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 44px 24px;
+      text-align: center;
+    }
+    .footer-logo {
+      display: inline-flex; align-items: center;
+      gap: 10px; margin-bottom: 20px;
+      text-decoration: none;
+    }
+    .footer-icon { width: 32px; height: 32px; border-radius: 8px; display: block; }
+    .footer-name { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+    .footer-links {
+      display: flex; justify-content: center;
+      gap: 20px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .footer-links a { font-size: 13px; color: var(--text2); text-decoration: none; transition: color 0.15s; }
     .footer-links a:hover { color: var(--blue); }
+    .footer-copy { font-size: 12px; color: var(--text3); }
 
-    .footer-copy {
-      font-size: 12px;
-      color: var(--text3);
-    }
-
-    /* ── DESKTOP ── */
+    /* ══════════════════════════════════════════ RESPONSIVE */
     @media (min-width: 900px) {
       nav { padding: 0 48px; }
-      .hero { padding: 100px 48px 80px; max-width: 780px; }
-      .mockup-section { padding: 96px 48px; }
-      .features-section { padding: 96px 48px; }
-      .features-inner { max-width: 1100px; }
-      .forwho-section { padding: 96px 48px; }
-      .forwho-inner { max-width: 900px; }
-      .pricing-section { padding: 96px 48px; }
-      .phone-frame { width: 220px; height: 430px; }
-      .phones { gap: 28px; }
     }
-
-    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .how-steps { grid-template-columns: 1fr; }
+      .forwho-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 640px) {
-      .hero { padding: 56px 20px 48px; }
-      .stat { min-width: 80px; padding: 8px 10px; }
-      .stat-value { font-size: 20px; }
-      .phones { gap: 10px; }
-      .phone-frame { width: 160px; height: 312px; border-radius: 30px; padding: 8px; }
-      .phone-frame.center-phone { transform: scale(1.06); }
+      nav { padding: 0 20px; height: 54px; }
+      .hero-app-icon { width: 96px; height: 96px; border-radius: 22px; }
+      .hero h1 { letter-spacing: -1.5px; }
+      .stat { min-width: 90px; padding: 10px 10px; }
+      .stat-value { font-size: 24px; }
+      .phones { gap: 12px; }
+      .phone-frame { width: 158px; height: 316px; border-radius: 34px; padding: 8px; }
+      .phone-frame.center-phone { transform: scale(1.07); }
       .nav-links { gap: 14px; }
+      .nav-cta { display: none; }
     }
   </style>
 </head>
 <body>
 
-<!-- ── NAV ── -->
-<nav>
+<!-- ═══════════════════════════════════════════════════ NAV -->
+<nav id="main-nav">
   <a href="/" class="nav-logo">
     <img class="nav-icon" src="assets/logo_icona.png" alt="">
     <span class="nav-name">Rad Index</span>
@@ -628,65 +559,69 @@
   <div class="nav-links">
     <a href="/proiezioni-radiografiche/">Proiezioni</a>
     <a href="mailto:info@radindex.app">Contatti</a>
-    <a href="/privacy.html">Privacy</a>
+    <a href="#pricing" class="nav-cta">Scarica l'app</a>
   </div>
 </nav>
 
-<!-- ── HERO ── -->
-<section class="hero">
-  <div class="hero-badge">☢ Per TSRM e studenti di radiologia</div>
-  <h1>Il tuo<br><span>manuale RX</span><br>sempre con te</h1>
-  <p class="hero-sub">141 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità e note pratiche. In tasca, sempre aggiornato.</p>
-  <div class="hero-cta">
-    <a href="#" class="btn-store apple">
-      <span class="store-icon">🍎</span>
-      <span class="store-label">
-        <small>Scarica su</small>
-        App Store
-      </span>
-    </a>
-    <a href="#" class="btn-store google">
-      <span class="store-icon">▶</span>
-      <span class="store-label">
-        <small>Disponibile su</small>
-        Google Play
-      </span>
-    </a>
+<!-- ═══════════════════════════════════════════════════ HERO -->
+<section class="hero-section">
+  <div class="hero-content">
+    <img class="hero-app-icon" src="assets/logo_icona.png" alt="Rad Index">
+    <div class="hero-badge">Fatto da un TSRM · <span>Per i TSRM</span></div>
+    <h1>Il manuale RX<br>che <em>meritavi</em>.</h1>
+    <p class="hero-sub">
+      <strong>141 proiezioni radiografiche</strong> con parametri DR e CR separati,
+      posizionamento preciso e criteri di qualità.
+      Scritto da chi lavora ogni giorno in sala.
+    </p>
+    <div class="hero-cta">
+      <a href="#" class="btn-store apple">
+        <span class="store-icon">🍎</span>
+        <span class="store-label">
+          <small>Scarica su</small>
+          App Store
+        </span>
+      </a>
+      <a href="#" class="btn-store google">
+        <span class="store-icon">▶</span>
+        <span class="store-label">
+          <small>Disponibile su</small>
+          Google Play
+        </span>
+      </a>
+    </div>
+    <p class="hero-trust">
+      <span>30 giorni di prova gratuita</span> &nbsp;·&nbsp; Pagamento unico &nbsp;·&nbsp; iOS e Android
+    </p>
   </div>
-  <p class="coming-soon-note">Disponibile presto · 14 giorni di prova gratuita</p>
+  <div class="scroll-hint">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Scopri
+  </div>
 </section>
 
-<!-- ── STATS ── -->
-<div class="stats">
+<!-- ═══════════════════════════════════════════════════ STATS -->
+<div class="stats-band">
   <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-value">141</div>
-      <div class="stat-label">Proiezioni</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">3</div>
-      <div class="stat-label">Lingue</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">5</div>
-      <div class="stat-label">Calcolatori</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">DR/CR</div>
-      <div class="stat-label">Separati</div>
-    </div>
+    <div class="stat"><div class="stat-value">141</div><div class="stat-label">Proiezioni</div></div>
+    <div class="stat"><div class="stat-value">3</div><div class="stat-label">Lingue</div></div>
+    <div class="stat"><div class="stat-value">DR/CR</div><div class="stat-label">Separati</div></div>
+    <div class="stat"><div class="stat-value">5+</div><div class="stat-label">Calcolatori</div></div>
+    <div class="stat"><div class="stat-value">iOS + Android</div><div class="stat-label">Piattaforme</div></div>
   </div>
 </div>
 
-<!-- ── MOCKUP ── -->
-<section class="mockup-section">
-  <p class="section-tag">L'app</p>
-  <h2 class="section-title">Progettata per chi lavora</h2>
-  <p class="section-sub">Interfaccia rapida, dark mode completa, ricerca istantanea. Pensata per la sala radiologica.</p>
+<!-- ═══════════════════════════════════════════════════ PHONES -->
+<section class="phones-section">
+  <span class="section-tag">L'app in azione</span>
+  <h2 class="section-title">Progettata per la sala radiologica</h2>
+  <p class="section-sub">Interfaccia rapida, dark mode completa, ricerca istantanea. Zero distrazioni.</p>
 
   <div class="phones">
 
-    <!-- Phone 1: scheda dettaglio -->
+    <!-- Scheda dettaglio -->
     <div class="phone-frame">
       <div class="phone-screen screen-scheda">
         <div class="s-card-header">
@@ -711,7 +646,7 @@
       </div>
     </div>
 
-    <!-- Phone 2: home (center, larger) -->
+    <!-- Home screen (centro, più grande) -->
     <div class="phone-frame center-phone">
       <div class="phone-screen screen-home">
         <div class="s-header">
@@ -732,7 +667,7 @@
       </div>
     </div>
 
-    <!-- Phone 3: dark mode -->
+    <!-- Dark mode -->
     <div class="phone-frame">
       <div class="phone-screen screen-dark">
         <div class="s-header">
@@ -741,14 +676,14 @@
         </div>
         <div class="s-search">🔍 Cerca proiezione…</div>
         <div class="zone-grid-dark">
-          <div class="zone-chip-dark"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11 proj.</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9 proj.</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11</div></div>
+          <div class="zone-chip-dark"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9</div></div>
         </div>
       </div>
     </div>
@@ -756,108 +691,165 @@
   </div>
 </section>
 
-<!-- ── FEATURES ── -->
+<!-- ═══════════════════════════════════════════════════ FEATURES -->
 <section class="features-section">
   <div class="features-inner">
-    <div class="features-header">
-      <p class="section-tag">Funzionalità</p>
-      <h2 class="section-title">Tutto quello che serve</h2>
-      <p class="section-sub">Nessuna funzionalità superflua. Solo quello che serve davvero in sala radiologica.</p>
+    <div class="section-header">
+      <span class="section-tag">Funzionalità</span>
+      <h2 class="section-title">Tutto ciò che serve. Niente di più.</h2>
+      <p class="section-sub">Ogni funzione è nata da una necessità reale in sala radiologica.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon" style="background:#E6F1FB">📋</div>
+        <div class="feature-icon" style="background:#E8F0FB">📋</div>
         <div class="feature-title">DR e CR separati</div>
-        <div class="feature-desc">Parametri tecnici distinti per rivelatore digitale diretto e per lastra CR/PSP. Con DFD, griglia e target EI.</div>
+        <div class="feature-desc">Parametri tecnici distinti per rivelatore digitale e lastra CR/PSP, con DFD, griglia e target EI.</div>
       </div>
-
       <div class="feature-card">
         <div class="feature-icon" style="background:#EEEDFE">🃏</div>
-        <div class="feature-title">Flashcard</div>
-        <div class="feature-desc">Studia con la ripetizione spaziata. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizione.</div>
+        <div class="feature-title">Flashcard SM-2</div>
+        <div class="feature-desc">Ripetizione spaziata con algoritmo SM-2. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#FCEBEB">📖</div>
+        <div class="feature-icon" style="background:#FCE8E8">📖</div>
         <div class="feature-title">Glossario RX</div>
-        <div class="feature-desc">Termini tecnici e anatomici con definizioni chiare. Tab Tutti / Tecnici / Anatomia per navigazione rapida.</div>
+        <div class="feature-desc">Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#FAEEDA">📄</div>
+        <div class="feature-icon" style="background:#FFF0DA">📄</div>
         <div class="feature-title">Esporta in PDF</div>
-        <div class="feature-desc">Genera e condividi la scheda di ogni proiezione come PDF A4 con header colorato per zona anatomica.</div>
+        <div class="feature-desc">Scheda di ogni proiezione in PDF A4 con header colorato per zona anatomica. Pronta da condividere o stampare.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#E8F4F8">✅</div>
+        <div class="feature-icon" style="background:#E8F6F0">✅</div>
         <div class="feature-title">Checklist ALARA</div>
-        <div class="feature-desc">10 punti interattivi per la verifica pre-esame secondo il principio ALARA. Con barra di avanzamento e disclaimer normativo.</div>
+        <div class="feature-desc">10 punti interattivi per la verifica pre-esame. Con barra di avanzamento e riferimento normativo integrato.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#F5E8FB">🌍</div>
+        <div class="feature-title">3 Lingue</div>
+        <div class="feature-desc">Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all'estero.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── FOR WHO ── -->
+<!-- ═══════════════════════════════════════════════════ HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-tag">Come funziona</span>
+      <h2 class="section-title">Da zero a operativo in secondi</h2>
+      <p class="section-sub" style="max-width:440px; margin: 12px auto 0;">Tre passi. Nessuna curva di apprendimento.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="step-num">01</div>
+        <div class="step-title">Cerca la proiezione</div>
+        <div class="step-desc">Per nome, zona anatomica o incidenza. La ricerca istantanea trova anche termini parziali.</div>
+      </div>
+      <div class="how-step">
+        <div class="step-num">02</div>
+        <div class="step-title">Consulta la scheda</div>
+        <div class="step-desc">Posizionamento, centratura, parametri DR/CR, criteri di qualità e note pratiche. Tutto in una schermata.</div>
+      </div>
+      <div class="how-step">
+        <div class="step-num">03</div>
+        <div class="step-title">Applica e riproduci</div>
+        <div class="step-desc">Condividi via PDF, salva nei preferiti o ripassa con le flashcard dedicate prima di un esame.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ FOR WHO -->
 <section class="forwho-section">
   <div class="forwho-inner">
-    <p class="section-tag">Per chi è</p>
-    <h2 class="section-title">Fatto da un TSRM, per i TSRM</h2>
-    <p class="section-sub">Contenuto clinico revisionato, linguaggio professionale, nessun compromesso sulla qualità.</p>
-    <div class="forwho-cards">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-tag">Per chi è</span>
+      <h2 class="section-title">Fatto da chi conosce la sala</h2>
+      <p class="section-sub">Contenuto clinico preciso, linguaggio professionale, nessun compromesso sulla qualità.</p>
+    </div>
+    <div class="forwho-grid">
       <div class="forwho-card">
         <div class="fw-icon">👨‍⚕️</div>
-        <div class="fw-title">TSRM</div>
-        <div class="fw-desc">Riferimento rapido durante il turno o per aggiornamento professionale</div>
+        <div class="fw-title">TSRM in servizio</div>
+        <div class="fw-desc">Riferimento rapido durante il turno per le proiezioni meno frequenti, o per verificare i parametri su apparecchiature diverse.</div>
       </div>
       <div class="forwho-card">
         <div class="fw-icon">🎓</div>
-        <div class="fw-title">Studenti</div>
-        <div class="fw-desc">Studio sistematico con flashcard e glossario per prepararsi agli esami</div>
+        <div class="fw-title">Studenti TSRM</div>
+        <div class="fw-desc">Studio sistematico con flashcard SM-2 e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.</div>
       </div>
       <div class="forwho-card">
         <div class="fw-icon">🏥</div>
         <div class="fw-title">Tirocinanti</div>
-        <div class="fw-desc">Supporto pratico durante il tirocinio con parametri e posizionamento</div>
+        <div class="fw-desc">Supporto pratico ogni giorno. Consulta posizionamento e parametri direttamente in sala, in autonomia.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── PRICING ── -->
-<section class="pricing-section">
-  <p class="section-tag">Prezzi</p>
-  <h2 class="section-title">Semplice e trasparente</h2>
-  <p class="section-sub">Nessun abbonamento. Paghi una volta sola.</p>
-  <div class="price-card">
-    <div class="price-badge">Accesso completo</div>
-    <div class="price-value"><sup>€</sup>9,99</div>
-    <div class="price-sub">Pagamento unico · Nessun abbonamento</div>
-    <ul class="price-features">
-      <li>141 proiezioni complete</li>
-      <li>Parametri DR e CR per ogni proiezione</li>
-
-      <li>Flashcard con ripetizione spaziata</li>
-      <li>Glossario RX</li>
-      <li>Esportazione PDF</li>
-      <li>Dark mode e selezione lingua</li>
-      <li>Aggiornamenti inclusi</li>
-    </ul>
-    <div class="price-trial">🎁 14 giorni di prova gratuita — nessuna carta richiesta</div>
+<!-- ═══════════════════════════════════════════════════ QUOTE -->
+<section class="quote-section">
+  <div class="quote-inner">
+    <div class="quote-mark">"</div>
+    <p class="quote-text">
+      Ho sviluppato Rad Index perché il manuale che cercavo
+      <em>non esisteva</em>. Volevo qualcosa di preciso,
+      professionale e sempre disponibile — senza abbonamenti.
+    </p>
+    <div class="quote-author">— Simone Zen, TSRM &nbsp;·&nbsp; Sviluppatore di Rad Index</div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="footer-logo">
-    <img src="assets/logo_chiaro.png" alt="Rad Index">
+<!-- ═══════════════════════════════════════════════════ PRICING -->
+<section class="pricing-section" id="pricing">
+  <span class="section-tag">Prezzi</span>
+  <h2 class="section-title">Semplice e trasparente</h2>
+  <p class="section-sub">Nessun abbonamento. Paghi una volta sola. Aggiornamenti inclusi per sempre.</p>
+  <div class="price-card">
+    <div class="price-badge">Accesso completo</div>
+    <div class="price-value"><sup>€</sup>9,99</div>
+    <div class="price-sub">Pagamento unico · Nessun abbonamento · iOS e Android</div>
+    <ul class="price-features">
+      <li>141 proiezioni radiografiche complete</li>
+      <li>Parametri DR e CR per ogni proiezione</li>
+      <li>Flashcard con ripetizione spaziata (SM-2)</li>
+      <li>Glossario RX tecnico e anatomico</li>
+      <li>Esportazione PDF per ogni scheda</li>
+      <li>Checklist ALARA interattiva</li>
+      <li>Dark mode e 3 lingue</li>
+      <li>Aggiornamenti inclusi</li>
+    </ul>
+    <div class="price-trial">🎁 30 giorni di prova gratuita — nessuna carta richiesta</div>
+    <a href="#" class="price-cta">Scarica ora — gratis per 30 giorni</a>
   </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ FOOTER -->
+<footer>
+  <a href="/" class="footer-logo">
+    <img class="footer-icon" src="assets/logo_icona.png" alt="">
+    <span class="footer-name">Rad Index</span>
+  </a>
   <div class="footer-links">
     <a href="/proiezioni-radiografiche/">Proiezioni radiografiche</a>
     <a href="mailto:info@radindex.app">info@radindex.app</a>
     <a href="https://t.me/radindexapp" target="_blank">Telegram</a>
     <a href="https://www.instagram.com/radindexapp" target="_blank">Instagram</a>
     <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Termini di utilizzo</a>
   </div>
   <div class="footer-copy">© 2026 Rad Index · Sviluppato da un TSRM per i TSRM</div>
 </footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
 
 </body>
 </html>
