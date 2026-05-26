@@ -62,16 +62,24 @@
       background: rgba(255,255,255,0.92);
       border-bottom-color: var(--border);
     }
-    .nav-logo { display: flex; align-items: center; text-decoration: none; position: relative; }
+    .nav-logo {
+      display: flex; align-items: center; text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      height: 38px;
+      flex-shrink: 0;
+    }
     .nav-wordmark {
-      height: 28px;
+      height: 88px;
       width: auto;
       display: block;
+      flex-shrink: 0;
+      margin: -25px -44px;
       transition: opacity 0.35s;
     }
     .nav-wordmark--dark {
       position: absolute;
-      left: 0; top: 50%;
+      left: -44px; top: 50%;
       transform: translateY(-50%);
       opacity: 0;
       pointer-events: none;
