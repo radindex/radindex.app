@@ -62,30 +62,28 @@
       background: rgba(255,255,255,0.92);
       border-bottom-color: var(--border);
     }
-    .nav-logo {
-      display: flex; align-items: center; text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      height: 38px;
-      flex-shrink: 0;
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+    .nav-icon {
+      width: 36px; height: 36px;
+      border-radius: 9px;
+      display: block; flex-shrink: 0;
     }
-    .nav-wordmark {
-      height: 88px;
-      width: auto;
-      display: block;
-      flex-shrink: 0;
-      margin: -25px -44px;
-      transition: opacity 0.35s;
+    .nav-brand {
+      display: flex; align-items: baseline; gap: 1px;
+      line-height: 1;
     }
-    .nav-wordmark--dark {
-      position: absolute;
-      left: -44px; top: 50%;
-      transform: translateY(-50%);
-      opacity: 0;
-      pointer-events: none;
+    .nav-brand-rad {
+      font-size: 18px; font-weight: 400; letter-spacing: -0.2px;
+      color: rgba(255,255,255,0.75);
+      transition: color 0.35s;
     }
-    nav.scrolled .nav-wordmark--light { opacity: 0; pointer-events: none; }
-    nav.scrolled .nav-wordmark--dark  { opacity: 1; pointer-events: auto; }
+    .nav-brand-index {
+      font-size: 18px; font-weight: 800; letter-spacing: -0.5px;
+      color: rgba(255,255,255,0.95);
+      transition: color 0.35s;
+    }
+    nav.scrolled .nav-brand-rad   { color: var(--text2); }
+    nav.scrolled .nav-brand-index { color: var(--text); }
     .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a {
       font-size: 14px; font-weight: 500;
@@ -574,8 +572,10 @@
 <!-- ═══════════════════════════════════════════════════ NAV -->
 <nav id="main-nav">
   <a href="/" class="nav-logo">
-    <img class="nav-wordmark nav-wordmark--light" src="assets/logo_chiaro.png" alt="Rad Index" height="28">
-    <img class="nav-wordmark nav-wordmark--dark"  src="assets/logo_scuro.png"  alt="Rad Index" height="28">
+    <img class="nav-icon" src="assets/logo_icona.png" alt="Rad Index">
+    <div class="nav-brand">
+      <span class="nav-brand-rad">Rad</span><span class="nav-brand-index">Index</span>
+    </div>
   </a>
   <div class="nav-links">
     <a href="/proiezioni-radiografiche/">Proiezioni</a>
