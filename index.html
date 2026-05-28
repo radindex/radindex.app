@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rad Index — Proiezioni radiografiche per TSRM</title>
-  <meta name="description" content="134 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. L'app professionale per TSRM e studenti di radiologia.">
+  <meta name="description" content="139 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. L'app professionale per TSRM e studenti di radiologia.">
   <meta name="google-site-verification" content="ueZbxEd9cg4XKGRWozkoi58KaOCwOJu8zWR0-j7Y8EA" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="icon" type="image/png" href="assets/logo_icona.png">
   <link rel="apple-touch-icon" href="assets/logo_icona.png">
   <meta property="og:title" content="Rad Index — Il manuale RX per TSRM">
-  <meta property="og:description" content="134 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. Scritto da un TSRM per i TSRM.">
+  <meta property="og:description" content="139 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. Scritto da un TSRM per i TSRM.">
   <meta property="og:image" content="https://radindex.app/assets/logo_icona.png">
   <meta property="og:url" content="https://radindex.app">
   <meta property="og:type" content="website">
@@ -62,28 +62,11 @@
       background: rgba(255,255,255,0.92);
       border-bottom-color: var(--border);
     }
-    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
-    .nav-icon {
-      width: 36px; height: 36px;
-      border-radius: 9px;
-      display: block; flex-shrink: 0;
-    }
-    .nav-brand {
-      display: flex; align-items: baseline; gap: 1px;
-      line-height: 1;
-    }
-    .nav-brand-rad {
-      font-size: 18px; font-weight: 400; letter-spacing: -0.2px;
-      color: rgba(255,255,255,0.75);
-      transition: color 0.35s;
-    }
-    .nav-brand-index {
-      font-size: 18px; font-weight: 800; letter-spacing: -0.5px;
-      color: rgba(255,255,255,0.95);
-      transition: color 0.35s;
-    }
-    nav.scrolled .nav-brand-rad   { color: var(--text2); }
-    nav.scrolled .nav-brand-index { color: var(--text); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-img { height: 30px; display: block; }
+    .nav-logo-scuro { display: none; }
+    nav.scrolled .nav-logo-chiaro { display: none; }
+    nav.scrolled .nav-logo-scuro  { display: block; }
     .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a {
       font-size: 14px; font-weight: 500;
@@ -535,8 +518,7 @@
       gap: 10px; margin-bottom: 20px;
       text-decoration: none;
     }
-    .footer-icon { width: 32px; height: 32px; border-radius: 8px; display: block; }
-    .footer-name { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+    .footer-logo-img { height: 26px; display: block; }
     .footer-links {
       display: flex; justify-content: center;
       gap: 20px; flex-wrap: wrap; margin-bottom: 16px;
@@ -572,10 +554,8 @@
 <!-- ═══════════════════════════════════════════════════ NAV -->
 <nav id="main-nav">
   <a href="/" class="nav-logo">
-    <img class="nav-icon" src="assets/logo_icona.png" alt="Rad Index">
-    <div class="nav-brand">
-      <span class="nav-brand-rad">Rad</span><span class="nav-brand-index">Index</span>
-    </div>
+    <img class="nav-logo-img nav-logo-chiaro" src="assets/logo_chiaro.png" alt="Rad Index">
+    <img class="nav-logo-img nav-logo-scuro"  src="assets/logo_scuro.png"  alt="Rad Index">
   </a>
   <div class="nav-links">
     <a href="/proiezioni-radiografiche/">Proiezioni</a>
@@ -591,7 +571,7 @@
     <div class="hero-badge">Fatto da un TSRM · <span>Per i TSRM</span></div>
     <h1 style="color:#ffffff;-webkit-text-fill-color:#ffffff;background:none;">Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meritavi</em>.</h1>
     <p class="hero-sub">
-      <strong>134 proiezioni radiografiche</strong> con parametri DR e CR separati,
+      <strong>139 proiezioni radiografiche</strong> con parametri DR e CR separati,
       posizionamento preciso e criteri di qualità.
       Scritto da chi lavora ogni giorno in sala.
     </p>
@@ -626,7 +606,7 @@
 <!-- ═══════════════════════════════════════════════════ STATS -->
 <div class="stats-band">
   <div class="stats-inner">
-    <div class="stat"><div class="stat-value">134</div><div class="stat-label">Proiezioni</div></div>
+    <div class="stat"><div class="stat-value">139</div><div class="stat-label">Proiezioni</div></div>
     <div class="stat"><div class="stat-value">3</div><div class="stat-label">Lingue</div></div>
     <div class="stat"><div class="stat-value">DR/CR</div><div class="stat-label">Separati</div></div>
     <div class="stat"><div class="stat-value">5+</div><div class="stat-label">Calcolatori</div></div>
@@ -834,7 +814,7 @@
     <div class="price-value"><sup>€</sup>9,99</div>
     <div class="price-sub">Pagamento unico · Nessun abbonamento · iOS e Android</div>
     <ul class="price-features">
-      <li>134 proiezioni radiografiche complete</li>
+      <li>139 proiezioni radiografiche complete</li>
       <li>Parametri DR e CR per ogni proiezione</li>
       <li>Flashcard con ripetizione spaziata (SM-2)</li>
       <li>Glossario RX tecnico e anatomico</li>
@@ -851,8 +831,7 @@
 <!-- ═══════════════════════════════════════════════════ FOOTER -->
 <footer>
   <a href="/" class="footer-logo">
-    <img class="footer-icon" src="assets/logo_icona.png" alt="">
-    <span class="footer-name">Rad Index</span>
+    <img class="footer-logo-img" src="assets/logo_chiaro.png" alt="Rad Index">
   </a>
   <div class="footer-links">
     <a href="/proiezioni-radiografiche/">Proiezioni radiografiche</a>
