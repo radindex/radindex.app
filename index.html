@@ -132,37 +132,42 @@
       background: radial-gradient(circle, rgba(100,80,200,0.1) 0%, transparent 60%);
       pointer-events: none;
     }
-    .hero-content {
+    /* ── Hero inner: 2 colonne su desktop ── */
+    .hero-inner {
       position: relative; z-index: 1;
-      max-width: 680px;
+      display: flex; align-items: center;
+      gap: 72px; max-width: 980px; width: 100%;
       animation: heroIn 0.9s cubic-bezier(0.16,1,0.3,1) both;
     }
     @keyframes heroIn {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
+    .hero-left { flex-shrink: 0; }
+    .hero-right { flex: 1; text-align: left; }
     .hero-app-icon {
-      width: 124px; height: 124px;
-      border-radius: 28px;
-      margin: 0 auto 32px; display: block;
+      width: 180px; height: 180px;
+      border-radius: 40px; display: block;
       box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 24px 64px rgba(65,109,190,0.5), 0 0 120px rgba(65,109,190,0.18);
     }
     .hero-badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(65,109,190,0.14);
-      border: 1px solid rgba(65,109,190,0.32);
-      color: #7AAAE0; font-size: 11px; font-weight: 600;
-      letter-spacing: 0.9px; padding: 5px 16px;
-      border-radius: 20px; margin-bottom: 28px;
+      display: flex; align-items: center; gap: 8px;
+      color: #7AAAE0; font-size: 11px; font-weight: 700;
+      letter-spacing: 1.4px; margin-bottom: 20px;
       text-transform: uppercase;
     }
-    .hero-badge span { color: rgba(245,245,247,0.88); }
+    .hero-badge::before {
+      content: '';
+      display: inline-block; width: 28px; height: 2px;
+      background: rgba(65,109,190,0.6); border-radius: 2px; flex-shrink: 0;
+    }
+    .hero-badge span { color: rgba(245,245,247,0.7); }
     .hero h1 {
-      font-size: clamp(46px, 8.5vw, 80px);
+      font-size: clamp(38px, 5.5vw, 72px);
       font-weight: 800; letter-spacing: -2.5px; line-height: 1.0;
       color: #FFFFFF !important; -webkit-text-fill-color: #FFFFFF !important;
       background: none !important; -webkit-background-clip: unset !important;
-      background-clip: unset !important; margin-bottom: 24px;
+      background-clip: unset !important; margin-bottom: 20px;
     }
     .hero h1 em {
       font-style: normal;
@@ -171,20 +176,29 @@
       background-clip: unset !important;
     }
     .hero-sub {
-      font-size: clamp(16px, 2.2vw, 18px); font-weight: 400;
-      color: rgba(245,245,247,0.48); max-width: 520px;
-      margin: 0 auto 44px; line-height: 1.75;
+      font-size: clamp(15px, 1.8vw, 17px); font-weight: 400;
+      color: rgba(245,245,247,0.48);
+      margin: 0 0 36px; line-height: 1.75;
     }
     .hero-sub strong { color: rgba(245,245,247,0.82); font-weight: 500; }
-    .hero-cta {
-      display: flex; gap: 12px;
-      justify-content: center; flex-wrap: wrap; margin-bottom: 22px;
-    }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
     .badge-link { display: inline-block; text-decoration: none; transition: transform 0.2s, opacity 0.2s; }
     .badge-link:hover { transform: translateY(-2px); opacity: 0.88; }
-    .badge-img { height: 58px; width: auto; display: block; }
+    .badge-img { height: 52px; width: auto; display: block; }
     .hero-trust { font-size: 12px; color: rgba(255,255,255,0.28); letter-spacing: 0.2px; }
     .hero-trust span { color: rgba(255,255,255,0.5); }
+
+    /* Mobile: stack */
+    @media (max-width: 760px) {
+      .hero-inner { flex-direction: column; text-align: center; gap: 32px; align-items: center; }
+      .hero-right { text-align: center; }
+      .hero-badge { justify-content: center; }
+      .hero-badge::before { display: none; }
+      .hero-cta { justify-content: center; }
+      .hero-trust { text-align: center; }
+      .hero-app-icon { width: 128px; height: 128px; border-radius: 30px; }
+      .hero h1 { font-size: clamp(36px, 10vw, 52px); }
+    }
     .scroll-hint {
       position: absolute; bottom: 28px; left: 50%;
       transform: translateX(-50%);
@@ -319,20 +333,37 @@
 
 <!-- ═══════════════════════════════════════════════════ HERO -->
 <section class="hero-section">
-  <div class="hero-content">
-    <img class="hero-app-icon" src="assets/logo_icona.png" alt="Rad Index">
-    <div class="hero-badge"><span data-i18n="heroBadge1">Fatto da un TSRM</span> · <span data-i18n="heroBadge2">Per i TSRM</span></div>
-    <h1 data-i18n-html="heroH1" style="color:#ffffff;-webkit-text-fill-color:#ffffff;background:none;">Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.</h1>
-    <p class="hero-sub" data-i18n-html="heroSub"><strong>139 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Scritto da chi lavora ogni giorno in sala.</p>
-    <div class="hero-cta">
-      <a href="#" class="badge-link">
-        <img src="assets/badges/app-store-white.svg" alt="Scarica su App Store" class="badge-img" data-i18n-alt="badgeApple">
-      </a>
-      <a href="#" class="badge-link">
-        <img src="assets/badges/google-play.png" alt="Disponibile su Google Play" class="badge-img" data-i18n-alt="badgeGoogle">
-      </a>
+  <div class="hero-inner">
+
+    <!-- LEFT: icona grande -->
+    <div class="hero-left">
+      <img class="hero-app-icon" src="assets/logo_icona.png" alt="Rad Index">
     </div>
-    <p class="hero-trust"><span data-i18n="heroTrust1">14 giorni di prova gratuita</span> &nbsp;·&nbsp; <span data-i18n="heroTrust2">Pagamento unico</span> &nbsp;·&nbsp; iOS &amp; Android</p>
+
+    <!-- RIGHT: claim + headline + badge + CTA -->
+    <div class="hero-right">
+      <div class="hero-badge">
+        <span data-i18n="heroBadge1">Fatto da un TSRM</span>
+        &nbsp;·&nbsp;
+        <span data-i18n="heroBadge2">Per i TSRM</span>
+      </div>
+      <h1 data-i18n-html="heroH1" style="color:#ffffff;-webkit-text-fill-color:#ffffff;background:none;">Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.</h1>
+      <p class="hero-sub" data-i18n-html="heroSub"><strong>139 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Scritto da chi lavora ogni giorno in sala.</p>
+      <div class="hero-cta">
+        <a href="#" class="badge-link">
+          <img src="assets/badges/app-store-white.svg" alt="Scarica su App Store" class="badge-img" data-i18n-alt="badgeApple">
+        </a>
+        <a href="#" class="badge-link">
+          <img src="assets/badges/google-play.png" alt="Disponibile su Google Play" class="badge-img" data-i18n-alt="badgeGoogle">
+        </a>
+      </div>
+      <p class="hero-trust">
+        <span data-i18n="heroTrust1">14 giorni di prova gratuita</span>
+        &nbsp;·&nbsp; <span data-i18n="heroTrust2">Pagamento unico</span>
+        &nbsp;·&nbsp; iOS &amp; Android
+      </p>
+    </div>
+
   </div>
   <div class="scroll-hint">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
