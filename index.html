@@ -194,26 +194,17 @@
       justify-content: center; flex-wrap: wrap;
       margin-bottom: 22px;
     }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 13px 22px; border-radius: 14px;
-      font-size: 15px; font-weight: 600;
+    .badge-link {
+      display: inline-block;
       text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s, background 0.15s;
+      transition: transform 0.2s, opacity 0.2s;
     }
-    .btn-store.apple {
-      background: #ffffff; color: #0A0A0A;
+    .badge-link:hover { transform: translateY(-2px); opacity: 0.88; }
+    .badge-img {
+      height: 44px;
+      width: auto;
+      display: block;
     }
-    .btn-store.apple:hover { background: #e6e6e6; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
-    .btn-store.google {
-      background: rgba(255,255,255,0.09);
-      border: 1px solid rgba(255,255,255,0.16);
-      color: rgba(255,255,255,0.88);
-    }
-    .btn-store.google:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); }
-    .btn-store .store-icon { font-size: 22px; line-height: 1; }
-    .btn-store .store-label { display: flex; flex-direction: column; text-align: left; }
-    .btn-store .store-label small { font-size: 10px; font-weight: 400; opacity: 0.65; line-height: 1; margin-bottom: 1px; }
     .hero-trust {
       font-size: 12px;
       color: rgba(255,255,255,0.28);
@@ -621,19 +612,11 @@
       Scritto da chi lavora ogni giorno in sala.
     </p>
     <div class="hero-cta">
-      <a href="#" class="btn-store apple">
-        <span class="store-icon">🍎</span>
-        <span class="store-label">
-          <small>Scarica su</small>
-          App Store
-        </span>
+      <a href="#" class="badge-link">
+        <img src="assets/badges/app-store-white.svg" alt="Scarica su App Store" class="badge-img">
       </a>
-      <a href="#" class="btn-store google">
-        <span class="store-icon">▶</span>
-        <span class="store-label">
-          <small>Disponibile su</small>
-          Google Play
-        </span>
+      <a href="#" class="badge-link">
+        <img src="assets/badges/google-play.png" alt="Disponibile su Google Play" class="badge-img">
       </a>
     </div>
     <p class="hero-trust">
