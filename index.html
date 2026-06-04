@@ -344,6 +344,52 @@
     .zone-chip-dark .z-count { font-size: 5px; color: #48484A; margin-top: 1px; }
     .phone-frame.center-phone { transform: scale(1.09); z-index: 2; }
 
+    /* ══════════════════════════════════════════ SCREENSHOTS GALLERY */
+    .screenshots-gallery {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 12px 32px 28px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .screenshots-gallery::-webkit-scrollbar { display: none; }
+    .screenshot-item {
+      flex-shrink: 0;
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .screenshot-frame {
+      width: 210px;
+      height: 373px;
+      background: #1C1C1E;
+      border-radius: 42px;
+      padding: 10px;
+      box-shadow:
+        0 32px 80px rgba(0,0,0,0.2),
+        0 0 0 1px rgba(255,255,255,0.06);
+    }
+    .screenshot-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 33px;
+      object-fit: cover;
+      display: block;
+    }
+    .screenshot-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text2);
+      text-align: center;
+    }
+    @media (min-width: 1200px) {
+      .screenshots-gallery { justify-content: center; }
+    }
+
     /* ══════════════════════════════════════════ FEATURES */
     .features-section {
       background: var(--surface);
@@ -621,73 +667,41 @@
   <h2 class="section-title">Progettata per la sala radiologica</h2>
   <p class="section-sub">Interfaccia rapida, dark mode completa, ricerca istantanea. Zero distrazioni.</p>
 
-  <div class="phones">
+  <div class="screenshots-gallery">
 
-    <!-- Scheda dettaglio -->
-    <div class="phone-frame">
-      <div class="phone-screen screen-scheda">
-        <div class="s-card-header">
-          <div class="s-card-name">RX Torace PA</div>
-          <div class="s-card-type">Postero-anteriore · Standard</div>
-        </div>
-        <div class="s-card-body">
-          <div class="s-row">
-            <div class="s-row-label">Obiettivo</div>
-            <div class="s-row-val">Campi polmonari, mediastino, diaframma e scheletro toracico.</div>
-          </div>
-          <div class="s-row">
-            <div class="s-row-label">Centratura</div>
-            <div class="s-row-val">T7, linea mediana</div>
-          </div>
-          <div class="s-params">
-            <div class="s-param-row"><span>DR</span><strong>100–125 kV · 3–5 mAs</strong></div>
-            <div class="s-param-row"><span>DFD</span><strong>~150–180 cm</strong></div>
-            <div class="s-param-row"><span>CR</span><strong>90–110 kV · 5–8 mAs</strong></div>
-          </div>
-        </div>
+    <div class="screenshot-item">
+      <div class="screenshot-frame">
+        <img src="assets/screenshots/01_home.jpg" alt="Home — Zone anatomiche e accesso rapido" class="screenshot-img" loading="lazy">
       </div>
+      <span class="screenshot-label">Home</span>
     </div>
 
-    <!-- Home screen (centro, più grande) -->
-    <div class="phone-frame center-phone">
-      <div class="phone-screen screen-home">
-        <div class="s-header">
-          <div class="s-title">Rad Index</div>
-          <div class="s-sub">Manuale proiezioni RX</div>
-        </div>
-        <div class="s-search">🔍 Cerca proiezione…</div>
-        <div class="zone-grid">
-          <div class="zone-chip"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11 proj.</div></div>
-          <div class="zone-chip"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9 proj.</div></div>
-        </div>
+    <div class="screenshot-item">
+      <div class="screenshot-frame">
+        <img src="assets/screenshots/02_lista.jpg" alt="Lista proiezioni per zona con filtri STD/VAR" class="screenshot-img" loading="lazy">
       </div>
+      <span class="screenshot-label">Lista proiezioni</span>
     </div>
 
-    <!-- Dark mode -->
-    <div class="phone-frame">
-      <div class="phone-screen screen-dark">
-        <div class="s-header">
-          <div class="s-title">Rad Index</div>
-          <div class="s-sub">Manuale proiezioni RX</div>
-        </div>
-        <div class="s-search">🔍 Cerca proiezione…</div>
-        <div class="zone-grid-dark">
-          <div class="zone-chip-dark"><div class="z-icon">🫁</div><div class="z-name">Torace</div><div class="z-count">12</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">💀</div><div class="z-name">Cranio</div><div class="z-count">14</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦴</div><div class="z-name">Rachide</div><div class="z-count">26</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">💪</div><div class="z-name">A. Sup.</div><div class="z-count">33</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦵</div><div class="z-name">A. Inf.</div><div class="z-count">32</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🫀</div><div class="z-name">Addome</div><div class="z-count">4</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🦷</div><div class="z-name">Pelvi</div><div class="z-count">11</div></div>
-          <div class="zone-chip-dark"><div class="z-icon">🔩</div><div class="z-name">Stitching</div><div class="z-count">9</div></div>
-        </div>
+    <div class="screenshot-item">
+      <div class="screenshot-frame">
+        <img src="assets/screenshots/03_dettaglio.jpg" alt="Scheda tecnica con parametri DR e CR" class="screenshot-img" loading="lazy">
       </div>
+      <span class="screenshot-label">Scheda tecnica</span>
+    </div>
+
+    <div class="screenshot-item">
+      <div class="screenshot-frame">
+        <img src="assets/screenshots/04_flashcard.jpg" alt="Flashcard con ripetizione spaziata SM-2" class="screenshot-img" loading="lazy">
+      </div>
+      <span class="screenshot-label">Flashcard</span>
+    </div>
+
+    <div class="screenshot-item">
+      <div class="screenshot-frame">
+        <img src="assets/screenshots/05_alara.jpg" alt="Checklist ALARA ottimizzazione dose" class="screenshot-img" loading="lazy">
+      </div>
+      <span class="screenshot-label">Checklist ALARA</span>
     </div>
 
   </div>
