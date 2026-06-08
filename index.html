@@ -439,8 +439,8 @@
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background:#EEEDFE">🃏</div>
-        <div class="feature-title" data-i18n="f2t">Flashcard SM-2</div>
-        <div class="feature-desc" data-i18n="f2d">Ripetizione spaziata con algoritmo SM-2. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
+        <div class="feature-title" data-i18n="f2t">Flashcard</div>
+        <div class="feature-desc" data-i18n="f2d">Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background:#FCE8E8">📖</div>
@@ -511,7 +511,7 @@
       <div class="forwho-card">
         <div class="fw-icon">🎓</div>
         <div class="fw-title" data-i18n="fw2t">Studenti TSRM</div>
-        <div class="fw-desc" data-i18n="fw2d">Studio sistematico con flashcard SM-2 e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.</div>
+        <div class="fw-desc" data-i18n="fw2d">Studio sistematico con flashcard e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.</div>
       </div>
       <div class="forwho-card">
         <div class="fw-icon">🏥</div>
@@ -543,7 +543,7 @@
     <ul class="price-features">
       <li data-i18n="pf1">147 proiezioni radiografiche complete</li>
       <li data-i18n="pf2">Parametri DR e CR per ogni proiezione</li>
-      <li data-i18n="pf3">Flashcard con ripetizione spaziata (SM-2)</li>
+      <li data-i18n="pf3">Flashcard con ripetizione spaziata</li>
       <li data-i18n="pf4">Glossario RX tecnico e anatomico</li>
       <li data-i18n="pf5">Esportazione PDF per ogni scheda</li>
       <li data-i18n="pf6">Checklist ALARA interattiva</li>
@@ -589,7 +589,7 @@ const T = {
     featTag: 'Funzionalità', featTitle: 'Tutto ciò che serve. Niente di più.',
     featSub: 'Ogni funzione è nata da una necessità reale in sala radiologica.',
     f1t: 'DR e CR separati', f1d: 'Parametri tecnici distinti per rivelatore digitale e lastra CR/PSP, con DFD, griglia e target EI.',
-    f2t: 'Flashcard SM-2', f2d: 'Ripetizione spaziata con algoritmo SM-2. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.',
+    f2t: 'Flashcard', f2d: 'Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.',
     f3t: 'Glossario RX', f3d: 'Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.',
     f4t: 'Esporta in PDF', f4d: 'Scheda di ogni proiezione in PDF A4 con header colorato per zona anatomica. Pronta da condividere o stampare.',
     f5t: 'Checklist ALARA', f5d: '10 punti interattivi per la verifica pre-esame. Con barra di avanzamento e riferimento normativo integrato.',
@@ -601,7 +601,7 @@ const T = {
     fwTag: 'Per chi è', fwTitle: 'Fatto da chi conosce la sala',
     fwSub: 'Contenuto clinico preciso, linguaggio professionale, nessun compromesso sulla qualità.',
     fw1t: 'TSRM in servizio', fw1d: 'Riferimento rapido durante il turno per le proiezioni meno frequenti, o per verificare i parametri su apparecchiature diverse.',
-    fw2t: 'Studenti TSRM', fw2d: 'Studio sistematico con flashcard SM-2 e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.',
+    fw2t: 'Studenti TSRM', fw2d: 'Studio sistematico con flashcard e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.',
     fw3t: 'Tirocinanti', fw3d: 'Supporto pratico ogni giorno. Consulta posizionamento e parametri direttamente in sala, in autonomia.',
     quoteText: 'Ho sviluppato Rad Index perché il manuale che cercavo <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile — senza abbonamenti.',
     quoteAuthor: '— Simone, TSRM  ·  Sviluppatore di Rad Index',
@@ -609,7 +609,7 @@ const T = {
     priceSub: 'Pagamento unico. Accesso permanente. Aggiornamenti inclusi.',
     priceBadge: 'Accesso completo', priceSubCard: 'Pagamento unico · Accesso permanente · iOS e Android',
     pf1: '147 proiezioni radiografiche complete', pf2: 'Parametri DR e CR per ogni proiezione',
-    pf3: 'Flashcard con ripetizione spaziata (SM-2)', pf4: 'Glossario RX tecnico e anatomico',
+    pf3: 'Flashcard con ripetizione spaziata', pf4: 'Glossario RX tecnico e anatomico',
     pf5: 'Esportazione PDF per ogni scheda', pf6: 'Checklist ALARA interattiva',
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
     priceTrial: '🎁 14 giorni di prova gratuita — nessuna carta richiesta',
@@ -633,7 +633,7 @@ const T = {
     featTag: 'Features', featTitle: 'Everything you need. Nothing more.',
     featSub: 'Every feature was born from a real need in the imaging suite.',
     f1t: 'Separate DR and CR', f1d: 'Distinct technical parameters for digital detector and CR/PSP plate, with SID, grid and EI target.',
-    f2t: 'SM-2 Flashcards', f2d: 'Spaced repetition with SM-2 algorithm. Each projection automatically generates 3 cards on centering, parameters and positioning.',
+    f2t: 'Flashcards', f2d: 'Smart spaced repetition. Each projection automatically generates 3 cards on centering, parameters and positioning.',
     f3t: 'X-ray Glossary', f3d: 'Technical and anatomical terms with clear definitions. Quick navigation by category: All / Technical / Anatomy.',
     f4t: 'Export to PDF', f4d: 'Each projection as an A4 PDF with a color-coded header by anatomical zone. Ready to share or print.',
     f5t: 'ALARA Checklist', f5d: '10 interactive checkpoints for pre-exam verification. With progress bar and integrated regulatory reference.',
@@ -645,7 +645,7 @@ const T = {
     fwTag: "Who it's for", fwTitle: 'Made by someone who knows the suite',
     fwSub: 'Precise clinical content, professional language, no compromise on quality.',
     fw1t: 'Practicing Radiographers', fw1d: 'Quick reference during shifts for less common projections, or to check parameters on different equipment.',
-    fw2t: 'Radiology Students', fw2d: 'Systematic study with SM-2 flashcards and integrated glossary. Prepare for exams and clinical placements with one tool.',
+    fw2t: 'Radiology Students', fw2d: 'Systematic study with flashcards and integrated glossary. Prepare for exams and clinical placements with one tool.',
     fw3t: 'Clinical Trainees', fw3d: 'Practical support every day. Consult positioning and parameters directly in the suite, independently.',
     quoteText: 'I developed Rad Index because the reference I was looking for <em>didn\'t exist</em>. I wanted something precise, professional and always available — without subscriptions.',
     quoteAuthor: '— Simone, Radiographer  ·  Developer of Rad Index',
@@ -653,7 +653,7 @@ const T = {
     priceSub: 'One-time payment. Permanent access. Updates included.',
     priceBadge: 'Full access', priceSubCard: 'One-time payment · Permanent access · iOS & Android',
     pf1: '147 complete radiographic projections', pf2: 'DR and CR parameters for every projection',
-    pf3: 'Flashcards with spaced repetition (SM-2)', pf4: 'Technical and anatomical X-ray glossary',
+    pf3: 'Flashcards with spaced repetition', pf4: 'Technical and anatomical X-ray glossary',
     pf5: 'PDF export for every card', pf6: 'Interactive ALARA checklist',
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
     priceTrial: '🎁 14-day free trial — no card required',
@@ -677,7 +677,7 @@ const T = {
     featTag: 'Funcionalidades', featTitle: 'Todo lo que necesitas. Nada más.',
     featSub: 'Cada función nació de una necesidad real en la sala de radiología.',
     f1t: 'DR y CR separados', f1d: 'Parámetros técnicos distintos para detector digital y placa CR/PSP, con DFR, rejilla y target EI.',
-    f2t: 'Flashcard SM-2', f2d: 'Repetición espaciada con algoritmo SM-2. Cada proyección genera automáticamente 3 tarjetas sobre centraje, parámetros y posicionamiento.',
+    f2t: 'Flashcard', f2d: 'Repetición espaciada inteligente. Cada proyección genera automáticamente 3 tarjetas sobre centraje, parámetros y posicionamiento.',
     f3t: 'Glosario RX', f3d: 'Términos técnicos y anatómicos con definiciones claras. Navegación rápida por categoría: Todos / Técnicos / Anatomía.',
     f4t: 'Exportar en PDF', f4d: 'Ficha de cada proyección en PDF A4 con cabecera de color por zona anatómica. Lista para compartir o imprimir.',
     f5t: 'Lista ALARA', f5d: '10 puntos interactivos para la verificación previa al examen. Con barra de progreso y referencia normativa integrada.',
@@ -689,7 +689,7 @@ const T = {
     fwTag: 'Para quién es', fwTitle: 'Hecho por quien conoce la sala',
     fwSub: 'Contenido clínico preciso, lenguaje profesional, sin compromisos en la calidad.',
     fw1t: 'Técnicos en ejercicio', fw1d: 'Referencia rápida durante el turno para las proyecciones menos frecuentes, o para verificar los parámetros en equipos diferentes.',
-    fw2t: 'Estudiantes de Radiología', fw2d: 'Estudio sistemático con flashcard SM-2 y glosario integrado. Prepárate para los exámenes y las prácticas con una sola herramienta.',
+    fw2t: 'Estudiantes de Radiología', fw2d: 'Estudio sistemático con flashcard y glosario integrado. Prepárate para los exámenes y las prácticas con una sola herramienta.',
     fw3t: 'Residentes en prácticas', fw3d: 'Apoyo práctico cada día. Consulta posicionamiento y parámetros directamente en sala, de forma autónoma.',
     quoteText: 'Desarrollé Rad Index porque el manual que buscaba <em>no existía</em>. Quería algo preciso, profesional y siempre disponible — sin suscripciones.',
     quoteAuthor: '— Simone, Técnico de Radiología  ·  Desarrollador de Rad Index',
@@ -697,7 +697,7 @@ const T = {
     priceSub: 'Pago único. Acceso permanente. Actualizaciones incluidas.',
     priceBadge: 'Acceso completo', priceSubCard: 'Pago único · Acceso permanente · iOS y Android',
     pf1: '147 proyecciones radiográficas completas', pf2: 'Parámetros DR y CR por cada proyección',
-    pf3: 'Flashcard con repetición espaciada (SM-2)', pf4: 'Glosario RX técnico y anatómico',
+    pf3: 'Flashcard con repetición espaciada', pf4: 'Glosario RX técnico y anatómico',
     pf5: 'Exportación PDF de cada ficha', pf6: 'Lista ALARA interactiva',
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
     priceTrial: '🎁 14 días de prueba gratuita — sin tarjeta requerida',
