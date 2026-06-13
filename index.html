@@ -241,7 +241,8 @@
     .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
     .feature-card { background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: 28px; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
     .feature-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.07); border-color: rgba(65,109,190,0.28); }
-    .feature-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 18px; }
+    .feature-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; color: var(--blue); background: var(--blue-lt); }
+    .feature-icon svg { width: 24px; height: 24px; }
     .feature-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .feature-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
 
@@ -260,7 +261,8 @@
     .forwho-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
     .forwho-card { border: 1px solid var(--border); border-radius: 20px; padding: 32px 24px; background: var(--bg); transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; }
     .forwho-card:hover { border-color: var(--blue); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(65,109,190,0.1); }
-    .fw-icon { font-size: 36px; margin-bottom: 14px; }
+    .fw-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--blue); background: var(--blue-lt); }
+    .fw-icon svg { width: 26px; height: 26px; }
     .fw-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
     .fw-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
 
@@ -348,7 +350,7 @@
         <span data-i18n="heroBadge2">Per i TSRM</span>
       </div>
       <h1 data-i18n-html="heroH1" style="color:#ffffff;-webkit-text-fill-color:#ffffff;background:none;">Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.</h1>
-      <p class="hero-sub" data-i18n-html="heroSub"><strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Scritto da chi lavora ogni giorno in sala.</p>
+      <p class="hero-sub" data-i18n-html="heroSub"><strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Sviluppato e redatto da chi lavora ogni giorno in Radiologia.</p>
       <div class="hero-cta">
         <a href="#" class="badge-link">
           <img src="assets/badges/app-store-white.svg" alt="Scarica su App Store" class="badge-img" data-i18n-alt="badgeApple">
@@ -388,7 +390,7 @@
 <section class="phones-section">
   <span class="section-tag" data-i18n="phonesTag">L'app in azione</span>
   <h2 class="section-title" data-i18n="phonesTitle">Progettata per la sala radiologica</h2>
-  <p class="section-sub" data-i18n="phonesSub">Interfaccia rapida, dark mode completa, ricerca istantanea. Zero distrazioni.</p>
+  <p class="section-sub" data-i18n="phonesSub">Interfaccia rapida, dark mode completa, ricerca istantanea.</p>
   <div class="screenshots-gallery">
     <div class="screenshot-item">
       <div class="screenshot-frame">
@@ -429,36 +431,36 @@
     <div class="section-header">
       <span class="section-tag" data-i18n="featTag">Funzionalità</span>
       <h2 class="section-title" data-i18n="featTitle">Tutto ciò che serve. Niente di più.</h2>
-      <p class="section-sub" data-i18n="featSub">Ogni funzione è nata da una necessità reale in sala radiologica.</p>
+      <p class="section-sub" data-i18n="featSub">Ogni funzione è nata da una necessità reale in sala radiologica o per lo studio.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon" style="background:#E8F0FB">📋</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="11" cy="18" r="2" fill="currentColor" stroke="none"/></svg></div>
         <div class="feature-title" data-i18n="f1t">DR e CR separati</div>
         <div class="feature-desc" data-i18n="f1d">Parametri tecnici distinti per rivelatore digitale e lastra CR/PSP, con DFD, griglia e target EI.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#EEEDFE">🃏</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="14" height="10" rx="2"/><path d="M4 9v8a2 2 0 0 0 2 2h10"/></svg></div>
         <div class="feature-title" data-i18n="f2t">Flashcard</div>
         <div class="feature-desc" data-i18n="f2d">Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#FCE8E8">📖</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-2-1.5-5-2-8-2v13c3 0 6 .5 8 2 2-1.5 5-2 8-2V5c-3 0-6 .5-8 2Z"/><line x1="12" y1="7" x2="12" y2="20"/></svg></div>
         <div class="feature-title" data-i18n="f3t">Glossario RX</div>
         <div class="feature-desc" data-i18n="f3d">Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#FFF0DA">📄</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
         <div class="feature-title" data-i18n="f4t">Esporta in PDF</div>
         <div class="feature-desc" data-i18n="f4d">Scheda di ogni proiezione in PDF A4 con header colorato per zona anatomica. Pronta da condividere o stampare.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#E8F6F0">✅</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <div class="feature-title" data-i18n="f5t">Checklist ALARA</div>
         <div class="feature-desc" data-i18n="f5d">10 punti interattivi per la verifica pre-esame. Con barra di avanzamento e riferimento normativo integrato.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:#F5E8FB">🌍</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10Z"/></svg></div>
         <div class="feature-title" data-i18n="f6t">3 Lingue</div>
         <div class="feature-desc" data-i18n="f6d">Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all'estero.</div>
       </div>
@@ -472,7 +474,7 @@
     <div class="section-header" style="text-align:center;">
       <span class="section-tag" data-i18n="howTag">Come funziona</span>
       <h2 class="section-title" data-i18n="howTitle">Da zero a operativo in secondi</h2>
-      <p class="section-sub" style="max-width:440px;margin:12px auto 0;" data-i18n="howSub">Tre passi. Nessuna curva di apprendimento.</p>
+      <p class="section-sub" style="max-width:440px;margin:12px auto 0;" data-i18n="howSub">Tre passi. Nessuna ricerca confusa o dispendiosa.</p>
     </div>
     <div class="how-steps">
       <div class="how-step">
@@ -499,22 +501,22 @@
   <div class="forwho-inner">
     <div class="section-header" style="text-align:center;">
       <span class="section-tag" data-i18n="fwTag">Per chi è</span>
-      <h2 class="section-title" data-i18n="fwTitle">Fatto da chi conosce la sala</h2>
-      <p class="section-sub" data-i18n="fwSub">Contenuto clinico preciso, linguaggio professionale, nessun compromesso sulla qualità.</p>
+      <h2 class="section-title" data-i18n="fwTitle">Fatto da chi lavora in Radiologia</h2>
+      <p class="section-sub" data-i18n="fwSub">Contenuto clinico preciso con linguaggio professionale.</p>
     </div>
     <div class="forwho-grid">
       <div class="forwho-card">
-        <div class="fw-icon">👨‍⚕️</div>
+        <div class="fw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
         <div class="fw-title" data-i18n="fw1t">TSRM in servizio</div>
         <div class="fw-desc" data-i18n="fw1d">Riferimento rapido durante il turno per le proiezioni meno frequenti, o per verificare i parametri su apparecchiature diverse.</div>
       </div>
       <div class="forwho-card">
-        <div class="fw-icon">🎓</div>
+        <div class="fw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 1.5 9 1.5 12 0v-5"/></svg></div>
         <div class="fw-title" data-i18n="fw2t">Studenti TSRM</div>
         <div class="fw-desc" data-i18n="fw2d">Studio sistematico con flashcard e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.</div>
       </div>
       <div class="forwho-card">
-        <div class="fw-icon">🏥</div>
+        <div class="fw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v18Z"/><path d="M6 12H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2"/><path d="M18 9h2a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-2"/><line x1="10" y1="6" x2="14" y2="6"/><line x1="10" y1="10" x2="14" y2="10"/><line x1="10" y1="14" x2="14" y2="14"/><line x1="10" y1="18" x2="14" y2="18"/></svg></div>
         <div class="fw-title" data-i18n="fw3t">Tirocinanti</div>
         <div class="fw-desc" data-i18n="fw3d">Supporto pratico ogni giorno. Consulta posizionamento e parametri direttamente in sala, in autonomia.</div>
       </div>
@@ -526,7 +528,7 @@
 <section class="quote-section">
   <div class="quote-inner">
     <div class="quote-mark">"</div>
-    <p class="quote-text" data-i18n-html="quoteText">Ho sviluppato Rad Index perché il manuale che cercavo <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile — senza abbonamenti.</p>
+    <p class="quote-text" data-i18n-html="quoteText">Ho sviluppato Rad Index perché il manuale che cercavo, <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile.</p>
     <div class="quote-author" data-i18n="quoteAuthor">— Simone, TSRM &nbsp;·&nbsp; Sviluppatore di Rad Index</div>
   </div>
 </section>
@@ -550,7 +552,7 @@
       <li data-i18n="pf7">Dark mode e 3 lingue</li>
       <li data-i18n="pf8">Aggiornamenti inclusi</li>
     </ul>
-    <div class="price-trial" data-i18n="priceTrial">🎁 14 giorni di prova gratuita — nessuna carta richiesta</div>
+    <div class="price-trial" data-i18n="priceTrial">14 giorni di prova gratuita — nessuna carta richiesta</div>
     <a href="#" class="price-cta" data-i18n="priceCta">Scarica ora — gratis per 14 giorni</a>
   </div>
 </section>
@@ -578,32 +580,32 @@ const T = {
     navProj: 'Proiezioni', navContact: 'Contatti', navCta: "Scarica l'app",
     heroBadge1: 'Fatto da un TSRM', heroBadge2: 'Per i TSRM',
     heroH1: 'Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.',
-    heroSub: '<strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Scritto da chi lavora ogni giorno in sala.',
+    heroSub: '<strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Sviluppato e redatto da chi lavora ogni giorno in Radiologia.',
     heroTrust1: '14 giorni di prova gratuita', heroTrust2: 'Pagamento unico',
     badgeApple: 'Scarica su App Store', badgeGoogle: 'Disponibile su Google Play',
     scrollHint: 'Scopri',
     stat1: 'Proiezioni', stat2: 'Lingue', stat3: 'Separati', stat4: 'Prova gratis', stat5: 'Piattaforme',
     phonesTag: "L'app in azione", phonesTitle: 'Progettata per la sala radiologica',
-    phonesSub: 'Interfaccia rapida, dark mode completa, ricerca istantanea. Zero distrazioni.',
+    phonesSub: 'Interfaccia rapida, dark mode completa, ricerca istantanea.',
     ss1: 'Home', ss2: 'Scheda tecnica', ss3: 'Ricerca', ss4: 'Flashcard', ss5: 'Checklist ALARA',
     featTag: 'Funzionalità', featTitle: 'Tutto ciò che serve. Niente di più.',
-    featSub: 'Ogni funzione è nata da una necessità reale in sala radiologica.',
+    featSub: 'Ogni funzione è nata da una necessità reale in sala radiologica o per lo studio.',
     f1t: 'DR e CR separati', f1d: 'Parametri tecnici distinti per rivelatore digitale e lastra CR/PSP, con DFD, griglia e target EI.',
     f2t: 'Flashcard', f2d: 'Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.',
     f3t: 'Glossario RX', f3d: 'Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.',
     f4t: 'Esporta in PDF', f4d: 'Scheda di ogni proiezione in PDF A4 con header colorato per zona anatomica. Pronta da condividere o stampare.',
     f5t: 'Checklist ALARA', f5d: '10 punti interattivi per la verifica pre-esame. Con barra di avanzamento e riferimento normativo integrato.',
     f6t: '3 Lingue', f6d: 'Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all\'estero.',
-    howTag: 'Come funziona', howTitle: 'Da zero a operativo in secondi', howSub: 'Tre passi. Nessuna curva di apprendimento.',
+    howTag: 'Come funziona', howTitle: 'Da zero a operativo in secondi', howSub: 'Tre passi. Nessuna ricerca confusa o dispendiosa.',
     s1t: 'Cerca la proiezione', s1d: 'Per nome, zona anatomica o incidenza. La ricerca istantanea trova anche termini parziali.',
     s2t: 'Consulta la scheda', s2d: 'Posizionamento, centratura, parametri DR/CR, criteri di qualità e note pratiche. Tutto in una schermata.',
     s3t: 'Applica e riproduci', s3d: 'Condividi via PDF, salva nei preferiti o ripassa con le flashcard dedicate prima di un esame.',
-    fwTag: 'Per chi è', fwTitle: 'Fatto da chi conosce la sala',
-    fwSub: 'Contenuto clinico preciso, linguaggio professionale, nessun compromesso sulla qualità.',
+    fwTag: 'Per chi è', fwTitle: 'Fatto da chi lavora in Radiologia',
+    fwSub: 'Contenuto clinico preciso con linguaggio professionale.',
     fw1t: 'TSRM in servizio', fw1d: 'Riferimento rapido durante il turno per le proiezioni meno frequenti, o per verificare i parametri su apparecchiature diverse.',
     fw2t: 'Studenti TSRM', fw2d: 'Studio sistematico con flashcard e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.',
     fw3t: 'Tirocinanti', fw3d: 'Supporto pratico ogni giorno. Consulta posizionamento e parametri direttamente in sala, in autonomia.',
-    quoteText: 'Ho sviluppato Rad Index perché il manuale che cercavo <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile — senza abbonamenti.',
+    quoteText: 'Ho sviluppato Rad Index perché il manuale che cercavo, <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile.',
     quoteAuthor: '— Simone, TSRM  ·  Sviluppatore di Rad Index',
     priceTag: 'Prezzi', priceTitle: 'Semplice e trasparente',
     priceSub: 'Pagamento unico. Accesso permanente. Aggiornamenti inclusi.',
@@ -612,7 +614,7 @@ const T = {
     pf3: 'Flashcard con ripetizione spaziata', pf4: 'Glossario RX tecnico e anatomico',
     pf5: 'Esportazione PDF per ogni scheda', pf6: 'Checklist ALARA interattiva',
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
-    priceTrial: '🎁 14 giorni di prova gratuita — nessuna carta richiesta',
+    priceTrial: '14 giorni di prova gratuita — nessuna carta richiesta',
     priceCta: 'Scarica ora — gratis per 14 giorni',
     footerProj: 'Proiezioni radiografiche', footerTerms: 'Termini di utilizzo',
     footerCopy: '© 2026 Rad Index · Sviluppato da un TSRM per i TSRM'
@@ -622,32 +624,32 @@ const T = {
     navProj: 'Projections', navContact: 'Contact', navCta: 'Download',
     heroBadge1: 'Built by a Radiographer', heroBadge2: 'For Radiographers',
     heroH1: 'The X-ray reference<br>you <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">deserve</em>.',
-    heroSub: '<strong>147 radiographic projections</strong> with separate DR and CR parameters, precise positioning and quality criteria. Written by someone who works in the imaging suite every day.',
+    heroSub: '<strong>147 radiographic projections</strong> with separate DR and CR parameters, precise positioning and quality criteria. Developed and written by someone who works in Radiology every day.',
     heroTrust1: '14-day free trial', heroTrust2: 'One-time payment',
     badgeApple: 'Download on the App Store', badgeGoogle: 'Get it on Google Play',
     scrollHint: 'Explore',
     stat1: 'Projections', stat2: 'Languages', stat3: 'Separate', stat4: 'Free trial', stat5: 'Platforms',
     phonesTag: 'The app in action', phonesTitle: 'Designed for the imaging suite',
-    phonesSub: 'Fast interface, full dark mode, instant search. Zero distractions.',
+    phonesSub: 'Fast interface, full dark mode, instant search.',
     ss1: 'Home', ss2: 'Tech card', ss3: 'Search', ss4: 'Flashcards', ss5: 'ALARA Checklist',
     featTag: 'Features', featTitle: 'Everything you need. Nothing more.',
-    featSub: 'Every feature was born from a real need in the imaging suite.',
+    featSub: 'Every feature was born from a real need in the imaging suite or while studying.',
     f1t: 'Separate DR and CR', f1d: 'Distinct technical parameters for digital detector and CR/PSP plate, with SID, grid and EI target.',
     f2t: 'Flashcards', f2d: 'Smart spaced repetition. Each projection automatically generates 3 cards on centering, parameters and positioning.',
     f3t: 'X-ray Glossary', f3d: 'Technical and anatomical terms with clear definitions. Quick navigation by category: All / Technical / Anatomy.',
     f4t: 'Export to PDF', f4d: 'Each projection as an A4 PDF with a color-coded header by anatomical zone. Ready to share or print.',
     f5t: 'ALARA Checklist', f5d: '10 interactive checkpoints for pre-exam verification. With progress bar and integrated regulatory reference.',
     f6t: '3 Languages', f6d: 'Italian, English and Spanish. Switch language on the fly. Designed for those who study or work abroad.',
-    howTag: 'How it works', howTitle: 'From zero to operational in seconds', howSub: 'Three steps. No learning curve.',
+    howTag: 'How it works', howTitle: 'From zero to operational in seconds', howSub: 'Three steps. No confusing, time-wasting searches.',
     s1t: 'Search the projection', s1d: 'By name, anatomical zone or incidence. Instant search finds partial terms too.',
     s2t: 'Consult the card', s2d: 'Positioning, centering, DR/CR parameters, quality criteria and practical notes. Everything on one screen.',
     s3t: 'Apply and reproduce', s3d: 'Share as PDF, save to favorites or review with dedicated flashcards before an exam.',
-    fwTag: "Who it's for", fwTitle: 'Made by someone who knows the suite',
-    fwSub: 'Precise clinical content, professional language, no compromise on quality.',
+    fwTag: "Who it's for", fwTitle: 'Made by people who work in Radiology',
+    fwSub: 'Precise clinical content with professional language.',
     fw1t: 'Practicing Radiographers', fw1d: 'Quick reference during shifts for less common projections, or to check parameters on different equipment.',
     fw2t: 'Radiology Students', fw2d: 'Systematic study with flashcards and integrated glossary. Prepare for exams and clinical placements with one tool.',
     fw3t: 'Clinical Trainees', fw3d: 'Practical support every day. Consult positioning and parameters directly in the suite, independently.',
-    quoteText: 'I developed Rad Index because the reference I was looking for <em>didn\'t exist</em>. I wanted something precise, professional and always available — without subscriptions.',
+    quoteText: 'I developed Rad Index because the reference I was looking for <em>didn\'t exist</em>. I wanted something precise, professional and always available.',
     quoteAuthor: '— Simone, Radiographer  ·  Developer of Rad Index',
     priceTag: 'Pricing', priceTitle: 'Simple and transparent',
     priceSub: 'One-time payment. Permanent access. Updates included.',
@@ -656,7 +658,7 @@ const T = {
     pf3: 'Flashcards with spaced repetition', pf4: 'Technical and anatomical X-ray glossary',
     pf5: 'PDF export for every card', pf6: 'Interactive ALARA checklist',
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
-    priceTrial: '🎁 14-day free trial — no card required',
+    priceTrial: '14-day free trial — no card required',
     priceCta: 'Download now — free for 14 days',
     footerProj: 'Radiographic Projections', footerTerms: 'Terms of Use',
     footerCopy: '© 2026 Rad Index · Built by a Radiographer for Radiographers'
@@ -666,32 +668,32 @@ const T = {
     navProj: 'Proyecciones', navContact: 'Contacto', navCta: 'Descargar',
     heroBadge1: 'Creado por un Técnico', heroBadge2: 'Para Técnicos',
     heroH1: 'El manual de RX<br>que <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">mereces</em>.',
-    heroSub: '<strong>147 proyecciones radiográficas</strong> con parámetros DR y CR separados, posicionamiento preciso y criterios de calidad. Escrito por alguien que trabaja cada día en sala.',
+    heroSub: '<strong>147 proyecciones radiográficas</strong> con parámetros DR y CR separados, posicionamiento preciso y criterios de calidad. Desarrollado y redactado por alguien que trabaja cada día en Radiología.',
     heroTrust1: '14 días de prueba gratuita', heroTrust2: 'Pago único',
     badgeApple: 'Disponible en App Store', badgeGoogle: 'Disponible en Google Play',
     scrollHint: 'Descubrir',
     stat1: 'Proyecciones', stat2: 'Idiomas', stat3: 'Separados', stat4: 'Prueba gratis', stat5: 'Plataformas',
     phonesTag: 'La app en acción', phonesTitle: 'Diseñada para la sala de radiología',
-    phonesSub: 'Interfaz rápida, dark mode completo, búsqueda instantánea. Cero distracciones.',
+    phonesSub: 'Interfaz rápida, dark mode completo, búsqueda instantánea.',
     ss1: 'Inicio', ss2: 'Ficha técnica', ss3: 'Búsqueda', ss4: 'Flashcard', ss5: 'Lista ALARA',
     featTag: 'Funcionalidades', featTitle: 'Todo lo que necesitas. Nada más.',
-    featSub: 'Cada función nació de una necesidad real en la sala de radiología.',
+    featSub: 'Cada función nació de una necesidad real en la sala de radiología o durante el estudio.',
     f1t: 'DR y CR separados', f1d: 'Parámetros técnicos distintos para detector digital y placa CR/PSP, con DFR, rejilla y target EI.',
     f2t: 'Flashcard', f2d: 'Repetición espaciada inteligente. Cada proyección genera automáticamente 3 tarjetas sobre centraje, parámetros y posicionamiento.',
     f3t: 'Glosario RX', f3d: 'Términos técnicos y anatómicos con definiciones claras. Navegación rápida por categoría: Todos / Técnicos / Anatomía.',
     f4t: 'Exportar en PDF', f4d: 'Ficha de cada proyección en PDF A4 con cabecera de color por zona anatómica. Lista para compartir o imprimir.',
     f5t: 'Lista ALARA', f5d: '10 puntos interactivos para la verificación previa al examen. Con barra de progreso y referencia normativa integrada.',
     f6t: '3 Idiomas', f6d: 'Italiano, Inglés y Español. Cambia idioma al instante. Pensada para quienes estudian o trabajan en el extranjero.',
-    howTag: 'Cómo funciona', howTitle: 'De cero a operativo en segundos', howSub: 'Tres pasos. Sin curva de aprendizaje.',
+    howTag: 'Cómo funciona', howTitle: 'De cero a operativo en segundos', howSub: 'Tres pasos. Sin búsquedas confusas que hagan perder tiempo.',
     s1t: 'Busca la proyección', s1d: 'Por nombre, zona anatómica o incidencia. La búsqueda instantánea también encuentra términos parciales.',
     s2t: 'Consulta la ficha', s2d: 'Posicionamiento, centraje, parámetros DR/CR, criterios de calidad y notas prácticas. Todo en una pantalla.',
     s3t: 'Aplica y reproduce', s3d: 'Comparte en PDF, guarda en favoritos o repasa con las flashcard dedicadas antes de un examen.',
-    fwTag: 'Para quién es', fwTitle: 'Hecho por quien conoce la sala',
-    fwSub: 'Contenido clínico preciso, lenguaje profesional, sin compromisos en la calidad.',
+    fwTag: 'Para quién es', fwTitle: 'Hecho por quienes trabajan en Radiología',
+    fwSub: 'Contenido clínico preciso con lenguaje profesional.',
     fw1t: 'Técnicos en ejercicio', fw1d: 'Referencia rápida durante el turno para las proyecciones menos frecuentes, o para verificar los parámetros en equipos diferentes.',
     fw2t: 'Estudiantes de Radiología', fw2d: 'Estudio sistemático con flashcard y glosario integrado. Prepárate para los exámenes y las prácticas con una sola herramienta.',
     fw3t: 'Residentes en prácticas', fw3d: 'Apoyo práctico cada día. Consulta posicionamiento y parámetros directamente en sala, de forma autónoma.',
-    quoteText: 'Desarrollé Rad Index porque el manual que buscaba <em>no existía</em>. Quería algo preciso, profesional y siempre disponible — sin suscripciones.',
+    quoteText: 'Desarrollé Rad Index porque el manual que buscaba <em>no existía</em>. Quería algo preciso, profesional y siempre disponible.',
     quoteAuthor: '— Simone, Técnico de Radiología  ·  Desarrollador de Rad Index',
     priceTag: 'Precios', priceTitle: 'Simple y transparente',
     priceSub: 'Pago único. Acceso permanente. Actualizaciones incluidas.',
@@ -700,7 +702,7 @@ const T = {
     pf3: 'Flashcard con repetición espaciada', pf4: 'Glosario RX técnico y anatómico',
     pf5: 'Exportación PDF de cada ficha', pf6: 'Lista ALARA interactiva',
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
-    priceTrial: '🎁 14 días de prueba gratuita — sin tarjeta requerida',
+    priceTrial: '14 días de prueba gratuita — sin tarjeta requerida',
     priceCta: 'Descargar ahora — gratis por 14 días',
     footerProj: 'Proyecciones radiográficas', footerTerms: 'Términos de uso',
     footerCopy: '© 2026 Rad Index · Desarrollado por un Técnico para Técnicos'
