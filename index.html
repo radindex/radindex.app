@@ -7,18 +7,82 @@
   <meta name="description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. L'app professionale per TSRM e studenti di radiologia.">
   <meta name="google-site-verification" content="ueZbxEd9cg4XKGRWozkoi58KaOCwOJu8zWR0-j7Y8EA" />
   <link rel="canonical" href="https://radindex.app/">
+  <link rel="alternate" hreflang="it" href="https://radindex.app/?lang=it" />
+  <link rel="alternate" hreflang="en" href="https://radindex.app/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://radindex.app/?lang=es" />
+  <link rel="alternate" hreflang="x-default" href="https://radindex.app/" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="icon" type="image/png" href="assets/logo_icona.png">
   <link rel="apple-touch-icon" href="assets/logo_icona.png">
   <meta property="og:title" content="Rad Index — Il manuale RX per TSRM">
   <meta property="og:description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. Scritto da un TSRM per i TSRM.">
-  <meta property="og:image" content="https://radindex.app/assets/logo_icona.png">
+  <meta property="og:image" content="https://radindex.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://radindex.app">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://radindex.app/assets/logo_icona.png">
+  <meta name="twitter:image" content="https://radindex.app/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/logo_icona.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Rad Index",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "MedicalApplication",
+    "description": "147 proiezioni radiografiche con parametri DR/CR separati, posizionamento, criteri di qualità, flashcard e glossario. Funziona offline. Per TSRM e studenti di radiologia.",
+    "url": "https://radindex.app",
+    "image": "https://radindex.app/assets/og-image.png",
+    "inLanguage": ["it", "en", "es"],
+    "author": {
+      "@type": "Person",
+      "name": "Simone",
+      "jobTitle": "TSRM"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "9.99",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "È un abbonamento?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Rad Index si paga una volta sola (€9,99) e l'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Funziona offline?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sì, completamente. Tutti i contenuti sono nell'app: puoi consultare proiezioni, parametri e flashcard senza connessione, anche in sala radiologica o in reparto. Nessun dato viene caricato in cloud." }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso provarla prima di acquistarla?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sì. Hai 14 giorni di prova gratuita con accesso completo a tutte le funzioni, senza inserire alcuna carta di pagamento." }
+      },
+      {
+        "@type": "Question",
+        "name": "I contenuti sono affidabili?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le 147 schede sono redatte da un TSRM e basate su fonti riconosciute (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index è uno strumento di studio e consultazione, non un dispositivo medico." }
+      },
+      {
+        "@type": "Question",
+        "name": "È disponibile per iOS e Android?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sì, è disponibile su entrambe le piattaforme, con la stessa esperienza e gli stessi contenuti. L'acquisto è legato al singolo store." }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --blue:    #416DBE;
@@ -146,13 +210,13 @@
     .hero-left { flex-shrink: 0; }
     .hero-right { flex: 1; text-align: left; }
     .hero-app-icon {
-      width: 180px; height: 180px;
-      border-radius: 40px; display: block;
+      width: 220px; height: 220px;
+      border-radius: 48px; display: block;
       box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 24px 64px rgba(65,109,190,0.5), 0 0 120px rgba(65,109,190,0.18);
     }
     .hero-badge {
       display: flex; align-items: center; gap: 8px;
-      color: #7AAAE0; font-size: 11px; font-weight: 700;
+      color: #7AAAE0; font-size: 13px; font-weight: 700;
       letter-spacing: 1.4px; margin-bottom: 20px;
       text-transform: uppercase;
     }
@@ -176,16 +240,16 @@
       background-clip: unset !important;
     }
     .hero-sub {
-      font-size: clamp(15px, 1.8vw, 17px); font-weight: 400;
-      color: rgba(245,245,247,0.48);
+      font-size: clamp(16px, 1.9vw, 19px); font-weight: 400;
+      color: rgba(245,245,247,0.55);
       margin: 0 0 36px; line-height: 1.75;
     }
     .hero-sub strong { color: rgba(245,245,247,0.82); font-weight: 500; }
     .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
     .badge-link { display: inline-block; text-decoration: none; transition: transform 0.2s, opacity 0.2s; }
     .badge-link:hover { transform: translateY(-2px); opacity: 0.88; }
-    .badge-img { height: 52px; width: auto; display: block; }
-    .hero-trust { font-size: 12px; color: rgba(255,255,255,0.28); letter-spacing: 0.2px; }
+    .badge-img { height: 56px; width: auto; display: block; }
+    .hero-trust { font-size: 13px; color: rgba(255,255,255,0.35); letter-spacing: 0.2px; }
     .hero-trust span { color: rgba(255,255,255,0.5); }
 
     /* Mobile: stack */
@@ -196,7 +260,7 @@
       .hero-badge::before { display: none; }
       .hero-cta { justify-content: center; }
       .hero-trust { text-align: center; }
-      .hero-app-icon { width: 128px; height: 128px; border-radius: 30px; }
+      .hero-app-icon { width: 150px; height: 150px; border-radius: 34px; }
       .hero h1 { font-size: clamp(36px, 10vw, 52px); }
     }
     .scroll-hint {
@@ -289,6 +353,15 @@
     .price-cta { display: block; margin-top: 16px; background: var(--blue); color: white; font-size: 15px; font-weight: 700; padding: 15px 24px; border-radius: 14px; text-decoration: none; transition: background 0.15s, transform 0.15s; }
     .price-cta:hover { background: var(--blue-dk); transform: translateY(-1px); }
 
+    /* ══════════════════════════════════════════ FAQ */
+    .faq-section { background: var(--surface); border-top: 1px solid var(--border); padding: 88px 24px; }
+    .faq-inner { max-width: 760px; margin: 0 auto; }
+    .faq-list { margin-top: 44px; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item { background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 22px 26px; }
+    .faq-q { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
+    .faq-q::before { content: ''; flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); margin-top: 8px; }
+    .faq-a { font-size: 14px; color: var(--text2); line-height: 1.65; padding-left: 16px; }
+
     /* ══════════════════════════════════════════ FOOTER */
     footer { background: var(--surface); border-top: 1px solid var(--border); padding: 44px 24px; text-align: center; }
     .footer-logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; text-decoration: none; }
@@ -303,12 +376,12 @@
     @media (max-width: 768px) { .how-steps { grid-template-columns: 1fr; } .forwho-grid { grid-template-columns: 1fr; } }
     @media (max-width: 640px) {
       nav { padding: 0 20px; height: 54px; }
-      .hero-app-icon { width: 96px; height: 96px; border-radius: 22px; }
+      .hero-app-icon { width: 112px; height: 112px; border-radius: 26px; }
       .hero h1 { letter-spacing: -1.5px; }
       .stat { min-width: 90px; padding: 10px 10px; }
       .stat-value { font-size: 24px; }
       .nav-links { gap: 12px; }
-      .nav-cta { display: none; }
+      .nav-cta { font-size: 12px !important; padding: 6px 14px !important; }
       .lang-btn { font-size: 15px; padding: 3px 4px; }
     }
 
@@ -460,12 +533,12 @@
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="14" height="10" rx="2"/><path d="M4 9v8a2 2 0 0 0 2 2h10"/></svg></div>
         <div class="feature-title" data-i18n="f2t">Flashcard</div>
-        <div class="feature-desc" data-i18n="f2d">Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
+        <div class="feature-desc" data-i18n="f2d">Ripasso intelligente che si adatta a ciò che ricordi meno. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-2-1.5-5-2-8-2v13c3 0 6 .5 8 2 2-1.5 5-2 8-2V5c-3 0-6 .5-8 2Z"/><line x1="12" y1="7" x2="12" y2="20"/></svg></div>
         <div class="feature-title" data-i18n="f3t">Glossario RX</div>
-        <div class="feature-desc" data-i18n="f3d">Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.</div>
+        <div class="feature-desc" data-i18n="f3d">Termini tecnici e anatomici con definizioni chiare. Navigazione per categoria: Tutti / Tecnici / Anatomia / Formule.</div>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
@@ -481,6 +554,11 @@
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10Z"/></svg></div>
         <div class="feature-title" data-i18n="f6t">3 Lingue</div>
         <div class="feature-desc" data-i18n="f6d">Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all'estero.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+        <div class="feature-title" data-i18n="f7t">100% Offline</div>
+        <div class="feature-desc" data-i18n="f7d">Nessuna connessione internet necessaria. Funziona ovunque: in sala, in reparto, in aula. Nessun dato in cloud.</div>
       </div>
     </div>
   </div>
@@ -563,7 +641,7 @@
     <ul class="price-features">
       <li data-i18n="pf1">147 proiezioni radiografiche complete</li>
       <li data-i18n="pf2">Parametri DR e CR per ogni proiezione</li>
-      <li data-i18n="pf3">Flashcard con ripetizione spaziata</li>
+      <li data-i18n="pf3">Flashcard con ripasso intelligente</li>
       <li data-i18n="pf4">Glossario RX tecnico e anatomico</li>
       <li data-i18n="pf5">Esportazione PDF per ogni scheda</li>
       <li data-i18n="pf6">Checklist ALARA interattiva</li>
@@ -572,6 +650,38 @@
     </ul>
     <div class="price-trial" data-i18n="priceTrial">14 giorni di prova gratuita — nessuna carta richiesta</div>
     <a href="#" class="price-cta" onclick="showComingSoon(event)" data-i18n="priceCta">Scarica ora — gratis per 14 giorni</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-tag" data-i18n="faqTag">Domande frequenti</span>
+      <h2 class="section-title" data-i18n="faqTitle">Tutto quello che vuoi sapere</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="faqQ1">È un abbonamento?</div>
+        <div class="faq-a" data-i18n="faqA1">No. Rad Index si paga una volta sola (€9,99) e l'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="faqQ2">Funziona offline?</div>
+        <div class="faq-a" data-i18n="faqA2">Sì, completamente. Tutti i contenuti sono nell'app: puoi consultare proiezioni, parametri e flashcard senza connessione, anche in sala radiologica o in reparto. Nessun dato viene caricato in cloud.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="faqQ3">Posso provarla prima di acquistarla?</div>
+        <div class="faq-a" data-i18n="faqA3">Sì. Hai 14 giorni di prova gratuita con accesso completo a tutte le funzioni, senza inserire alcuna carta di pagamento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="faqQ4">I contenuti sono affidabili?</div>
+        <div class="faq-a" data-i18n="faqA4">Le 147 schede sono redatte da un TSRM e basate su fonti riconosciute (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index è uno strumento di studio e consultazione, non un dispositivo medico.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="faqQ5">È disponibile per iOS e Android?</div>
+        <div class="faq-a" data-i18n="faqA5">Sì, è disponibile su entrambe le piattaforme, con la stessa esperienza e gli stessi contenuti. L'acquisto è legato al singolo store.</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -611,11 +721,12 @@ const T = {
     featTag: 'Funzionalità', featTitle: 'Tutto ciò che serve. Niente di più.',
     featSub: 'Ogni funzione è nata da una necessità reale in sala radiologica o per lo studio.',
     f1t: 'DR e CR separati', f1d: 'Parametri tecnici distinti per rivelatore digitale e lastra CR/PSP, con DFD, griglia e target EI.',
-    f2t: 'Flashcard', f2d: 'Ripetizione spaziata intelligente. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.',
-    f3t: 'Glossario RX', f3d: 'Termini tecnici e anatomici con definizioni chiare. Navigazione rapida per categoria: Tutti / Tecnici / Anatomia.',
+    f2t: 'Flashcard', f2d: 'Ripasso intelligente che si adatta a ciò che ricordi meno. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.',
+    f3t: 'Glossario RX', f3d: 'Termini tecnici e anatomici con definizioni chiare. Navigazione per categoria: Tutti / Tecnici / Anatomia / Formule.',
     f4t: 'Esporta in PDF', f4d: 'Scheda di ogni proiezione in PDF A4 con header colorato per zona anatomica. Pronta da condividere o stampare.',
     f5t: 'Checklist ALARA', f5d: '10 punti interattivi per la verifica pre-esame. Con barra di avanzamento e riferimento normativo integrato.',
     f6t: '3 Lingue', f6d: 'Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all\'estero.',
+    f7t: '100% Offline', f7d: 'Nessuna connessione internet necessaria. Funziona ovunque: in sala, in reparto, in aula. Nessun dato in cloud.',
     howTag: 'Come funziona', howTitle: 'Da zero a operativo in secondi', howSub: 'Tre passi. Nessuna ricerca confusa o dispendiosa.',
     s1t: 'Cerca la proiezione', s1d: 'Per nome, zona anatomica o incidenza. La ricerca istantanea trova anche termini parziali.',
     s2t: 'Consulta la scheda', s2d: 'Posizionamento, centratura, parametri DR/CR, criteri di qualità e note pratiche. Tutto in una schermata.',
@@ -631,11 +742,17 @@ const T = {
     priceSub: 'Pagamento unico. Accesso permanente. Aggiornamenti inclusi.',
     priceBadge: 'Accesso completo', priceSubCard: 'Pagamento unico · Accesso permanente · iOS e Android',
     pf1: '147 proiezioni radiografiche complete', pf2: 'Parametri DR e CR per ogni proiezione',
-    pf3: 'Flashcard con ripetizione spaziata', pf4: 'Glossario RX tecnico e anatomico',
+    pf3: 'Flashcard con ripasso intelligente', pf4: 'Glossario RX tecnico e anatomico',
     pf5: 'Esportazione PDF per ogni scheda', pf6: 'Checklist ALARA interattiva',
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
     priceTrial: '14 giorni di prova gratuita — nessuna carta richiesta',
     priceCta: 'Scarica ora — gratis per 14 giorni',
+    faqTag: 'Domande frequenti', faqTitle: 'Tutto quello che vuoi sapere',
+    faqQ1: 'È un abbonamento?', faqA1: 'No. Rad Index si paga una volta sola (€9,99) e l\'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi.',
+    faqQ2: 'Funziona offline?', faqA2: 'Sì, completamente. Tutti i contenuti sono nell\'app: puoi consultare proiezioni, parametri e flashcard senza connessione, anche in sala radiologica o in reparto. Nessun dato viene caricato in cloud.',
+    faqQ3: 'Posso provarla prima di acquistarla?', faqA3: 'Sì. Hai 14 giorni di prova gratuita con accesso completo a tutte le funzioni, senza inserire alcuna carta di pagamento.',
+    faqQ4: 'I contenuti sono affidabili?', faqA4: 'Le 147 schede sono redatte da un TSRM e basate su fonti riconosciute (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index è uno strumento di studio e consultazione, non un dispositivo medico.',
+    faqQ5: 'È disponibile per iOS e Android?', faqA5: 'Sì, è disponibile su entrambe le piattaforme, con la stessa esperienza e gli stessi contenuti. L\'acquisto è legato al singolo store.',
     footerProj: 'Proiezioni radiografiche', footerTerms: 'Termini di utilizzo',
     footerCopy: '© 2026 Rad Index · Sviluppato da un TSRM per i TSRM'
   },
@@ -655,11 +772,12 @@ const T = {
     featTag: 'Features', featTitle: 'Everything you need. Nothing more.',
     featSub: 'Every feature was born from a real need in the imaging suite or while studying.',
     f1t: 'Separate DR and CR', f1d: 'Distinct technical parameters for digital detector and CR/PSP plate, with SID, grid and EI target.',
-    f2t: 'Flashcards', f2d: 'Smart spaced repetition. Each projection automatically generates 3 cards on centering, parameters and positioning.',
-    f3t: 'X-ray Glossary', f3d: 'Technical and anatomical terms with clear definitions. Quick navigation by category: All / Technical / Anatomy.',
+    f2t: 'Flashcards', f2d: 'Smart review that adapts to what you remember least. Each projection automatically generates 3 cards on centering, parameters and positioning.',
+    f3t: 'X-ray Glossary', f3d: 'Technical and anatomical terms with clear definitions. Navigation by category: All / Technical / Anatomy / Formulas.',
     f4t: 'Export to PDF', f4d: 'Each projection as an A4 PDF with a color-coded header by anatomical zone. Ready to share or print.',
     f5t: 'ALARA Checklist', f5d: '10 interactive checkpoints for pre-exam verification. With progress bar and integrated regulatory reference.',
     f6t: '3 Languages', f6d: 'Italian, English and Spanish. Switch language on the fly. Designed for those who study or work abroad.',
+    f7t: '100% Offline', f7d: 'No internet connection needed. Works everywhere: in the suite, on the ward, in the classroom. No data in the cloud.',
     howTag: 'How it works', howTitle: 'From zero to operational in seconds', howSub: 'Three steps. No confusing, time-wasting searches.',
     s1t: 'Search the projection', s1d: 'By name, anatomical zone or incidence. Instant search finds partial terms too.',
     s2t: 'Consult the card', s2d: 'Positioning, centering, DR/CR parameters, quality criteria and practical notes. Everything on one screen.',
@@ -675,11 +793,17 @@ const T = {
     priceSub: 'One-time payment. Permanent access. Updates included.',
     priceBadge: 'Full access', priceSubCard: 'One-time payment · Permanent access · iOS & Android',
     pf1: '147 complete radiographic projections', pf2: 'DR and CR parameters for every projection',
-    pf3: 'Flashcards with spaced repetition', pf4: 'Technical and anatomical X-ray glossary',
+    pf3: 'Flashcards with smart review', pf4: 'Technical and anatomical X-ray glossary',
     pf5: 'PDF export for every card', pf6: 'Interactive ALARA checklist',
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
     priceTrial: '14-day free trial — no card required',
     priceCta: 'Download now — free for 14 days',
+    faqTag: 'Frequently asked questions', faqTitle: 'Everything you want to know',
+    faqQ1: 'Is it a subscription?', faqA1: 'No. Rad Index is a one-time payment (€9.99) with permanent access. No recurring fees, no auto-renewal. Future updates are included.',
+    faqQ2: 'Does it work offline?', faqA2: 'Yes, completely. All content is in the app: you can consult projections, parameters and flashcards without a connection, even in the imaging suite or on the ward. No data is uploaded to the cloud.',
+    faqQ3: 'Can I try it before buying?', faqA3: 'Yes. You get a 14-day free trial with full access to all features, no payment card required.',
+    faqQ4: 'Is the content reliable?', faqA4: 'The 147 cards are written by a radiographer and based on recognised sources (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index is a study and reference tool, not a medical device.',
+    faqQ5: 'Is it available for iOS and Android?', faqA5: 'Yes, it is available on both platforms, with the same experience and content. The purchase is tied to the individual store.',
     footerProj: 'Radiographic Projections', footerTerms: 'Terms of Use',
     footerCopy: '© 2026 Rad Index · Built by a Radiographer for Radiographers'
   },
@@ -699,11 +823,12 @@ const T = {
     featTag: 'Funcionalidades', featTitle: 'Todo lo que necesitas. Nada más.',
     featSub: 'Cada función nació de una necesidad real en la sala de radiología o durante el estudio.',
     f1t: 'DR y CR separados', f1d: 'Parámetros técnicos distintos para detector digital y placa CR/PSP, con DFR, rejilla y target EI.',
-    f2t: 'Flashcard', f2d: 'Repetición espaciada inteligente. Cada proyección genera automáticamente 3 tarjetas sobre centraje, parámetros y posicionamiento.',
-    f3t: 'Glosario RX', f3d: 'Términos técnicos y anatómicos con definiciones claras. Navegación rápida por categoría: Todos / Técnicos / Anatomía.',
+    f2t: 'Flashcard', f2d: 'Repaso inteligente que se adapta a lo que recuerdas menos. Cada proyección genera automáticamente 3 tarjetas sobre centraje, parámetros y posicionamiento.',
+    f3t: 'Glosario RX', f3d: 'Términos técnicos y anatómicos con definiciones claras. Navegación por categoría: Todos / Técnicos / Anatomía / Fórmulas.',
     f4t: 'Exportar en PDF', f4d: 'Ficha de cada proyección en PDF A4 con cabecera de color por zona anatómica. Lista para compartir o imprimir.',
     f5t: 'Lista ALARA', f5d: '10 puntos interactivos para la verificación previa al examen. Con barra de progreso y referencia normativa integrada.',
     f6t: '3 Idiomas', f6d: 'Italiano, Inglés y Español. Cambia idioma al instante. Pensada para quienes estudian o trabajan en el extranjero.',
+    f7t: '100% Offline', f7d: 'Sin conexión a internet necesaria. Funciona en cualquier lugar: en sala, en planta, en el aula. Ningún dato en la nube.',
     howTag: 'Cómo funciona', howTitle: 'De cero a operativo en segundos', howSub: 'Tres pasos. Sin búsquedas confusas que hagan perder tiempo.',
     s1t: 'Busca la proyección', s1d: 'Por nombre, zona anatómica o incidencia. La búsqueda instantánea también encuentra términos parciales.',
     s2t: 'Consulta la ficha', s2d: 'Posicionamiento, centraje, parámetros DR/CR, criterios de calidad y notas prácticas. Todo en una pantalla.',
@@ -719,11 +844,17 @@ const T = {
     priceSub: 'Pago único. Acceso permanente. Actualizaciones incluidas.',
     priceBadge: 'Acceso completo', priceSubCard: 'Pago único · Acceso permanente · iOS y Android',
     pf1: '147 proyecciones radiográficas completas', pf2: 'Parámetros DR y CR por cada proyección',
-    pf3: 'Flashcard con repetición espaciada', pf4: 'Glosario RX técnico y anatómico',
+    pf3: 'Flashcard con repaso inteligente', pf4: 'Glosario RX técnico y anatómico',
     pf5: 'Exportación PDF de cada ficha', pf6: 'Lista ALARA interactiva',
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
     priceTrial: '14 días de prueba gratuita — sin tarjeta requerida',
     priceCta: 'Descargar ahora — gratis por 14 días',
+    faqTag: 'Preguntas frecuentes', faqTitle: 'Todo lo que quieres saber',
+    faqQ1: '¿Es una suscripción?', faqA1: 'No. Rad Index se paga una sola vez (9,99 €) y el acceso es permanente. Sin costes recurrentes, sin renovación automática. Las actualizaciones futuras están incluidas.',
+    faqQ2: '¿Funciona sin conexión?', faqA2: 'Sí, completamente. Todo el contenido está en la app: puedes consultar proyecciones, parámetros y flashcards sin conexión, incluso en la sala de radiología o en planta. Ningún dato se sube a la nube.',
+    faqQ3: '¿Puedo probarla antes de comprarla?', faqA3: 'Sí. Tienes 14 días de prueba gratuita con acceso completo a todas las funciones, sin introducir ninguna tarjeta de pago.',
+    faqQ4: '¿El contenido es fiable?', faqA4: 'Las 147 fichas están redactadas por un técnico de radiología y basadas en fuentes reconocidas (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index es una herramienta de estudio y consulta, no un dispositivo médico.',
+    faqQ5: '¿Está disponible para iOS y Android?', faqA5: 'Sí, está disponible en ambas plataformas, con la misma experiencia y los mismos contenidos. La compra está vinculada a cada tienda.',
     footerProj: 'Proyecciones radiográficas', footerTerms: 'Términos de uso',
     footerCopy: '© 2026 Rad Index · Desarrollado por un Técnico para Técnicos'
   }
@@ -763,8 +894,10 @@ function setLanguage(lang) {
   localStorage.setItem('radindex-lang', lang);
 }
 
-// Init: localStorage → browser language → IT
+// Init: URL ?lang= → localStorage → browser language → IT
 (function() {
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  if (urlLang && T[urlLang]) { setLanguage(urlLang); return; }
   const saved = localStorage.getItem('radindex-lang');
   if (saved && T[saved]) { setLanguage(saved); return; }
   const browser = (navigator.language || 'it').slice(0,2).toLowerCase();
