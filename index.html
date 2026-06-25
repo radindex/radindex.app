@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rad Index — Proiezioni radiografiche per TSRM</title>
-  <meta name="description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. L'app professionale per TSRM e studenti di radiologia.">
+  <meta name="description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità, errori comuni e note pratiche. L'app professionale per TSRM e studenti di radiologia.">
   <meta name="google-site-verification" content="ueZbxEd9cg4XKGRWozkoi58KaOCwOJu8zWR0-j7Y8EA" />
   <link rel="canonical" href="https://radindex.app/">
   <link rel="alternate" hreflang="it" href="https://radindex.app/?lang=it" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" href="assets/logo_icona.png">
   <link rel="apple-touch-icon" href="assets/logo_icona.png">
   <meta property="og:title" content="Rad Index — Il manuale RX per TSRM">
-  <meta property="og:description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento e criteri di qualità. Scritto da un TSRM per i TSRM.">
+  <meta property="og:description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità, errori comuni e note pratiche. Scritto da un TSRM per i TSRM.">
   <meta property="og:image" content="https://radindex.app/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     "name": "Rad Index",
     "operatingSystem": "iOS, Android",
     "applicationCategory": "MedicalApplication",
-    "description": "147 proiezioni radiografiche con parametri DR/CR separati, posizionamento, criteri di qualità, flashcard e glossario. Funziona offline. Per TSRM e studenti di radiologia.",
+    "description": "147 proiezioni radiografiche con parametri DR/CR separati, posizionamento, criteri di qualità, errori comuni, note pratiche, flashcard e glossario. Funziona offline. Per TSRM e studenti di radiologia.",
     "url": "https://radindex.app",
     "image": "https://radindex.app/assets/og-image.png",
     "inLanguage": ["it", "en", "es"],
@@ -581,13 +581,16 @@
       <div class="how-step">
         <div class="step-num">02</div>
         <div class="step-title" data-i18n="s2t">Consulta la scheda</div>
-        <div class="step-desc" data-i18n="s2d">Posizionamento, centratura, parametri DR/CR, criteri di qualità e note pratiche. Tutto in una schermata.</div>
+        <div class="step-desc" data-i18n="s2d">Posizionamento, centratura, parametri DR/CR, criteri di qualità, errori comuni e note pratiche. Tutto in una schermata.</div>
       </div>
       <div class="how-step">
         <div class="step-num">03</div>
         <div class="step-title" data-i18n="s3t">Applica e riproduci</div>
         <div class="step-desc" data-i18n="s3d">Condividi via PDF, salva nei preferiti o ripassa con le flashcard dedicate prima di un esame.</div>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="/proiezioni-radiografiche/" style="display:inline-flex;align-items:center;gap:8px;background:var(--blue-lt);color:var(--blue);font-size:14px;font-weight:600;padding:12px 24px;border-radius:12px;text-decoration:none;transition:background 0.15s,transform 0.15s;" onmouseover="this.style.background='#d0e2f7'" onmouseout="this.style.background='var(--blue-lt)'" data-i18n-html="howCta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Consulta gratis le proiezioni principali →</a>
     </div>
   </div>
 </section>
@@ -729,7 +732,8 @@ const T = {
     f7t: '100% Offline', f7d: 'Nessuna connessione internet necessaria. Funziona ovunque: in sala, in reparto, in aula. Nessun dato in cloud.',
     howTag: 'Come funziona', howTitle: 'Da zero a operativo in secondi', howSub: 'Tre passi. Nessuna ricerca confusa o dispendiosa.',
     s1t: 'Cerca la proiezione', s1d: 'Per nome, zona anatomica o incidenza. La ricerca istantanea trova anche termini parziali.',
-    s2t: 'Consulta la scheda', s2d: 'Posizionamento, centratura, parametri DR/CR, criteri di qualità e note pratiche. Tutto in una schermata.',
+    s2t: 'Consulta la scheda', s2d: 'Posizionamento, centratura, parametri DR/CR, criteri di qualità, errori comuni e note pratiche. Tutto in una schermata.',
+    howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Consulta gratis le proiezioni principali →',
     s3t: 'Applica e riproduci', s3d: 'Condividi via PDF, salva nei preferiti o ripassa con le flashcard dedicate prima di un esame.',
     fwTag: 'Per chi è', fwTitle: 'Fatto da chi lavora in Radiologia',
     fwSub: 'Contenuto clinico preciso con linguaggio professionale.',
@@ -780,7 +784,8 @@ const T = {
     f7t: '100% Offline', f7d: 'No internet connection needed. Works everywhere: in the suite, on the ward, in the classroom. No data in the cloud.',
     howTag: 'How it works', howTitle: 'From zero to operational in seconds', howSub: 'Three steps. No confusing, time-wasting searches.',
     s1t: 'Search the projection', s1d: 'By name, anatomical zone or incidence. Instant search finds partial terms too.',
-    s2t: 'Consult the card', s2d: 'Positioning, centering, DR/CR parameters, quality criteria and practical notes. Everything on one screen.',
+    s2t: 'Consult the card', s2d: 'Positioning, centering, DR/CR parameters, quality criteria, common errors and practical notes. Everything on one screen.',
+    howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Browse key projections for free →',
     s3t: 'Apply and reproduce', s3d: 'Share as PDF, save to favorites or review with dedicated flashcards before an exam.',
     fwTag: "Who it's for", fwTitle: 'Made by people who work in Radiology',
     fwSub: 'Precise clinical content with professional language.',
@@ -831,7 +836,8 @@ const T = {
     f7t: '100% Offline', f7d: 'Sin conexión a internet necesaria. Funciona en cualquier lugar: en sala, en planta, en el aula. Ningún dato en la nube.',
     howTag: 'Cómo funciona', howTitle: 'De cero a operativo en segundos', howSub: 'Tres pasos. Sin búsquedas confusas que hagan perder tiempo.',
     s1t: 'Busca la proyección', s1d: 'Por nombre, zona anatómica o incidencia. La búsqueda instantánea también encuentra términos parciales.',
-    s2t: 'Consulta la ficha', s2d: 'Posicionamiento, centraje, parámetros DR/CR, criterios de calidad y notas prácticas. Todo en una pantalla.',
+    s2t: 'Consulta la ficha', s2d: 'Posicionamiento, centraje, parámetros DR/CR, criterios de calidad, errores comunes y notas prácticas. Todo en una pantalla.',
+    howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Consulta gratis las proyecciones principales →',
     s3t: 'Aplica y reproduce', s3d: 'Comparte en PDF, guarda en favoritos o repasa con las flashcard dedicadas antes de un examen.',
     fwTag: 'Para quién es', fwTitle: 'Hecho por quienes trabajan en Radiología',
     fwSub: 'Contenido clínico preciso con lenguaje profesional.',
