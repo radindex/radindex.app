@@ -19,7 +19,11 @@
   <link rel="icon" type="image/png" href="../assets/logo_icona.png">
   
   
-  <link rel="preload" as="font" href="../assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin><style>@font-face{font-family:'Inter';font-style:normal;font-weight:300 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format('woff2');}</style>
+  <link rel="preload" as="font" href="../assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin><style>@font-face{font-family:'Inter';font-style:normal;font-weight:300 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format('woff2');}.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;margin-right:-8px;}
+    .nav-hamburger svg{display:block;}.nav-hamburger line{stroke:#333;stroke-width:2;stroke-linecap:round;transition:transform 0.25s,opacity 0.25s;transform-origin:center;}
+    .nav-hamburger.open line:nth-child(1){transform:translateY(6px) rotate(45deg);}.nav-hamburger.open line:nth-child(2){opacity:0;}.nav-hamburger.open line:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+    @media(max-width:640px){.nav-hamburger{display:block;}.nav-links{display:none!important;position:absolute;top:56px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--border);padding:8px 0;z-index:100;}.nav-links.open{display:flex!important;}.nav-links a{padding:14px 24px;font-size:15px;}.nav-links a:active{background:rgba(0,0,0,0.04);}.nav-cta{margin:8px 24px 4px!important;text-align:center;padding:10px 18px!important;font-size:14px!important;}.lang-switcher{margin:4px 24px 8px;gap:8px;}.lang-btn{font-size:20px;padding:6px 8px;}}
+    </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"MedicalWebPage","name":"RX Articolazioni Sacro-Iliache AP","description":"RX Articolazioni Sacro-Iliache AP — Antero-posteriore. Posizionamento, parametri DR/CR, centratura, criteri di qualità, errori comuni e note pratiche. Zona: Rachide.","url":"https://radindex.app/proiezioni-radiografiche/rx-articolazioni-sacro-iliache-ap.html","inLanguage":["it","en","es"],
   "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[
@@ -64,7 +68,10 @@
 <body>
 <nav>
   <a href="/" class="nav-logo"><img src="../assets/logo_scuro.png" alt="Rad Index"></a>
-  <div class="nav-links">
+  <button class="nav-hamburger" id="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-toggle').classList.toggle('open');document.getElementById('nav-menu').classList.toggle('open')">
+    <svg width="22" height="22" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <div class="nav-links" id="nav-menu">
     <a href="/" data-i18n="navHome">Home</a>
     <a href="/proiezioni-radiografiche/" data-i18n="navProj">Proiezioni</a>
     <a href="/#pricing" class="nav-cta" data-i18n="navCta">Scarica l'app</a>
@@ -135,6 +142,8 @@ function setLang(lang) {
 })();
 let toastTimer=null;
 function showComingSoon(e){e.preventDefault();const t=document.getElementById('toast-coming');const l=localStorage.getItem('radindex-lang')||'it';const msgs={it:'\ud83d\ude80 In arrivo a luglio 2026',en:'\ud83d\ude80 Coming July 2026',es:'\ud83d\ude80 Disponible en julio 2026'};t.textContent=msgs[l]||msgs.it;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2800);}
+
+document.querySelectorAll('#nav-menu a').forEach(a=>{a.addEventListener('click',()=>{document.getElementById('nav-toggle').classList.remove('open');document.getElementById('nav-menu').classList.remove('open');});});
 </script>
 </body>
 </html>

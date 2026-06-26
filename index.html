@@ -159,6 +159,22 @@
       transition: background 0.15s, transform 0.15s !important;
     }
     .nav-cta:hover { background: var(--blue-dk) !important; transform: translateY(-1px); }
+    .nav-hamburger {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      padding: 8px; margin-right: -8px;
+    }
+    .nav-hamburger svg { display: block; }
+    .nav-hamburger line {
+      stroke: rgba(255,255,255,0.7);
+      stroke-width: 2; stroke-linecap: round;
+      transition: transform 0.25s, opacity 0.25s;
+      transform-origin: center;
+    }
+    nav.scrolled .nav-hamburger line { stroke: var(--text1); }
+    .nav-hamburger.open line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open line:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
     /* ══════════════════════════════════════════ LANG SWITCHER */
     .lang-switcher {
@@ -384,13 +400,44 @@
     @media (max-width: 768px) { .how-steps { grid-template-columns: 1fr; } .forwho-grid { grid-template-columns: 1fr; } }
     @media (max-width: 640px) {
       nav { padding: 0 20px; height: 54px; }
+      .nav-hamburger { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 54px; left: 0; right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgb(6,10,20);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 8px 0;
+      }
+      nav.scrolled .nav-links {
+        background: rgb(255,255,255);
+        border-bottom-color: var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a {
+        padding: 14px 24px;
+        font-size: 15px;
+      }
+      .nav-links a:active { background: rgba(255,255,255,0.06); }
+      nav.scrolled .nav-links a:active { background: rgba(0,0,0,0.04); }
+      .nav-cta {
+        margin: 8px 24px 4px !important;
+        text-align: center;
+        padding: 10px 18px !important;
+        font-size: 14px !important;
+      }
+      .lang-switcher {
+        margin: 4px 24px 8px;
+        gap: 8px;
+      }
+      .lang-btn { font-size: 20px; padding: 6px 8px; }
       .hero-app-icon { width: 112px; height: 112px; border-radius: 26px; }
       .hero h1 { letter-spacing: -1.5px; }
       .stat { min-width: 90px; padding: 10px 10px; }
       .stat-value { font-size: 24px; }
-      .nav-links { gap: 12px; }
-      .nav-cta { font-size: 12px !important; padding: 6px 14px !important; }
-      .lang-btn { font-size: 15px; padding: 3px 4px; }
     }
 
     /* ══════════════════════════════════════════ TOAST */
@@ -419,7 +466,10 @@
     <img class="nav-logo-img nav-logo-chiaro" src="assets/logo_chiaro.png" alt="Rad Index">
     <img class="nav-logo-img nav-logo-scuro"  src="assets/logo_scuro.png"  alt="Rad Index">
   </a>
-  <div class="nav-links">
+  <button class="nav-hamburger" id="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-toggle').classList.toggle('open');document.getElementById('nav-menu').classList.toggle('open')">
+    <svg width="22" height="22" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <div class="nav-links" id="nav-menu">
     <a href="/proiezioni-radiografiche/" data-i18n="navProj">Proiezioni</a>
     <a href="mailto:info@radindex.app" data-i18n="navContact">Contatti</a>
     <a href="#pricing" class="nav-cta" data-i18n="navCta">Scarica l'app</a>
@@ -936,6 +986,14 @@ const nav = document.getElementById('main-nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+// Mobile menu: close on link click
+document.querySelectorAll('#nav-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('nav-toggle').classList.remove('open');
+    document.getElementById('nav-menu').classList.remove('open');
+  });
+});
 </script>
 
 </body>
