@@ -354,6 +354,22 @@
     .fw-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
     .fw-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
 
+    /* ══════════════════════════════════════════ TRUST */
+    .trust-section { background: var(--bg); padding: 88px 24px; border-top: 1px solid var(--border); }
+    .trust-inner { max-width: 920px; margin: 0 auto; }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
+    .trust-card { border-radius: 20px; padding: 32px 24px; position: relative; }
+    .trust-card--hero { background: var(--hero-bg); border: 1.5px solid rgba(65,109,190,0.3); }
+    .trust-card--hero .tc-title, .trust-card--hero .tc-desc { color: rgba(245,245,247,0.9); }
+    .trust-card--hero .tc-desc { color: rgba(245,245,247,0.6); }
+    .trust-card--std { background: var(--surface); border: 1px solid var(--border); }
+    .tc-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .trust-card--hero .tc-icon { background: rgba(65,109,190,0.2); color: #7BAEE0; }
+    .trust-card--std .tc-icon { background: var(--blue-lt); color: var(--blue); }
+    .tc-icon svg { width: 24px; height: 24px; }
+    .tc-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .tc-desc { font-size: 13px; color: var(--text2); line-height: 1.65; }
+
     /* ══════════════════════════════════════════ QUOTE */
     .quote-section { background: var(--hero-bg); padding: 88px 24px; text-align: center; }
     .quote-inner { max-width: 620px; margin: 0 auto; }
@@ -397,7 +413,7 @@
 
     /* ══════════════════════════════════════════ RESPONSIVE */
     @media (min-width: 900px) { nav { padding: 0 48px; } }
-    @media (max-width: 768px) { .how-steps { grid-template-columns: 1fr; } .forwho-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .how-steps { grid-template-columns: 1fr; } .forwho-grid { grid-template-columns: 1fr; } .trust-grid { grid-template-columns: 1fr; } }
     @media (max-width: 640px) {
       nav { padding: 0 20px; height: 54px; }
       .nav-hamburger { display: block; }
@@ -681,6 +697,34 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════ TRUST -->
+<section class="trust-section">
+  <div class="trust-inner">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-tag" data-i18n="trustTag">Perché fidarti</span>
+      <h2 class="section-title" data-i18n="trustTitle">Non è un manuale qualsiasi</h2>
+      <p class="section-sub" data-i18n="trustSub">Ogni scheda è scritta da chi esegue queste proiezioni ogni giorno, non da chi le ha solo lette su un libro.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card trust-card--hero">
+        <div class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div class="tc-title" data-i18n="tc1t">Errori comuni inclusi</div>
+        <div class="tc-desc" data-i18n="tc1d">Nessun manuale ti dice cosa può andare storto. Rad Index sì: ogni scheda include gli errori più frequenti in sala, quelli che causano ripetizioni e dose inutile al paziente.</div>
+      </div>
+      <div class="trust-card trust-card--std">
+        <div class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="tc-title" data-i18n="tc2t">Scritto da un TSRM in attività</div>
+        <div class="tc-desc" data-i18n="tc2d">Non da un'azienda tech, non da un algoritmo. Ogni parametro, ogni centratura e ogni nota pratica viene dall'esperienza clinica quotidiana di un tecnico di radiologia.</div>
+      </div>
+      <div class="trust-card trust-card--std">
+        <div class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-2-1.5-5-2-8-2v13c3 0 6 .5 8 2 2-1.5 5-2 8-2V5c-3 0-6 .5-8 2Z"/><line x1="12" y1="7" x2="12" y2="20"/></svg></div>
+        <div class="tc-title" data-i18n="tc3t">Fonti accademiche verificate</div>
+        <div class="tc-desc" data-i18n="tc3d">Contenuto basato su Mazzuccato (EdiSES) e Bontrager/Lampignano (Elsevier), i testi di riferimento per la formazione TSRM. 147 schede revisionate una per una.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════════ QUOTE -->
 <section class="quote-section">
   <div class="quote-inner">
@@ -798,6 +842,11 @@ const T = {
     fw1t: 'TSRM in servizio', fw1d: 'Riferimento rapido durante il turno per le proiezioni meno frequenti, o per verificare i parametri su apparecchiature diverse.',
     fw2t: 'Studenti TSRM', fw2d: 'Studio sistematico con flashcard e glossario integrato. Preparati agli esami e al tirocinio con un unico strumento.',
     fw3t: 'Tirocinanti', fw3d: 'Supporto pratico ogni giorno. Consulta posizionamento e parametri direttamente in sala, in autonomia.',
+    trustTag: 'Perché fidarti', trustTitle: 'Non è un manuale qualsiasi',
+    trustSub: 'Ogni scheda è scritta da chi esegue queste proiezioni ogni giorno, non da chi le ha solo lette su un libro.',
+    tc1t: 'Errori comuni inclusi', tc1d: 'Nessun manuale ti dice cosa può andare storto. Rad Index sì: ogni scheda include gli errori più frequenti in sala, quelli che causano ripetizioni e dose inutile al paziente.',
+    tc2t: 'Scritto da un TSRM in attività', tc2d: "Non da un\'azienda tech, non da un algoritmo. Ogni parametro, ogni centratura e ogni nota pratica viene dall\'esperienza clinica quotidiana di un tecnico di radiologia.",
+    tc3t: 'Fonti accademiche verificate', tc3d: 'Contenuto basato su Mazzuccato (EdiSES) e Bontrager/Lampignano (Elsevier), i testi di riferimento per la formazione TSRM. 147 schede revisionate una per una.',
     quoteText: 'Ho sviluppato Rad Index perché il manuale che cercavo, <em>non esisteva</em>. Volevo qualcosa di preciso, professionale e sempre disponibile.',
     quoteAuthor: '— Simone, TSRM  ·  Sviluppatore di Rad Index',
     priceTag: 'Prezzi', priceTitle: 'Semplice e trasparente',
@@ -850,6 +899,11 @@ const T = {
     fw1t: 'Practicing Radiographers', fw1d: 'Quick reference during shifts for less common projections, or to check parameters on different equipment.',
     fw2t: 'Radiology Students', fw2d: 'Systematic study with flashcards and integrated glossary. Prepare for exams and clinical placements with one tool.',
     fw3t: 'Clinical Trainees', fw3d: 'Practical support every day. Consult positioning and parameters directly in the suite, independently.',
+    trustTag: 'Why trust it', trustTitle: 'Not just another manual',
+    trustSub: 'Every card is written by someone who performs these projections every day, not by someone who only read about them.',
+    tc1t: 'Common errors included', tc1d: 'No manual tells you what can go wrong. Rad Index does: every card includes the most frequent errors in practice, the ones that cause repeat exposures and unnecessary dose.',
+    tc2t: 'Written by a practicing Radiographer', tc2d: 'Not by a tech company, not by an algorithm. Every parameter, every centering point and every practical note comes from the daily clinical experience of a radiologic technologist.',
+    tc3t: 'Verified academic sources', tc3d: 'Content based on Mazzuccato (EdiSES) and Bontrager/Lampignano (Elsevier), the standard textbooks for radiographer training. 147 cards reviewed one by one.',
     quoteText: 'I developed Rad Index because the reference I was looking for <em>didn\'t exist</em>. I wanted something precise, professional and always available.',
     quoteAuthor: '— Simone, Radiographer  ·  Developer of Rad Index',
     priceTag: 'Pricing', priceTitle: 'Simple and transparent',
@@ -902,6 +956,11 @@ const T = {
     fw1t: 'Técnicos en ejercicio', fw1d: 'Referencia rápida durante el turno para las proyecciones menos frecuentes, o para verificar los parámetros en equipos diferentes.',
     fw2t: 'Estudiantes de Radiología', fw2d: 'Estudio sistemático con flashcard y glosario integrado. Prepárate para los exámenes y las prácticas con una sola herramienta.',
     fw3t: 'Residentes en prácticas', fw3d: 'Apoyo práctico cada día. Consulta posicionamiento y parámetros directamente en sala, de forma autónoma.',
+    trustTag: 'Por qué confiar', trustTitle: 'No es un manual cualquiera',
+    trustSub: 'Cada ficha está escrita por quien realiza estas proyecciones cada día, no por quien solo las leyó en un libro.',
+    tc1t: 'Errores comunes incluidos', tc1d: 'Ningún manual te dice qué puede salir mal. Rad Index sí: cada ficha incluye los errores más frecuentes en sala, los que causan repeticiones y dosis innecesaria al paciente.',
+    tc2t: 'Escrito por un técnico en ejercicio', tc2d: 'No por una empresa tecnológica, no por un algoritmo. Cada parámetro, cada centraje y cada nota práctica proviene de la experiencia clínica diaria de un técnico en radiodiagnóstico.',
+    tc3t: 'Fuentes académicas verificadas', tc3d: 'Contenido basado en Mazzuccato (EdiSES) y Bontrager/Lampignano (Elsevier), los textos de referencia para la formación en radiología. 147 fichas revisadas una por una.',
     quoteText: 'Desarrollé Rad Index porque el manual que buscaba <em>no existía</em>. Quería algo preciso, profesional y siempre disponible.',
     quoteAuthor: '— Simone, Técnico de Radiología  ·  Desarrollador de Rad Index',
     priceTag: 'Precios', priceTitle: 'Simple y transparente',
