@@ -52,8 +52,11 @@ sed -i '' '/toastTimer/d' index.html
 # ─── 5. Aggiornare le pagine proiezioni (toast sui bottoni store) ───
 echo "5/5 Aggiornando link store nelle 148 pagine proiezioni..."
 for f in proiezioni-radiografiche/*.html; do
-  # Sostituisci href="#" onclick="showComingSoon(event)" con link reali
-  sed -i '' "s|href=\"#\"[^>]*onclick=\"showComingSoon(event)\"|href=\"$IOS_URL\" target=\"_blank\"|" "$f" 2>/dev/null || true
+  # I due bottoni (App Store / Google Play) hanno markup IDENTICO sulla stessa riga:
+  # senza il testo del link come ancora, sed sostituirebbe solo il primo (App Store)
+  # lasciando Google Play rotto per sempre. Pattern distinto includendo il testo visibile.
+  sed -i '' "s|href=\"#\" class=\"btn-store\" onclick=\"showComingSoon(event)\">App Store|href=\"$IOS_URL\" class=\"btn-store\" target=\"_blank\">App Store|" "$f" 2>/dev/null || true
+  sed -i '' "s|href=\"#\" class=\"btn-store\" onclick=\"showComingSoon(event)\">Google Play|href=\"$ANDROID_URL\" class=\"btn-store\" target=\"_blank\">Google Play|" "$f" 2>/dev/null || true
 done
 
 echo ""
