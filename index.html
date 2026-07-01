@@ -1053,13 +1053,6 @@ function setLanguage(lang) {
   setLanguage(T[browser] ? browser : 'it');
 })();
 
-// Coming soon toast
-  e.preventDefault();
-  const toast = document.getElementById('toast-coming');
-  const lang = localStorage.getItem('radindex-lang') || 'it';
-  toast.classList.add('show');
-}
-
 // Nav scroll
 const nav = document.getElementById('main-nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
