@@ -518,10 +518,10 @@
       <h1 data-i18n-html="heroH1" style="color:#ffffff;-webkit-text-fill-color:#ffffff;background:none;">Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.</h1>
       <p class="hero-sub" data-i18n-html="heroSub"><strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Sviluppato e redatto da chi lavora ogni giorno in Radiologia.</p>
       <div class="hero-cta">
-        <a href="#" class="badge-link" onclick="showComingSoon(event)">
+        <a href="https://apps.apple.com/it/app/rad-index/id6770671896" class="badge-link" target="_blank">
           <img src="assets/badges/app-store-white.svg" alt="Scarica su App Store" class="badge-img" data-i18n-alt="badgeApple" width="145" height="56">
         </a>
-        <a href="#" class="badge-link" onclick="showComingSoon(event)">
+        <a href="https://apps.apple.com/it/app/rad-index/id6770671896" class="badge-link" target="_blank">
           <img src="assets/badges/google-play.png" alt="Disponibile su Google Play" class="badge-img" data-i18n-alt="badgeGoogle" width="145" height="56">
         </a>
       </div>
@@ -529,7 +529,6 @@
         <span data-i18n="heroTrust1">14 giorni di prova gratuita</span>
         &nbsp;·&nbsp; <span data-i18n="heroTrust2">Pagamento unico</span>
         &nbsp;·&nbsp; iOS &amp; Android
-        &nbsp;·&nbsp; <span data-i18n="heroTrust3">Lancio luglio 2026</span>
         &nbsp;·&nbsp; <span data-i18n="heroTrust4">Unica app in italiano</span>
       </p>
     </div>
@@ -770,7 +769,7 @@
       <li data-i18n="pf10">Preferiti per accesso rapido</li>
     </ul>
     <div class="price-trial" data-i18n="priceTrial">14 giorni di prova gratuita — nessuna carta richiesta</div>
-    <a href="#" class="price-cta" onclick="showComingSoon(event)" data-i18n="priceCta">Scarica ora — gratis per 14 giorni</a>
+    <a href="https://apps.apple.com/it/app/rad-index/id6770671896" class="price-cta" target="_blank" data-i18n="priceCta">Scarica ora — gratis per 14 giorni</a>
   </div>
 </section>
 
@@ -832,7 +831,6 @@ const T = {
     heroBadge1: 'Fatto da un TSRM', heroBadge2: 'Per i TSRM',
     heroH1: 'Il manuale RX<br>che <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">meriti</em>.',
     heroSub: '<strong>147 proiezioni radiografiche</strong> con parametri DR e CR separati, posizionamento preciso e criteri di qualità. Sviluppato e redatto da chi lavora ogni giorno in Radiologia.',
-    heroTrust1: '14 giorni di prova gratuita', heroTrust2: 'Pagamento unico', heroTrust3: 'Lancio luglio 2026', heroTrust4: 'Unica app in italiano',
     badgeApple: 'Scarica su App Store', badgeGoogle: 'Disponibile su Google Play',
     scrollHint: 'Scopri',
     stat1: 'Proiezioni', stat2: 'Lingue', stat3: 'Separati', stat4: 'Prova gratis', stat5: 'Piattaforme',
@@ -893,7 +891,7 @@ const T = {
     heroBadge1: 'Built by a Radiographer', heroBadge2: 'For Radiographers',
     heroH1: 'The X-ray reference<br>you <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">deserve</em>.',
     heroSub: '<strong>147 radiographic projections</strong> with separate DR and CR parameters, precise positioning and quality criteria. Developed and written by someone who works in Radiology every day.',
-    heroTrust1: '14-day free trial', heroTrust2: 'One-time payment', heroTrust3: 'Launching July 2026', heroTrust4: 'Professional-grade · 3 languages',
+    heroTrust1: '14-day free trial', heroTrust2: 'One-time payment',  heroTrust4: 'Professional-grade · 3 languages',
     badgeApple: 'Download on the App Store', badgeGoogle: 'Get it on Google Play',
     scrollHint: 'Explore',
     stat1: 'Projections', stat2: 'Languages', stat3: 'Separate', stat4: 'Free trial', stat5: 'Platforms',
@@ -954,7 +952,7 @@ const T = {
     heroBadge1: 'Creado por un Técnico', heroBadge2: 'Para Técnicos',
     heroH1: 'El manual de RX<br>que <em style="color:#7BAEE0;-webkit-text-fill-color:#7BAEE0;background:none;">mereces</em>.',
     heroSub: '<strong>147 proyecciones radiográficas</strong> con parámetros DR y CR separados, posicionamiento preciso y criterios de calidad. Desarrollado y redactado por alguien que trabaja cada día en Radiología.',
-    heroTrust1: '14 días de prueba gratuita', heroTrust2: 'Pago único', heroTrust3: 'Lanzamiento julio 2026', heroTrust4: 'Primera app en español',
+    heroTrust1: '14 días de prueba gratuita', heroTrust2: 'Pago único',  heroTrust4: 'Primera app en español',
     badgeApple: 'Disponible en App Store', badgeGoogle: 'Disponible en Google Play',
     scrollHint: 'Descubrir',
     stat1: 'Proyecciones', stat2: 'Idiomas', stat3: 'Separados', stat4: 'Prueba gratis', stat5: 'Plataformas',
@@ -1056,16 +1054,10 @@ function setLanguage(lang) {
 })();
 
 // Coming soon toast
-const toastMsgs = { it: '🚀 In arrivo a luglio 2026', en: '🚀 Coming July 2026', es: '🚀 Disponible en julio 2026' };
-let toastTimer = null;
-function showComingSoon(e) {
   e.preventDefault();
   const toast = document.getElementById('toast-coming');
   const lang = localStorage.getItem('radindex-lang') || 'it';
-  toast.textContent = toastMsgs[lang] || toastMsgs.it;
   toast.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
 }
 
 // Nav scroll
