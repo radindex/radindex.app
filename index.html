@@ -1013,34 +1013,29 @@ function setLanguage(lang) {
   if (!T[lang]) return;
   const t = T[lang];
 
-  // HTML lang + title
+  // Aggiornamenti critici sincroni (visibili immediatamente)
   document.documentElement.lang = lang;
   document.title = t.pageTitle;
-
-  // data-i18n (textContent)
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.textContent = t[key];
-  });
-
-  // data-i18n-html (innerHTML)
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    if (t[key] !== undefined) el.innerHTML = t[key];
-  });
-
-  // data-i18n-alt (img alt)
-  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-    const key = el.getAttribute('data-i18n-alt');
-    if (t[key] !== undefined) el.alt = t[key];
-  });
-
-  // Active button
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
-
   localStorage.setItem('radindex-lang', lang);
+
+  // Aggiornamenti DOM pesanti differiti al prossimo frame — riduce INP
+  requestAnimationFrame(() => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (t[key] !== undefined) el.alt = t[key];
+    });
+  });
 }
 
 // Init: URL ?lang= → localStorage → browser language → IT
