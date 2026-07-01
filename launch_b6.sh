@@ -27,10 +27,10 @@ echo "🚀 B6 — Attivazione lancio radindex.app"
 echo ""
 
 # ─── 1. Link store nel hero (App Store + Google Play badges) ───
+# I due badge hanno markup identico — usare l'img alt come ancora per distinguerli
 echo "1/5 Attivando link store nel hero..."
-sed -i '' "s|href=\"#\" class=\"badge-link\" onclick=\"showComingSoon(event)\"|href=\"$IOS_URL\" class=\"badge-link\" target=\"_blank\"|" index.html
-# Il secondo href=# è Google Play
-sed -i '' "s|href=\"#\" class=\"badge-link\" onclick=\"showComingSoon(event)\"|href=\"$ANDROID_URL\" class=\"badge-link\" target=\"_blank\"|" index.html
+sed -i '' "s|href=\"#\" class=\"badge-link\" onclick=\"showComingSoon(event)\">\s*<img src=\"assets/badges/app-store|href=\"$IOS_URL\" class=\"badge-link\" target=\"_blank\"><img src=\"assets/badges/app-store|" index.html
+sed -i '' "s|href=\"#\" class=\"badge-link\" onclick=\"showComingSoon(event)\">\s*<img src=\"assets/badges/google-play|href=\"$ANDROID_URL\" class=\"badge-link\" target=\"_blank\"><img src=\"assets/badges/google-play|" index.html
 
 # ─── 2. Link store nel pricing CTA ───
 echo "2/5 Attivando link pricing CTA..."
