@@ -739,99 +739,574 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/proiezioni-radiografiche/rx-anca-ap-monolatera.html?lang=en"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/proiezioni-radiografiche/rx-anca-ap-monolatera.html?lang=es"/>
   </url>
-  <url><loc>https://radindex.app/glossario/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://radindex.app/glossario/raggi-x.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/kv-kilovolt.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/ma-milliampere.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/mas-milliampere-secondo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/fattore-di-ingrandimento.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/punto-focale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/penombra-geometrica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/contrasto-radiografico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/densita-ottica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dr-digital-radiography.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/cr-computed-radiography.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/griglia-antidiffusione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/collimazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/filtrazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/radiazione-diffusa-scatter.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/ei-exposure-index.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/stitching.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/aec-automatic-exposure-control.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/kvp-kilovolt-picco.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/rumore-quantistico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/risoluzione-spaziale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/latitudine-di-esposizione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/post-processing.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/finestra-window-width-level.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dose-efficace.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dap-dose-area-product.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/principio-alara.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/drl-diagnostic-reference-level.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/protezioni-schermanti.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/angolo-di-cobb.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/varianza-ulnare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/angolo-di-costa-bertani.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/sagittal-balance.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/indice-di-risser.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/piano-sagittale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/piano-frontale-coronale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/piano-trasversale-orizzontale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/craniale-cefalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/caudale-podalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/mediale-laterale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/prossimale-distale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/supinazione-pronazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/dorsiflessione-flessione-plantare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/inversione-eversione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/abduzione-adduzione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/proiezione-ap-antero-posteriore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/proiezione-pa-postero-anteriore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/proiezione-ll-latero-laterale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/proiezione-obliqua.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/oad-obliqua-anteriore-destra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/opd-obliqua-posteriore-destra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/centratura.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/piano-orbitomeatale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/rocca-petrosa.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/forame-magno.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/interlinea-articolare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/pars-interarticularis.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/seno-del-tarso.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/articolazione-sottoastragalica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/fossa-intercondiloidea.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/troclea-femorale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/glenoide.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/acromion.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/coracoide.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/scafoide-carpale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/acetabolo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/sinfisi-pubica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/forami-di-coniugazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/disco-intervertebrale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/piatto-vertebrale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/diaframma.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/sesamoidi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/pneumoperitoneo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/livello-idroaereo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/spondilolisi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/spondilolistesi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/frattura-di-bennett.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/cagnolino-di-scottie.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/mas-ma-t.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/regola-del-15-kvp.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://radindex.app/glossario/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/raggi-x.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/raggi-x.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/raggi-x.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/raggi-x.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/raggi-x.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/kv-kilovolt.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/kv-kilovolt.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/kv-kilovolt.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/kv-kilovolt.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/kv-kilovolt.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/ma-milliampere.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/ma-milliampere.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/ma-milliampere.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/ma-milliampere.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/ma-milliampere.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/mas-milliampere-secondo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/mas-milliampere-secondo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/mas-milliampere-secondo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/mas-milliampere-secondo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/mas-milliampere-secondo.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dfd-distanza-fuoco-detettore.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dfo-distanza-fuoco-oggetto.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/fattore-di-ingrandimento.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/fattore-di-ingrandimento.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/fattore-di-ingrandimento.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/fattore-di-ingrandimento.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/fattore-di-ingrandimento.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/punto-focale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/punto-focale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/punto-focale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/punto-focale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/punto-focale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/penombra-geometrica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/penombra-geometrica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/penombra-geometrica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/penombra-geometrica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/penombra-geometrica.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/contrasto-radiografico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/contrasto-radiografico.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/contrasto-radiografico.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/contrasto-radiografico.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/contrasto-radiografico.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/densita-ottica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/densita-ottica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/densita-ottica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/densita-ottica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/densita-ottica.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dr-digital-radiography.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dr-digital-radiography.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dr-digital-radiography.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dr-digital-radiography.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dr-digital-radiography.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/cr-computed-radiography.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/cr-computed-radiography.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/cr-computed-radiography.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/cr-computed-radiography.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/cr-computed-radiography.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/griglia-antidiffusione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/griglia-antidiffusione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/griglia-antidiffusione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/griglia-antidiffusione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/griglia-antidiffusione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/collimazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/collimazione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/collimazione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/collimazione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/collimazione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/filtrazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/filtrazione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/filtrazione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/filtrazione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/filtrazione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/radiazione-diffusa-scatter.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/radiazione-diffusa-scatter.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/radiazione-diffusa-scatter.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/radiazione-diffusa-scatter.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/radiazione-diffusa-scatter.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/ei-exposure-index.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/ei-exposure-index.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/ei-exposure-index.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/ei-exposure-index.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/ei-exposure-index.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/stitching.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/stitching.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/stitching.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/stitching.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/stitching.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/aec-automatic-exposure-control.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/aec-automatic-exposure-control.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/aec-automatic-exposure-control.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/aec-automatic-exposure-control.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/aec-automatic-exposure-control.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/kvp-kilovolt-picco.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/kvp-kilovolt-picco.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/kvp-kilovolt-picco.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/kvp-kilovolt-picco.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/kvp-kilovolt-picco.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/rumore-quantistico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/rumore-quantistico.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/rumore-quantistico.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/rumore-quantistico.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/rumore-quantistico.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/risoluzione-spaziale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/risoluzione-spaziale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/risoluzione-spaziale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/risoluzione-spaziale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/risoluzione-spaziale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/latitudine-di-esposizione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/latitudine-di-esposizione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/latitudine-di-esposizione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/latitudine-di-esposizione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/latitudine-di-esposizione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/post-processing.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/post-processing.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/post-processing.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/post-processing.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/post-processing.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/finestra-window-width-level.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/finestra-window-width-level.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/finestra-window-width-level.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/finestra-window-width-level.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/finestra-window-width-level.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dose-efficace.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dose-efficace.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dose-efficace.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dose-efficace.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dose-efficace.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dap-dose-area-product.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dap-dose-area-product.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dap-dose-area-product.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dap-dose-area-product.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dap-dose-area-product.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/principio-alara.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/principio-alara.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/principio-alara.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/principio-alara.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/principio-alara.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/drl-diagnostic-reference-level.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/drl-diagnostic-reference-level.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/drl-diagnostic-reference-level.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/drl-diagnostic-reference-level.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/drl-diagnostic-reference-level.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/protezioni-schermanti.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/protezioni-schermanti.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/protezioni-schermanti.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/protezioni-schermanti.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/protezioni-schermanti.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/angolo-di-cobb.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/angolo-di-cobb.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/angolo-di-cobb.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/angolo-di-cobb.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/angolo-di-cobb.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/angolo-hka-hip-knee-ankle.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/varianza-ulnare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/varianza-ulnare.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/varianza-ulnare.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/varianza-ulnare.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/varianza-ulnare.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/angolo-di-costa-bertani.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/angolo-di-costa-bertani.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/angolo-di-costa-bertani.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/angolo-di-costa-bertani.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/angolo-di-costa-bertani.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/sagittal-balance.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/sagittal-balance.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/sagittal-balance.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/sagittal-balance.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/sagittal-balance.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/indice-di-risser.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/indice-di-risser.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/indice-di-risser.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/indice-di-risser.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/indice-di-risser.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/tfcc-triangular-fibrocartilage-complex.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/piano-sagittale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/piano-sagittale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/piano-sagittale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/piano-sagittale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/piano-sagittale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/piano-frontale-coronale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/piano-frontale-coronale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/piano-frontale-coronale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/piano-frontale-coronale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/piano-frontale-coronale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/piano-trasversale-orizzontale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/piano-trasversale-orizzontale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/piano-trasversale-orizzontale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/piano-trasversale-orizzontale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/piano-trasversale-orizzontale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/craniale-cefalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/craniale-cefalico.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/craniale-cefalico.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/craniale-cefalico.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/craniale-cefalico.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/caudale-podalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/caudale-podalico.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/caudale-podalico.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/caudale-podalico.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/caudale-podalico.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/mediale-laterale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/mediale-laterale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/mediale-laterale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/mediale-laterale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/mediale-laterale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/prossimale-distale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/prossimale-distale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/prossimale-distale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/prossimale-distale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/prossimale-distale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/supinazione-pronazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/supinazione-pronazione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/supinazione-pronazione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/supinazione-pronazione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/supinazione-pronazione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/dorsiflessione-flessione-plantare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/dorsiflessione-flessione-plantare.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/dorsiflessione-flessione-plantare.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/dorsiflessione-flessione-plantare.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/dorsiflessione-flessione-plantare.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/inversione-eversione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/inversione-eversione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/inversione-eversione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/inversione-eversione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/inversione-eversione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/abduzione-adduzione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/abduzione-adduzione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/abduzione-adduzione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/abduzione-adduzione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/abduzione-adduzione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/proiezione-ap-antero-posteriore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/proiezione-ap-antero-posteriore.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/proiezione-ap-antero-posteriore.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/proiezione-ap-antero-posteriore.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/proiezione-ap-antero-posteriore.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/proiezione-pa-postero-anteriore.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/proiezione-pa-postero-anteriore.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/proiezione-pa-postero-anteriore.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/proiezione-pa-postero-anteriore.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/proiezione-pa-postero-anteriore.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/proiezione-ll-latero-laterale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/proiezione-ll-latero-laterale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/proiezione-ll-latero-laterale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/proiezione-ll-latero-laterale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/proiezione-ll-latero-laterale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/proiezione-obliqua.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/proiezione-obliqua.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/proiezione-obliqua.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/proiezione-obliqua.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/proiezione-obliqua.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/oad-obliqua-anteriore-destra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/oad-obliqua-anteriore-destra.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/oad-obliqua-anteriore-destra.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/oad-obliqua-anteriore-destra.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/oad-obliqua-anteriore-destra.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/oas-obliqua-anteriore-sinistra.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/opd-obliqua-posteriore-destra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/opd-obliqua-posteriore-destra.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/opd-obliqua-posteriore-destra.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/opd-obliqua-posteriore-destra.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/opd-obliqua-posteriore-destra.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/ops-obliqua-posteriore-sinistra.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/centratura.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/centratura.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/centratura.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/centratura.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/centratura.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/piano-orbitomeatale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/piano-orbitomeatale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/piano-orbitomeatale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/piano-orbitomeatale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/piano-orbitomeatale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/rocca-petrosa.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/rocca-petrosa.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/rocca-petrosa.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/rocca-petrosa.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/rocca-petrosa.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/forame-magno.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/forame-magno.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/forame-magno.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/forame-magno.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/forame-magno.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/processo-odontoide-dente-dell-epistrofeo.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/mortaio-tibio-peroneale-tibio-astragalico.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/interlinea-articolare.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/interlinea-articolare.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/interlinea-articolare.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/interlinea-articolare.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/interlinea-articolare.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/pars-interarticularis.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/pars-interarticularis.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/pars-interarticularis.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/pars-interarticularis.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/pars-interarticularis.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/seno-del-tarso.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/seno-del-tarso.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/seno-del-tarso.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/seno-del-tarso.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/seno-del-tarso.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/articolazione-sottoastragalica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/articolazione-sottoastragalica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/articolazione-sottoastragalica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/articolazione-sottoastragalica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/articolazione-sottoastragalica.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/fossa-intercondiloidea.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/fossa-intercondiloidea.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/fossa-intercondiloidea.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/fossa-intercondiloidea.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/fossa-intercondiloidea.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/troclea-femorale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/troclea-femorale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/troclea-femorale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/troclea-femorale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/troclea-femorale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/glenoide.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/glenoide.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/glenoide.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/glenoide.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/glenoide.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/acromion.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/acromion.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/acromion.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/acromion.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/acromion.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/coracoide.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/coracoide.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/coracoide.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/coracoide.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/coracoide.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/scafoide-carpale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/scafoide-carpale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/scafoide-carpale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/scafoide-carpale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/scafoide-carpale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/acetabolo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/acetabolo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/acetabolo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/acetabolo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/acetabolo.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/sinfisi-pubica.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/sinfisi-pubica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/sinfisi-pubica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/sinfisi-pubica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/sinfisi-pubica.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/forami-di-coniugazione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/forami-di-coniugazione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/forami-di-coniugazione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/forami-di-coniugazione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/forami-di-coniugazione.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/disco-intervertebrale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/disco-intervertebrale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/disco-intervertebrale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/disco-intervertebrale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/disco-intervertebrale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/piatto-vertebrale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/piatto-vertebrale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/piatto-vertebrale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/piatto-vertebrale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/piatto-vertebrale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/angolo-di-louis-angolo-sternale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/diaframma.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/diaframma.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/diaframma.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/diaframma.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/diaframma.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/sesamoidi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/sesamoidi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/sesamoidi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/sesamoidi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/sesamoidi.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/pneumoperitoneo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/pneumoperitoneo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/pneumoperitoneo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/pneumoperitoneo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/pneumoperitoneo.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/livello-idroaereo.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/livello-idroaereo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/livello-idroaereo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/livello-idroaereo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/livello-idroaereo.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/spondilolisi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/spondilolisi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/spondilolisi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/spondilolisi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/spondilolisi.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/spondilolistesi.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/spondilolistesi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/spondilolistesi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/spondilolistesi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/spondilolistesi.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/frattura-di-bennett.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/frattura-di-bennett.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/frattura-di-bennett.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/frattura-di-bennett.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/frattura-di-bennett.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/sindrome-da-conflitto-sub-acromiale.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/cagnolino-di-scottie.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/cagnolino-di-scottie.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/cagnolino-di-scottie.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/cagnolino-di-scottie.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/cagnolino-di-scottie.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/mas-ma-t.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/mas-ma-t.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/mas-ma-t.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/mas-ma-t.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/mas-ma-t.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/legge-degli-inversi-del-quadrato.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/fattore-di-griglia-bucky-factor-formula.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/regola-del-15-kvp.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/regola-del-15-kvp.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/regola-del-15-kvp.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/regola-del-15-kvp.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/regola-del-15-kvp.html"/>
+  </url>
+  <url><loc>https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html"/>
+  </url>
 </urlset>

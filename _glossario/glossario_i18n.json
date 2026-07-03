@@ -1,0 +1,1412 @@
+{
+ "raggi-x": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Raggi X",
+   "definizione": "Radiazioni elettromagnetiche ionizzanti con lunghezza d'onda compresa tra 0,01 e 10 nm. Prodotti in un tubo radiogeno per bremsstrahlung e radiazione caratteristica quando elettroni ad alta velocità colpiscono un anodo metallico (solitamente tungsteno)."
+  },
+  "en": {
+   "termine": "X-rays",
+   "definizione": "Ionising electromagnetic radiation with a wavelength between 0.01 and 10 nm. Produced in an X-ray tube by bremsstrahlung and characteristic radiation when high-speed electrons strike a metal anode (usually tungsten)."
+  },
+  "es": {
+   "termine": "Rayos X",
+   "definizione": "Radiación electromagnética ionizante con una longitud de onda entre 0,01 y 10 nm. Se producen en un tubo de rayos X por bremsstrahlung y radiación característica cuando electrones a alta velocidad chocan contra un ánodo metálico (habitualmente wolframio)."
+  }
+ },
+ "kv-kilovolt": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "kV (kilovolt)",
+   "definizione": "Tensione applicata al tubo radiogeno tra catodo e anodo. Determina la qualità (energia) del fascio di raggi X: valori più alti aumentano il potere di penetrazione. Influenza direttamente il contrasto dell'immagine — kV elevati riducono il contrasto ma aumentano la latitudine di esposizione."
+  },
+  "en": {
+   "termine": "kV (kilovolt)",
+   "definizione": "Voltage applied to the X-ray tube between cathode and anode. It determines the quality (energy) of the X-ray beam: higher values increase penetrating power. It directly affects image contrast — high kV reduces contrast but increases exposure latitude."
+  },
+  "es": {
+   "termine": "kV (kilovoltio)",
+   "definizione": "Tensión aplicada al tubo de rayos X entre cátodo y ánodo. Determina la calidad (energía) del haz de rayos X: valores más altos aumentan el poder de penetración. Influye directamente en el contraste de la imagen — un kV elevado reduce el contraste pero aumenta la latitud de exposición."
+  }
+ },
+ "ma-milliampere": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "mA (milliampere)",
+   "definizione": "Corrente del tubo radiogeno. Determina il numero di elettroni che attraversano il tubo e quindi la quantità di raggi X prodotti per unità di tempo. Influenza direttamente la densità ottica dell'immagine."
+  },
+  "en": {
+   "termine": "mA (milliampere)",
+   "definizione": "X-ray tube current. It determines the number of electrons crossing the tube and therefore the quantity of X-rays produced per unit of time. It directly affects the optical density of the image."
+  },
+  "es": {
+   "termine": "mA (miliamperio)",
+   "definizione": "Corriente del tubo de rayos X. Determina el número de electrones que atraviesan el tubo y, por tanto, la cantidad de rayos X producidos por unidad de tiempo. Influye directamente en la densidad óptica de la imagen."
+  }
+ },
+ "mas-milliampere-secondo": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "mAs (milliampere-secondo)",
+   "definizione": "Prodotto tra la corrente (mA) e il tempo di esposizione (s). Esprime la quantità totale di raggi X prodotti in un'esposizione. Valore fondamentale per la gestione della dose al paziente: raddoppiando i mAs si raddoppia la dose."
+  },
+  "en": {
+   "termine": "mAs (milliampere-second)",
+   "definizione": "Product of tube current (mA) and exposure time (s). It expresses the total quantity of X-rays produced in an exposure. A key value for managing patient dose: doubling the mAs doubles the dose."
+  },
+  "es": {
+   "termine": "mAs (miliamperio-segundo)",
+   "definizione": "Producto de la corriente (mA) por el tiempo de exposición (s). Expresa la cantidad total de rayos X producidos en una exposición. Valor fundamental para la gestión de la dosis al paciente: duplicar los mAs duplica la dosis."
+  }
+ },
+ "dfd-distanza-fuoco-detettore": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "DFD (Distanza Fuoco-Detettore)",
+   "definizione": "Distanza tra il punto focale del tubo radiogeno e il detettore. Influenza l'ingrandimento geometrico e la nitidezza: aumentando il DFD si riduce l'ingrandimento e migliora la nitidezza geometrica. Valori standard: 100–115 cm per la maggior parte degli esami; 150–180 cm per torace e stitching."
+  },
+  "en": {
+   "termine": "SID (Source-Image Distance)",
+   "definizione": "Distance between the focal spot of the X-ray tube and the detector. It affects geometric magnification and sharpness: increasing the SID reduces magnification and improves geometric sharpness. Standard values: 100–115 cm for most examinations; 150–180 cm for chest and stitching."
+  },
+  "es": {
+   "termine": "DFR (Distancia Foco-Receptor)",
+   "definizione": "Distancia entre el punto focal del tubo de rayos X y el receptor. Influye en la magnificación geométrica y la nitidez: al aumentar la DFR se reduce la magnificación y mejora la nitidez geométrica. Valores estándar: 100–115 cm para la mayoría de los exámenes; 150–180 cm para tórax y stitching."
+  }
+ },
+ "dfo-distanza-fuoco-oggetto": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "DFO (Distanza Fuoco-Oggetto)",
+   "definizione": "Distanza tra il punto focale del tubo radiogeno e l'oggetto esaminato. Insieme al DFD determina il fattore di ingrandimento geometrico dell'immagine (M = DFD/DFO)."
+  },
+  "en": {
+   "termine": "OID (Object-Image Distance)",
+   "definizione": "Distance between the focal spot of the X-ray tube and the object being examined. Together with the SID it determines the geometric magnification factor of the image (M = SID/OID)."
+  },
+  "es": {
+   "termine": "DFO (Distancia Foco-Objeto)",
+   "definizione": "Distancia entre el punto focal del tubo de rayos X y el objeto examinado. Junto con la DFR determina el factor de magnificación geométrica de la imagen (M = DFR/DFO)."
+  }
+ },
+ "fattore-di-ingrandimento": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Fattore di ingrandimento",
+   "definizione": "Rapporto tra le dimensioni dell'immagine radiografica e le dimensioni reali dell'oggetto. Calcolato come M = DFD/DFO. Per ridurre l'ingrandimento si aumenta il DFD o si avvicina l'oggetto al detettore."
+  },
+  "en": {
+   "termine": "Magnification factor",
+   "definizione": "Ratio between the dimensions of the radiographic image and the real dimensions of the object. Calculated as M = SID/OID. To reduce magnification, increase the SID or bring the object closer to the detector."
+  },
+  "es": {
+   "termine": "Factor de magnificación",
+   "definizione": "Relación entre las dimensiones de la imagen radiográfica y las dimensiones reales del objeto. Se calcula como M = DFR/DFO. Para reducir la magnificación se aumenta la DFR o se acerca el objeto al receptor."
+  }
+ },
+ "punto-focale": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Punto focale",
+   "definizione": "Area dell'anodo del tubo radiogeno da cui viene emesso il fascio di raggi X. I tubi moderni hanno due fuochi: grande (per esami ad alto mAs) e piccolo (per alta risoluzione). Punti focali più piccoli producono immagini più nitide geometricamente."
+  },
+  "en": {
+   "termine": "Focal spot",
+   "definizione": "Area of the X-ray tube anode from which the X-ray beam is emitted. Modern tubes have two focal spots: large (for high-mAs examinations) and small (for high resolution). Smaller focal spots produce geometrically sharper images."
+  },
+  "es": {
+   "termine": "Punto focal",
+   "definizione": "Área del ánodo del tubo de rayos X desde la que se emite el haz de rayos X. Los tubos modernos tienen dos focos: grande (para exámenes de alto mAs) y pequeño (para alta resolución). Los puntos focales más pequeños producen imágenes geométricamente más nítidas."
+  }
+ },
+ "penombra-geometrica": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Penombra geometrica",
+   "definizione": "Alone sfumato ai margini delle strutture nell'immagine radiografica, dovuto alle dimensioni finite del punto focale. Si riduce diminuendo le dimensioni del fuoco, aumentando il DFD o avvicinando l'oggetto al detettore."
+  },
+  "en": {
+   "termine": "Geometric penumbra",
+   "definizione": "Blurred halo at the edges of structures in the radiographic image, caused by the finite size of the focal spot. It is reduced by decreasing focal spot size, increasing the SID, or bringing the object closer to the detector."
+  },
+  "es": {
+   "termine": "Penumbra geométrica",
+   "definizione": "Halo difuso en los márgenes de las estructuras en la imagen radiográfica, debido al tamaño finito del punto focal. Se reduce disminuyendo el tamaño del foco, aumentando la DFR o acercando el objeto al receptor."
+  }
+ },
+ "contrasto-radiografico": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Contrasto radiografico",
+   "definizione": "Differenza di densità ottica tra zone adiacenti dell'immagine. Dipende dalla differenza di assorbimento dei raggi X tra i tessuti, dalla tensione (kV), dalla radiazione diffusa e dal tipo di detettore. Si riduce con kV elevati e aumenta con kV bassi."
+  },
+  "en": {
+   "termine": "Radiographic contrast",
+   "definizione": "Difference in optical density between adjacent areas of the image. It depends on the difference in X-ray absorption between tissues, on the voltage (kV), on scatter radiation and on the type of detector. It is reduced by high kV and increased by low kV."
+  },
+  "es": {
+   "termine": "Contraste radiográfico",
+   "definizione": "Diferencia de densidad óptica entre zonas adyacentes de la imagen. Depende de la diferencia de absorción de los rayos X entre los tejidos, de la tensión (kV), de la radiación dispersa y del tipo de receptor. Disminuye con un kV elevado y aumenta con un kV bajo."
+  }
+ },
+ "densita-ottica": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Densità ottica",
+   "definizione": "Grado di annerimento di una lastra radiografica o di luminosità in un sistema digitale. Dipende dalla quantità di raggi X che raggiunge il detettore dopo aver attraversato il paziente."
+  },
+  "en": {
+   "termine": "Optical density",
+   "definizione": "Degree of blackening of a radiographic film or of brightness in a digital system. It depends on the quantity of X-rays reaching the detector after passing through the patient."
+  },
+  "es": {
+   "termine": "Densidad óptica",
+   "definizione": "Grado de ennegrecimiento de una placa radiográfica o de luminosidad en un sistema digital. Depende de la cantidad de rayos X que alcanza el receptor tras atravesar al paciente."
+  }
+ },
+ "dr-digital-radiography": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "DR (Digital Radiography)",
+   "definizione": "Radiografia digitale diretta con flat panel detector (FPD). Il detettore converte direttamente i raggi X in segnale elettrico tramite materiali come il selenio amorfo (conversione diretta) o scintillatori accoppiati a fotodiodi (conversione indiretta). Offre acquisizione immediata, bassa dose e ampia latitudine di esposizione."
+  },
+  "en": {
+   "termine": "DR (Digital Radiography)",
+   "definizione": "Direct digital radiography with a flat panel detector (FPD). The detector converts X-rays directly into an electrical signal using materials such as amorphous selenium (direct conversion) or scintillators coupled to photodiodes (indirect conversion). It offers immediate acquisition, low dose and wide exposure latitude."
+  },
+  "es": {
+   "termine": "DR (Radiografía Digital)",
+   "definizione": "Radiografía digital directa con detector de panel plano (FPD). El detector convierte directamente los rayos X en señal eléctrica mediante materiales como el selenio amorfo (conversión directa) o centelleadores acoplados a fotodiodos (conversión indirecta). Ofrece adquisición inmediata, baja dosis y amplia latitud de exposición."
+  }
+ },
+ "cr-computed-radiography": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "CR (Computed Radiography)",
+   "definizione": "Radiografia computerizzata con piastre al fosforo fotostimolabile (PSP). La piastra registra l'immagine latente che viene poi letta da un lettore laser dedicato. Tecnologia più datata rispetto alla DR; richiede generalmente mAs più elevati e ha risoluzione spaziale inferiore."
+  },
+  "en": {
+   "termine": "CR (Computed Radiography)",
+   "definizione": "Computed radiography with photostimulable phosphor (PSP) plates. The plate records the latent image, which is then read by a dedicated laser reader. Older technology than DR; it generally requires higher mAs and has lower spatial resolution."
+  },
+  "es": {
+   "termine": "CR (Radiografía Computarizada)",
+   "definizione": "Radiografía computarizada con placas de fósforo fotoestimulable (PSP). La placa registra la imagen latente, que después es leída por un lector láser dedicado. Tecnología más antigua que la DR; generalmente requiere mAs más elevados y tiene menor resolución espacial."
+  }
+ },
+ "griglia-antidiffusione": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Griglia antidiffusione",
+   "definizione": "Dispositivo composto da lamelle di materiale radiopaco (piombo) alternate a materiale radiotrasparente (alluminio o fibra di carbonio). Posta tra il paziente e il detettore, riduce la radiazione diffusa migliorando il contrasto. Necessaria per spessori corporei superiori a 10–12 cm. Richiede un aumento dei mAs per compensare l'assorbimento."
+  },
+  "en": {
+   "termine": "Anti-scatter grid",
+   "definizione": "Device made of strips of radiopaque material (lead) alternating with radiolucent material (aluminium or carbon fibre). Placed between the patient and the detector, it reduces scatter radiation and improves contrast. Required for body thicknesses greater than 10–12 cm. It requires an increase in mAs to compensate for its absorption."
+  },
+  "es": {
+   "termine": "Rejilla antidifusora",
+   "definizione": "Dispositivo formado por láminas de material radiopaco (plomo) alternadas con material radiotransparente (aluminio o fibra de carbono). Colocada entre el paciente y el receptor, reduce la radiación dispersa mejorando el contraste. Necesaria para grosores corporales superiores a 10–12 cm. Requiere un aumento de los mAs para compensar su absorción."
+  }
+ },
+ "fattore-di-griglia-bucky-factor": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Fattore di griglia (Bucky factor)",
+   "definizione": "Fattore di aumento dell'esposizione necessario per compensare l'assorbimento della griglia. Una griglia tipica richiede un aumento di 2–6 volte i mAs rispetto all'esame senza griglia."
+  },
+  "en": {
+   "termine": "Grid factor (Bucky factor)",
+   "definizione": "Exposure increase factor needed to compensate for the grid's absorption. A typical grid requires an increase of 2–6 times the mAs compared with the examination without a grid."
+  },
+  "es": {
+   "termine": "Factor de rejilla (Bucky factor)",
+   "definizione": "Factor de aumento de la exposición necesario para compensar la absorción de la rejilla. Una rejilla típica requiere un aumento de 2–6 veces los mAs respecto al examen sin rejilla."
+  }
+ },
+ "collimazione": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Collimazione",
+   "definizione": "Limitazione del fascio di raggi X all'area anatomica di interesse tramite diaframmi regolabili. Riduce la dose al paziente, diminuisce la radiazione diffusa migliorando il contrasto e aumenta la nitidezza ai margini del campo."
+  },
+  "en": {
+   "termine": "Collimation",
+   "definizione": "Restriction of the X-ray beam to the anatomical area of interest using adjustable diaphragms. It reduces patient dose, decreases scatter radiation (improving contrast) and increases sharpness at the field edges."
+  },
+  "es": {
+   "termine": "Colimación",
+   "definizione": "Limitación del haz de rayos X al área anatómica de interés mediante diafragmas regulables. Reduce la dosis al paciente, disminuye la radiación dispersa (mejorando el contraste) y aumenta la nitidez en los márgenes del campo."
+  }
+ },
+ "filtrazione": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Filtrazione",
+   "definizione": "Rimozione dei raggi X a bassa energia (molli) dal fascio primario tramite filtri in alluminio o rame posti all'uscita del tubo. Riduce la dose al paziente (i raggi molli vengono assorbiti superficialmente senza contribuire all'immagine) e indurisce il fascio."
+  },
+  "en": {
+   "termine": "Filtration",
+   "definizione": "Removal of low-energy (soft) X-rays from the primary beam using aluminium or copper filters placed at the tube exit. It reduces patient dose (soft rays are absorbed superficially without contributing to the image) and hardens the beam."
+  },
+  "es": {
+   "termine": "Filtración",
+   "definizione": "Eliminación de los rayos X de baja energía (blandos) del haz primario mediante filtros de aluminio o cobre colocados a la salida del tubo. Reduce la dosis al paciente (los rayos blandos se absorben superficialmente sin contribuir a la imagen) y endurece el haz."
+  }
+ },
+ "radiazione-diffusa-scatter": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Radiazione diffusa (scatter)",
+   "definizione": "Radiazione prodotta per effetto Compton nell'attraversamento dei tessuti. Non contribuisce alla formazione dell'immagine utile ma peggiora il contrasto e aumenta la dose. Si riduce con collimazione adeguata, griglia antidiffusione e compressione del paziente."
+  },
+  "en": {
+   "termine": "Scatter radiation",
+   "definizione": "Radiation produced by the Compton effect as the beam passes through tissues. It does not contribute to the useful image but worsens contrast and increases dose. It is reduced with proper collimation, an anti-scatter grid and patient compression."
+  },
+  "es": {
+   "termine": "Radiación dispersa (scatter)",
+   "definizione": "Radiación producida por efecto Compton al atravesar los tejidos. No contribuye a la formación de la imagen útil pero empeora el contraste y aumenta la dosis. Se reduce con una colimación adecuada, rejilla antidifusora y compresión del paciente."
+  }
+ },
+ "ei-exposure-index": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "EI (Exposure Index)",
+   "definizione": "Indice di esposizione nei sistemi digitali. Indica la quantità di radiazione che ha raggiunto il detettore. Valori troppo bassi indicano sottoesposizione (immagine rumorosa); valori troppo alti indicano sovraesposizione (dose eccessiva al paziente). Il valore target varia secondo il fabbricante."
+  },
+  "en": {
+   "termine": "EI (Exposure Index)",
+   "definizione": "Exposure index in digital systems. It indicates the amount of radiation that reached the detector. Values that are too low indicate underexposure (noisy image); values that are too high indicate overexposure (excessive patient dose). The target value varies by manufacturer."
+  },
+  "es": {
+   "termine": "EI (Índice de Exposición)",
+   "definizione": "Índice de exposición en los sistemas digitales. Indica la cantidad de radiación que ha alcanzado el receptor. Valores demasiado bajos indican subexposición (imagen ruidosa); valores demasiado altos indican sobreexposición (dosis excesiva al paciente). El valor objetivo varía según el fabricante."
+  }
+ },
+ "stitching": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Stitching",
+   "definizione": "Tecnica di acquisizione di immagini panoramiche ottenute unendo più acquisizioni sequenziali tramite software dedicato. Utilizzata per la visualizzazione di segmenti anatomici lunghi (colonna in toto, arti inferiori in toto, scoliosi). Richiede che il paziente resti perfettamente immobile tra le acquisizioni."
+  },
+  "en": {
+   "termine": "Stitching",
+   "definizione": "Technique for acquiring panoramic images obtained by joining several sequential acquisitions with dedicated software. Used to visualise long anatomical segments (full spine, full lower limbs, scoliosis). It requires the patient to remain perfectly still between acquisitions."
+  },
+  "es": {
+   "termine": "Stitching",
+   "definizione": "Técnica de adquisición de imágenes panorámicas obtenidas uniendo varias adquisiciones secuenciales mediante software dedicado. Se utiliza para la visualización de segmentos anatómicos largos (columna completa, miembros inferiores completos, escoliosis). Requiere que el paciente permanezca perfectamente inmóvil entre las adquisiciones."
+  }
+ },
+ "aec-automatic-exposure-control": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "AEC (Automatic Exposure Control)",
+   "definizione": "Controllo automatico dell'esposizione. Sistema che interrompe automaticamente l'esposizione quando il detettore ha ricevuto una quantità predefinita di raggi X. Garantisce esposizioni costanti indipendentemente dallo spessore del paziente. Le camere ionizzanti sono posizionate sotto il detettore."
+  },
+  "en": {
+   "termine": "AEC (Automatic Exposure Control)",
+   "definizione": "System that automatically terminates the exposure when the detector has received a predefined quantity of X-rays. It ensures consistent exposures regardless of patient thickness. The ionisation chambers are positioned beneath the detector."
+  },
+  "es": {
+   "termine": "AEC (Control Automático de Exposición)",
+   "definizione": "Sistema que interrumpe automáticamente la exposición cuando el receptor ha recibido una cantidad predefinida de rayos X. Garantiza exposiciones constantes independientemente del grosor del paciente. Las cámaras de ionización se colocan bajo el receptor."
+  }
+ },
+ "kvp-kilovolt-picco": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "kVp (kilovolt picco)",
+   "definizione": "Valore massimo della tensione applicata al tubo radiogeno durante un'esposizione in corrente alternata. Corrisponde all'energia massima dei fotoni X prodotti. Nelle macchine moderne ad alta frequenza, kVp e kV sono praticamente equivalenti."
+  },
+  "en": {
+   "termine": "kVp (kilovolt peak)",
+   "definizione": "Maximum value of the voltage applied to the X-ray tube during an alternating-current exposure. It corresponds to the maximum energy of the X-ray photons produced. In modern high-frequency machines, kVp and kV are practically equivalent."
+  },
+  "es": {
+   "termine": "kVp (kilovoltio pico)",
+   "definizione": "Valor máximo de la tensión aplicada al tubo de rayos X durante una exposición en corriente alterna. Corresponde a la energía máxima de los fotones X producidos. En los equipos modernos de alta frecuencia, kVp y kV son prácticamente equivalentes."
+  }
+ },
+ "rumore-quantistico": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Rumore quantistico",
+   "definizione": "Variazione casuale della densità ottica nell'immagine dovuta alla natura corpuscolare dei raggi X (fluttuazione statistica dei fotoni). Aumenta riducendo i mAs. Nei sistemi digitali si manifesta come aspetto granulare dell'immagine (quantum mottle)."
+  },
+  "en": {
+   "termine": "Quantum noise",
+   "definizione": "Random variation of optical density in the image caused by the particulate nature of X-rays (statistical fluctuation of photons). It increases as mAs is reduced. In digital systems it appears as a grainy image (quantum mottle)."
+  },
+  "es": {
+   "termine": "Ruido cuántico",
+   "definizione": "Variación aleatoria de la densidad óptica en la imagen debida a la naturaleza corpuscular de los rayos X (fluctuación estadística de los fotones). Aumenta al reducir los mAs. En los sistemas digitales se manifiesta como un aspecto granular de la imagen (quantum mottle)."
+  }
+ },
+ "risoluzione-spaziale": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Risoluzione spaziale",
+   "definizione": "Capacità di distinguere strutture adiacenti nell'immagine. Si misura in coppie di linee per millimetro (lp/mm). Nei sistemi DR è generalmente inferiore alla pellicola convenzionale ma sufficiente per la diagnostica clinica."
+  },
+  "en": {
+   "termine": "Spatial resolution",
+   "definizione": "Ability to distinguish adjacent structures in the image. It is measured in line pairs per millimetre (lp/mm). In DR systems it is generally lower than conventional film but sufficient for clinical diagnosis."
+  },
+  "es": {
+   "termine": "Resolución espacial",
+   "definizione": "Capacidad de distinguir estructuras adyacentes en la imagen. Se mide en pares de líneas por milímetro (pl/mm). En los sistemas DR es generalmente inferior a la película convencional pero suficiente para el diagnóstico clínico."
+  }
+ },
+ "latitudine-di-esposizione": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Latitudine di esposizione",
+   "definizione": "Range di esposizioni che produce immagini diagnosticamente accettabili. I sistemi digitali hanno latitudine molto ampia rispetto alla pellicola, permettendo correzioni post-acquisizione. Questo non riduce però la necessità di ottimizzare l'esposizione per minimizzare la dose."
+  },
+  "en": {
+   "termine": "Exposure latitude",
+   "definizione": "Range of exposures that produces diagnostically acceptable images. Digital systems have a very wide latitude compared with film, allowing post-acquisition corrections. This does not, however, reduce the need to optimise exposure to minimise dose."
+  },
+  "es": {
+   "termine": "Latitud de exposición",
+   "definizione": "Rango de exposiciones que produce imágenes diagnósticamente aceptables. Los sistemas digitales tienen una latitud muy amplia respecto a la película, permitiendo correcciones tras la adquisición. Esto, sin embargo, no reduce la necesidad de optimizar la exposición para minimizar la dosis."
+  }
+ },
+ "post-processing": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Post-processing",
+   "definizione": "Elaborazione digitale dell'immagine dopo l'acquisizione. Include finestra/livello, miglioramento del contrasto, riduzione del rumore, inversione, misurazioni. Nei sistemi DR è applicato automaticamente ma può essere modificato dall'operatore."
+  },
+  "en": {
+   "termine": "Post-processing",
+   "definizione": "Digital processing of the image after acquisition. It includes window/level, contrast enhancement, noise reduction, inversion and measurements. In DR systems it is applied automatically but can be modified by the operator."
+  },
+  "es": {
+   "termine": "Post-procesado",
+   "definizione": "Procesamiento digital de la imagen tras la adquisición. Incluye ventana/nivel, mejora del contraste, reducción del ruido, inversión y mediciones. En los sistemas DR se aplica automáticamente pero puede ser modificado por el operador."
+  }
+ },
+ "finestra-window-width-level": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Finestra (window width/level)",
+   "definizione": "Parametri di visualizzazione dell'immagine digitale. Window width (WW) controlla il contrasto; window level (WL) o window center controlla la luminosità media. Permettono di ottimizzare la visualizzazione per diversi tessuti senza riacquisire l'immagine."
+  },
+  "en": {
+   "termine": "Window (width/level)",
+   "definizione": "Display parameters of the digital image. Window width (WW) controls contrast; window level (WL) or window centre controls the average brightness. They allow the display to be optimised for different tissues without re-acquiring the image."
+  },
+  "es": {
+   "termine": "Ventana (window width/level)",
+   "definizione": "Parámetros de visualización de la imagen digital. El ancho de ventana (WW) controla el contraste; el nivel de ventana (WL) o centro de ventana controla la luminosidad media. Permiten optimizar la visualización para diferentes tejidos sin readquirir la imagen."
+  }
+ },
+ "dose-efficace": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Dose efficace",
+   "definizione": "Grandezza dosimetrica che tiene conto sia della quantità di energia assorbita sia della radiosensibilità degli organi irradiati e del tipo di radiazione. Si misura in sievert (Sv) o millisievert (mSv). Usata per la stima del rischio stocastico."
+  },
+  "en": {
+   "termine": "Effective dose",
+   "definizione": "Dosimetric quantity that accounts for both the amount of energy absorbed and the radiosensitivity of the irradiated organs and the type of radiation. It is measured in sieverts (Sv) or millisieverts (mSv). Used to estimate stochastic risk."
+  },
+  "es": {
+   "termine": "Dosis efectiva",
+   "definizione": "Magnitud dosimétrica que tiene en cuenta tanto la cantidad de energía absorbida como la radiosensibilidad de los órganos irradiados y el tipo de radiación. Se mide en sieverts (Sv) o milisieverts (mSv). Se utiliza para la estimación del riesgo estocástico."
+  }
+ },
+ "dap-dose-area-product": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "DAP (Dose-Area Product)",
+   "definizione": "Prodotto dose-area, misura la quantità totale di energia impartita al paziente. Si misura in Gy·cm². Indicatore della dose totale indipendentemente dalla distribuzione nel paziente. Strumento fondamentale per il monitoraggio della dose in radiologia."
+  },
+  "en": {
+   "termine": "DAP (Dose-Area Product)",
+   "definizione": "Dose-area product; it measures the total energy imparted to the patient. Measured in Gy·cm². An indicator of total dose independent of its distribution in the patient. A key tool for dose monitoring in radiology."
+  },
+  "es": {
+   "termine": "DAP (Producto Dosis-Área)",
+   "definizione": "Producto dosis-área; mide la cantidad total de energía impartida al paciente. Se mide en Gy·cm². Indicador de la dosis total independientemente de su distribución en el paciente. Herramienta fundamental para la monitorización de la dosis en radiología."
+  }
+ },
+ "principio-alara": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Principio ALARA",
+   "definizione": "\"As Low As Reasonably Achievable\" — principio fondamentale di radioprotezione. La dose al paziente deve essere mantenuta al livello più basso ragionevolmente ottenibile, compatibilmente con l'ottenimento di immagini diagnosticamente valide."
+  },
+  "en": {
+   "termine": "ALARA principle",
+   "definizione": "\"As Low As Reasonably Achievable\" — a fundamental radiation protection principle. Patient dose must be kept at the lowest level reasonably achievable, consistent with obtaining diagnostically valid images."
+  },
+  "es": {
+   "termine": "Principio ALARA",
+   "definizione": "\"As Low As Reasonably Achievable\" (tan bajo como sea razonablemente posible) — principio fundamental de radioprotección. La dosis al paciente debe mantenerse en el nivel más bajo razonablemente alcanzable, compatible con la obtención de imágenes diagnósticamente válidas."
+  }
+ },
+ "drl-diagnostic-reference-level": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "DRL (Diagnostic Reference Level)",
+   "definizione": "Livello di riferimento diagnostico. Valore di dose che non dovrebbe essere superato in condizioni standard per un determinato esame radiografico. Strumento per l'ottimizzazione della dose: centri che sistematicamente superano il DRL devono rivedere le proprie procedure."
+  },
+  "en": {
+   "termine": "DRL (Diagnostic Reference Level)",
+   "definizione": "A dose value that should not be exceeded under standard conditions for a given radiographic examination. A tool for dose optimisation: centres that systematically exceed the DRL must review their procedures."
+  },
+  "es": {
+   "termine": "NRD (Nivel de Referencia Diagnóstico)",
+   "definizione": "Valor de dosis que no debería superarse en condiciones estándar para un determinado examen radiográfico. Herramienta para la optimización de la dosis: los centros que superan sistemáticamente el NRD deben revisar sus procedimientos."
+  }
+ },
+ "protezioni-schermanti": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Protezioni schermanti",
+   "definizione": "Dispositivi di protezione in materiale radiopaco (piombo, bismuto) posizionati sul paziente per proteggere organi radiosensibili non inclusi nel campo diagnostico. Includono grembiuli piombati, protezioni gonadiche, collari tiroidei."
+  },
+  "en": {
+   "termine": "Shielding",
+   "definizione": "Protective devices made of radiopaque material (lead, bismuth) placed on the patient to protect radiosensitive organs not included in the diagnostic field. They include lead aprons, gonadal shields and thyroid collars."
+  },
+  "es": {
+   "termine": "Protecciones/blindajes",
+   "definizione": "Dispositivos de protección de material radiopaco (plomo, bismuto) colocados sobre el paciente para proteger órganos radiosensibles no incluidos en el campo diagnóstico. Incluyen delantales plomados, protecciones gonadales y collares tiroideos."
+  }
+ },
+ "angolo-di-cobb": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Angolo di Cobb",
+   "definizione": "Misura standard della curvatura scoliotica in radiografia. Si individuano le vertebre limite superiore e inferiore della curva, si tracciano linee parallele ai piatti vertebrali e si misura l'angolo tra le perpendicolari a queste linee. Curve > 10° sono considerate scoliosi; > 40–50° richiedono valutazione chirurgica."
+  },
+  "en": {
+   "termine": "Cobb angle",
+   "definizione": "Standard measurement of scoliotic curvature on radiography. The upper and lower end vertebrae of the curve are identified, lines are drawn parallel to the vertebral endplates, and the angle between the perpendiculars to these lines is measured. Curves > 10° are considered scoliosis; > 40–50° require surgical evaluation."
+  },
+  "es": {
+   "termine": "Ángulo de Cobb",
+   "definizione": "Medida estándar de la curvatura escoliótica en radiografía. Se identifican las vértebras límite superior e inferior de la curva, se trazan líneas paralelas a los platillos vertebrales y se mide el ángulo entre las perpendiculares a dichas líneas. Curvas > 10° se consideran escoliosis; > 40–50° requieren valoración quirúrgica."
+  }
+ },
+ "angolo-hka-hip-knee-ankle": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Angolo HKA (Hip-Knee-Ankle)",
+   "definizione": "Angolo che esprime l'asse meccanico dell'arto inferiore, misurato tra la testa del femore, il centro del ginocchio e il centro della caviglia. Normalmente ±3° (asse neutro). Valori positivi indicano varismo; negativi indicano valgismo. Fondamentale per la pianificazione chirurgica protesica."
+  },
+  "en": {
+   "termine": "HKA angle (Hip-Knee-Ankle)",
+   "definizione": "Angle expressing the mechanical axis of the lower limb, measured between the femoral head, the centre of the knee and the centre of the ankle. Normally ±3° (neutral axis). Positive values indicate varus; negative values indicate valgus. Essential for prosthetic surgical planning."
+  },
+  "es": {
+   "termine": "Ángulo HKA (Cadera-Rodilla-Tobillo)",
+   "definizione": "Ángulo que expresa el eje mecánico del miembro inferior, medido entre la cabeza femoral, el centro de la rodilla y el centro del tobillo. Normalmente ±3° (eje neutro). Los valores positivos indican varo; los negativos, valgo. Fundamental para la planificación quirúrgica protésica."
+  }
+ },
+ "varianza-ulnare": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Varianza ulnare",
+   "definizione": "Differenza di lunghezza tra radio e ulna a livello dell'articolazione radio-ulnare distale, valutata in proiezione PA in posizione neutra. Valori normali: da -2 a +2 mm. La varianza ulnare positiva (ulna più lunga) è associata a lesioni del TFCC e alla malattia di Kienböck."
+  },
+  "en": {
+   "termine": "Ulnar variance",
+   "definizione": "Difference in length between the radius and ulna at the distal radioulnar joint, assessed on a PA projection in the neutral position. Normal values: -2 to +2 mm. Positive ulnar variance (a longer ulna) is associated with TFCC injuries and Kienböck's disease."
+  },
+  "es": {
+   "termine": "Varianza cubital",
+   "definizione": "Diferencia de longitud entre el radio y el cúbito a nivel de la articulación radiocubital distal, valorada en proyección PA en posición neutra. Valores normales: de -2 a +2 mm. La varianza cubital positiva (cúbito más largo) se asocia a lesiones del TFCC y a la enfermedad de Kienböck."
+  }
+ },
+ "angolo-di-costa-bertani": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Angolo di Costa-Bertani",
+   "definizione": "Angolo che misura l'altezza dell'arco plantare longitudinale in proiezione laterale in carico. Formato tra la linea che unisce la tuberosità posteriore del calcagno alla testa del I metatarso e la linea che unisce la testa del I metatarso alla tuberosità scafoidea. Valori normali: 120–130°. Valori ridotti indicano piede piatto."
+  },
+  "en": {
+   "termine": "Costa-Bertani angle",
+   "definizione": "Angle that measures the height of the longitudinal plantar arch on a weight-bearing lateral projection. Formed between the line joining the posterior tuberosity of the calcaneus to the head of the first metatarsal and the line joining the head of the first metatarsal to the navicular tuberosity. Normal values: 120–130°. Reduced values indicate flatfoot."
+  },
+  "es": {
+   "termine": "Ángulo de Costa-Bertani",
+   "definizione": "Ángulo que mide la altura del arco plantar longitudinal en proyección lateral en carga. Formado entre la línea que une la tuberosidad posterior del calcáneo con la cabeza del primer metatarsiano y la línea que une la cabeza del primer metatarsiano con la tuberosidad del navicular. Valores normales: 120–130°. Valores reducidos indican pie plano."
+  }
+ },
+ "sagittal-balance": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Sagittal balance",
+   "definizione": "Equilibrio sagittale della colonna vertebrale valutato in proiezione laterale in toto. Esprime il rapporto tra l'allineamento sagittale globale (piombo da C7) e il posizionamento del bacino. Un sagittal balance positivo (tronco inclinato in avanti) è associato a disabilità e dolore."
+  },
+  "en": {
+   "termine": "Sagittal balance",
+   "definizione": "Sagittal balance of the spine assessed on a full-length lateral projection. It expresses the relationship between global sagittal alignment (plumb line from C7) and pelvic positioning. A positive sagittal balance (trunk leaning forward) is associated with disability and pain."
+  },
+  "es": {
+   "termine": "Balance sagital",
+   "definizione": "Equilibrio sagital de la columna vertebral valorado en proyección lateral completa. Expresa la relación entre la alineación sagital global (plomada desde C7) y la posición de la pelvis. Un balance sagital positivo (tronco inclinado hacia delante) se asocia a discapacidad y dolor."
+  }
+ },
+ "indice-di-risser": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "Indice di Risser",
+   "definizione": "Scala da 0 a 5 che valuta l'ossificazione dell'apofisi iliaca nelle radiografie per scoliosi. Indica la maturità scheletrica: Risser 0 = scheletro immaturo; Risser 5 = maturità scheletrica completa. Usato per predire il rischio di progressione della scoliosi."
+  },
+  "en": {
+   "termine": "Risser sign",
+   "definizione": "A scale from 0 to 5 that assesses ossification of the iliac apophysis on scoliosis radiographs. It indicates skeletal maturity: Risser 0 = immature skeleton; Risser 5 = complete skeletal maturity. Used to predict the risk of scoliosis progression."
+  },
+  "es": {
+   "termine": "Signo de Risser",
+   "definizione": "Escala de 0 a 5 que valora la osificación de la apófisis ilíaca en las radiografías de escoliosis. Indica la madurez esquelética: Risser 0 = esqueleto inmaduro; Risser 5 = madurez esquelética completa. Se utiliza para predecir el riesgo de progresión de la escoliosis."
+  }
+ },
+ "tfcc-triangular-fibrocartilage-complex": {
+  "categoria": "tecnico",
+  "it": {
+   "termine": "TFCC (Triangular Fibrocartilage Complex)",
+   "definizione": "Complesso fibrocartilagineo triangolare del polso. Struttura stabilizzatrice dell'articolazione radio-ulnare distale e del lato ulnare del carpo. Le sue lesioni causano dolore ulnare al polso e instabilità. Valutato con proiezioni dedicate in stress e in deviazione."
+  },
+  "en": {
+   "termine": "TFCC (Triangular Fibrocartilage Complex)",
+   "definizione": "Stabilising structure of the distal radioulnar joint and the ulnar side of the carpus. Its injuries cause ulnar-sided wrist pain and instability. Assessed with dedicated stress and deviation projections."
+  },
+  "es": {
+   "termine": "TFCC (Complejo Fibrocartilaginoso Triangular)",
+   "definizione": "Estructura estabilizadora de la articulación radiocubital distal y del lado cubital del carpo. Sus lesiones causan dolor cubital de muñeca e inestabilidad. Se valora con proyecciones dedicadas en estrés y en desviación."
+  }
+ },
+ "piano-sagittale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Piano sagittale",
+   "definizione": "Piano verticale che divide il corpo in metà destra e sinistra. Il piano sagittale mediano (mediosagittale) divide il corpo in due metà simmetriche. Utilizzato come riferimento per il posizionamento nelle proiezioni laterali."
+  },
+  "en": {
+   "termine": "Sagittal plane",
+   "definizione": "Vertical plane that divides the body into right and left halves. The median (midsagittal) plane divides the body into two symmetrical halves. Used as a reference for positioning in lateral projections."
+  },
+  "es": {
+   "termine": "Plano sagital",
+   "definizione": "Plano vertical que divide el cuerpo en mitades derecha e izquierda. El plano sagital medio (mediosagital) divide el cuerpo en dos mitades simétricas. Se utiliza como referencia para el posicionamiento en las proyecciones laterales."
+  }
+ },
+ "piano-frontale-coronale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Piano frontale (coronale)",
+   "definizione": "Piano verticale che divide il corpo in parte anteriore (ventrale/anteriore) e posteriore (dorsale/posteriore). Utilizzato come riferimento per le proiezioni AP e PA."
+  },
+  "en": {
+   "termine": "Frontal plane (coronal)",
+   "definizione": "Vertical plane that divides the body into an anterior part (ventral) and a posterior part (dorsal). Used as a reference for AP and PA projections."
+  },
+  "es": {
+   "termine": "Plano frontal (coronal)",
+   "definizione": "Plano vertical que divide el cuerpo en una parte anterior (ventral) y una posterior (dorsal). Se utiliza como referencia para las proyecciones AP y PA."
+  }
+ },
+ "piano-trasversale-orizzontale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Piano trasversale (orizzontale)",
+   "definizione": "Piano orizzontale che divide il corpo in parte superiore (craniale/cefalica) e inferiore (caudale/podalica). Perpendicolare all'asse longitudinale del corpo."
+  },
+  "en": {
+   "termine": "Transverse plane (horizontal)",
+   "definizione": "Horizontal plane that divides the body into a superior part (cranial/cephalic) and an inferior part (caudal). Perpendicular to the longitudinal axis of the body."
+  },
+  "es": {
+   "termine": "Plano transversal (horizontal)",
+   "definizione": "Plano horizontal que divide el cuerpo en una parte superior (craneal/cefálica) y una inferior (caudal). Perpendicular al eje longitudinal del cuerpo."
+  }
+ },
+ "craniale-cefalico": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Craniale / Cefalico",
+   "definizione": "Direzione verso la testa. Nelle angolazioni del fascio: angolazione craniale significa che il fascio è inclinato verso la testa del paziente."
+  },
+  "en": {
+   "termine": "Cranial / Cephalic",
+   "definizione": "Direction towards the head. In beam angulations: a cranial angulation means the beam is tilted towards the patient's head."
+  },
+  "es": {
+   "termine": "Craneal / Cefálico",
+   "definizione": "Dirección hacia la cabeza. En las angulaciones del haz: una angulación craneal significa que el haz está inclinado hacia la cabeza del paciente."
+  }
+ },
+ "caudale-podalico": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Caudale / Podalico",
+   "definizione": "Direzione verso i piedi. Nelle angolazioni del fascio: angolazione caudale significa che il fascio è inclinato verso i piedi del paziente."
+  },
+  "en": {
+   "termine": "Caudal",
+   "definizione": "Direction towards the feet. In beam angulations: a caudal angulation means the beam is tilted towards the patient's feet."
+  },
+  "es": {
+   "termine": "Caudal / Podálico",
+   "definizione": "Dirección hacia los pies. En las angulaciones del haz: una angulación caudal significa que el haz está inclinado hacia los pies del paciente."
+  }
+ },
+ "mediale-laterale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Mediale / Laterale",
+   "definizione": "Mediale: verso la linea mediana del corpo. Laterale: lontano dalla linea mediana. Utilizzato per descrivere la posizione di strutture anatomiche e la direzione del fascio."
+  },
+  "en": {
+   "termine": "Medial / Lateral",
+   "definizione": "Medial: towards the midline of the body. Lateral: away from the midline. Used to describe the position of anatomical structures and the direction of the beam."
+  },
+  "es": {
+   "termine": "Medial / Lateral",
+   "definizione": "Medial: hacia la línea media del cuerpo. Lateral: alejado de la línea media. Se utiliza para describir la posición de las estructuras anatómicas y la dirección del haz."
+  }
+ },
+ "prossimale-distale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Prossimale / Distale",
+   "definizione": "Prossimale: più vicino all'origine di un arto o alla radice. Distale: più lontano dall'origine. Es: il polso è distale rispetto al gomito."
+  },
+  "en": {
+   "termine": "Proximal / Distal",
+   "definizione": "Proximal: closer to the origin of a limb or to the root. Distal: further from the origin. E.g. the wrist is distal relative to the elbow."
+  },
+  "es": {
+   "termine": "Proximal / Distal",
+   "definizione": "Proximal: más cerca del origen de un miembro o de la raíz. Distal: más lejos del origen. Ej.: la muñeca es distal respecto al codo."
+  }
+ },
+ "supinazione-pronazione": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Supinazione / Pronazione",
+   "definizione": "Supinazione: rotazione dell'avambraccio con il palmo rivolto verso l'alto (anteriormente). Pronazione: rotazione dell'avambraccio con il palmo rivolto verso il basso (posteriormente). Fondamentali per il corretto posizionamento nelle proiezioni dell'arto superiore."
+  },
+  "en": {
+   "termine": "Supination / Pronation",
+   "definizione": "Supination: rotation of the forearm with the palm facing upwards (anteriorly). Pronation: rotation of the forearm with the palm facing downwards (posteriorly). Essential for correct positioning in upper-limb projections."
+  },
+  "es": {
+   "termine": "Supinación / Pronación",
+   "definizione": "Supinación: rotación del antebrazo con la palma hacia arriba (anteriormente). Pronación: rotación del antebrazo con la palma hacia abajo (posteriormente). Fundamentales para el correcto posicionamiento en las proyecciones del miembro superior."
+  }
+ },
+ "dorsiflessione-flessione-plantare": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Dorsiflessione / Flessione plantare",
+   "definizione": "Dorsiflessione: movimento del piede verso la gamba (punta verso l'alto). Flessione plantare: movimento del piede lontano dalla gamba (punta verso il basso). Rilevante per il posizionamento nelle proiezioni del piede e della caviglia."
+  },
+  "en": {
+   "termine": "Dorsiflexion / Plantar flexion",
+   "definizione": "Dorsiflexion: movement of the foot towards the leg (toes up). Plantar flexion: movement of the foot away from the leg (toes down). Relevant for positioning in foot and ankle projections."
+  },
+  "es": {
+   "termine": "Dorsiflexión / Flexión plantar",
+   "definizione": "Dorsiflexión: movimiento del pie hacia la pierna (punta hacia arriba). Flexión plantar: movimiento del pie alejándose de la pierna (punta hacia abajo). Relevante para el posicionamiento en las proyecciones del pie y del tobillo."
+  }
+ },
+ "inversione-eversione": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Inversione / Eversione",
+   "definizione": "Inversione: rotazione della pianta del piede verso l'interno. Eversione: rotazione della pianta del piede verso l'esterno. Le prove da stress della caviglia valutano la stabilità in inversione (varo) e eversione (valgo)."
+  },
+  "en": {
+   "termine": "Inversion / Eversion",
+   "definizione": "Inversion: rotation of the sole of the foot inwards. Eversion: rotation of the sole of the foot outwards. Ankle stress views assess stability in inversion (varus) and eversion (valgus)."
+  },
+  "es": {
+   "termine": "Inversión / Eversión",
+   "definizione": "Inversión: rotación de la planta del pie hacia dentro. Eversión: rotación de la planta del pie hacia fuera. Las pruebas de estrés del tobillo valoran la estabilidad en inversión (varo) y eversión (valgo)."
+  }
+ },
+ "abduzione-adduzione": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Abduzione / Adduzione",
+   "definizione": "Abduzione: allontanamento di un arto dalla linea mediana. Adduzione: avvicinamento di un arto alla linea mediana. Rilevante per la proiezione assiale della spalla (braccio abdotto a 90°)."
+  },
+  "en": {
+   "termine": "Abduction / Adduction",
+   "definizione": "Abduction: movement of a limb away from the midline. Adduction: movement of a limb towards the midline. Relevant for the axial projection of the shoulder (arm abducted to 90°)."
+  },
+  "es": {
+   "termine": "Abducción / Aducción",
+   "definizione": "Abducción: alejamiento de un miembro de la línea media. Aducción: acercamiento de un miembro a la línea media. Relevante para la proyección axial del hombro (brazo abducido a 90°)."
+  }
+ },
+ "proiezione-ap-antero-posteriore": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Proiezione AP (Antero-posteriore)",
+   "definizione": "Il fascio entra dalla parte anteriore del paziente ed esce posteriormente verso il detettore. Il paziente è supino o in piedi con la schiena al detettore. Le strutture anteriori appaiono ingrandite per la maggiore distanza dal detettore."
+  },
+  "en": {
+   "termine": "AP projection (Anteroposterior)",
+   "definizione": "The beam enters the anterior part of the patient and exits posteriorly towards the detector. The patient is supine or standing with the back to the detector. Anterior structures appear magnified because of their greater distance from the detector."
+  },
+  "es": {
+   "termine": "Proyección AP (Anteroposterior)",
+   "definizione": "El haz entra por la parte anterior del paciente y sale posteriormente hacia el receptor. El paciente está en decúbito supino o de pie con la espalda hacia el receptor. Las estructuras anteriores aparecen magnificadas por su mayor distancia del receptor."
+  }
+ },
+ "proiezione-pa-postero-anteriore": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Proiezione PA (Postero-anteriore)",
+   "definizione": "Il fascio entra dalla parte posteriore del paziente ed esce anteriormente verso il detettore. Il paziente è in piedi con il torace/struttura anteriore a contatto con il detettore. Riduce l'ingrandimento delle strutture anteriori (es: cuore nel torace PA)."
+  },
+  "en": {
+   "termine": "PA projection (Posteroanterior)",
+   "definizione": "The beam enters the posterior part of the patient and exits anteriorly towards the detector. The patient stands with the chest/anterior structure in contact with the detector. It reduces the magnification of anterior structures (e.g. the heart in a PA chest)."
+  },
+  "es": {
+   "termine": "Proyección PA (Posteroanterior)",
+   "definizione": "El haz entra por la parte posterior del paciente y sale anteriormente hacia el receptor. El paciente está de pie con el tórax/estructura anterior en contacto con el receptor. Reduce la magnificación de las estructuras anteriores (ej.: el corazón en el tórax PA)."
+  }
+ },
+ "proiezione-ll-latero-laterale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Proiezione LL (Latero-laterale)",
+   "definizione": "Il fascio attraversa il paziente da un lato all'altro. Fornisce una visione in profilo della struttura anatomica, ortogonale alla proiezione AP/PA. Eseguita sempre in associazione alla proiezione frontale per la valutazione completa."
+  },
+  "en": {
+   "termine": "LL projection (Laterolateral)",
+   "definizione": "The beam passes through the patient from one side to the other. It provides a profile view of the anatomical structure, orthogonal to the AP/PA projection. Always performed together with the frontal projection for complete assessment."
+  },
+  "es": {
+   "termine": "Proyección LL (Laterolateral)",
+   "definizione": "El haz atraviesa al paciente de un lado al otro. Proporciona una visión de perfil de la estructura anatómica, ortogonal a la proyección AP/PA. Siempre se realiza junto con la proyección frontal para una valoración completa."
+  }
+ },
+ "proiezione-obliqua": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Proiezione obliqua",
+   "definizione": "Il paziente è ruotato di un angolo specifico rispetto al piano frontale, producendo una proiezione intermedia tra frontale e laterale. Riduce le sovrapposizioni di strutture e permette la visualizzazione di strutture non visibili nelle proiezioni standard (es: forami di coniugazione, articolazioni interapofisarie)."
+  },
+  "en": {
+   "termine": "Oblique projection",
+   "definizione": "The patient is rotated by a specific angle relative to the frontal plane, producing a projection intermediate between frontal and lateral. It reduces structural overlap and allows visualisation of structures not seen in standard projections (e.g. intervertebral foramina, zygapophyseal joints)."
+  },
+  "es": {
+   "termine": "Proyección oblicua",
+   "definizione": "El paciente se rota un ángulo específico respecto al plano frontal, produciendo una proyección intermedia entre frontal y lateral. Reduce las superposiciones de estructuras y permite la visualización de estructuras no visibles en las proyecciones estándar (ej.: agujeros de conjunción, articulaciones interapofisarias)."
+  }
+ },
+ "oad-obliqua-anteriore-destra": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "OAD (Obliqua Anteriore Destra)",
+   "definizione": "Il paziente è ruotato con la parte anteriore destra più vicina al detettore. Nelle proiezioni della colonna cervicale permette la visualizzazione dei forami di coniugazione del lato sinistro (controlaterale)."
+  },
+  "en": {
+   "termine": "RAO (Right Anterior Oblique)",
+   "definizione": "The patient is rotated with the right anterior aspect closer to the detector. In cervical spine projections it allows visualisation of the intervertebral foramina on the left (contralateral) side."
+  },
+  "es": {
+   "termine": "OAD (Oblicua Anterior Derecha)",
+   "definizione": "El paciente se rota con la parte anterior derecha más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado izquierdo (contralateral)."
+  }
+ },
+ "oas-obliqua-anteriore-sinistra": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "OAS (Obliqua Anteriore Sinistra)",
+   "definizione": "Il paziente è ruotato con la parte anteriore sinistra più vicina al detettore. Nelle proiezioni della colonna cervicale permette la visualizzazione dei forami di coniugazione del lato destro (controlaterale)."
+  },
+  "en": {
+   "termine": "LAO (Left Anterior Oblique)",
+   "definizione": "The patient is rotated with the left anterior aspect closer to the detector. In cervical spine projections it allows visualisation of the intervertebral foramina on the right (contralateral) side."
+  },
+  "es": {
+   "termine": "OAI (Oblicua Anterior Izquierda)",
+   "definizione": "El paciente se rota con la parte anterior izquierda más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado derecho (contralateral)."
+  }
+ },
+ "opd-obliqua-posteriore-destra": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "OPD (Obliqua Posteriore Destra)",
+   "definizione": "Il paziente è ruotato con la parte posteriore destra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo (pars interarticularis) e delle faccette articolari del lato destro (ipsilaterale)."
+  },
+  "en": {
+   "termine": "RPO (Right Posterior Oblique)",
+   "definizione": "The patient is rotated with the right posterior aspect closer to the detector. In lumbar spine projections it allows visualisation of the pars interarticularis and the articular facets on the right (ipsilateral) side."
+  },
+  "es": {
+   "termine": "OPD (Oblicua Posterior Derecha)",
+   "definizione": "El paciente se rota con la parte posterior derecha más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo (pars interarticularis) y de las facetas articulares del lado derecho (ipsilateral)."
+  }
+ },
+ "ops-obliqua-posteriore-sinistra": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "OPS (Obliqua Posteriore Sinistra)",
+   "definizione": "Il paziente è ruotato con la parte posteriore sinistra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo e delle faccette articolari del lato sinistro (ipsilaterale)."
+  },
+  "en": {
+   "termine": "LPO (Left Posterior Oblique)",
+   "definizione": "The patient is rotated with the left posterior aspect closer to the detector. In lumbar spine projections it allows visualisation of the pars interarticularis and the articular facets on the left (ipsilateral) side."
+  },
+  "es": {
+   "termine": "OPI (Oblicua Posterior Izquierda)",
+   "definizione": "El paciente se rota con la parte posterior izquierda más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo y de las facetas articulares del lado izquierdo (ipsilateral)."
+  }
+ },
+ "centratura": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Centratura",
+   "definizione": "Punto anatomico su cui viene centrato il fascio di raggi X (centro del campo). Deve coincidere con il centro della struttura anatomica da esaminare e con il centro del detettore per evitare distorsioni e garantire l'inclusione di tutta la struttura."
+  },
+  "en": {
+   "termine": "Centring point",
+   "definizione": "Anatomical point on which the X-ray beam is centred (centre of the field). It must coincide with the centre of the anatomical structure to be examined and with the centre of the detector, to avoid distortion and ensure the whole structure is included."
+  },
+  "es": {
+   "termine": "Centraje",
+   "definizione": "Punto anatómico sobre el que se centra el haz de rayos X (centro del campo). Debe coincidir con el centro de la estructura anatómica a examinar y con el centro del receptor para evitar distorsiones y garantizar la inclusión de toda la estructura."
+  }
+ },
+ "piano-orbitomeatale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Piano orbitomeatale",
+   "definizione": "Piano che passa per il margine infraorbitario e il meato acustico esterno. Utilizzato come piano di riferimento fondamentale per il posizionamento del capo nelle proiezioni craniche. In posizione eretta standard è inclinato di circa 15° rispetto al piano orizzontale."
+  },
+  "en": {
+   "termine": "Orbitomeatal plane",
+   "definizione": "Plane passing through the infraorbital margin and the external acoustic meatus. Used as a key reference plane for positioning the head in skull projections. In the standard erect position it is tilted about 15° relative to the horizontal plane."
+  },
+  "es": {
+   "termine": "Plano orbitomeatal",
+   "definizione": "Plano que pasa por el margen infraorbitario y el meato acústico externo. Se utiliza como plano de referencia fundamental para el posicionamiento de la cabeza en las proyecciones craneales. En posición erecta estándar está inclinado unos 15° respecto al plano horizontal."
+  }
+ },
+ "rocca-petrosa": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Rocca petrosa",
+   "definizione": "Porzione più densa dell'osso temporale, a forma di piramide con apice rivolto medialmente. Contiene le strutture dell'orecchio interno (coclea, canali semicircolari) e il condotto uditivo interno. Nelle proiezioni craniche può sovrapporsi ad altre strutture se il posizionamento non è corretto."
+  },
+  "en": {
+   "termine": "Petrous ridge",
+   "definizione": "The densest portion of the temporal bone, pyramid-shaped with its apex pointing medially. It contains the inner-ear structures (cochlea, semicircular canals) and the internal auditory canal. In skull projections it can overlap other structures if positioning is incorrect."
+  },
+  "es": {
+   "termine": "Peñasco (porción petrosa)",
+   "definizione": "Porción más densa del hueso temporal, con forma de pirámide y vértice dirigido medialmente. Contiene las estructuras del oído interno (cóclea, canales semicirculares) y el conducto auditivo interno. En las proyecciones craneales puede superponerse a otras estructuras si el posicionamiento no es correcto."
+  }
+ },
+ "forame-magno": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Forame magno",
+   "definizione": "Grande apertura nella base del cranio attraverso cui il tronco encefalico si continua con il midollo spinale. Visualizzato nella proiezione di Towne. Delimitato dai condili occipitali che si articolano con l'atlante."
+  },
+  "en": {
+   "termine": "Foramen magnum",
+   "definizione": "Large opening in the base of the skull through which the brainstem continues into the spinal cord. Visualised in the Towne projection. Bounded by the occipital condyles, which articulate with the atlas."
+  },
+  "es": {
+   "termine": "Agujero magno",
+   "definizione": "Gran apertura en la base del cráneo a través de la cual el tronco encefálico se continúa con la médula espinal. Se visualiza en la proyección de Towne. Delimitado por los cóndilos occipitales, que se articulan con el atlas."
+  }
+ },
+ "processo-odontoide-dente-dell-epistrofeo": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Processo odontoide (dente dell'epistrofeo)",
+   "definizione": "Proiezione ossea superiore del corpo dell'epistrofeo (C2) che si articola con l'atlante (C1) tramite un legamento trasverso. Visualizzato nella proiezione trans-orale. La sua frattura o la rottura del legamento trasverso causa instabilità atlo-assiale potenzialmente pericolosa per il midollo."
+  },
+  "en": {
+   "termine": "Odontoid process (dens of the axis)",
+   "definizione": "Superior bony projection of the body of the axis (C2) that articulates with the atlas (C1) via a transverse ligament. Visualised in the open-mouth projection. A fracture of it, or rupture of the transverse ligament, causes potentially cord-threatening atlantoaxial instability."
+  },
+  "es": {
+   "termine": "Apófisis odontoides (diente del axis)",
+   "definizione": "Proyección ósea superior del cuerpo del axis (C2) que se articula con el atlas (C1) mediante un ligamento transverso. Se visualiza en la proyección transoral. Su fractura o la rotura del ligamento transverso causa inestabilidad atloaxoidea potencialmente peligrosa para la médula."
+  }
+ },
+ "mortaio-tibio-peroneale-tibio-astragalico": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Mortaio tibio-peroneale (tibio-astragalico)",
+   "definizione": "Struttura articolare formata dall'incisura fibulare della tibia (pilastro mediale), dal malleolo peroneale (pilastro laterale) e dalla superficie tibiale superiore (soffitto). Accoglie la troclea dell'astragalo. Valutato nelle proiezioni AP e Mortise della caviglia."
+  },
+  "en": {
+   "termine": "Ankle mortise (tibiotalar)",
+   "definizione": "Articular structure formed by the fibular notch of the tibia (medial pillar), the fibular malleolus (lateral pillar) and the superior tibial surface (roof). It receives the trochlea of the talus. Assessed in the AP and Mortise ankle projections."
+  },
+  "es": {
+   "termine": "Mortaja tibioperoneo-astragalina",
+   "definizione": "Estructura articular formada por la incisura fibular de la tibia (pilar medial), el maléolo peroneo (pilar lateral) y la superficie tibial superior (techo). Aloja la tróclea del astrágalo. Se valora en las proyecciones AP y Mortise del tobillo."
+  }
+ },
+ "interlinea-articolare": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Interlinea articolare",
+   "definizione": "Spazio radiotrasparente visibile tra le superfici articolari nelle proiezioni radiografiche standard. Corrisponde allo spazio occupato dalla cartilagine articolare (non visibile direttamente). Il restringimento dell'interlinea è segno di artrosi o artrite."
+  },
+  "en": {
+   "termine": "Joint space",
+   "definizione": "Radiolucent space visible between the articular surfaces on standard radiographic projections. It corresponds to the space occupied by the articular cartilage (not directly visible). Narrowing of the joint space is a sign of osteoarthritis or arthritis."
+  },
+  "es": {
+   "termine": "Interlínea articular",
+   "definizione": "Espacio radiotransparente visible entre las superficies articulares en las proyecciones radiográficas estándar. Corresponde al espacio ocupado por el cartílago articular (no visible directamente). El estrechamiento de la interlínea es signo de artrosis o artritis."
+  }
+ },
+ "pars-interarticularis": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Pars interarticularis",
+   "definizione": "Porzione ossea del peduncolo vertebrale compresa tra le faccette articolari superiore e inferiore. La sua fractura (spondilolisi) è visualizzabile nella proiezione obliqua lombare come frattura del \"collo del cagnolino di Scottie\". La spondilolisi bilaterale può causare spondilolistesi."
+  },
+  "en": {
+   "termine": "Pars interarticularis",
+   "definizione": "Bony portion of the vertebral pedicle between the superior and inferior articular facets. Its fracture (spondylolysis) is seen on the lumbar oblique projection as a fracture of the \"Scottie dog's neck\". Bilateral spondylolysis can cause spondylolisthesis."
+  },
+  "es": {
+   "termine": "Pars interarticularis",
+   "definizione": "Porción ósea del pedículo vertebral comprendida entre las facetas articulares superior e inferior. Su fractura (espondilólisis) es visible en la proyección oblicua lumbar como fractura del \"cuello del perrito de Scottie\". La espondilólisis bilateral puede causar espondilolistesis."
+  }
+ },
+ "seno-del-tarso": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Seno del tarso",
+   "definizione": "Canale osseo che si trova tra la superficie inferiore dell'astragalo e quella superiore del calcagno, lateralmente alla articolazione sottoastragalica posteriore. Contiene il legamento interosseo e il legamento cervicale. Visibile nella proiezione di Broden."
+  },
+  "en": {
+   "termine": "Sinus tarsi",
+   "definizione": "Bony canal located between the inferior surface of the talus and the superior surface of the calcaneus, lateral to the posterior subtalar joint. It contains the interosseous and cervical ligaments. Visible in the Broden projection."
+  },
+  "es": {
+   "termine": "Seno del tarso",
+   "definizione": "Canal óseo situado entre la superficie inferior del astrágalo y la superior del calcáneo, lateral a la articulación subastragalina posterior. Contiene el ligamento interóseo y el ligamento cervical. Visible en la proyección de Broden."
+  }
+ },
+ "articolazione-sottoastragalica": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Articolazione sottoastragalica",
+   "definizione": "Articolazione tra astragalo e calcagno, composta da una faccia posteriore (maggiore) e due facce anteriori. Permette l'inversione ed eversione del piede. Non visibile nelle proiezioni standard della caviglia; richiede proiezioni dedicate (Broden, assiale del calcagno) o TC."
+  },
+  "en": {
+   "termine": "Subtalar joint",
+   "definizione": "Joint between the talus and calcaneus, made up of a posterior facet (larger) and two anterior facets. It allows inversion and eversion of the foot. Not visible on standard ankle projections; it requires dedicated projections (Broden, axial calcaneus) or CT."
+  },
+  "es": {
+   "termine": "Articulación subastragalina",
+   "definizione": "Articulación entre el astrágalo y el calcáneo, compuesta por una faceta posterior (mayor) y dos facetas anteriores. Permite la inversión y eversión del pie. No visible en las proyecciones estándar del tobillo; requiere proyecciones dedicadas (Broden, axial del calcáneo) o TC."
+  }
+ },
+ "fossa-intercondiloidea": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Fossa intercondiloidea",
+   "definizione": "Depressione tra i condili femorali sulla superficie posteriore del femore distale. Contiene i legamenti crociati. Visualizzata nella proiezione a tunnel (Rosenberg) con ginocchio flesso a 45°. L'asse del femore è un'area frequente di lesioni osteocondrali."
+  },
+  "en": {
+   "termine": "Intercondylar fossa",
+   "definizione": "Depression between the femoral condyles on the posterior surface of the distal femur. It contains the cruciate ligaments. Visualised in the tunnel projection (Rosenberg) with the knee flexed to 45°. It is a frequent site of osteochondral lesions."
+  },
+  "es": {
+   "termine": "Fosa intercondílea",
+   "definizione": "Depresión entre los cóndilos femorales en la superficie posterior del fémur distal. Contiene los ligamentos cruzados. Se visualiza en la proyección en túnel (Rosenberg) con la rodilla flexionada a 45°. Es una zona frecuente de lesiones osteocondrales."
+  }
+ },
+ "troclea-femorale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Troclea femorale",
+   "definizione": "Superficie articolare anteriore del femore distale, a forma di puleggia, che si articola con la rotula. La sua morfologia influenza il tracking rotuleo. Valutata nelle proiezioni assiali (Skyline, Merchant) con ginocchio flesso."
+  },
+  "en": {
+   "termine": "Femoral trochlea",
+   "definizione": "Anterior articular surface of the distal femur, pulley-shaped, that articulates with the patella. Its morphology influences patellar tracking. Assessed in axial projections (Skyline, Merchant) with the knee flexed."
+  },
+  "es": {
+   "termine": "Tróclea femoral",
+   "definizione": "Superficie articular anterior del fémur distal, con forma de polea, que se articula con la rótula. Su morfología influye en el desplazamiento rotuliano. Se valora en las proyecciones axiales (Skyline, Merchant) con la rodilla flexionada."
+  }
+ },
+ "glenoide": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Glenoide",
+   "definizione": "Superficie articolare della scapola che si articola con la testa omerale formando l'articolazione gleno-omerale (spalla). Ha una superficie relativamente piccola rispetto alla testa omerale, garantendo grande mobilità a scapito della stabilità ossea."
+  },
+  "en": {
+   "termine": "Glenoid",
+   "definizione": "Articular surface of the scapula that articulates with the humeral head, forming the glenohumeral joint (shoulder). It has a relatively small surface compared with the humeral head, granting great mobility at the expense of bony stability."
+  },
+  "es": {
+   "termine": "Glenoides",
+   "definizione": "Superficie articular de la escápula que se articula con la cabeza humeral formando la articulación glenohumeral (hombro). Tiene una superficie relativamente pequeña respecto a la cabeza humeral, lo que otorga gran movilidad a costa de la estabilidad ósea."
+  }
+ },
+ "acromion": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Acromion",
+   "definizione": "Processo osseo della scapola che si prolunga lateralmente e anteriormente sopra l'articolazione gleno-omerale. Si articola con la clavicola (articolazione acromion-clavicolare). La sua morfologia (tipo I piatto, II curvo, III uncinato) influenza la sindrome da conflitto sub-acromiale."
+  },
+  "en": {
+   "termine": "Acromion",
+   "definizione": "Bony process of the scapula that extends laterally and anteriorly above the glenohumeral joint. It articulates with the clavicle (acromioclavicular joint). Its morphology (type I flat, II curved, III hooked) influences subacromial impingement syndrome."
+  },
+  "es": {
+   "termine": "Acromion",
+   "definizione": "Proceso óseo de la escápula que se prolonga lateral y anteriormente por encima de la articulación glenohumeral. Se articula con la clavícula (articulación acromioclavicular). Su morfología (tipo I plano, II curvo, III ganchoso) influye en el síndrome de pinzamiento subacromial."
+  }
+ },
+ "coracoide": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Coracoide",
+   "definizione": "Processo osseo della scapola che si proietta anteriormente e lateralmente. Punto di inserzione di muscoli (piccolo pettorale, capo breve del bicipite, coracobrachiale) e legamenti (coraco-clavicolare, coraco-acromiale). Visibile nelle proiezioni della spalla."
+  },
+  "en": {
+   "termine": "Coracoid process",
+   "definizione": "Bony process of the scapula that projects anteriorly and laterally. Attachment point for muscles (pectoralis minor, short head of biceps, coracobrachialis) and ligaments (coracoclavicular, coracoacromial). Visible in shoulder projections."
+  },
+  "es": {
+   "termine": "Apófisis coracoides",
+   "definizione": "Proceso óseo de la escápula que se proyecta anterior y lateralmente. Punto de inserción de músculos (pectoral menor, porción corta del bíceps, coracobraquial) y ligamentos (coracoclavicular, coracoacromial). Visible en las proyecciones del hombro."
+  }
+ },
+ "scafoide-carpale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Scafoide carpale",
+   "definizione": "Osso del carpo a forma di barca, situato nel primo filare (prossimale). È l'osso carpale più frequentemente fratturato. La sua vascolarizzazione prevalentemente distale lo rende suscettibile a necrosi avascolare in caso di frattura non trattata. Richiede proiezioni dedicate (deviazione ulnare) per la visualizzazione ottimale."
+  },
+  "en": {
+   "termine": "Carpal scaphoid",
+   "definizione": "Boat-shaped carpal bone located in the first (proximal) row. It is the most frequently fractured carpal bone. Its predominantly distal blood supply makes it prone to avascular necrosis when a fracture is left untreated. Requires dedicated projections (ulnar deviation) for optimal visualisation."
+  },
+  "es": {
+   "termine": "Escafoides carpiano",
+   "definizione": "Hueso del carpo con forma de barca, situado en la primera fila (proximal). Es el hueso carpiano que se fractura con más frecuencia. Su vascularización predominantemente distal lo hace susceptible a necrosis avascular en caso de fractura no tratada. Requiere proyecciones dedicadas (desviación cubital) para su visualización óptima."
+  }
+ },
+ "acetabolo": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Acetabolo",
+   "definizione": "Cavità articolare dell'anca formata dall'ileo (parete superiore), dall'ischio (parete posteriore e inferiore) e dal pube (parete anteriore). Si articola con la testa femorale. Le fratture dell'acetabolo sono classificate secondo Letournel e richiedono le proiezioni di Judet per la valutazione completa."
+  },
+  "en": {
+   "termine": "Acetabulum",
+   "definizione": "Articular cavity of the hip formed by the ilium (superior wall), the ischium (posterior and inferior wall) and the pubis (anterior wall). It articulates with the femoral head. Acetabular fractures are classified according to Letournel and require Judet projections for complete assessment."
+  },
+  "es": {
+   "termine": "Acetábulo",
+   "definizione": "Cavidad articular de la cadera formada por el ilion (pared superior), el isquion (pared posterior e inferior) y el pubis (pared anterior). Se articula con la cabeza femoral. Las fracturas del acetábulo se clasifican según Letournel y requieren las proyecciones de Judet para su valoración completa."
+  }
+ },
+ "sinfisi-pubica": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Sinfisi pubica",
+   "definizione": "Articolazione cartilaginea (anfiartrosi) tra le due ossa pubiche. Punto di centratura per le proiezioni del bacino. La distanza normale è < 5 mm negli adulti; allargamenti indicano instabilità pelvica."
+  },
+  "en": {
+   "termine": "Pubic symphysis",
+   "definizione": "Cartilaginous joint (amphiarthrosis) between the two pubic bones. Centring point for pelvic projections. The normal width is < 5 mm in adults; widening indicates pelvic instability."
+  },
+  "es": {
+   "termine": "Sínfisis púbica",
+   "definizione": "Articulación cartilaginosa (anfiartrosis) entre los dos huesos púbicos. Punto de centraje para las proyecciones de la pelvis. La distancia normal es < 5 mm en adultos; su ensanchamiento indica inestabilidad pélvica."
+  }
+ },
+ "forami-di-coniugazione": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Forami di coniugazione",
+   "definizione": "Aperture intervertebrali attraverso cui passano le radici nervose spinali e i vasi sanguigni. Delimitati superiormente e inferiormente dai peduncoli vertebrali, anteriormente dai corpi e dai dischi intervertebrali, posteriormente dalle faccette articolari. Visualizzati nelle proiezioni oblique della colonna."
+  },
+  "en": {
+   "termine": "Intervertebral foramina",
+   "definizione": "Intervertebral openings through which the spinal nerve roots and blood vessels pass. Bounded above and below by the pedicles, anteriorly by the vertebral bodies and intervertebral discs, and posteriorly by the articular facets. Visualised in oblique spine projections."
+  },
+  "es": {
+   "termine": "Agujeros de conjunción",
+   "definizione": "Aberturas intervertebrales a través de las cuales pasan las raíces nerviosas espinales y los vasos sanguíneos. Delimitados superior e inferiormente por los pedículos, anteriormente por los cuerpos y discos intervertebrales, y posteriormente por las facetas articulares. Se visualizan en las proyecciones oblicuas de la columna."
+  }
+ },
+ "disco-intervertebrale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Disco intervertebrale",
+   "definizione": "Struttura fibrocartilaginea interposta tra i corpi vertebrali adiacenti. Composto da un nucleo polposo centrale e da un anello fibroso periferico. Non direttamente visibile in radiografia standard; la sua integrità è valutata indirettamente attraverso l'altezza dello spazio intervertebrale."
+  },
+  "en": {
+   "termine": "Intervertebral disc",
+   "definizione": "Fibrocartilaginous structure interposed between adjacent vertebral bodies. Composed of a central nucleus pulposus and a peripheral annulus fibrosus. Not directly visible on standard radiography; its integrity is assessed indirectly through the height of the intervertebral space."
+  },
+  "es": {
+   "termine": "Disco intervertebral",
+   "definizione": "Estructura fibrocartilaginosa interpuesta entre los cuerpos vertebrales adyacentes. Compuesto por un núcleo pulposo central y un anillo fibroso periférico. No visible directamente en la radiografía estándar; su integridad se valora indirectamente a través de la altura del espacio intervertebral."
+  }
+ },
+ "piatto-vertebrale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Piatto vertebrale",
+   "definizione": "Superficie superiore e inferiore del corpo vertebrale. In radiografia è la struttura di riferimento per la misurazione dell'angolo di Cobb nella scoliosi e per la valutazione dell'altezza discale. Irregolarità dei piatti vertebrali possono indicare fratture, ernie discali o infezioni."
+  },
+  "en": {
+   "termine": "Vertebral endplate",
+   "definizione": "Superior and inferior surface of the vertebral body. On radiography it is the reference structure for measuring the Cobb angle in scoliosis and for assessing disc height. Endplate irregularities may indicate fractures, disc herniations or infections."
+  },
+  "es": {
+   "termine": "Platillo vertebral",
+   "definizione": "Superficie superior e inferior del cuerpo vertebral. En radiografía es la estructura de referencia para la medición del ángulo de Cobb en la escoliosis y para la valoración de la altura discal. Las irregularidades de los platillos pueden indicar fracturas, hernias discales o infecciones."
+  }
+ },
+ "angolo-di-louis-angolo-sternale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Angolo di Louis (angolo sternale)",
+   "definizione": "Giunzione tra manubrio e corpo dello sterno, visibile come una leggera prominenza anteriore. Corrisponde alla II costola e alla biforcazione tracheale (T4-T5). Punto di centratura per le proiezioni dello sterno."
+  },
+  "en": {
+   "termine": "Angle of Louis (sternal angle)",
+   "definizione": "Junction between the manubrium and body of the sternum, visible as a slight anterior prominence. It corresponds to the second rib and the tracheal bifurcation (T4-T5). Centring point for sternum projections."
+  },
+  "es": {
+   "termine": "Ángulo de Louis (ángulo esternal)",
+   "definizione": "Unión entre el manubrio y el cuerpo del esternón, visible como una ligera prominencia anterior. Corresponde a la segunda costilla y a la bifurcación traqueal (T4-T5). Punto de centraje para las proyecciones del esternón."
+  }
+ },
+ "diaframma": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Diaframma",
+   "definizione": "Muscolo a cupola che separa la cavità toracica da quella addominale. In radiografia: la cupola destra è più alta (fegato) della sinistra (stomaco). Nelle proiezioni dell'addome la sua posizione dipende dalla fase respiratoria: in inspirazione scende, in espirazione sale."
+  },
+  "en": {
+   "termine": "Diaphragm",
+   "definizione": "Dome-shaped muscle that separates the thoracic cavity from the abdominal cavity. On radiography: the right dome is higher (liver) than the left (stomach). In abdominal projections its position depends on the respiratory phase: it descends on inspiration and rises on expiration."
+  },
+  "es": {
+   "termine": "Diafragma",
+   "definizione": "Músculo en forma de cúpula que separa la cavidad torácica de la abdominal. En radiografía: la cúpula derecha es más alta (hígado) que la izquierda (estómago). En las proyecciones del abdomen su posición depende de la fase respiratoria: en inspiración desciende, en espiración asciende."
+  }
+ },
+ "sesamoidi": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Sesamoidi",
+   "definizione": "Piccole ossa incluse nei tendini, situate nelle sedi di maggiore attrito meccanico. I sesamoidi clinicamente più rilevanti in radiologia sono quelli del I dito della mano (tendini flessori) e del I dito del piede (tendine del flessore dell'alluce). Richiedono proiezioni dedicate per la loro visualizzazione assiale."
+  },
+  "en": {
+   "termine": "Sesamoids",
+   "definizione": "Small bones embedded within tendons, located at sites of greatest mechanical friction. The most clinically relevant sesamoids in radiology are those of the first digit of the hand (flexor tendons) and of the first toe (flexor hallucis tendon). They require dedicated projections for their axial visualisation."
+  },
+  "es": {
+   "termine": "Sesamoideos",
+   "definizione": "Pequeños huesos incluidos en los tendones, situados en las zonas de mayor fricción mecánica. Los sesamoideos más relevantes clínicamente en radiología son los del primer dedo de la mano (tendones flexores) y del primer dedo del pie (tendón del flexor del hallux). Requieren proyecciones dedicadas para su visualización axial."
+  }
+ },
+ "pneumoperitoneo": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Pneumoperitoneo",
+   "definizione": "Presenza di aria libera nella cavità addominale, visibile nella proiezione dell'addome in ortostatismo come falce aerea sottodiaframmatica. Segno radiografico di perforazione di un viscere cavo (es: ulcera perforata). Il paziente deve stare in piedi almeno 5-10 minuti prima dell'esposizione."
+  },
+  "en": {
+   "termine": "Pneumoperitoneum",
+   "definizione": "Presence of free air in the abdominal cavity, visible on the erect abdominal projection as a subdiaphragmatic air crescent. A radiographic sign of perforation of a hollow viscus (e.g. perforated ulcer). The patient must remain standing for at least 5–10 minutes before the exposure."
+  },
+  "es": {
+   "termine": "Neumoperitoneo",
+   "definizione": "Presencia de aire libre en la cavidad abdominal, visible en la proyección del abdomen en bipedestación como una semiluna aérea subdiafragmática. Signo radiográfico de perforación de una víscera hueca (ej.: úlcera perforada). El paciente debe permanecer de pie al menos 5–10 minutos antes de la exposición."
+  }
+ },
+ "livello-idroaereo": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Livello idroaereo",
+   "definizione": "Interfaccia liquido-gas visibile nelle proiezioni in ortostatismo come una linea orizzontale netta con aria sopra e liquido sotto. Indica accumulo anomalo di gas e liquido nelle anse intestinali o in altre cavità. Segno di occlusione intestinale o ileo paralitico."
+  },
+  "en": {
+   "termine": "Air-fluid level",
+   "definizione": "Liquid-gas interface visible on erect projections as a sharp horizontal line with air above and fluid below. It indicates abnormal accumulation of gas and fluid in the bowel loops or other cavities. A sign of bowel obstruction or paralytic ileus."
+  },
+  "es": {
+   "termine": "Nivel hidroaéreo",
+   "definizione": "Interfaz líquido-gas visible en las proyecciones en bipedestación como una línea horizontal nítida con aire encima y líquido debajo. Indica acumulación anómala de gas y líquido en las asas intestinales u otras cavidades. Signo de obstrucción intestinal o íleo paralítico."
+  }
+ },
+ "spondilolisi": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Spondilolisi",
+   "definizione": "Difetto (soluzione di continuità) della pars interarticularis vertebrale, più frequente a livello di L5. Visualizzabile nella proiezione obliqua lombare come frattura del \"collo del cagnolino di Scottie\". Può essere congenita, da stress o traumatica."
+  },
+  "en": {
+   "termine": "Spondylolysis",
+   "definizione": "Defect (break in continuity) of the vertebral pars interarticularis, most frequently at L5. Seen on the lumbar oblique projection as a fracture of the \"Scottie dog's neck\". It can be congenital, stress-related or traumatic."
+  },
+  "es": {
+   "termine": "Espondilólisis",
+   "definizione": "Defecto (solución de continuidad) de la pars interarticularis vertebral, más frecuente a nivel de L5. Visible en la proyección oblicua lumbar como fractura del \"cuello del perrito de Scottie\". Puede ser congénita, por estrés o traumática."
+  }
+ },
+ "spondilolistesi": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Spondilolistesi",
+   "definizione": "Scivolamento anteriore (anterolisi) di un corpo vertebrale rispetto al sottostante. Classificata secondo Meyerding in gradi I-IV in base all'entità dello scivolamento. Valutata nelle proiezioni laterali della colonna lombare, in particolare in quelle funzionali (flessione/estensione)."
+  },
+  "en": {
+   "termine": "Spondylolisthesis",
+   "definizione": "Anterior slippage (anterolisthesis) of one vertebral body relative to the one below. Classified according to Meyerding into grades I–IV based on the degree of slippage. Assessed on lateral lumbar spine projections, particularly the functional ones (flexion/extension)."
+  },
+  "es": {
+   "termine": "Espondilolistesis",
+   "definizione": "Deslizamiento anterior (anterolistesis) de un cuerpo vertebral respecto al subyacente. Clasificada según Meyerding en grados I–IV según la magnitud del deslizamiento. Se valora en las proyecciones laterales de la columna lumbar, en particular en las funcionales (flexión/extensión)."
+  }
+ },
+ "frattura-di-bennett": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Frattura di Bennett",
+   "definizione": "Frattura-lussazione del I metacarpo con coinvolgimento dell'articolazione trapeziometacarpale. Il frammento mediale (di Bennett) rimane in sede mentre il metacarpo si disloca prossimalmente e radialmente per la trazione del muscolo abduttore lungo del pollice."
+  },
+  "en": {
+   "termine": "Bennett fracture",
+   "definizione": "Fracture-dislocation of the first metacarpal involving the trapeziometacarpal joint. The medial (Bennett) fragment stays in place while the metacarpal dislocates proximally and radially due to the pull of the abductor pollicis longus muscle."
+  },
+  "es": {
+   "termine": "Fractura de Bennett",
+   "definizione": "Fractura-luxación del primer metacarpiano con afectación de la articulación trapeciometacarpiana. El fragmento medial (de Bennett) permanece en su sitio mientras el metacarpiano se luxa proximal y radialmente por la tracción del músculo abductor largo del pulgar."
+  }
+ },
+ "sindrome-da-conflitto-sub-acromiale": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "Sindrome da conflitto sub-acromiale",
+   "definizione": "Compressione della cuffia dei rotatori e della borsa sub-acromiale tra la testa omerale e l'arco coraco-acromiale. Valutata con la proiezione \"Neer\" (Outlet). La morfologia dell'acromion (tipo I, II, III) influenza il rischio di conflitto."
+  },
+  "en": {
+   "termine": "Subacromial impingement syndrome",
+   "definizione": "Compression of the rotator cuff and the subacromial bursa between the humeral head and the coracoacromial arch. Assessed with the \"Neer\" (Outlet) projection. The morphology of the acromion (type I, II, III) influences the risk of impingement."
+  },
+  "es": {
+   "termine": "Síndrome de pinzamiento subacromial",
+   "definizione": "Compresión del manguito de los rotadores y de la bolsa subacromial entre la cabeza humeral y el arco coracoacromial. Se valora con la proyección \"Neer\" (Outlet). La morfología del acromion (tipo I, II, III) influye en el riesgo de pinzamiento."
+  }
+ },
+ "cagnolino-di-scottie": {
+  "categoria": "anatomia",
+  "it": {
+   "termine": "\"Cagnolino di Scottie\"",
+   "definizione": "Immagine caratteristica che si forma nella proiezione obliqua della colonna lombare. Il \"cagnolino\" è formato da: naso = processo trasverso, occhio = peduncolo, orecchio = faccetta articolare superiore, zampa anteriore = faccetta articolare inferiore, collo = pars interarticularis. Una frattura del collo = spondilolisi."
+  },
+  "en": {
+   "termine": "\"Scottie dog\"",
+   "definizione": "Characteristic image formed on the oblique projection of the lumbar spine. The \"Scottie dog\" is made up of: nose = transverse process, eye = pedicle, ear = superior articular facet, front leg = inferior articular facet, neck = pars interarticularis. A fracture of the neck = spondylolysis."
+  },
+  "es": {
+   "termine": "\"Perrito de Scottie\"",
+   "definizione": "Imagen característica que se forma en la proyección oblicua de la columna lumbar. El \"perrito\" está formado por: nariz = apófisis transversa, ojo = pedículo, oreja = faceta articular superior, pata delantera = faceta articular inferior, cuello = pars interarticularis. Una fractura del cuello = espondilólisis."
+  }
+ },
+ "mas-ma-t": {
+  "categoria": "formula",
+  "it": {
+   "termine": "mAs = mA × t",
+   "definizione": "Il prodotto milliampere-secondo esprime la carica totale erogata in un'esposizione.\\n\\nmAs = mA × t\\nmA = mAs / t\\nt = mAs / mA\\n\\nMantenere il prodotto mAs costante quando si varia corrente o tempo preserva la dose e la densità ottica. Raddoppiare i mAs raddoppia la dose.\\n\\nEsempio: 200 mA × 0,5 s = 100 mAs  ·  400 mA × 0,25 s = 100 mAs"
+  },
+  "en": {
+   "termine": "mAs = mA × t",
+   "definizione": "The milliampere-second product expresses the total charge delivered in an exposure.\n\nmAs = mA × t\nmA = mAs / t\nt = mAs / mA\n\nKeeping the mAs product constant when varying current or time preserves dose and optical density. Doubling the mAs doubles the dose.\n\nExample: 200 mA × 0.5 s = 100 mAs  ·  400 mA × 0.25 s = 100 mAs"
+  },
+  "es": {
+   "termine": "mAs = mA × t",
+   "definizione": "El producto miliamperio-segundo expresa la carga total suministrada en una exposición.\n\nmAs = mA × t\nmA = mAs / t\nt = mAs / mA\n\nMantener el producto mAs constante al variar la corriente o el tiempo preserva la dosis y la densidad óptica. Duplicar los mAs duplica la dosis.\n\nEjemplo: 200 mA × 0,5 s = 100 mAs  ·  400 mA × 0,25 s = 100 mAs"
+  }
+ },
+ "legge-degli-inversi-del-quadrato": {
+  "categoria": "formula",
+  "it": {
+   "termine": "Legge degli Inversi del Quadrato",
+   "definizione": "L'intensità del fascio è inversamente proporzionale al quadrato della distanza dalla sorgente.\\n\\nmAs₂ = mAs₁ × (DFD₂ / DFD₁)²\\n\\nAumentando il DFD i mAs vanno corretti proporzionalmente al quadrato del rapporto delle distanze, per mantenere la stessa esposizione al detettore.\\n\\nEsempio: DFD 100 cm → 150 cm\\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25"
+  },
+  "en": {
+   "termine": "Inverse Square Law",
+   "definizione": "The intensity of the beam is inversely proportional to the square of the distance from the source.\n\nmAs₂ = mAs₁ × (SID₂ / SID₁)²\n\nWhen the SID is increased, the mAs must be corrected in proportion to the square of the distance ratio, to maintain the same exposure at the detector.\n\nExample: SID 100 cm → 150 cm\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2.25"
+  },
+  "es": {
+   "termine": "Ley del Cuadrado Inverso",
+   "definizione": "La intensidad del haz es inversamente proporcional al cuadrado de la distancia a la fuente.\n\nmAs₂ = mAs₁ × (DFR₂ / DFR₁)²\n\nAl aumentar la DFR, los mAs deben corregirse proporcionalmente al cuadrado de la razón de distancias, para mantener la misma exposición en el receptor.\n\nEjemplo: DFR 100 cm → 150 cm\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25"
+  }
+ },
+ "fattore-di-griglia-bucky-factor-formula": {
+  "categoria": "formula",
+  "it": {
+   "termine": "Fattore di Griglia (Bucky Factor)",
+   "definizione": "L'uso della griglia antidiffusione richiede un aumento dei mAs per compensare l'assorbimento.\\n\\nmAs_griglia = mAs_senza_griglia × BF\\n\\nValori tipici del Bucky Factor (BF):\\n• Rapporto 5:1  → BF ≈ 3\\n• Rapporto 8:1  → BF ≈ 4\\n• Rapporto 10:1 → BF ≈ 5\\n• Rapporto 12:1 → BF ≈ 6\\n\\nL'aumento dei mAs compensa l'assorbimento della griglia mantenendo la corretta densità ottica sull'immagine."
+  },
+  "en": {
+   "termine": "Grid Factor (Bucky Factor)",
+   "definizione": "Using an anti-scatter grid requires an increase in mAs to compensate for its absorption.\n\nmAs_grid = mAs_no_grid × BF\n\nTypical Bucky Factor (BF) values:\n• Ratio 5:1  → BF ≈ 3\n• Ratio 8:1  → BF ≈ 4\n• Ratio 10:1 → BF ≈ 5\n• Ratio 12:1 → BF ≈ 6\n\nThe mAs increase compensates for the grid's absorption while maintaining the correct optical density on the image."
+  },
+  "es": {
+   "termine": "Factor de Rejilla (Bucky Factor)",
+   "definizione": "El uso de la rejilla antidifusora requiere un aumento de los mAs para compensar su absorción.\n\nmAs_rejilla = mAs_sin_rejilla × BF\n\nValores típicos del Bucky Factor (BF):\n• Razón 5:1  → BF ≈ 3\n• Razón 8:1  → BF ≈ 4\n• Razón 10:1 → BF ≈ 5\n• Razón 12:1 → BF ≈ 6\n\nEl aumento de los mAs compensa la absorción de la rejilla manteniendo la densidad óptica correcta en la imagen."
+  }
+ },
+ "regola-del-15-kvp": {
+  "categoria": "formula",
+  "it": {
+   "termine": "Regola del 15% kVp",
+   "definizione": "Aumentare il kVp del 15% incrementa il potere penetrante del fascio, permettendo di dimezzare i mAs con densità ottica equivalente. Ridurre il kVp del 15% ha l'effetto opposto.\\n\\n+15% kVp → mAs ÷ 2\\n−15% kVp → mAs × 2\\n\\nUso pratico: preferire kVp elevati e mAs ridotti per ottimizzare la dose mantenendo contrasto accettabile (principio ALARA). La variazione del kVp modifica anche il contrasto dell'immagine."
+  },
+  "en": {
+   "termine": "The 15% kVp Rule",
+   "definizione": "Increasing the kVp by 15% raises the penetrating power of the beam, allowing the mAs to be halved with equivalent optical density. Reducing the kVp by 15% has the opposite effect.\n\n+15% kVp → mAs ÷ 2\n−15% kVp → mAs × 2\n\nPractical use: prefer high kVp and low mAs to optimise dose while maintaining acceptable contrast (ALARA principle). Changing the kVp also modifies image contrast."
+  },
+  "es": {
+   "termine": "Regla del 15% de kVp",
+   "definizione": "Aumentar el kVp un 15% incrementa el poder de penetración del haz, permitiendo reducir los mAs a la mitad con una densidad óptica equivalente. Reducir el kVp un 15% tiene el efecto opuesto.\n\n+15% kVp → mAs ÷ 2\n−15% kVp → mAs × 2\n\nUso práctico: preferir kVp elevados y mAs reducidos para optimizar la dosis manteniendo un contraste aceptable (principio ALARA). La variación del kVp modifica también el contraste de la imagen."
+  }
+ },
+ "calcolo-del-tempo-di-esposizione": {
+  "categoria": "formula",
+  "it": {
+   "termine": "Calcolo del Tempo di Esposizione",
+   "definizione": "Re-espressioni della relazione fondamentale tra mA, tempo e mAs.\\n\\nt = mAs / mA\\nmA = mAs / t\\nmAs = mA × t\\n\\nUtili per convertire tra stazioni tecniche a mAs costante o per verificare i tempi massimi ammissibili con i sistemi AEC.\\n\\nEsempio: 200 mAs a 400 mA → t = 200 / 400 = 0,5 s\\n200 mAs a 800 mA → t = 200 / 800 = 0,25 s"
+  },
+  "en": {
+   "termine": "Exposure Time Calculation",
+   "definizione": "Rearrangements of the fundamental relationship between mA, time and mAs.\n\nt = mAs / mA\nmA = mAs / t\nmAs = mA × t\n\nUseful for converting between technique settings at constant mAs, or for checking the maximum permissible times with AEC systems.\n\nExample: 200 mAs at 400 mA → t = 200 / 400 = 0.5 s\n200 mAs at 800 mA → t = 200 / 800 = 0.25 s"
+  },
+  "es": {
+   "termine": "Cálculo del Tiempo de Exposición",
+   "definizione": "Reexpresiones de la relación fundamental entre mA, tiempo y mAs.\n\nt = mAs / mA\nmA = mAs / t\nmAs = mA × t\n\nÚtiles para convertir entre parámetros técnicos a mAs constante o para verificar los tiempos máximos admisibles con los sistemas AEC.\n\nEjemplo: 200 mAs a 400 mA → t = 200 / 400 = 0,5 s\n200 mAs a 800 mA → t = 200 / 800 = 0,25 s"
+  }
+ }
+}
