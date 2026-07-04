@@ -173,6 +173,7 @@ def head(canonical, title, desc, extra_schema):
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="apple-itunes-app" content="app-id=6770671896">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
