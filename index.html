@@ -392,8 +392,6 @@
     .price-features li:last-child { border-bottom: none; }
     .price-features li::before { content: '✓'; color: var(--blue); font-weight: 700; font-size: 14px; flex-shrink: 0; }
     .price-trial { margin-top: 24px; font-size: 13px; color: var(--text2); background: var(--blue-lt); padding: 12px 18px; border-radius: 12px; }
-    .price-cta { display: block; margin-top: 16px; background: var(--blue); color: white; font-size: 15px; font-weight: 700; padding: 15px 24px; border-radius: 14px; text-decoration: none; transition: background 0.15s, transform 0.15s; }
-    .price-cta:hover { background: var(--blue-dk); transform: translateY(-1px); }
 
     /* ══════════════════════════════════════════ FAQ */
     .faq-section { background: var(--surface); border-top: 1px solid var(--border); padding: 88px 24px; }
@@ -458,22 +456,6 @@
       .stat-value { font-size: 24px; }
     }
 
-    /* ══════════════════════════════════════════ TOAST */
-    #toast-coming {
-      position: fixed; bottom: 32px; left: 50%;
-      transform: translateX(-50%) translateY(12px);
-      background: var(--blue); color: #fff;
-      font-size: 14px; font-weight: 600;
-      padding: 12px 26px; border-radius: 40px;
-      white-space: nowrap;
-      box-shadow: 0 8px 28px rgba(65,109,190,0.45);
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.22s ease, transform 0.22s ease;
-      z-index: 9999;
-    }
-    #toast-coming.show {
-      opacity: 1; transform: translateX(-50%) translateY(0);
-    }
   </style>
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e94eb4bff7374521ba1b71b5bb958c5f"}'></script>
 </head>
@@ -778,8 +760,8 @@
     </ul>
     <div class="price-trial" data-i18n="priceTrial">14 giorni di prova gratuita — nessuna carta richiesta</div>
     <div class="price-cta-badges" style="display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:16px;">
-      <a href="https://apps.apple.com/it/app/rad-index/id6770671896" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Scarica su App Store" data-i18n-alt="badgeApple" style="height:52px;width:auto;display:block;"></a>
-      <a href="https://play.google.com/store/apps/details?id=com.radindex.app" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponibile su Google Play" data-i18n-alt="badgeGoogle" style="height:52px;width:auto;display:block;"></a>
+      <a href="https://apps.apple.com/it/app/rad-index/id6770671896" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Scarica su App Store" data-i18n-alt="badgeApple" loading="lazy" style="height:52px;width:auto;display:block;"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.radindex.app" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponibile su Google Play" data-i18n-alt="badgeGoogle" loading="lazy" style="height:52px;width:auto;display:block;"></a>
     </div>
   </div>
 </section>
@@ -817,7 +799,6 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════ FOOTER -->
-<div id="toast-coming"></div>
 
 <footer>
   <a href="/" class="footer-logo">
@@ -887,7 +868,6 @@ const T = {
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
     pf9: 'Note personali su ogni scheda', pf10: 'Preferiti per accesso rapido',
     priceTrial: '14 giorni di prova gratuita — nessuna carta richiesta',
-    priceCta: 'Scarica ora — gratis per 14 giorni',
     faqTag: 'Domande frequenti', faqTitle: 'Tutto quello che vuoi sapere',
     faqQ1: 'È un abbonamento?', faqA1: 'No. Rad Index si paga una volta sola (€9,99) e l\'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi.',
     faqQ2: 'Funziona offline?', faqA2: 'Sì, completamente. Tutti i contenuti sono nell\'app: puoi consultare proiezioni, parametri e flashcard senza connessione, anche in sala radiologica o in reparto. Nessun dato viene caricato in cloud.',
@@ -948,7 +928,6 @@ const T = {
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
     pf9: 'Personal notes on every card', pf10: 'Favorites for quick access',
     priceTrial: '14-day free trial — no card required',
-    priceCta: 'Download now — free for 14 days',
     faqTag: 'Frequently asked questions', faqTitle: 'Everything you want to know',
     faqQ1: 'Is it a subscription?', faqA1: 'No. Rad Index is a one-time payment (€9.99) with permanent access. No recurring fees, no auto-renewal. Future updates are included.',
     faqQ2: 'Does it work offline?', faqA2: 'Yes, completely. All content is in the app: you can consult projections, parameters and flashcards without a connection, even in the imaging suite or on the ward. No data is uploaded to the cloud.',
@@ -1009,7 +988,6 @@ const T = {
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
     pf9: 'Notas personales en cada ficha', pf10: 'Favoritos para acceso rápido',
     priceTrial: '14 días de prueba gratuita — sin tarjeta requerida',
-    priceCta: 'Descargar ahora — gratis por 14 días',
     faqTag: 'Preguntas frecuentes', faqTitle: 'Todo lo que quieres saber',
     faqQ1: '¿Es una suscripción?', faqA1: 'No. Rad Index se paga una sola vez (9,99 €) y el acceso es permanente. Sin costes recurrentes, sin renovación automática. Las actualizaciones futuras están incluidas.',
     faqQ2: '¿Funciona sin conexión?', faqA2: 'Sí, completamente. Todo el contenido está en la app: puedes consultar proyecciones, parámetros y flashcards sin conexión, incluso en la sala de radiología o en planta. Ningún dato se sube a la nube.',

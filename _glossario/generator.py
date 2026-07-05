@@ -54,6 +54,11 @@ def strip_acc(s): return "".join(c for c in unicodedata.normalize("NFD", s.lower
 def esc(s): return html.escape(s)
 def defhtml(s): return html.escape(s).replace("\n", "<br>")
 
+def jstr(s):
+    """Stringa JSON valida (con virgolette) — per i valori dentro JSON-LD.
+    NON usare esc()/html.escape nei blocchi schema: produce &quot; nel JSON."""
+    return json.dumps(s, ensure_ascii=False)
+
 def load_projections():
     projs = []
     for p in sorted(PROJ_DIR.glob("rx-*.html")) + sorted(PROJ_DIR.glob("opt-*.html")):
@@ -196,8 +201,8 @@ CTA = f"""<div class="app-cta">
     <h2 data-i18n="ctaH">Vai oltre la definizione</h2>
     <p data-i18n="ctaP">Con Rad Index studi con le flashcard, consulti le 147 proiezioni complete e la checklist ALARA — anche offline, in reparto.</p>
     <div class="cta-buttons">
-      <a href="{APP_STORE}" class="badge-link"><img src="../assets/badges/app-store.svg" alt="App Store" class="badge-img" width="124" height="48"></a>
-      <a href="{PLAY_STORE}" class="badge-link"><img src="../assets/badges/google-play.png" alt="Google Play" class="badge-img" width="124" height="48"></a>
+      <a href="{APP_STORE}" class="badge-link"><img src="../assets/badges/app-store.svg" alt="App Store" class="badge-img" loading="lazy" width="124" height="48"></a>
+      <a href="{PLAY_STORE}" class="badge-link"><img src="../assets/badges/google-play.png" alt="Google Play" class="badge-img" loading="lazy" width="124" height="48"></a>
     </div>
   </div>"""
 
@@ -237,10 +242,10 @@ def term_page(slug, v, data, projs, dfc):
             f'<span class="related-cat" data-i18n="projtag_{pr["slug"]}">{UI["it"]["uiProjTag"]}</span></a>' for pr in proj_matches)
         proj_section = f'<div class="related" style="margin-bottom:24px;"><h2 data-i18n="uiProjRelated">Proiezioni correlate</h2><div class="related-list">{pit}</div></div>'
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"DefinedTerm","name":"{esc(it["termine"])}","description":"{esc(re.sub(chr(10)," ",it["definizione"]))[:300]}","inDefinedTermSet":{{"@type":"DefinedTermSet","name":"Glossario di radiologia — Rad Index","url":"https://radindex.app/glossario/"}},"url":"{canonical}"}}
+  {{"@context":"https://schema.org","@type":"DefinedTerm","name":{jstr(it["termine"])},"description":{jstr(re.sub(chr(10)," ",it["definizione"])[:300])},"inDefinedTermSet":{{"@type":"DefinedTermSet","name":"Glossario di radiologia — Rad Index","url":"https://radindex.app/glossario/"}},"url":"{canonical}"}}
   </script>
   <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://radindex.app/"}},{{"@type":"ListItem","position":2,"name":"Glossario","item":"https://radindex.app/glossario/"}},{{"@type":"ListItem","position":3,"name":"{esc(it["termine"])}"}}]}}
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://radindex.app/"}},{{"@type":"ListItem","position":2,"name":"Glossario","item":"https://radindex.app/glossario/"}},{{"@type":"ListItem","position":3,"name":{jstr(it["termine"])}}}]}}
   </script>'''
     desc = re.sub(r"\s+"," ", it["definizione"]).strip()
     desc = f"{it['termine']}: {desc[:150]}…" if len(desc) > 150 else f"{it['termine']}: {desc}"
@@ -322,7 +327,9 @@ def hub_page(data):
 def update_sitemap(data):
     txt = SITEMAP.read_text(encoding="utf-8")
     # rimuovi vecchie righe glossario (semplici)
-    txt = re.sub(r'\n?\s*<url><loc>https://radindex\.app/glossario/[^<]*</loc>.*?</url>', '', txt)
+    # re.S: le entry glossario sono multiriga (xhtml:link hreflang) — senza
+    # DOTALL non verrebbero rimosse e la rigenerazione creerebbe duplicati.
+    txt = re.sub(r'\n?\s*<url><loc>https://radindex\.app/glossario/[^<]*</loc>.*?</url>', '', txt, flags=re.S)
     def entry(loc):
         alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{l}" href="{loc}?lang={l}"/>' for l in LANGS)
         alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{loc}"/>'
