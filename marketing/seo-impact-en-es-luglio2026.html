@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impatto SEO EN/ES — Calcolo Spanometrico · Rad Index</title>
+<style>
+:root {
+  --bg:        #f0f2f6;
+  --surface:   #ffffff;
+  --surface-2: #f7f8fb;
+  --border:    #dde1ea;
+  --text-1:    #0d0f14;
+  --text-2:    #4a4f5c;
+  --text-3:    #8a909e;
+  --c-en:      #2a78d6;
+  --c-es:      #1baf7a;
+  --c-it:      #c98500;
+  --c-en-a:    rgba(42,120,214,0.12);
+  --c-es-a:    rgba(27,175,122,0.12);
+  --c-it-a:    rgba(201,133,0,0.12);
+  --grid:      #e4e7ef;
+  --warn-bg:   #fff9ed;
+  --warn-bd:   #f0c040;
+  --radius:    8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #0d0f14;
+    --surface:   #161820;
+    --surface-2: #1c1f2a;
+    --border:    #272a36;
+    --text-1:    #f0f2f8;
+    --text-2:    #a0a6b8;
+    --text-3:    #5a6070;
+    --c-en:      #5298e8;
+    --c-es:      #26cc8c;
+    --c-it:      #d4a020;
+    --c-en-a:    rgba(82,152,232,0.15);
+    --c-es-a:    rgba(38,204,140,0.15);
+    --c-it-a:    rgba(212,160,32,0.15);
+    --grid:      #222530;
+    --warn-bg:   #1e1a10;
+    --warn-bd:   #a07820;
+  }
+}
+:root[data-theme="light"] {
+  --bg:#f0f2f6; --surface:#ffffff; --surface-2:#f7f8fb; --border:#dde1ea;
+  --text-1:#0d0f14; --text-2:#4a4f5c; --text-3:#8a909e;
+  --c-en:#2a78d6; --c-es:#1baf7a; --c-it:#c98500;
+  --c-en-a:rgba(42,120,214,0.12); --c-es-a:rgba(27,175,122,0.12); --c-it-a:rgba(201,133,0,0.12);
+  --grid:#e4e7ef; --warn-bg:#fff9ed; --warn-bd:#f0c040;
+}
+:root[data-theme="dark"] {
+  --bg:#0d0f14; --surface:#161820; --surface-2:#1c1f2a; --border:#272a36;
+  --text-1:#f0f2f8; --text-2:#a0a6b8; --text-3:#5a6070;
+  --c-en:#5298e8; --c-es:#26cc8c; --c-it:#d4a020;
+  --c-en-a:rgba(82,152,232,0.15); --c-es-a:rgba(38,204,140,0.15); --c-it-a:rgba(212,160,32,0.15);
+  --grid:#222530; --warn-bg:#1e1a10; --warn-bd:#a07820;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 32px 24px 48px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.header { margin-bottom: 28px; }
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 6px;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--text-1);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.subtitle { font-size: 13px; color: var(--text-2); }
+
+/* ── Tiles ────────────────────────────────────────────── */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+@media (max-width: 580px) { .tiles { grid-template-columns: 1fr; } }
+.tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.tile-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text-3);
+  margin-bottom: 8px;
+}
+.tile-value {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.03em;
+  color: var(--text-1);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.tile-sub {
+  display: block;
+  font-size: 12px;
+  color: var(--text-3);
+}
+.tile.accent-en { border-top: 3px solid var(--c-en); }
+.tile.accent-es { border-top: 3px solid var(--c-es); }
+.tile.accent-tot { border-top: 3px solid var(--text-3); }
+
+/* ── Chart card ──────────────────────────────────────── */
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.chart-title { font-size: 15px; font-weight: 600; color: var(--text-1); }
+.chart-sub { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+.legend {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-2);
+}
+.legend-dot {
+  width: 10px;
+  height: 3px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.chart-wrap { position: relative; }
+#chart { width: 100%; display: block; }
+#tooltip {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .1s;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  z-index: 10;
+}
+.tt-month { font-weight: 700; color: var(--text-1); margin-bottom: 6px; }
+.tt-row { display: flex; justify-content: space-between; gap: 12px; margin-top: 3px; }
+.tt-label { color: var(--text-2); }
+.tt-val { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+/* ── Two-col bottom ───────────────────────────────────── */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+@media (max-width: 580px) { .bottom-grid { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.card-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text-3);
+  margin-bottom: 14px;
+}
+.assump-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+.assump-row:last-child { border-bottom: none; }
+.assump-key { color: var(--text-2); }
+.assump-val { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--text-1); text-align: right; }
+
+.scenario-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sc-label { font-size: 12px; color: var(--text-2); }
+.sc-bar-wrap { height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+.sc-bar { height: 100%; border-radius: 4px; }
+.sc-numbers { grid-column: 2; font-size: 11px; color: var(--text-3); font-variant-numeric: tabular-nums; }
+
+/* ── Warning ─────────────────────────────────────────── */
+.warn {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-bd);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 12px;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+.warn strong { color: var(--text-1); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p class="eyebrow">Rad Index · radindex.app · luglio 2026</p>
+  <h1>Impatto SEO — Calcolo spanometrico EN/ES</h1>
+  <p class="subtitle">Proiezione organica a 12 mesi post-deploy pagine statiche · Incertezza ±50–70%</p>
+</div>
+
+<div class="tiles">
+  <div class="tile accent-en">
+    <span class="tile-label">Ricerche mensili indirizzabili</span>
+    <span class="tile-value">38.250</span>
+    <span class="tile-sub">EN 22k · ES 9k · IT 7k</span>
+  </div>
+  <div class="tile accent-es">
+    <span class="tile-label">Visite organiche al mese 12</span>
+    <span class="tile-value">~950</span>
+    <span class="tile-sub">scenario base (EN+ES+IT)</span>
+  </div>
+  <div class="tile accent-tot">
+    <span class="tile-label">Download stimati al mese 12</span>
+    <span class="tile-value">~48</span>
+    <span class="tile-sub">conversione 5% da search intent</span>
+  </div>
+</div>
+
+<div class="chart-card">
+  <div class="chart-header">
+    <div>
+      <div class="chart-title">Visite organiche mensili stimate</div>
+      <div class="chart-sub">Lug 2026 → Giu 2027 · scenario base</div>
+    </div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--c-es)"></div>
+        <span>Español</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--c-en)"></div>
+        <span>English</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--c-it)"></div>
+        <span>Italiano</span>
+      </div>
+    </div>
+  </div>
+  <div class="chart-wrap">
+    <svg id="chart" height="280"></svg>
+    <div id="tooltip">
+      <div class="tt-month" id="tt-month"></div>
+      <div class="tt-row">
+        <span class="tt-label" style="color:var(--c-es)">● ES</span>
+        <span class="tt-val" id="tt-es"></span>
+      </div>
+      <div class="tt-row">
+        <span class="tt-label" style="color:var(--c-en)">● EN</span>
+        <span class="tt-val" id="tt-en"></span>
+      </div>
+      <div class="tt-row">
+        <span class="tt-label" style="color:var(--c-it)">● IT</span>
+        <span class="tt-val" id="tt-it"></span>
+      </div>
+      <div class="tt-row" style="margin-top:4px;padding-top:4px;border-top:1px solid var(--border)">
+        <span class="tt-label">Totale</span>
+        <span class="tt-val" id="tt-tot"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-grid">
+  <div class="card">
+    <div class="card-title">Assunzioni chiave</div>
+    <div class="assump-row">
+      <span class="assump-key">Volume medio/proiezione EN</span>
+      <span class="assump-val">~150/mese</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">Volume medio/proiezione ES</span>
+      <span class="assump-val">~60/mese</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">CTR EN mese 12</span>
+      <span class="assump-val">1.3%</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">CTR ES mese 12</span>
+      <span class="assump-val">5.5%</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">Competizione EN</span>
+      <span class="assump-val">🔴 Alta</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">Competizione ES</span>
+      <span class="assump-val">🟢 Bassa</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">Conversione visita → install</span>
+      <span class="assump-val">5%</span>
+    </div>
+    <div class="assump-row">
+      <span class="assump-key">Pagine EN indicizzate</span>
+      <span class="assump-val">243</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Scenari download/mese al mese 12</div>
+    <div style="margin-bottom:16px">
+
+      <div class="scenario-row">
+        <span class="sc-label">Pessimistico</span>
+        <div class="sc-bar-wrap">
+          <div class="sc-bar" style="width:20%;background:var(--text-3)"></div>
+        </div>
+        <span class="sc-numbers" style="grid-column:2">÷3 base → <strong>~16</strong> download/mese</span>
+      </div>
+
+      <div class="scenario-row">
+        <span class="sc-label">Base</span>
+        <div class="sc-bar-wrap">
+          <div class="sc-bar" style="width:48%;background:var(--c-en)"></div>
+        </div>
+        <span class="sc-numbers" style="grid-column:2">→ <strong>~48</strong> download/mese</span>
+      </div>
+
+      <div class="scenario-row">
+        <span class="sc-label">Ottimistico</span>
+        <div class="sc-bar-wrap">
+          <div class="sc-bar" style="width:96%;background:var(--c-es)"></div>
+        </div>
+        <span class="sc-numbers" style="grid-column:2">×2 base → <strong>~96</strong> download/mese</span>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid var(--border);padding-top:14px;margin-top:4px">
+      <div class="assump-row">
+        <span class="assump-key">Oriz. anno 1 cumulato (base)</span>
+        <span class="assump-val">~175 install</span>
+      </div>
+      <div class="assump-row">
+        <span class="assump-key">Motore più rapido</span>
+        <span class="assump-val">🟢 ES/LATAM</span>
+      </div>
+      <div class="assump-row">
+        <span class="assump-key">Motore strategico (Y2+)</span>
+        <span class="assump-val">🔵 EN</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="warn">
+  <strong>Caveats:</strong> nessun keyword research tool — le stime di volume sono derivate da analogia con contenuti medico-educativi simili. La competizione EN (Merrill's, Frank's, RadiologyInfo, AAPM) è concreta. Il DA del sito è oggi ~5–8 → il ranking reale dipende dalla velocità con cui Google scansiona le 486 nuove pagine e dall'authority che si costruisce con i backlink di settembre (FNO, CdL). ES/LATAM è genuinamente meno presidiato e rappresenta l'opportunità più rapida. Questi numeri vanno riverificati su GSC a 28 luglio con dati reali.
+</div>
+
+<script>
+(function() {
+  // ── Data ─────────────────────────────────────────────
+  const months = ['Lug','Ago','Set','Ott','Nov','Dic','Gen','Feb','Mar','Apr','Mag','Giu'];
+  // Scenario base: visite organiche mensili
+  const en = [44, 58, 77, 98, 120, 143, 165, 186, 207, 231, 259, 287];
+  const es = [26, 45, 75, 112, 158, 208, 262, 312, 358, 403, 445, 485];
+  const it = [35, 52, 68, 82, 94, 105, 117, 131, 145, 158, 170, 182];
+
+  const series = [
+    { key:'es', data:es, color:'--c-es', areaColor:'--c-es-a' },
+    { key:'en', data:en, color:'--c-en', areaColor:'--c-en-a' },
+    { key:'it', data:it, color:'--c-it', areaColor:'--c-it-a' },
+  ];
+  const N = months.length;
+  const YMAX = 620;
+
+  // ── SVG setup ────────────────────────────────────────
+  const svg = document.getElementById('chart');
+  const root = document.documentElement;
+  const W = svg.parentElement.offsetWidth || 700;
+  svg.setAttribute('viewBox', `0 0 ${W} 280`);
+  svg.setAttribute('width', W);
+  const M = { top: 16, right: 16, bottom: 38, left: 46 };
+  const PW = W - M.left - M.right;
+  const PH = 280 - M.top - M.bottom;
+
+  function getVar(v) {
+    return getComputedStyle(root).getPropertyValue(v).trim();
+  }
+
+  function xOf(i) { return M.left + i * (PW / (N - 1)); }
+  function yOf(v) { return M.top + PH - (v / YMAX) * PH; }
+
+  function makePath(data) {
+    return data.map((v, i) => `${i === 0 ? 'M' : 'L'}${xOf(i).toFixed(1)},${yOf(v).toFixed(1)}`).join(' ');
+  }
+  function makeArea(data) {
+    const base = yOf(0).toFixed(1);
+    const line = makePath(data);
+    return `${line} L${xOf(N-1).toFixed(1)},${base} L${xOf(0).toFixed(1)},${base} Z`;
+  }
+
+  // Build SVG
+  let html = `<defs>
+    ${series.map(s => `
+    <linearGradient id="grad-${s.key}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${getVar(s.color)}" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="${getVar(s.color)}" stop-opacity=".02"/>
+    </linearGradient>`).join('')}
+  </defs>`;
+
+  // Grid lines
+  const gridVals = [0, 150, 300, 450, 600];
+  html += gridVals.map(v => {
+    const y = yOf(v).toFixed(1);
+    return `<line x1="${M.left}" y1="${y}" x2="${M.left + PW}" y2="${y}" stroke="${getVar('--grid')}" stroke-width="1"/>
+    <text x="${(M.left - 6).toFixed(1)}" y="${y}" text-anchor="end" dominant-baseline="middle" fill="${getVar('--text-3')}" font-size="10" font-family="system-ui" font-variant-numeric="tabular-nums">${v}</text>`;
+  }).join('');
+
+  // X-axis ticks (every other month on small screens)
+  months.forEach((m, i) => {
+    const x = xOf(i).toFixed(1);
+    const y = (M.top + PH + 14).toFixed(1);
+    const showEvery = PW < 400 ? 2 : 1;
+    if (i % showEvery !== 0) return;
+    html += `<text x="${x}" y="${y}" text-anchor="middle" fill="${getVar('--text-3')}" font-size="10" font-family="system-ui">${m}</text>`;
+    html += `<line x1="${x}" y1="${(M.top + PH).toFixed(1)}" x2="${x}" y2="${(M.top + PH + 4).toFixed(1)}" stroke="${getVar('--grid')}" stroke-width="1"/>`;
+  });
+
+  // Areas (drawn first, behind lines)
+  series.forEach(s => {
+    html += `<path d="${makeArea(s.data)}" fill="url(#grad-${s.key})"/>`;
+  });
+
+  // Lines
+  series.forEach(s => {
+    html += `<path d="${makePath(s.data)}" fill="none" stroke="${getVar(s.color)}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  });
+
+  // End-point dots + label at month 12
+  series.forEach(s => {
+    const x = xOf(N-1).toFixed(1);
+    const y = yOf(s.data[N-1]).toFixed(1);
+    const val = s.data[N-1];
+    const offset = s.key === 'en' ? -14 : s.key === 'es' ? -14 : 10;
+    html += `<circle cx="${x}" cy="${y}" r="3.5" fill="${getVar(s.color)}" stroke="${getVar('--surface')}" stroke-width="2"/>`;
+    html += `<text x="${(xOf(N-1) - 6).toFixed(1)}" y="${(yOf(val) + offset).toFixed(1)}" text-anchor="end" fill="${getVar(s.color)}" font-size="11" font-weight="600" font-family="system-ui">${val}</text>`;
+  });
+
+  // Hover overlay — invisible rect for mouse events
+  html += `<rect id="hover-zone" x="${M.left}" y="${M.top}" width="${PW}" height="${PH}" fill="transparent" style="cursor:crosshair"/>`;
+  // Crosshair line
+  html += `<line id="crosshair" x1="0" y1="${M.top}" x2="0" y2="${M.top + PH}" stroke="${getVar('--text-3')}" stroke-width="1" stroke-dasharray="4,3" opacity="0"/>`;
+
+  svg.innerHTML = html;
+
+  // ── Tooltip interaction ───────────────────────────────
+  const tooltip   = document.getElementById('tooltip');
+  const crosshair = document.getElementById('crosshair');
+  const hoverZone = document.getElementById('hover-zone');
+
+  function showTooltip(e) {
+    const rect = svg.getBoundingClientRect();
+    const mx   = (e.clientX - rect.left) * (W / rect.width);
+    const fi   = (mx - M.left) / (PW / (N - 1));
+    const i    = Math.round(Math.max(0, Math.min(N - 1, fi)));
+    const cx   = xOf(i);
+
+    crosshair.setAttribute('x1', cx.toFixed(1));
+    crosshair.setAttribute('x2', cx.toFixed(1));
+    crosshair.setAttribute('opacity', '0.8');
+
+    document.getElementById('tt-month').textContent = months[i] + ' 2026' + (i >= 6 ? '/27' : ' 2026').replace('/27','') + (i >= 5 ? ' 2027' : ' 2026').replace(' 2026', i < 5 ? ' 2026' : ' 2027');
+    document.getElementById('tt-es').textContent = es[i] + ' visite';
+    document.getElementById('tt-en').textContent = en[i] + ' visite';
+    document.getElementById('tt-it').textContent = it[i] + ' visite';
+    document.getElementById('tt-tot').textContent = (es[i]+en[i]+it[i]) + ' visite';
+
+    // Position tooltip
+    const svgRect = svg.getBoundingClientRect();
+    const tx = cx * (svgRect.width / W) + svgRect.left - rect.left;
+    let left = tx + 12;
+    if (left + 160 > rect.width) left = tx - 160;
+    tooltip.style.left = left + 'px';
+    tooltip.style.top  = (M.top + 8) + 'px';
+    tooltip.style.opacity = '1';
+  }
+  function hideTooltip() {
+    tooltip.style.opacity = '0';
+    crosshair.setAttribute('opacity', '0');
+  }
+
+  hoverZone.addEventListener('mousemove', showTooltip);
+  hoverZone.addEventListener('mouseleave', hideTooltip);
+  hoverZone.addEventListener('touchmove', e => { e.preventDefault(); showTooltip(e.touches[0]); });
+  hoverZone.addEventListener('touchend', hideTooltip);
+
+  // ── Month label fix (gen-giu are 2027) ───────────────
+  const ttMonth = document.getElementById('tt-month');
+  function updateTTMonth(i) {
+    const year = i >= 6 ? '2027' : '2026';
+    ttMonth.textContent = months[i] + ' ' + year;
+  }
+  hoverZone.addEventListener('mousemove', e => {
+    const rect = svg.getBoundingClientRect();
+    const mx   = (e.clientX - rect.left) * (W / rect.width);
+    const fi   = (mx - M.left) / (PW / (N - 1));
+    const i    = Math.round(Math.max(0, Math.min(N - 1, fi)));
+    updateTTMonth(i);
+  });
+})();
+</script>
+</body>
+</html>
