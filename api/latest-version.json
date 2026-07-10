@@ -1,7 +1,7 @@
 {
-  "latest_ios": "1.1.0",
-  "latest_android": "1.1.0",
-  "critical_message": "I quiz sono live! Aggiorna per accedere alla simulazione esame.",
+  "latest_ios": "1.0.1",
+  "latest_android": "1.0.1",
+  "critical_message": "Nuova versione disponibile con miglioramenti e correzioni.",
   "store_url_ios": "https://apps.apple.com/it/app/rad-index/id6770671896",
   "store_url_android": "https://play.google.com/store/apps/details?id=com.radindex.app",
   "priority": "low",
