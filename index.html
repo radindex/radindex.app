@@ -411,6 +411,48 @@
     .footer-links a:hover { color: var(--blue); }
     .footer-copy { font-size: 12px; color: var(--text3); }
 
+    /* ══════════════════════════════════════════ CONTACT FORM */
+    .contact-section { background: var(--surface); border-top: 1px solid var(--border); padding: 88px 24px; }
+    .contact-inner { max-width: 600px; margin: 0 auto; }
+    .contact-form { margin-top: 44px; }
+    .form-group { margin-bottom: 24px; }
+    .form-group label { display: block; font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(65,109,190,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group [data-fs-error] { display: none; font-size: 13px; color: #b42318; margin-top: 6px; }
+    .form-submit-btn {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .form-submit-btn:hover { background: var(--blue-dk); transform: translateY(-1px); }
+    .form-submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+    [data-fs-success] { display: none; padding: 16px 18px; background: #d4edda; border-radius: 12px; margin-bottom: 20px; color: #155724; font-size: 14px; font-weight: 500; }
+    [data-fs-success].show { display: block; }
+
     /* ══════════════════════════════════════════ RESPONSIVE */
     @media (min-width: 900px) { nav { padding: 0 48px; } }
     @media (max-width: 768px) { .how-steps { grid-template-columns: 1fr; } .forwho-grid { grid-template-columns: 1fr; } .trust-grid { grid-template-columns: 1fr; } }
@@ -798,6 +840,80 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════ NEWSLETTER -->
+<section class="newsletter-section" style="padding:72px 20px;text-align:center;">
+  <div style="max-width:560px;margin:0 auto;">
+    <span class="section-tag">Resta aggiornato</span>
+    <h2 class="section-title">Nuove funzioni e consigli per TSRM</h2>
+    <p class="section-sub">Lascia la tua email: ti avviso sugli aggiornamenti di Rad Index. Niente spam, ti disiscrivi quando vuoi.</p>
+    <form id="nl-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+          style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <input type="email" name="email" required placeholder="La tua email" aria-label="Email"
+             style="flex:1 1 240px;max-width:320px;padding:14px 16px;border:1px solid #d0d5dd;border-radius:12px;font-size:15px;font-family:inherit;outline:none;">
+      <button type="submit"
+              style="padding:14px 26px;background:#416DBE;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;">Avvisami</button>
+    </form>
+    <p id="nl-msg" style="display:none;margin-top:16px;font-size:14px;font-weight:600;"></p>
+    <p style="margin-top:10px;font-size:12px;color:#98a2b3;">Riceverai solo aggiornamenti importanti. Zero spam.</p>
+  </div>
+</section>
+<script>
+(function(){
+  var f=document.getElementById('nl-form'),m=document.getElementById('nl-msg');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(r.ok){f.style.display='none';m.textContent='Grazie! Ti terrò aggiornato.';m.style.color='#27500A';m.style.display='block';}
+      else{m.textContent='Ops, qualcosa è andato storto. Riprova tra poco.';m.style.color='#b42318';m.style.display='block';}
+    }).catch(function(){m.textContent='Ops, qualcosa è andato storto. Riprova tra poco.';m.style.color='#b42318';m.style.display='block';});
+  });
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════ CONTACT FORM -->
+<section class="contact-section">
+  <div class="contact-inner">
+    <div class="section-header" style="text-align:center;margin-bottom:12px;">
+      <span class="section-tag" data-i18n="contactTag">Contatti</span>
+      <h2 class="section-title" data-i18n="contactTitle">Domande o suggerimenti?</h2>
+      <p class="section-sub" data-i18n="contactSub">Scrivimi direttamente. Leggo e rispondo a tutti.</p>
+    </div>
+
+    <div data-fs-success></div>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="contact-email" data-i18n="contactEmail">Email</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          data-fs-field
+          required
+          placeholder="il_tuo_indirizzo@example.com"
+        />
+        <span data-fs-error="email"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message" data-i18n="contactMessage">Messaggio</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          data-fs-field
+          required
+          placeholder="Scrivi il tuo messaggio..."
+        ></textarea>
+        <span data-fs-error="message"></span>
+      </div>
+
+      <button type="submit" class="form-submit-btn" data-fs-submit-btn data-i18n="contactSubmit">Invia</button>
+    </form>
+  </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════════ FOOTER -->
 
 <footer>
@@ -874,6 +990,8 @@ const T = {
     faqQ3: 'Posso provarla prima di acquistarla?', faqA3: 'Sì. Hai 14 giorni di prova gratuita con accesso completo a tutte le funzioni, senza inserire alcuna carta di pagamento.',
     faqQ4: 'I contenuti sono affidabili?', faqA4: 'Le 147 schede sono redatte da un TSRM e basate su fonti riconosciute (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index è uno strumento di studio e consultazione, non un dispositivo medico.',
     faqQ5: 'È disponibile per iOS e Android?', faqA5: 'Sì, è disponibile su entrambe le piattaforme, con la stessa esperienza e gli stessi contenuti. L\'acquisto è legato al singolo store.',
+    contactTag: 'Contatti', contactTitle: 'Domande o suggerimenti?', contactSub: 'Scrivimi direttamente. Leggo e rispondo a tutti.',
+    contactEmail: 'Email', contactMessage: 'Messaggio', contactSubmit: 'Invia',
     footerProj: 'Proiezioni radiografiche', footerTerms: 'Termini di utilizzo',
     footerCopy: '© 2026 Rad Index · Sviluppato da un TSRM per i TSRM'
   },
@@ -934,6 +1052,8 @@ const T = {
     faqQ3: 'Can I try it before buying?', faqA3: 'Yes. You get a 14-day free trial with full access to all features, no payment card required.',
     faqQ4: 'Is the content reliable?', faqA4: 'The 147 cards are written by a radiographer and based on recognised sources (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index is a study and reference tool, not a medical device.',
     faqQ5: 'Is it available for iOS and Android?', faqA5: 'Yes, it is available on both platforms, with the same experience and content. The purchase is tied to the individual store.',
+    contactTag: 'Contact', contactTitle: 'Questions or suggestions?', contactSub: 'Write to me directly. I read and reply to everyone.',
+    contactEmail: 'Email', contactMessage: 'Message', contactSubmit: 'Send',
     footerProj: 'Radiographic Projections', footerTerms: 'Terms of Use',
     footerCopy: '© 2026 Rad Index · Built by a Radiographer for Radiographers'
   },
@@ -994,6 +1114,8 @@ const T = {
     faqQ3: '¿Puedo probarla antes de comprarla?', faqA3: 'Sí. Tienes 14 días de prueba gratuita con acceso completo a todas las funciones, sin introducir ninguna tarjeta de pago.',
     faqQ4: '¿El contenido es fiable?', faqA4: 'Las 147 fichas están redactadas por un técnico de radiología y basadas en fuentes reconocidas (Mazzuccato EdiSES, Bontrager/Lampignano Elsevier). Rad Index es una herramienta de estudio y consulta, no un dispositivo médico.',
     faqQ5: '¿Está disponible para iOS y Android?', faqA5: 'Sí, está disponible en ambas plataformas, con la misma experiencia y los mismos contenidos. La compra está vinculada a cada tienda.',
+    contactTag: 'Contacto', contactTitle: '¿Preguntas o sugerencias?', contactSub: 'Escríbeme directamente. Leo y respondo a todos.',
+    contactEmail: 'Correo electrónico', contactMessage: 'Mensaje', contactSubmit: 'Enviar',
     footerProj: 'Proyecciones radiográficas', footerTerms: 'Términos de uso',
     footerCopy: '© 2026 Rad Index · Desarrollado por un Técnico para Técnicos'
   }
@@ -1052,6 +1174,13 @@ document.querySelectorAll('#nav-menu a').forEach(a => {
   });
 });
 </script>
+
+<!-- Formspree: contact form initialization -->
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'mpqvwlvp' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>
