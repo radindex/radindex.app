@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""Generatore glossario RadIndex TRILINGUE (IT/EN/ES) — pattern ?lang= come le proiezioni."""
+"""Generatore glossario RadIndex TRILINGUE (IT/EN/ES) — pattern ?lang= come le proiezioni.
+
+⚠️⚠️  NON eseguire questo script DA SOLO: produce hreflang `?lang=` e NON include
+il beacon Cloudflare → REGREDISCE la SEO EN/ES e il tracciamento (le pagine live
+sono post-processate a valle). Esegui SEMPRE la catena completa via:
+
+    ./build_glossario.sh        (dalla root del repo)
+
+che lancia in ordine: generator.py → _i18n/generate_static_i18n.py (fixa hreflang
+IT→statico + crea /en/ /es/) → add_analytics_beacon.py (beacon). Vedi build_glossario.sh.
+"""
 import re, html, json, unicodedata, pathlib
 from collections import Counter, OrderedDict
 
@@ -85,8 +95,12 @@ def match_projections(term_it, projs, dfc, cap=4, maxdf=3):
 
 CSS = (OUT / "kv-kilovolt.html").read_text(encoding="utf-8")  # riuso il CSS già in produzione
 CSS = re.search(r"<style>(.*?)</style>", CSS, re.DOTALL).group(1)
-# aggiungo stile lang switcher + colonne hub (se non presenti)
-CSS += """
+# Guard anti-duplicazione: il CSS sorgente (kv-kilovolt.html) POTREBBE già contenere
+# gli stili lang-switcher/colonne (se generato da una run precedente). Se presenti,
+# non ri-appendere (altrimenti ogni rigenerazione duplica il blocco).
+if ".lang-switcher" not in CSS:
+    # aggiungo stile lang switcher + colonne hub (se non presenti)
+    CSS += """
     .lang-switcher{display:flex;gap:2px;align-items:center;margin-left:8px;}
     .lang-btn{background:none;border:none;cursor:pointer;font-size:15px;padding:3px 4px;border-radius:6px;opacity:0.38;transition:opacity 0.15s;line-height:1;}
     .lang-btn:hover{opacity:0.75;}.lang-btn.active{opacity:1;}
@@ -223,7 +237,7 @@ def term_page(slug, v, data, projs, dfc):
              "catLabel": u["catLabel"][cat], "navHome":u["navHome"],"navProj":u["navProj"],
              "navGloss":u["navGloss"],"navCta":u["navCta"],"uiRelated":u["uiRelated"],
              "uiProjRelated":u["uiProjRelated"],"ctaH":u["ctaH"],"ctaP":u["ctaP"],
-             "footerCopy":u["footerCopy"],"pageTitle":f"{tv['termine']} — {u['titleSuffix']}"}
+             "footerCopy":u["footerCopy"],"pageTitle":tv.get("seo_title") or f"{tv['termine']} — {u['titleSuffix']}"}
         for rs in related:
             d[f"rel_{rs}"] = esc(data[rs][l]["termine"])
             d[f"relcat_{rs}"] = UI[l]["catLabel"][data[rs]["categoria"]]
@@ -247,9 +261,15 @@ def term_page(slug, v, data, projs, dfc):
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://radindex.app/"}},{{"@type":"ListItem","position":2,"name":"Glossario","item":"https://radindex.app/glossario/"}},{{"@type":"ListItem","position":3,"name":{jstr(it["termine"])}}}]}}
   </script>'''
-    desc = re.sub(r"\s+"," ", it["definizione"]).strip()
-    desc = f"{it['termine']}: {desc[:150]}…" if len(desc) > 150 else f"{it['termine']}: {desc}"
-    body = f"""{head(canonical, f"{it['termine']} — {UI['it']['titleSuffix']}", desc, schema)}
+    # SEO override opzionale (title/meta ottimizzati per CTR su pagine già in pagina 1).
+    # Se assenti, fallback al comportamento standard (definizione troncata).
+    if it.get("seo_desc"):
+        desc = re.sub(r"\s+"," ", it["seo_desc"]).strip()
+    else:
+        desc = re.sub(r"\s+"," ", it["definizione"]).strip()
+        desc = f"{it['termine']}: {desc[:150]}…" if len(desc) > 150 else f"{it['termine']}: {desc}"
+    page_title = it.get("seo_title") or f"{it['termine']} — {UI['it']['titleSuffix']}"
+    body = f"""{head(canonical, page_title, desc, schema)}
 <body>
 {NAV}
 <div class="breadcrumb">

@@ -528,7 +528,9 @@
   "categoria": "tecnico",
   "it": {
    "termine": "Angolo di Costa-Bertani",
-   "definizione": "Angolo che misura l'altezza dell'arco plantare longitudinale in proiezione laterale in carico. Formato tra la linea che unisce la tuberosità posteriore del calcagno alla testa del I metatarso e la linea che unisce la testa del I metatarso alla tuberosità scafoidea. Valori normali: 120–130°. Valori ridotti indicano piede piatto."
+   "definizione": "Angolo che misura l'altezza dell'arco plantare longitudinale in proiezione laterale in carico. Formato tra la linea che unisce la tuberosità posteriore del calcagno alla testa del I metatarso e la linea che unisce la testa del I metatarso alla tuberosità scafoidea. Valori normali: 120–130°. Valori ridotti indicano piede piatto.",
+   "seo_title": "Angolo di Costa-Bertani: valori normali e significato — Rad Index",
+   "seo_desc": "Misura l'arco plantare longitudinale in proiezione laterale sotto carico. Valori normali 120–130°; valori ridotti indicano piede piatto."
   },
   "en": {
    "termine": "Costa-Bertani angle",
@@ -558,7 +560,9 @@
   "categoria": "tecnico",
   "it": {
    "termine": "Indice di Risser",
-   "definizione": "Scala da 0 a 5 che valuta l'ossificazione dell'apofisi iliaca nelle radiografie per scoliosi. Indica la maturità scheletrica: Risser 0 = scheletro immaturo; Risser 5 = maturità scheletrica completa. Usato per predire il rischio di progressione della scoliosi."
+   "definizione": "Scala da 0 a 5 che valuta l'ossificazione dell'apofisi iliaca nelle radiografie per scoliosi. Indica la maturità scheletrica: Risser 0 = scheletro immaturo; Risser 5 = maturità scheletrica completa. Usato per predire il rischio di progressione della scoliosi.",
+   "seo_title": "Indice di Risser: scala 0–5 e maturità scheletrica — Rad Index",
+   "seo_desc": "Scala 0–5 che valuta l'ossificazione dell'apofisi iliaca nelle radiografie per scoliosi. Risser 0 = scheletro immaturo, Risser 5 = maturità completa."
   },
   "en": {
    "termine": "Risser sign",
@@ -918,7 +922,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Forame magno",
-   "definizione": "Grande apertura nella base del cranio attraverso cui il tronco encefalico si continua con il midollo spinale. Visualizzato nella proiezione di Towne. Delimitato dai condili occipitali che si articolano con l'atlante."
+   "definizione": "Grande apertura nella base del cranio attraverso cui il tronco encefalico si continua con il midollo spinale. Visualizzato nella proiezione di Towne. Delimitato dai condili occipitali che si articolano con l'atlante.",
+   "seo_title": "Forame magno: anatomia e proiezione di Towne — Rad Index",
+   "seo_desc": "Grande apertura nella base del cranio dove il tronco encefalico si continua nel midollo spinale. Delimitato dai condili occipitali; si visualizza nella proiezione di Towne."
   },
   "en": {
    "termine": "Foramen magnum",
@@ -1143,7 +1149,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Forami di coniugazione",
-   "definizione": "Aperture intervertebrali attraverso cui passano le radici nervose spinali e i vasi sanguigni. Delimitati superiormente e inferiormente dai peduncoli vertebrali, anteriormente dai corpi e dai dischi intervertebrali, posteriormente dalle faccette articolari. Visualizzati nelle proiezioni oblique della colonna."
+   "definizione": "Aperture intervertebrali attraverso cui passano le radici nervose spinali e i vasi sanguigni. Delimitati superiormente e inferiormente dai peduncoli vertebrali, anteriormente dai corpi e dai dischi intervertebrali, posteriormente dalle faccette articolari. Visualizzati nelle proiezioni oblique della colonna.",
+   "seo_title": "Forami di coniugazione: anatomia e proiezioni oblique — Rad Index",
+   "seo_desc": "Aperture intervertebrali da cui passano le radici nervose spinali. Delimitati da peduncoli, corpi/dischi e faccette; visibili nelle proiezioni oblique della colonna."
   },
   "en": {
    "termine": "Intervertebral foramina",
@@ -1188,7 +1196,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Angolo di Louis (angolo sternale)",
-   "definizione": "Giunzione tra manubrio e corpo dello sterno, visibile come una leggera prominenza anteriore. Corrisponde alla II costola e alla biforcazione tracheale (T4-T5). Punto di centratura per le proiezioni dello sterno."
+   "definizione": "Giunzione tra manubrio e corpo dello sterno, visibile come una leggera prominenza anteriore. Corrisponde alla II costola e alla biforcazione tracheale (T4-T5). Punto di centratura per le proiezioni dello sterno.",
+   "seo_title": "Angolo di Louis (angolo sternale): dov'è e a cosa serve — Rad Index",
+   "seo_desc": "Giunzione tra manubrio e corpo dello sterno, a livello della II costola e della biforcazione tracheale (T4-T5). È il punto di centratura per le proiezioni dello sterno."
   },
   "en": {
    "termine": "Angle of Louis (sternal angle)",
@@ -1233,7 +1243,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Pneumoperitoneo",
-   "definizione": "Presenza di aria libera nella cavità addominale, visibile nella proiezione dell'addome in ortostatismo come falce aerea sottodiaframmatica. Segno radiografico di perforazione di un viscere cavo (es: ulcera perforata). Il paziente deve stare in piedi almeno 5-10 minuti prima dell'esposizione."
+   "definizione": "Presenza di aria libera nella cavità addominale, visibile nella proiezione dell'addome in ortostatismo come falce aerea sottodiaframmatica. Segno radiografico di perforazione di un viscere cavo (es: ulcera perforata). Il paziente deve stare in piedi almeno 5-10 minuti prima dell'esposizione.",
+   "seo_title": "Pneumoperitoneo: aria libera addominale, come rilevarlo — Rad Index",
+   "seo_desc": "Aria libera in addome, visibile come falce sottodiaframmatica nell'addome in ortostatismo. Segno di perforazione; paziente in piedi 5-10 min prima dell'esposizione."
   },
   "en": {
    "termine": "Pneumoperitoneum",
@@ -1248,7 +1260,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Livello idroaereo",
-   "definizione": "Interfaccia liquido-gas visibile nelle proiezioni in ortostatismo come una linea orizzontale netta con aria sopra e liquido sotto. Indica accumulo anomalo di gas e liquido nelle anse intestinali o in altre cavità. Segno di occlusione intestinale o ileo paralitico."
+   "definizione": "Interfaccia liquido-gas visibile nelle proiezioni in ortostatismo come una linea orizzontale netta con aria sopra e liquido sotto. Indica accumulo anomalo di gas e liquido nelle anse intestinali o in altre cavità. Segno di occlusione intestinale o ileo paralitico.",
+   "seo_title": "Livello idroaereo: cos'è e cosa indica in radiografia — Rad Index",
+   "seo_desc": "Interfaccia liquido-gas visibile in ortostatismo come linea orizzontale netta. Segno di occlusione intestinale o ileo paralitico."
   },
   "en": {
    "termine": "Air-fluid level",
@@ -1323,7 +1337,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "\"Cagnolino di Scottie\"",
-   "definizione": "Immagine caratteristica che si forma nella proiezione obliqua della colonna lombare. Il \"cagnolino\" è formato da: naso = processo trasverso, occhio = peduncolo, orecchio = faccetta articolare superiore, zampa anteriore = faccetta articolare inferiore, collo = pars interarticularis. Una frattura del collo = spondilolisi."
+   "definizione": "Immagine caratteristica che si forma nella proiezione obliqua della colonna lombare. Il \"cagnolino\" è formato da: naso = processo trasverso, occhio = peduncolo, orecchio = faccetta articolare superiore, zampa anteriore = faccetta articolare inferiore, collo = pars interarticularis. Una frattura del collo = spondilolisi.",
+   "seo_title": "Cagnolino di Scottie: quale proiezione e cosa indica — Rad Index",
+   "seo_desc": "Appare nella proiezione obliqua della colonna lombare: naso = processo trasverso, collo = pars interarticularis. La frattura del collo indica spondilolisi."
   },
   "en": {
    "termine": "\"Scottie dog\"",
