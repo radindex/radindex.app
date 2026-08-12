@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.radindex.app",
+      "sha256_cert_fingerprints": [
+        "4D:C6:D4:D6:67:DB:35:71:91:15:BA:A1:AD:77:C8:9C:45:C8:E1:D5:85:39:12:80:84:D4:5D:A5:D0:55:B5:A7"
+      ]
+    }
+  }
+]
