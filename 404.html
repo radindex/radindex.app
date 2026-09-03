@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-itunes-app" content="app-id=6770671896">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Pagina non trovata — Rad Index</title>
+  <meta property="og:title" content="Pagina non trovata — Rad Index">
+  <meta property="og:image" content="https://radindex.app/assets/og-image.png">
+  <meta property="og:url" content="https://radindex.app/404.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://radindex.app/assets/og-image.png">
+  <link rel="icon" type="image/png" href="assets/logo_icona.png">
+
+  <style>@font-face{font-family:'Inter';font-style:normal;font-weight:300 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format('woff2');}</style>
+  <style>
+    :root {
+      --bg: #F7F6F3;
+      --surface: #FFFFFF;
+      --text: #1A1A1A;
+      --text-secondary: #6B6B6B;
+      --accent: #1B4B8A;
+      --accent-light: #E8EFF8;
+      --border: #E5E2DC;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .brand-logo-img { height: 28px; display: block; }
+
+    .lang-switcher {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    .lang-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+      padding: 4px 5px;
+      border-radius: 6px;
+      opacity: 0.4;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+
+    .lang-btn:hover { opacity: 0.75; transform: scale(1.1); }
+    .lang-btn.active { opacity: 1; }
+
+    main {
+      flex: 1;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .page-title {
+      font-size: 30px;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+    }
+
+    .page-body {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      max-width: 420px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    .store-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 6px 0;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .store-divider::before,
+    .store-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .store-badges {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .store-badges img { height: 40px; width: auto; display: block; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Language sections */
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="/" aria-label="Torna alla home"><img class="brand-logo-img" src="assets/logo_scuro.png" alt="Rad Index"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('it')" title="Italiano" aria-label="Italiano">🇮🇹</button>
+    <button class="lang-btn" onclick="setLang('en')" title="English" aria-label="English">🇬🇧</button>
+    <button class="lang-btn" onclick="setLang('es')" title="Español" aria-label="Español">🇪🇸</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="lang-content active" id="lang-it">
+    <div class="error-code">ERRORE 404</div>
+    <h1 class="page-title">Pagina non trovata</h1>
+    <p class="page-body">Il link seguito potrebbe essere sbagliato o la pagina è stata spostata. Ecco dove trovare quello che cerchi:</p>
+    <div class="links">
+      <a class="btn btn-primary" href="/">Torna alla home</a>
+      <a class="btn btn-secondary" href="/proiezioni-radiografiche/">Sfoglia le 147 proiezioni</a>
+      <a class="btn btn-secondary" href="/glossario/">Glossario tecnico</a>
+      <div class="store-divider">oppure scarica l'app</div>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/it/app/rad-index/id6770671896" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Scarica su App Store" loading="lazy"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.radindex.app" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponibile su Google Play" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lang-content" id="lang-en">
+    <div class="error-code">ERROR 404</div>
+    <h1 class="page-title">Page not found</h1>
+    <p class="page-body">The link you followed may be broken or the page has moved. Here's where to find what you're looking for:</p>
+    <div class="links">
+      <a class="btn btn-primary" href="/">Back to home</a>
+      <a class="btn btn-secondary" href="/en/proiezioni-radiografiche/">Browse all 147 projections</a>
+      <a class="btn btn-secondary" href="/en/glossario/">Technical glossary</a>
+      <div class="store-divider">or download the app</div>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/it/app/rad-index/id6770671896" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Download on the App Store" loading="lazy"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.radindex.app" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Get it on Google Play" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lang-content" id="lang-es">
+    <div class="error-code">ERROR 404</div>
+    <h1 class="page-title">Página no encontrada</h1>
+    <p class="page-body">Puede que el enlace esté roto o que la página se haya movido. Aquí puedes encontrar lo que buscas:</p>
+    <div class="links">
+      <a class="btn btn-primary" href="/">Volver al inicio</a>
+      <a class="btn btn-secondary" href="/es/proiezioni-radiografiche/">Explorar las 147 proyecciones</a>
+      <a class="btn btn-secondary" href="/es/glossario/">Glosario técnico</a>
+      <div class="store-divider">o descarga la app</div>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/it/app/rad-index/id6770671896" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Descargar en App Store" loading="lazy"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.radindex.app" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponible en Google Play" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Rad Index · <a href="mailto:info@radindex.app" style="color:inherit">info@radindex.app</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelector('[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+    document.documentElement.lang = lang;
+  }
+
+  // Auto-detect browser language
+  const browserLang = navigator.language.substring(0, 2);
+  if (['it', 'en', 'es'].includes(browserLang)) setLang(browserLang);
+</script>
+
+</body>
+</html>
