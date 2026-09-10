@@ -269,16 +269,21 @@ def generate_lang_page(
     dest_url = lang_url(it_url, target_lang)
 
     # ── 1. Derive title and meta description ──────────────────────────────────
+    # SEO override opzionale (title/meta ottimizzati per CTR su pagine già in
+    # pagina 1, stesso meccanismo IT di generator.py): se il LANG_DATA della
+    # lingua target porta un "metaDesc" non vuoto, usalo al posto del template
+    # generico. Il "pageTitle" è già coperto (generator.py applica l'override
+    # lì per tutte le lingue).
     if page_type == "proj_detail":
         title    = d.get("pageTitle", "")
-        meta_desc = META_DESC_PROJ[target_lang].format(
+        meta_desc = html_module.unescape(d["metaDesc"]) if d.get("metaDesc") else META_DESC_PROJ[target_lang].format(
             name  = html_module.unescape(d.get("projName", "")),
             ptype = html_module.unescape(d.get("projType", "")),
             zone  = html_module.unescape(d.get("zoneName", "")),
         )
     elif page_type == "gloss_detail":
         title    = d.get("pageTitle", "")
-        meta_desc = META_DESC_GLOSS[target_lang].format(
+        meta_desc = html_module.unescape(d["metaDesc"]) if d.get("metaDesc") else META_DESC_GLOSS[target_lang].format(
             name = html_module.unescape(d.get("termName", "")),
         )
     elif page_type == "proj_index":

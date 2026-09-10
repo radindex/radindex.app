@@ -18,7 +18,9 @@
   "categoria": "tecnico",
   "it": {
    "termine": "kV (kilovolt)",
-   "definizione": "Tensione applicata al tubo radiogeno tra catodo e anodo. Determina la qualità (energia) del fascio di raggi X: valori più alti aumentano il potere di penetrazione. Influenza direttamente il contrasto dell'immagine — kV elevati riducono il contrasto ma aumentano la latitudine di esposizione."
+   "definizione": "Tensione applicata al tubo radiogeno tra catodo e anodo. Determina la qualità (energia) del fascio di raggi X: valori più alti aumentano il potere di penetrazione. Influenza direttamente il contrasto dell'immagine — kV elevati riducono il contrasto ma aumentano la latitudine di esposizione.",
+   "seo_title": "kV (kilovolt): contrasto e penetrazione — Rad Index",
+   "seo_desc": "Tensione applicata al tubo radiogeno. kV più alti aumentano il potere di penetrazione ma riducono il contrasto, aumentando la latitudine di esposizione."
   },
   "en": {
    "termine": "kV (kilovolt)",
@@ -41,7 +43,9 @@
   },
   "es": {
    "termine": "mA (miliamperio)",
-   "definizione": "Corriente del tubo de rayos X. Determina el número de electrones que atraviesan el tubo y, por tanto, la cantidad de rayos X producidos por unidad de tiempo. Influye directamente en la densidad óptica de la imagen."
+   "definizione": "Corriente del tubo de rayos X. Determina el número de electrones que atraviesan el tubo y, por tanto, la cantidad de rayos X producidos por unidad de tiempo. Influye directamente en la densidad óptica de la imagen.",
+   "seo_title": "mA (miliamperio): qué determina en la imagen — Rad Index",
+   "seo_desc": "Corriente del tubo de rayos X: determina la cantidad de rayos X producidos por unidad de tiempo, influyendo directamente en la densidad óptica."
   }
  },
  "mas-milliampere-secondo": {
@@ -56,7 +60,9 @@
   },
   "es": {
    "termine": "mAs (miliamperio-segundo)",
-   "definizione": "Producto de la corriente (mA) por el tiempo de exposición (s). Expresa la cantidad total de rayos X producidos en una exposición. Valor fundamental para la gestión de la dosis al paciente: duplicar los mAs duplica la dosis."
+   "definizione": "Producto de la corriente (mA) por el tiempo de exposición (s). Expresa la cantidad total de rayos X producidos en una exposición. Valor fundamental para la gestión de la dosis al paciente: duplicar los mAs duplica la dosis.",
+   "seo_title": "mAs (miliamperio-segundo): mAs×2 = dosis×2 — Rad Index",
+   "seo_desc": "Producto de corriente (mA) por tiempo de exposición. Expresa la cantidad total de rayos X producidos — valor clave para gestionar la dosis al paciente."
   }
  },
  "dfd-distanza-fuoco-detettore": {
@@ -71,7 +77,9 @@
   },
   "es": {
    "termine": "DFR (Distancia Foco-Receptor)",
-   "definizione": "Distancia entre el punto focal del tubo de rayos X y el receptor. Influye en la magnificación geométrica y la nitidez: al aumentar la DFR se reduce la magnificación y mejora la nitidez geométrica. Valores estándar: 100–115 cm para la mayoría de los exámenes; 150–180 cm para tórax y stitching."
+   "definizione": "Distancia entre el punto focal del tubo de rayos X y el receptor. Influye en la magnificación geométrica y la nitidez: al aumentar la DFR se reduce la magnificación y mejora la nitidez geométrica. Valores estándar: 100–115 cm para la mayoría de los exámenes; 150–180 cm para tórax y stitching.",
+   "seo_title": "DFR (Distancia Foco-Receptor): valores estándar — Rad Index",
+   "seo_desc": "A mayor DFR, menor magnificación y mejor nitidez geométrica. Valores estándar: 100-115 cm para la mayoría de los exámenes, 150-180 cm para tórax y stitching."
   }
  },
  "dfo-distanza-fuoco-oggetto": {
@@ -86,7 +94,9 @@
   },
   "es": {
    "termine": "DFO (Distancia Foco-Objeto)",
-   "definizione": "Distancia entre el punto focal del tubo de rayos X y el objeto examinado. Junto con la DFR determina el factor de magnificación geométrica de la imagen (M = DFR/DFO)."
+   "definizione": "Distancia entre el punto focal del tubo de rayos X y el objeto examinado. Junto con la DFR determina el factor de magnificación geométrica de la imagen (M = DFR/DFO).",
+   "seo_title": "DFO (Distancia Foco-Objeto): fórmula de magnificación — Rad Index",
+   "seo_desc": "Distancia entre el foco del tubo y el objeto. Junto con la DFR determina el factor de magnificación geométrica: M = DFR/DFO."
   }
  },
  "fattore-di-ingrandimento": {
@@ -108,7 +118,9 @@
   "categoria": "tecnico",
   "it": {
    "termine": "Punto focale",
-   "definizione": "Area dell'anodo del tubo radiogeno da cui viene emesso il fascio di raggi X. I tubi moderni hanno due fuochi: grande (per esami ad alto mAs) e piccolo (per alta risoluzione). Punti focali più piccoli producono immagini più nitide geometricamente."
+   "definizione": "Area dell'anodo del tubo radiogeno da cui viene emesso il fascio di raggi X. I tubi moderni hanno due fuochi: grande (per esami ad alto mAs) e piccolo (per alta risoluzione). Punti focali più piccoli producono immagini più nitide geometricamente.",
+   "seo_title": "Punto focale: fuoco grande o piccolo — Rad Index",
+   "seo_desc": "Area dell'anodo da cui viene emesso il fascio X. I tubi moderni hanno due fuochi: grande (alto mAs) e piccolo (alta risoluzione geometrica)."
   },
   "en": {
    "termine": "Focal spot",
@@ -131,7 +143,9 @@
   },
   "es": {
    "termine": "Penumbra geométrica",
-   "definizione": "Halo difuso en los márgenes de las estructuras en la imagen radiográfica, debido al tamaño finito del punto focal. Se reduce disminuyendo el tamaño del foco, aumentando la DFR o acercando el objeto al receptor."
+   "definizione": "Halo difuso en los márgenes de las estructuras en la imagen radiográfica, debido al tamaño finito del punto focal. Se reduce disminuyendo el tamaño del foco, aumentando la DFR o acercando el objeto al receptor.",
+   "seo_title": "Penumbra geométrica: cómo reducirla — Rad Index",
+   "seo_desc": "Halo difuso en los márgenes de la imagen debido al tamaño finito del punto focal. Se reduce con un foco más pequeño, mayor DFR o acercando el objeto al receptor."
   }
  },
  "contrasto-radiografico": {
@@ -161,7 +175,9 @@
   },
   "es": {
    "termine": "Densidad óptica",
-   "definizione": "Grado de ennegrecimiento de una placa radiográfica o de luminosidad en un sistema digital. Depende de la cantidad de rayos X que alcanza el receptor tras atravesar al paciente."
+   "definizione": "Grado de ennegrecimiento de una placa radiográfica o de luminosidad en un sistema digital. Depende de la cantidad de rayos X que alcanza el receptor tras atravesar al paciente.",
+   "seo_title": "Densidad óptica: de qué depende — Rad Index",
+   "seo_desc": "Grado de ennegrecimiento de la placa radiográfica (o luminosidad en digital), determinado por la cantidad de rayos X que alcanza el receptor tras atravesar al paciente."
   }
  },
  "dr-digital-radiography": {
@@ -191,7 +207,9 @@
   },
   "es": {
    "termine": "CR (Radiografía Computarizada)",
-   "definizione": "Radiografía computarizada con placas de fósforo fotoestimulable (PSP). La placa registra la imagen latente, que después es leída por un lector láser dedicado. Tecnología más antigua que la DR; generalmente requiere mAs más elevados y tiene menor resolución espacial."
+   "definizione": "Radiografía computarizada con placas de fósforo fotoestimulable (PSP). La placa registra la imagen latente, que después es leída por un lector láser dedicado. Tecnología más antigua que la DR; generalmente requiere mAs más elevados y tiene menor resolución espacial.",
+   "seo_title": "CR (Radiografía Computarizada): cómo funciona — Rad Index",
+   "seo_desc": "Sistema con placas de fósforo fotoestimulable, leídas por un lector láser dedicado. Tecnología previa a la DR: requiere más mAs y ofrece menor resolución espacial."
   }
  },
  "griglia-antidiffusione": {
@@ -206,7 +224,9 @@
   },
   "es": {
    "termine": "Rejilla antidifusora",
-   "definizione": "Dispositivo formado por láminas de material radiopaco (plomo) alternadas con material radiotransparente (aluminio o fibra de carbono). Colocada entre el paciente y el receptor, reduce la radiación dispersa mejorando el contraste. Necesaria para grosores corporales superiores a 10–12 cm. Requiere un aumento de los mAs para compensar su absorción."
+   "definizione": "Dispositivo formado por láminas de material radiopaco (plomo) alternadas con material radiotransparente (aluminio o fibra de carbono). Colocada entre el paciente y el receptor, reduce la radiación dispersa mejorando el contraste. Necesaria para grosores corporales superiores a 10–12 cm. Requiere un aumento de los mAs para compensar su absorción.",
+   "seo_title": "Rejilla antidifusora: cuándo es necesaria — Rad Index",
+   "seo_desc": "Láminas de plomo alternadas con material radiotransparente que reducen la radiación dispersa. Necesaria para espesores superiores a 10-12 cm."
   }
  },
  "fattore-di-griglia-bucky-factor": {
@@ -221,7 +241,9 @@
   },
   "es": {
    "termine": "Factor de rejilla (Bucky factor)",
-   "definizione": "Factor de aumento de la exposición necesario para compensar la absorción de la rejilla. Una rejilla típica requiere un aumento de 2–6 veces los mAs respecto al examen sin rejilla."
+   "definizione": "Factor de aumento de la exposición necesario para compensar la absorción de la rejilla. Una rejilla típica requiere un aumento de 2–6 veces los mAs respecto al examen sin rejilla.",
+   "seo_title": "Factor de rejilla (Bucky factor) — Rad Index",
+   "seo_desc": "Factor de aumento de exposición para compensar la absorción de la rejilla. Una rejilla típica requiere 2-6 veces más mAs que sin rejilla."
   }
  },
  "collimazione": {
@@ -236,7 +258,9 @@
   },
   "es": {
    "termine": "Colimación",
-   "definizione": "Limitación del haz de rayos X al área anatómica de interés mediante diafragmas regulables. Reduce la dosis al paciente, disminuye la radiación dispersa (mejorando el contraste) y aumenta la nitidez en los márgenes del campo."
+   "definizione": "Limitación del haz de rayos X al área anatómica de interés mediante diafragmas regulables. Reduce la dosis al paciente, disminuye la radiación dispersa (mejorando el contraste) y aumenta la nitidez en los márgenes del campo.",
+   "seo_title": "Colimación: por qué reduce la dosis — Rad Index",
+   "seo_desc": "Limita el haz de rayos X al área anatómica de interés con diafragmas regulables. Reduce la dosis al paciente, la radiación dispersa y mejora la nitidez en los márgenes."
   }
  },
  "filtrazione": {
@@ -266,7 +290,9 @@
   },
   "es": {
    "termine": "Radiación dispersa (scatter)",
-   "definizione": "Radiación producida por efecto Compton al atravesar los tejidos. No contribuye a la formación de la imagen útil pero empeora el contraste y aumenta la dosis. Se reduce con una colimación adecuada, rejilla antidifusora y compresión del paciente."
+   "definizione": "Radiación producida por efecto Compton al atravesar los tejidos. No contribuye a la formación de la imagen útil pero empeora el contraste y aumenta la dosis. Se reduce con una colimación adecuada, rejilla antidifusora y compresión del paciente.",
+   "seo_title": "Radiación dispersa (scatter): cómo reducirla — Rad Index",
+   "seo_desc": "Producida por efecto Compton, empeora el contraste y aumenta la dosis. Se reduce con colimación adecuada, rejilla antidifusora y compresión del paciente."
   }
  },
  "ei-exposure-index": {
@@ -311,7 +337,9 @@
   },
   "es": {
    "termine": "AEC (Control Automático de Exposición)",
-   "definizione": "Sistema que interrumpe automáticamente la exposición cuando el receptor ha recibido una cantidad predefinida de rayos X. Garantiza exposiciones constantes independientemente del grosor del paciente. Las cámaras de ionización se colocan bajo el receptor."
+   "definizione": "Sistema que interrumpe automáticamente la exposición cuando el receptor ha recibido una cantidad predefinida de rayos X. Garantiza exposiciones constantes independientemente del grosor del paciente. Las cámaras de ionización se colocan bajo el receptor.",
+   "seo_title": "AEC (Control Automático de Exposición): cómo funciona — Rad Index",
+   "seo_desc": "Interrumpe la exposición cuando el receptor recibe la dosis predefinida, garantizando exposiciones constantes independientes del grosor del paciente."
   }
  },
  "kvp-kilovolt-picco": {
@@ -326,7 +354,9 @@
   },
   "es": {
    "termine": "kVp (kilovoltio pico)",
-   "definizione": "Valor máximo de la tensión aplicada al tubo de rayos X durante una exposición en corriente alterna. Corresponde a la energía máxima de los fotones X producidos. En los equipos modernos de alta frecuencia, kVp y kV son prácticamente equivalentes."
+   "definizione": "Valor máximo de la tensión aplicada al tubo de rayos X durante una exposición en corriente alterna. Corresponde a la energía máxima de los fotones X producidos. En los equipos modernos de alta frecuencia, kVp y kV son prácticamente equivalentes.",
+   "seo_title": "kVp (kilovoltio pico): diferencia con el kV — Rad Index",
+   "seo_desc": "Valor máximo de la tensión aplicada al tubo en corriente alterna. En los equipos modernos de alta frecuencia, kVp y kV son prácticamente equivalentes."
   }
  },
  "rumore-quantistico": {
@@ -341,7 +371,9 @@
   },
   "es": {
    "termine": "Ruido cuántico",
-   "definizione": "Variación aleatoria de la densidad óptica en la imagen debida a la naturaleza corpuscular de los rayos X (fluctuación estadística de los fotones). Aumenta al reducir los mAs. En los sistemas digitales se manifiesta como un aspecto granular de la imagen (quantum mottle)."
+   "definizione": "Variación aleatoria de la densidad óptica en la imagen debida a la naturaleza corpuscular de los rayos X (fluctuación estadística de los fotones). Aumenta al reducir los mAs. En los sistemas digitales se manifiesta como un aspecto granular de la imagen (quantum mottle).",
+   "seo_title": "Ruido cuántico: por qué aparece al bajar los mAs — Rad Index",
+   "seo_desc": "Variación aleatoria de la densidad óptica por la naturaleza corpuscular de los rayos X. En digital se ve como aspecto granular (quantum mottle)."
   }
  },
  "risoluzione-spaziale": {
@@ -386,7 +418,9 @@
   },
   "es": {
    "termine": "Post-procesado",
-   "definizione": "Procesamiento digital de la imagen tras la adquisición. Incluye ventana/nivel, mejora del contraste, reducción del ruido, inversión y mediciones. En los sistemas DR se aplica automáticamente pero puede ser modificado por el operador."
+   "definizione": "Procesamiento digital de la imagen tras la adquisición. Incluye ventana/nivel, mejora del contraste, reducción del ruido, inversión y mediciones. En los sistemas DR se aplica automáticamente pero puede ser modificado por el operador.",
+   "seo_title": "Post-procesado: qué incluye en radiología digital — Rad Index",
+   "seo_desc": "Procesamiento digital tras la adquisición: ventana/nivel, contraste, reducción de ruido, inversión y mediciones. Automático en DR, ajustable por el operador."
   }
  },
  "finestra-window-width-level": {
@@ -401,7 +435,9 @@
   },
   "es": {
    "termine": "Ventana (window width/level)",
-   "definizione": "Parámetros de visualización de la imagen digital. El ancho de ventana (WW) controla el contraste; el nivel de ventana (WL) o centro de ventana controla la luminosidad media. Permiten optimizar la visualización para diferentes tejidos sin readquirir la imagen."
+   "definizione": "Parámetros de visualización de la imagen digital. El ancho de ventana (WW) controla el contraste; el nivel de ventana (WL) o centro de ventana controla la luminosidad media. Permiten optimizar la visualización para diferentes tejidos sin readquirir la imagen.",
+   "seo_title": "Ventana (WW/WL): contraste y luminosidad — Rad Index",
+   "seo_desc": "El ancho de ventana (WW) controla el contraste, el nivel (WL) la luminosidad media. Permiten optimizar la visualización para distintos tejidos sin readquirir la imagen."
   }
  },
  "dose-efficace": {
@@ -431,7 +467,9 @@
   },
   "es": {
    "termine": "DAP (Producto Dosis-Área)",
-   "definizione": "Producto dosis-área; mide la cantidad total de energía impartida al paciente. Se mide en Gy·cm². Indicador de la dosis total independientemente de su distribución en el paciente. Herramienta fundamental para la monitorización de la dosis en radiología."
+   "definizione": "Producto dosis-área; mide la cantidad total de energía impartida al paciente. Se mide en Gy·cm². Indicador de la dosis total independientemente de su distribución en el paciente. Herramienta fundamental para la monitorización de la dosis en radiología.",
+   "seo_title": "DAP (Producto Dosis-Área): qué mide y en qué unidad — Rad Index",
+   "seo_desc": "Mide la energía total impartida al paciente en Gy·cm², independientemente de su distribución. Herramienta clave para la monitorización de dosis en radiología."
   }
  },
  "principio-alara": {
@@ -461,7 +499,9 @@
   },
   "es": {
    "termine": "NRD (Nivel de Referencia Diagnóstico)",
-   "definizione": "Valor de dosis que no debería superarse en condiciones estándar para un determinado examen radiográfico. Herramienta para la optimización de la dosis: los centros que superan sistemáticamente el NRD deben revisar sus procedimientos."
+   "definizione": "Valor de dosis que no debería superarse en condiciones estándar para un determinado examen radiográfico. Herramienta para la optimización de la dosis: los centros que superan sistemáticamente el NRD deben revisar sus procedimientos.",
+   "seo_title": "NRD (Nivel de Referencia Diagnóstico): para qué sirve — Rad Index",
+   "seo_desc": "Valor de dosis que no debería superarse en condiciones estándar. Herramienta clave para la optimización de dosis y revisión de procedimientos."
   }
  },
  "protezioni-schermanti": {
@@ -506,7 +546,9 @@
   },
   "es": {
    "termine": "Ángulo HKA (Cadera-Rodilla-Tobillo)",
-   "definizione": "Ángulo que expresa el eje mecánico del miembro inferior, medido entre la cabeza femoral, el centro de la rodilla y el centro del tobillo. Normalmente ±3° (eje neutro). Los valores positivos indican varo; los negativos, valgo. Fundamental para la planificación quirúrgica protésica."
+   "definizione": "Ángulo que expresa el eje mecánico del miembro inferior, medido entre la cabeza femoral, el centro de la rodilla y el centro del tobillo. Normalmente ±3° (eje neutro). Los valores positivos indican varo; los negativos, valgo. Fundamental para la planificación quirúrgica protésica.",
+   "seo_title": "Ángulo HKA (Cadera-Rodilla-Tobillo): eje mecánico — Rad Index",
+   "seo_desc": "Ángulo entre cabeza femoral, centro de rodilla y tobillo, normalmente ±3°. Valores positivos indican varo, negativos valgo — fundamental en la planificación protésica."
   }
  },
  "varianza-ulnare": {
@@ -521,7 +563,9 @@
   },
   "es": {
    "termine": "Varianza cubital",
-   "definizione": "Diferencia de longitud entre el radio y el cúbito a nivel de la articulación radiocubital distal, valorada en proyección PA en posición neutra. Valores normales: de -2 a +2 mm. La varianza cubital positiva (cúbito más largo) se asocia a lesiones del TFCC y a la enfermedad de Kienböck."
+   "definizione": "Diferencia de longitud entre el radio y el cúbito a nivel de la articulación radiocubital distal, valorada en proyección PA en posición neutra. Valores normales: de -2 a +2 mm. La varianza cubital positiva (cúbito más largo) se asocia a lesiones del TFCC y a la enfermedad de Kienböck.",
+   "seo_title": "Varianza cubital: valores normales -2/+2mm — Rad Index",
+   "seo_desc": "Diferencia de longitud radio-cúbito en la articulación radiocubital distal, en PA neutra. La varianza positiva se asocia al TFCC y a la enfermedad de Kienböck."
   }
  },
  "angolo-di-costa-bertani": {
@@ -553,7 +597,9 @@
   },
   "es": {
    "termine": "Balance sagital",
-   "definizione": "Equilibrio sagital de la columna vertebral valorado en proyección lateral completa. Expresa la relación entre la alineación sagital global (plomada desde C7) y la posición de la pelvis. Un balance sagital positivo (tronco inclinado hacia delante) se asocia a discapacidad y dolor."
+   "definizione": "Equilibrio sagital de la columna vertebral valorado en proyección lateral completa. Expresa la relación entre la alineación sagital global (plomada desde C7) y la posición de la pelvis. Un balance sagital positivo (tronco inclinado hacia delante) se asocia a discapacidad y dolor.",
+   "seo_title": "Balance sagital: qué significa un valor positivo — Rad Index",
+   "seo_desc": "Equilibrio sagital de la columna en lateral completa, entre la plomada desde C7 y la pelvis. Un balance positivo se asocia a dolor y discapacidad."
   }
  },
  "indice-di-risser": {
@@ -570,7 +616,9 @@
   },
   "es": {
    "termine": "Signo de Risser",
-   "definizione": "Escala de 0 a 5 que valora la osificación de la apófisis ilíaca en las radiografías de escoliosis. Indica la madurez esquelética: Risser 0 = esqueleto inmaduro; Risser 5 = madurez esquelética completa. Se utiliza para predecir el riesgo de progresión de la escoliosis."
+   "definizione": "Escala de 0 a 5 que valora la osificación de la apófisis ilíaca en las radiografías de escoliosis. Indica la madurez esquelética: Risser 0 = esqueleto inmaduro; Risser 5 = madurez esquelética completa. Se utiliza para predecir el riesgo de progresión de la escoliosis.",
+   "seo_title": "Signo de Risser: escala 0-5 de madurez ósea — Rad Index",
+   "seo_desc": "Escala de 0 a 5 que valora la osificación de la apófisis ilíaca en radiografías de escoliosis, para predecir el riesgo de progresión."
   }
  },
  "tfcc-triangular-fibrocartilage-complex": {
@@ -607,7 +655,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Piano frontale (coronale)",
-   "definizione": "Piano verticale che divide il corpo in parte anteriore (ventrale/anteriore) e posteriore (dorsale/posteriore). Utilizzato come riferimento per le proiezioni AP e PA."
+   "definizione": "Piano verticale che divide il corpo in parte anteriore (ventrale/anteriore) e posteriore (dorsale/posteriore). Utilizzato come riferimento per le proiezioni AP e PA.",
+   "seo_title": "Piano frontale (coronale): riferimento per AP/PA — Rad Index",
+   "seo_desc": "Piano verticale che divide il corpo in parte anteriore e posteriore. Punto di riferimento per orientare le proiezioni AP e PA."
   },
   "en": {
    "termine": "Frontal plane (coronal)",
@@ -637,7 +687,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Craniale / Cefalico",
-   "definizione": "Direzione verso la testa. Nelle angolazioni del fascio: angolazione craniale significa che il fascio è inclinato verso la testa del paziente."
+   "definizione": "Direzione verso la testa. Nelle angolazioni del fascio: angolazione craniale significa che il fascio è inclinato verso la testa del paziente.",
+   "seo_title": "Craniale / Cefalico: direzione del fascio — Rad Index",
+   "seo_desc": "Direzione verso la testa. Un'angolazione craniale indica che il fascio è inclinato verso la testa del paziente."
   },
   "en": {
    "termine": "Cranial / Cephalic",
@@ -652,7 +704,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Caudale / Podalico",
-   "definizione": "Direzione verso i piedi. Nelle angolazioni del fascio: angolazione caudale significa che il fascio è inclinato verso i piedi del paziente."
+   "definizione": "Direzione verso i piedi. Nelle angolazioni del fascio: angolazione caudale significa che il fascio è inclinato verso i piedi del paziente.",
+   "seo_title": "Caudale / Podalico: direzione del fascio — Rad Index",
+   "seo_desc": "Direzione verso i piedi. Un'angolazione caudale indica che il fascio è inclinato verso i piedi del paziente."
   },
   "en": {
    "termine": "Caudal",
@@ -712,7 +766,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Dorsiflessione / Flessione plantare",
-   "definizione": "Dorsiflessione: movimento del piede verso la gamba (punta verso l'alto). Flessione plantare: movimento del piede lontano dalla gamba (punta verso il basso). Rilevante per il posizionamento nelle proiezioni del piede e della caviglia."
+   "definizione": "Dorsiflessione: movimento del piede verso la gamba (punta verso l'alto). Flessione plantare: movimento del piede lontano dalla gamba (punta verso il basso). Rilevante per il posizionamento nelle proiezioni del piede e della caviglia.",
+   "seo_title": "Dorsiflessione e flessione plantare: differenza — Rad Index",
+   "seo_desc": "Dorsiflessione: piede verso la gamba. Flessione plantare: piede lontano dalla gamba. Rilevanti nel posizionamento di piede e caviglia."
   },
   "en": {
    "termine": "Dorsiflexion / Plantar flexion",
@@ -727,7 +783,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Inversione / Eversione",
-   "definizione": "Inversione: rotazione della pianta del piede verso l'interno. Eversione: rotazione della pianta del piede verso l'esterno. Le prove da stress della caviglia valutano la stabilità in inversione (varo) e eversione (valgo)."
+   "definizione": "Inversione: rotazione della pianta del piede verso l'interno. Eversione: rotazione della pianta del piede verso l'esterno. Le prove da stress della caviglia valutano la stabilità in inversione (varo) e eversione (valgo).",
+   "seo_title": "Inversione ed eversione del piede: cosa valutano — Rad Index",
+   "seo_desc": "Inversione: pianta verso l'interno. Eversione: verso l'esterno. Le prove da stress della caviglia valutano la stabilità in varo e valgo."
   },
   "en": {
    "termine": "Inversion / Eversion",
@@ -802,7 +860,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Proiezione obliqua",
-   "definizione": "Il paziente è ruotato di un angolo specifico rispetto al piano frontale, producendo una proiezione intermedia tra frontale e laterale. Riduce le sovrapposizioni di strutture e permette la visualizzazione di strutture non visibili nelle proiezioni standard (es: forami di coniugazione, articolazioni interapofisarie)."
+   "definizione": "Il paziente è ruotato di un angolo specifico rispetto al piano frontale, producendo una proiezione intermedia tra frontale e laterale. Riduce le sovrapposizioni di strutture e permette la visualizzazione di strutture non visibili nelle proiezioni standard (es: forami di coniugazione, articolazioni interapofisarie).",
+   "seo_title": "Proiezione obliqua: quando si usa — Rad Index",
+   "seo_desc": "Il paziente è ruotato rispetto al piano frontale per ridurre le sovrapposizioni e visualizzare strutture non visibili nelle proiezioni standard."
   },
   "en": {
    "termine": "Oblique projection",
@@ -939,7 +999,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Processo odontoide (dente dell'epistrofeo)",
-   "definizione": "Proiezione ossea superiore del corpo dell'epistrofeo (C2) che si articola con l'atlante (C1) tramite un legamento trasverso. Visualizzato nella proiezione trans-orale. La sua frattura o la rottura del legamento trasverso causa instabilità atlo-assiale potenzialmente pericolosa per il midollo."
+   "definizione": "Proiezione ossea superiore del corpo dell'epistrofeo (C2) che si articola con l'atlante (C1) tramite un legamento trasverso. Visualizzato nella proiezione trans-orale. La sua frattura o la rottura del legamento trasverso causa instabilità atlo-assiale potenzialmente pericolosa per il midollo.",
+   "seo_title": "Processo odontoide (dente dell'epistrofeo): frattura — Rad Index",
+   "seo_desc": "Proiezione ossea di C2 che si articola con l'atlante tramite legamento trasverso. Visualizzato nella proiezione trans-orale."
   },
   "en": {
    "termine": "Odontoid process (dens of the axis)",
@@ -954,7 +1016,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Mortaio tibio-peroneale (tibio-astragalico)",
-   "definizione": "Struttura articolare formata dall'incisura fibulare della tibia (pilastro mediale), dal malleolo peroneale (pilastro laterale) e dalla superficie tibiale superiore (soffitto). Accoglie la troclea dell'astragalo. Valutato nelle proiezioni AP e Mortise della caviglia."
+   "definizione": "Struttura articolare formata dall'incisura fibulare della tibia (pilastro mediale), dal malleolo peroneale (pilastro laterale) e dalla superficie tibiale superiore (soffitto). Accoglie la troclea dell'astragalo. Valutato nelle proiezioni AP e Mortise della caviglia.",
+   "seo_title": "Mortaio tibio-peroneale: anatomia e proiezioni — Rad Index",
+   "seo_desc": "Formato da incisura fibulare, malleolo peroneale e superficie tibiale. Valutato nelle proiezioni AP e Mortise della caviglia."
   },
   "en": {
    "termine": "Ankle mortise (tibiotalar)",
@@ -999,7 +1063,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Seno del tarso",
-   "definizione": "Canale osseo che si trova tra la superficie inferiore dell'astragalo e quella superiore del calcagno, lateralmente alla articolazione sottoastragalica posteriore. Contiene il legamento interosseo e il legamento cervicale. Visibile nella proiezione di Broden."
+   "definizione": "Canale osseo che si trova tra la superficie inferiore dell'astragalo e quella superiore del calcagno, lateralmente alla articolazione sottoastragalica posteriore. Contiene il legamento interosseo e il legamento cervicale. Visibile nella proiezione di Broden.",
+   "seo_title": "Seno del tarso: dove si trova — Rad Index",
+   "seo_desc": "Canale osseo tra astragalo e calcagno, lateralmente all'articolazione sottoastragalica posteriore. Visibile nella proiezione di Broden."
   },
   "en": {
    "termine": "Sinus tarsi",
@@ -1014,7 +1080,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Articolazione sottoastragalica",
-   "definizione": "Articolazione tra astragalo e calcagno, composta da una faccia posteriore (maggiore) e due facce anteriori. Permette l'inversione ed eversione del piede. Non visibile nelle proiezioni standard della caviglia; richiede proiezioni dedicate (Broden, assiale del calcagno) o TC."
+   "definizione": "Articolazione tra astragalo e calcagno, composta da una faccia posteriore (maggiore) e due facce anteriori. Permette l'inversione ed eversione del piede. Non visibile nelle proiezioni standard della caviglia; richiede proiezioni dedicate (Broden, assiale del calcagno) o TC.",
+   "seo_title": "Articolazione sottoastragalica: come si visualizza — Rad Index",
+   "seo_desc": "Tra astragalo e calcagno, permette inversione ed eversione del piede. Non visibile nelle proiezioni standard — richiede Broden o TC."
   },
   "en": {
    "termine": "Subtalar joint",
@@ -1029,7 +1097,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Fossa intercondiloidea",
-   "definizione": "Depressione tra i condili femorali sulla superficie posteriore del femore distale. Contiene i legamenti crociati. Visualizzata nella proiezione a tunnel (Rosenberg) con ginocchio flesso a 45°. L'asse del femore è un'area frequente di lesioni osteocondrali."
+   "definizione": "Depressione tra i condili femorali sulla superficie posteriore del femore distale. Contiene i legamenti crociati. Visualizzata nella proiezione a tunnel (Rosenberg) con ginocchio flesso a 45°. L'asse del femore è un'area frequente di lesioni osteocondrali.",
+   "seo_title": "Fossa intercondiloidea: proiezione a tunnel — Rad Index",
+   "seo_desc": "Depressione tra i condili femorali che contiene i legamenti crociati. Visualizzata nella proiezione a tunnel (Rosenberg) con ginocchio flesso a 45°."
   },
   "en": {
    "termine": "Intercondylar fossa",
@@ -1044,7 +1114,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Troclea femorale",
-   "definizione": "Superficie articolare anteriore del femore distale, a forma di puleggia, che si articola con la rotula. La sua morfologia influenza il tracking rotuleo. Valutata nelle proiezioni assiali (Skyline, Merchant) con ginocchio flesso."
+   "definizione": "Superficie articolare anteriore del femore distale, a forma di puleggia, che si articola con la rotula. La sua morfologia influenza il tracking rotuleo. Valutata nelle proiezioni assiali (Skyline, Merchant) con ginocchio flesso.",
+   "seo_title": "Troclea femorale: dove si vede nelle proiezioni — Rad Index",
+   "seo_desc": "Superficie articolare anteriore del femore distale che si articola con la rotula. Valutata nelle proiezioni assiali (Skyline, Merchant) a ginocchio flesso."
   },
   "en": {
    "termine": "Femoral trochlea",
@@ -1089,7 +1161,9 @@
   "categoria": "anatomia",
   "it": {
    "termine": "Coracoide",
-   "definizione": "Processo osseo della scapola che si proietta anteriormente e lateralmente. Punto di inserzione di muscoli (piccolo pettorale, capo breve del bicipite, coracobrachiale) e legamenti (coraco-clavicolare, coraco-acromiale). Visibile nelle proiezioni della spalla."
+   "definizione": "Processo osseo della scapola che si proietta anteriormente e lateralmente. Punto di inserzione di muscoli (piccolo pettorale, capo breve del bicipite, coracobrachiale) e legamenti (coraco-clavicolare, coraco-acromiale). Visibile nelle proiezioni della spalla.",
+   "seo_title": "Coracoide: inserzioni muscolari e legamentose — Rad Index",
+   "seo_desc": "Processo osseo della scapola proiettato anteriormente. Punto di inserzione di piccolo pettorale, bicipite e legamenti coraco-clavicolari."
   },
   "en": {
    "termine": "Coracoid process",
@@ -1369,7 +1443,9 @@
   "categoria": "formula",
   "it": {
    "termine": "Legge degli Inversi del Quadrato",
-   "definizione": "L'intensità del fascio è inversamente proporzionale al quadrato della distanza dalla sorgente.\\n\\nmAs₂ = mAs₁ × (DFD₂ / DFD₁)²\\n\\nAumentando il DFD i mAs vanno corretti proporzionalmente al quadrato del rapporto delle distanze, per mantenere la stessa esposizione al detettore.\\n\\nEsempio: DFD 100 cm → 150 cm\\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25"
+   "definizione": "L'intensità del fascio è inversamente proporzionale al quadrato della distanza dalla sorgente.\\n\\nmAs₂ = mAs₁ × (DFD₂ / DFD₁)²\\n\\nAumentando il DFD i mAs vanno corretti proporzionalmente al quadrato del rapporto delle distanze, per mantenere la stessa esposizione al detettore.\\n\\nEsempio: DFD 100 cm → 150 cm\\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25",
+   "seo_title": "Legge degli Inversi del Quadrato: formula mAs — Rad Index",
+   "seo_desc": "L'intensità del fascio è inversamente proporzionale al quadrato della distanza. Formula: mAs₂ = mAs₁ × (DFD₂/DFD₁)² per mantenere la stessa esposizione."
   },
   "en": {
    "termine": "Inverse Square Law",

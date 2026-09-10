@@ -237,7 +237,8 @@ def term_page(slug, v, data, projs, dfc):
              "catLabel": u["catLabel"][cat], "navHome":u["navHome"],"navProj":u["navProj"],
              "navGloss":u["navGloss"],"navCta":u["navCta"],"uiRelated":u["uiRelated"],
              "uiProjRelated":u["uiProjRelated"],"ctaH":u["ctaH"],"ctaP":u["ctaP"],
-             "footerCopy":u["footerCopy"],"pageTitle":tv.get("seo_title") or f"{tv['termine']} — {u['titleSuffix']}"}
+             "footerCopy":u["footerCopy"],"pageTitle":tv.get("seo_title") or f"{tv['termine']} — {u['titleSuffix']}",
+             "metaDesc":tv.get("seo_desc") or ""}
         for rs in related:
             d[f"rel_{rs}"] = esc(data[rs][l]["termine"])
             d[f"relcat_{rs}"] = UI[l]["catLabel"][data[rs]["categoria"]]
