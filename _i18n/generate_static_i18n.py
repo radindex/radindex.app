@@ -362,8 +362,15 @@ def update_sitemap(proj_urls: List[str], gloss_urls: List[str]) -> int:
         return f'href="{lang_url(clean, "es")}"'
     txt = re.sub(r'href="(https://radindex\.app/[^"?]*)\?lang=es"', fix_es, txt)
 
-    # Build new /en/ and /es/ entries to append
+    # Build new /en/ and /es/ entries to append.
+    # Idempotency: skip any URL whose <loc> is already present, so rerunning
+    # the pipeline (e.g. for a content-only change) never duplicates entries.
     new_entries = []
+
+    def add_entry(dest: str, it_url_: str, priority: str) -> None:
+        if f"<loc>{dest}</loc>" in txt:
+            return
+        new_entries.append(sitemap_entry(dest, it_url_, priority))
 
     # Section index pages
     for section, it_sec_url, priority in [
@@ -371,17 +378,16 @@ def update_sitemap(proj_urls: List[str], gloss_urls: List[str]) -> int:
         ("glossario",                f"{BASE}/glossario/",                 "0.8"),
     ]:
         for lang in LANGS:
-            dest = lang_url(it_sec_url, lang)
-            new_entries.append(sitemap_entry(dest, it_sec_url, priority))
+            add_entry(lang_url(it_sec_url, lang), it_sec_url, priority)
 
     # Detail pages
     for it_url in proj_urls:
         for lang in LANGS:
-            new_entries.append(sitemap_entry(lang_url(it_url, lang), it_url, "0.7"))
+            add_entry(lang_url(it_url, lang), it_url, "0.7")
 
     for it_url in gloss_urls:
         for lang in LANGS:
-            new_entries.append(sitemap_entry(lang_url(it_url, lang), it_url, "0.6"))
+            add_entry(lang_url(it_url, lang), it_url, "0.6")
 
     # Append before closing </urlset>
     txt = txt.replace("</urlset>", "\n".join(new_entries) + "\n</urlset>")
