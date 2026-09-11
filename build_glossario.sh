@@ -34,6 +34,14 @@ else echo "  ✓ beacon presente"; fi
 if grep -q "<title>Angolo di Louis (angolo sternale) — Glossario di radiologia" glossario/angolo-di-louis-angolo-sternale.html; then
   echo "  ✗ seo_title NON applicato (title generico) — controlla i campi seo_ nel JSON"; fail=1
 else echo "  ✓ seo_title applicato"; fi
+# sitemap.xml: nessun <loc> duplicato (recidiva del bug fixato il 10 set —
+# update_sitemap() appendeva ad ogni riesecuzione senza controllare
+# l'idempotenza, il sitemap live arrivò a contenere le 486 entry EN/ES 2 volte)
+total_locs=$(grep -c "<loc>" sitemap.xml)
+unique_locs=$(grep -o "<loc>[^<]*</loc>" sitemap.xml | sort -u | wc -l | tr -d ' ')
+if [ "$total_locs" -ne "$unique_locs" ]; then
+  echo "  ✗ sitemap.xml ha URL duplicati ($total_locs <loc> totali, $unique_locs unici)"; fail=1
+else echo "  ✓ sitemap.xml senza duplicati ($total_locs URL)"; fi
 
 if [ "$fail" -ne 0 ]; then
   echo "!! BUILD REGREDITA — NON committare. Rivedi gli script a valle."; exit 1
