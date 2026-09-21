@@ -111,7 +111,9 @@
   },
   "es": {
    "termine": "Factor de magnificación",
-   "definizione": "Relación entre las dimensiones de la imagen radiográfica y las dimensiones reales del objeto. Se calcula como M = DFR/DFO. Para reducir la magnificación se aumenta la DFR o se acerca el objeto al receptor."
+   "definizione": "Relación entre las dimensiones de la imagen radiográfica y las dimensiones reales del objeto. Se calcula como M = DFR/DFO. Para reducir la magnificación se aumenta la DFR o se acerca el objeto al receptor.",
+   "seo_title": "Factor de magnificación: fórmula M = DFR/DFO — Rad Index",
+   "seo_desc": "Relación entre las dimensiones de la imagen radiográfica y el objeto real (M = DFR/DFO). Se reduce aumentando la DFR o acercando el objeto al receptor."
   }
  },
  "punto-focale": {
@@ -714,7 +716,9 @@
   },
   "es": {
    "termine": "Caudal / Podálico",
-   "definizione": "Dirección hacia los pies. En las angulaciones del haz: una angulación caudal significa que el haz está inclinado hacia los pies del paciente."
+   "definizione": "Dirección hacia los pies. En las angulaciones del haz: una angulación caudal significa que el haz está inclinado hacia los pies del paciente.",
+   "seo_title": "Caudal / Podálico: dirección del haz — Rad Index",
+   "seo_desc": "Dirección hacia los pies. Una angulación caudal indica que el haz está inclinado hacia los pies del paciente."
   }
  },
  "mediale-laterale": {
@@ -870,7 +874,9 @@
   },
   "es": {
    "termine": "Proyección oblicua",
-   "definizione": "El paciente se rota un ángulo específico respecto al plano frontal, produciendo una proyección intermedia entre frontal y lateral. Reduce las superposiciones de estructuras y permite la visualización de estructuras no visibles en las proyecciones estándar (ej.: agujeros de conjunción, articulaciones interapofisarias)."
+   "definizione": "El paciente se rota un ángulo específico respecto al plano frontal, produciendo una proyección intermedia entre frontal y lateral. Reduce las superposiciones de estructuras y permite la visualización de estructuras no visibles en las proyecciones estándar (ej.: agujeros de conjunción, articulaciones interapofisarias).",
+   "seo_title": "Proyección oblicua: cuándo se usa — Rad Index",
+   "seo_desc": "El paciente se rota respecto al plano frontal para reducir superposiciones y visualizar estructuras no vistas en las proyecciones estándar."
   }
  },
  "oad-obliqua-anteriore-destra": {
@@ -885,7 +891,9 @@
   },
   "es": {
    "termine": "OAD (Oblicua Anterior Derecha)",
-   "definizione": "El paciente se rota con la parte anterior derecha más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado izquierdo (contralateral)."
+   "definizione": "El paciente se rota con la parte anterior derecha más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado izquierdo (contralateral).",
+   "seo_title": "OAD (Oblicua Anterior Derecha): cuándo se usa — Rad Index",
+   "seo_desc": "El paciente se rota con la parte anterior derecha más cerca del receptor. En columna cervical visualiza los agujeros de conjunción del lado izquierdo."
   }
  },
  "oas-obliqua-anteriore-sinistra": {
@@ -1041,7 +1049,9 @@
   },
   "es": {
    "termine": "Interlínea articular",
-   "definizione": "Espacio radiotransparente visible entre las superficies articulares en las proyecciones radiográficas estándar. Corresponde al espacio ocupado por el cartílago articular (no visible directamente). El estrechamiento de la interlínea es signo de artrosis o artritis."
+   "definizione": "Espacio radiotransparente visible entre las superficies articulares en las proyecciones radiográficas estándar. Corresponde al espacio ocupado por el cartílago articular (no visible directamente). El estrechamiento de la interlínea es signo de artrosis o artritis.",
+   "seo_title": "Interlínea articular: signo radiográfico de artrosis — Rad Index",
+   "seo_desc": "Espacio radiotransparente entre superficies articulares, ocupado por el cartílago no visible directamente. Su estrechamiento es signo de artrosis o artritis."
   }
  },
  "pars-interarticularis": {
@@ -1107,7 +1117,9 @@
   },
   "es": {
    "termine": "Fosa intercondílea",
-   "definizione": "Depresión entre los cóndilos femorales en la superficie posterior del fémur distal. Contiene los ligamentos cruzados. Se visualiza en la proyección en túnel (Rosenberg) con la rodilla flexionada a 45°. Es una zona frecuente de lesiones osteocondrales."
+   "definizione": "Depresión entre los cóndilos femorales en la superficie posterior del fémur distal. Contiene los ligamentos cruzados. Se visualiza en la proyección en túnel (Rosenberg) con la rodilla flexionada a 45°. Es una zona frecuente de lesiones osteocondrales.",
+   "seo_title": "Fosa intercondílea: proyección en túnel — Rad Index",
+   "seo_desc": "Depresión entre los cóndilos femorales que contiene los ligamentos cruzados. Se visualiza en la proyección en túnel (Rosenberg) con la rodilla flexionada a 45°."
   }
  },
  "troclea-femorale": {
@@ -1233,7 +1245,9 @@
   },
   "es": {
    "termine": "Agujeros de conjunción",
-   "definizione": "Aberturas intervertebrales a través de las cuales pasan las raíces nerviosas espinales y los vasos sanguíneos. Delimitados superior e inferiormente por los pedículos, anteriormente por los cuerpos y discos intervertebrales, y posteriormente por las facetas articulares. Se visualizan en las proyecciones oblicuas de la columna."
+   "definizione": "Aberturas intervertebrales a través de las cuales pasan las raíces nerviosas espinales y los vasos sanguíneos. Delimitados superior e inferiormente por los pedículos, anteriormente por los cuerpos y discos intervertebrales, y posteriormente por las facetas articulares. Se visualizan en las proyecciones oblicuas de la columna.",
+   "seo_title": "Agujeros de conjunción: anatomía y proyecciones oblicuas — Rad Index",
+   "seo_desc": "Aberturas intervertebrales por las que pasan las raíces nerviosas espinales. Delimitadas por pedículos, cuerpos/discos y facetas; visibles en las oblicuas de columna."
   }
  },
  "disco-intervertebrale": {
@@ -1263,7 +1277,9 @@
   },
   "es": {
    "termine": "Platillo vertebral",
-   "definizione": "Superficie superior e inferior del cuerpo vertebral. En radiografía es la estructura de referencia para la medición del ángulo de Cobb en la escoliosis y para la valoración de la altura discal. Las irregularidades de los platillos pueden indicar fracturas, hernias discales o infecciones."
+   "definizione": "Superficie superior e inferior del cuerpo vertebral. En radiografía es la estructura de referencia para la medición del ángulo de Cobb en la escoliosis y para la valoración de la altura discal. Las irregularidades de los platillos pueden indicar fracturas, hernias discales o infecciones.",
+   "seo_title": "Platillo vertebral: referencia para el ángulo de Cobb — Rad Index",
+   "seo_desc": "Superficie superior e inferior del cuerpo vertebral, estructura de referencia para medir el ángulo de Cobb en la escoliosis y valorar la altura discal."
   }
  },
  "angolo-di-louis-angolo-sternale": {
@@ -1280,7 +1296,9 @@
   },
   "es": {
    "termine": "Ángulo de Louis (ángulo esternal)",
-   "definizione": "Unión entre el manubrio y el cuerpo del esternón, visible como una ligera prominencia anterior. Corresponde a la segunda costilla y a la bifurcación traqueal (T4-T5). Punto de centraje para las proyecciones del esternón."
+   "definizione": "Unión entre el manubrio y el cuerpo del esternón, visible como una ligera prominencia anterior. Corresponde a la segunda costilla y a la bifurcación traqueal (T4-T5). Punto de centraje para las proyecciones del esternón.",
+   "seo_title": "Ángulo de Louis (ángulo esternal): dónde está — Rad Index",
+   "seo_desc": "Unión entre manubrio y cuerpo del esternón, a la altura de la 2ª costilla y la bifurcación traqueal (T4-T5). Punto de centraje para las proyecciones de esternón."
   }
  },
  "diaframma": {

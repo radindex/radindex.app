@@ -3655,6 +3655,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/es/glossario/varianza-ulnare.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/varianza-ulnare.html"/>
   </url>
+
   <url><loc>https://radindex.app/glossario/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://radindex.app/glossario/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://radindex.app/en/glossario/"/>
@@ -4225,4 +4226,5 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://radindex.app/es/glossario/calcolo-del-tempo-di-esposizione.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://radindex.app/glossario/calcolo-del-tempo-di-esposizione.html"/>
   </url>
+
 </urlset>
