@@ -843,18 +843,20 @@
 <!-- ═══════════════════════════════════════════════════ NEWSLETTER -->
 <section class="newsletter-section" style="padding:72px 20px;text-align:center;">
   <div style="max-width:560px;margin:0 auto;">
-    <span class="section-tag">Resta aggiornato</span>
-    <h2 class="section-title">Nuove funzioni e consigli per TSRM</h2>
-    <p class="section-sub">Lascia la tua email: ti avviso sugli aggiornamenti di Rad Index. Niente spam, ti disiscrivi quando vuoi.</p>
-    <form id="nl-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+    <span class="section-tag" data-i18n="newsletterTag">Resta aggiornato</span>
+    <h2 class="section-title" data-i18n="newsletterTitle">Nuove funzioni e consigli per TSRM</h2>
+    <p class="section-sub" data-i18n="newsletterSub">Lascia la tua email: ti avviso sugli aggiornamenti di Rad Index. Niente spam, ti disiscrivi quando vuoi.</p>
+    <form id="nl-form" action="https://formspree.io/f/mpqvwlvp" method="POST"
           style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
-      <input type="email" name="email" required placeholder="La tua email" aria-label="Email"
+      <input type="hidden" name="_subject" value="Nuova iscrizione newsletter Rad Index">
+      <input type="hidden" name="form_type" value="newsletter">
+      <input type="email" name="email" required placeholder="La tua email" aria-label="Email" data-i18n-placeholder="newsletterPlaceholder"
              style="flex:1 1 240px;max-width:320px;padding:14px 16px;border:1px solid #d0d5dd;border-radius:12px;font-size:15px;font-family:inherit;outline:none;">
-      <button type="submit"
+      <button type="submit" data-i18n="newsletterButton"
               style="padding:14px 26px;background:#416DBE;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;">Avvisami</button>
     </form>
     <p id="nl-msg" style="display:none;margin-top:16px;font-size:14px;font-weight:600;"></p>
-    <p style="margin-top:10px;font-size:12px;color:#98a2b3;">Riceverai solo aggiornamenti importanti. Zero spam.</p>
+    <p style="margin-top:10px;font-size:12px;color:#98a2b3;" data-i18n="newsletterFooter">Riceverai solo aggiornamenti importanti. Zero spam.</p>
   </div>
 </section>
 <script>
@@ -863,11 +865,14 @@
   if(!f)return;
   f.addEventListener('submit',function(e){
     e.preventDefault();
+    var tr=(typeof T!=='undefined'&&T[document.documentElement.lang])||{};
+    var okMsg=tr.newsletterOk||'Grazie! Ti terrò aggiornato.';
+    var errMsg=tr.newsletterErr||'Ops, qualcosa è andato storto. Riprova tra poco.';
     fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
     .then(function(r){
-      if(r.ok){f.style.display='none';m.textContent='Grazie! Ti terrò aggiornato.';m.style.color='#27500A';m.style.display='block';}
-      else{m.textContent='Ops, qualcosa è andato storto. Riprova tra poco.';m.style.color='#b42318';m.style.display='block';}
-    }).catch(function(){m.textContent='Ops, qualcosa è andato storto. Riprova tra poco.';m.style.color='#b42318';m.style.display='block';});
+      if(r.ok){f.style.display='none';m.textContent=okMsg;m.style.color='#27500A';m.style.display='block';}
+      else{m.textContent=errMsg;m.style.color='#b42318';m.style.display='block';}
+    }).catch(function(){m.textContent=errMsg;m.style.color='#b42318';m.style.display='block';});
   });
 })();
 </script>
@@ -984,6 +989,11 @@ const T = {
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
     pf9: 'Note personali su ogni scheda', pf10: 'Preferiti per accesso rapido',
     priceTrial: '14 giorni di prova gratuita — nessuna carta richiesta',
+    newsletterTag: 'Resta aggiornato', newsletterTitle: 'Nuove funzioni e consigli per TSRM',
+    newsletterSub: 'Lascia la tua email: ti avviso sugli aggiornamenti di Rad Index. Niente spam, ti disiscrivi quando vuoi.',
+    newsletterPlaceholder: 'La tua email', newsletterButton: 'Avvisami',
+    newsletterFooter: 'Riceverai solo aggiornamenti importanti. Zero spam.',
+    newsletterOk: 'Grazie! Ti terrò aggiornato.', newsletterErr: 'Ops, qualcosa è andato storto. Riprova tra poco.',
     faqTag: 'Domande frequenti', faqTitle: 'Tutto quello che vuoi sapere',
     faqQ1: 'È un abbonamento?', faqA1: 'No. Rad Index si paga una volta sola (€9,99) e l\'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi.',
     faqQ2: 'Funziona offline?', faqA2: 'Sì, completamente. Tutti i contenuti sono nell\'app: puoi consultare proiezioni, parametri e flashcard senza connessione, anche in sala radiologica o in reparto. Nessun dato viene caricato in cloud.',
@@ -1046,6 +1056,11 @@ const T = {
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
     pf9: 'Personal notes on every card', pf10: 'Favorites for quick access',
     priceTrial: '14-day free trial — no card required',
+    newsletterTag: 'Stay updated', newsletterTitle: 'New features and tips for radiographers',
+    newsletterSub: 'Leave your email: I\'ll notify you about Rad Index updates. No spam, unsubscribe anytime.',
+    newsletterPlaceholder: 'Your email', newsletterButton: 'Notify me',
+    newsletterFooter: 'You\'ll only receive important updates. Zero spam.',
+    newsletterOk: 'Thanks! I\'ll keep you posted.', newsletterErr: 'Oops, something went wrong. Please try again shortly.',
     faqTag: 'Frequently asked questions', faqTitle: 'Everything you want to know',
     faqQ1: 'Is it a subscription?', faqA1: 'No. Rad Index is a one-time payment (€9.99) with permanent access. No recurring fees, no auto-renewal. Future updates are included.',
     faqQ2: 'Does it work offline?', faqA2: 'Yes, completely. All content is in the app: you can consult projections, parameters and flashcards without a connection, even in the imaging suite or on the ward. No data is uploaded to the cloud.',
@@ -1108,6 +1123,11 @@ const T = {
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
     pf9: 'Notas personales en cada ficha', pf10: 'Favoritos para acceso rápido',
     priceTrial: '14 días de prueba gratuita — sin tarjeta requerida',
+    newsletterTag: 'Mantente al día', newsletterTitle: 'Nuevas funciones y consejos para técnicos',
+    newsletterSub: 'Deja tu email: te avisaré de las novedades de Rad Index. Sin spam, cancela cuando quieras.',
+    newsletterPlaceholder: 'Tu correo electrónico', newsletterButton: 'Avísame',
+    newsletterFooter: 'Solo recibirás actualizaciones importantes. Cero spam.',
+    newsletterOk: '¡Gracias! Te mantendré informado.', newsletterErr: 'Ups, algo salió mal. Inténtalo de nuevo en un momento.',
     faqTag: 'Preguntas frecuentes', faqTitle: 'Todo lo que quieres saber',
     faqQ1: '¿Es una suscripción?', faqA1: 'No. Rad Index se paga una sola vez (9,99 €) y el acceso es permanente. Sin costes recurrentes, sin renovación automática. Las actualizaciones futuras están incluidas.',
     faqQ2: '¿Funciona sin conexión?', faqA2: 'Sí, completamente. Todo el contenido está en la app: puedes consultar proyecciones, parámetros y flashcards sin conexión, incluso en la sala de radiología o en planta. Ningún dato se sube a la nube.',
@@ -1146,6 +1166,10 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
       const key = el.getAttribute('data-i18n-alt');
       if (t[key] !== undefined) el.alt = t[key];
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (t[key] !== undefined) { el.placeholder = t[key]; el.setAttribute('aria-label', t[key]); }
     });
   });
 }
