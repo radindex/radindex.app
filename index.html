@@ -640,6 +640,11 @@
         <div class="feature-desc" data-i18n="f2d">Ripasso intelligente che si adatta a ciò che ricordi meno. Ogni proiezione genera automaticamente 3 carte su centratura, parametri e posizionamento.</div>
       </div>
       <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div class="feature-title" data-i18n="fqt">Quiz di autovalutazione</div>
+        <div class="feature-desc" data-i18n="fqd">120 domande su parametri tecnici, criteri di qualità e casi clinici. Le domande sbagliate tornano più spesso, così ripassi ciò che ti serve davvero.</div>
+      </div>
+      <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-2-1.5-5-2-8-2v13c3 0 6 .5 8 2 2-1.5 5-2 8-2V5c-3 0-6 .5-8 2Z"/><line x1="12" y1="7" x2="12" y2="20"/></svg></div>
         <div class="feature-title" data-i18n="f3t">Glossario RX</div>
         <div class="feature-desc" data-i18n="f3d">Termini tecnici e anatomici con definizioni chiare. Navigazione per categoria: Tutti / Tecnici / Anatomia / Formule.</div>
@@ -683,7 +688,7 @@
   <div class="how-inner">
     <div class="section-header" style="text-align:center;">
       <span class="section-tag" data-i18n="howTag">Come funziona</span>
-      <h2 class="section-title" data-i18n="howTitle">Da zero a operativo in secondi</h2>
+      <h2 class="section-title" data-i18n="howTitle">Da zero a operativo in pochi secondi</h2>
       <p class="section-sub" style="max-width:440px;margin:12px auto 0;" data-i18n="howSub">Tre passi. Nessuna ricerca confusa o dispendiosa.</p>
     </div>
     <div class="how-steps">
@@ -794,6 +799,7 @@
       <li data-i18n="pf1">147 proiezioni radiografiche complete</li>
       <li data-i18n="pf2">Parametri DR e CR per ogni proiezione</li>
       <li data-i18n="pf3">Flashcard con ripasso intelligente</li>
+      <li data-i18n="pfq">Quiz di autovalutazione (120 domande)</li>
       <li data-i18n="pf4">Glossario RX tecnico e anatomico</li>
       <li data-i18n="pf5">Esportazione PDF per ogni scheda</li>
       <li data-i18n="pf6">Checklist ALARA interattiva</li>
@@ -891,6 +897,8 @@
     <div data-fs-success></div>
 
     <form id="contact-form" class="contact-form">
+      <input type="hidden" name="_subject" value="Nuovo messaggio dal sito Rad Index">
+      <input type="hidden" name="form_type" value="contact">
       <div class="form-group">
         <label for="contact-email" data-i18n="contactEmail">Email</label>
         <input
@@ -965,8 +973,9 @@ const T = {
     f6t: '3 Lingue', f6d: 'Italiano, Inglese e Spagnolo. Cambia lingua al volo. Pensata anche per chi studia o lavora all\'estero.',
     f7t: 'Funziona offline', f7d: 'Nessuna connessione internet necessaria per consultare le schede. Funziona ovunque: in sala, in reparto, in aula. Note e progressi restano sul tuo dispositivo.',
     f8t: 'Note personali', f8d: "Scrivi annotazioni su ogni scheda — dettagli del tuo reparto, varianti locali, promemoria. Salvataggio automatico.",
+    fqt: 'Quiz di autovalutazione', fqd: '120 domande su parametri tecnici, criteri di qualità e casi clinici. Le domande sbagliate tornano più spesso, così ripassi ciò che ti serve davvero.',
     f9t: 'Preferiti', f9d: 'Salva le proiezioni che usi più spesso per averle sempre a un tap di distanza, senza dover ricercare ogni volta.',
-    howTag: 'Come funziona', howTitle: 'Da zero a operativo in secondi', howSub: 'Tre passi. Nessuna ricerca confusa o dispendiosa.',
+    howTag: 'Come funziona', howTitle: 'Da zero a operativo in pochi secondi', howSub: 'Tre passi. Nessuna ricerca confusa o dispendiosa.',
     s1t: 'Cerca la proiezione', s1d: 'Per nome, zona anatomica o incidenza. La ricerca istantanea trova anche termini parziali.',
     s2t: 'Consulta la scheda', s2d: 'Posizionamento, centratura, parametri DR/CR, criteri di qualità, errori comuni e note pratiche. Tutto in una schermata.',
     howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Consulta gratis le proiezioni principali →',
@@ -988,7 +997,7 @@ const T = {
     priceBadge: 'Accesso completo', priceSubCard: 'Pagamento unico · Accesso permanente · iOS e Android',
     priceReframe: 'Meno di un caffè al mese per un anno intero',
     pf1: '147 proiezioni radiografiche complete', pf2: 'Parametri DR e CR per ogni proiezione',
-    pf3: 'Flashcard con ripasso intelligente', pf4: 'Glossario RX tecnico e anatomico',
+    pf3: 'Flashcard con ripasso intelligente', pfq: 'Quiz di autovalutazione (120 domande)', pf4: 'Glossario RX tecnico e anatomico',
     pf5: 'Esportazione PDF per ogni scheda', pf6: 'Checklist ALARA interattiva',
     pf7: 'Dark mode e 3 lingue', pf8: 'Aggiornamenti inclusi',
     pf9: 'Note personali su ogni scheda', pf10: 'Preferiti per accesso rapido',
@@ -1033,8 +1042,9 @@ const T = {
     f6t: '3 Languages', f6d: 'Italian, English and Spanish. Switch language on the fly. Designed for those who study or work abroad.',
     f7t: 'Works offline', f7d: 'No internet connection needed to consult the cards. Works everywhere: in the suite, on the ward, in the classroom. Your notes and progress stay on your device.',
     f8t: 'Personal notes', f8d: 'Write annotations on every card — department-specific details, local variants, reminders. Auto-saved.',
+    fqt: 'Self-assessment quiz', fqd: '120 questions on technical parameters, quality criteria and clinical cases. Questions you get wrong come back more often, so you review what you really need.',
     f9t: 'Favorites', f9d: 'Save the projections you use most for quick access in one tap, without searching every time.',
-    howTag: 'How it works', howTitle: 'From zero to operational in seconds', howSub: 'Three steps. No confusing, time-wasting searches.',
+    howTag: 'How it works', howTitle: 'From zero to operational in a few seconds', howSub: 'Three steps. No confusing, time-wasting searches.',
     s1t: 'Search the projection', s1d: 'By name, anatomical zone or incidence. Instant search finds partial terms too.',
     s2t: 'Consult the card', s2d: 'Positioning, centering, DR/CR parameters, quality criteria, common errors and practical notes. Everything on one screen.',
     howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Browse key projections for free →',
@@ -1056,7 +1066,7 @@ const T = {
     priceBadge: 'Full access', priceSubCard: 'One-time payment · Permanent access · iOS & Android',
     priceReframe: 'Less than a coffee a month for a full year',
     pf1: '147 complete radiographic projections', pf2: 'DR and CR parameters for every projection',
-    pf3: 'Flashcards with smart review', pf4: 'Technical and anatomical X-ray glossary',
+    pf3: 'Flashcards with smart review', pfq: 'Self-assessment quiz (120 questions)', pf4: 'Technical and anatomical X-ray glossary',
     pf5: 'PDF export for every card', pf6: 'Interactive ALARA checklist',
     pf7: 'Dark mode and 3 languages', pf8: 'Updates included',
     pf9: 'Personal notes on every card', pf10: 'Favorites for quick access',
@@ -1101,8 +1111,9 @@ const T = {
     f6t: '3 Idiomas', f6d: 'Italiano, Inglés y Español. Cambia idioma al instante. Pensada para quienes estudian o trabajan en el extranjero.',
     f7t: 'Funciona sin conexión', f7d: 'No necesitas conexión a internet para consultar las fichas. Funciona en cualquier lugar: en sala, en planta, en el aula. Tus notas y tu progreso se quedan en tu dispositivo.',
     f8t: 'Notas personales', f8d: 'Escribe anotaciones en cada ficha — detalles de tu servicio, variantes locales, recordatorios. Guardado automático.',
+    fqt: 'Quiz de autoevaluación', fqd: '120 preguntas sobre parámetros técnicos, criterios de calidad y casos clínicos. Las preguntas que fallas vuelven con más frecuencia, para repasar lo que realmente necesitas.',
     f9t: 'Favoritos', f9d: 'Guarda las proyecciones que usas más a menudo para tenerlas siempre a un toque, sin tener que buscar cada vez.',
-    howTag: 'Cómo funciona', howTitle: 'De cero a operativo en segundos', howSub: 'Tres pasos. Sin búsquedas confusas que hagan perder tiempo.',
+    howTag: 'Cómo funciona', howTitle: 'De cero a operativo en pocos segundos', howSub: 'Tres pasos. Sin búsquedas confusas que hagan perder tiempo.',
     s1t: 'Busca la proyección', s1d: 'Por nombre, zona anatómica o incidencia. La búsqueda instantánea también encuentra términos parciales.',
     s2t: 'Consulta la ficha', s2d: 'Posicionamiento, centraje, parámetros DR/CR, criterios de calidad, errores comunes y notas prácticas. Todo en una pantalla.',
     howCta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Consulta gratis las proyecciones principales →',
@@ -1124,7 +1135,7 @@ const T = {
     priceBadge: 'Acceso completo', priceSubCard: 'Pago único · Acceso permanente · iOS y Android',
     priceReframe: 'Menos de un café al mes durante un año entero',
     pf1: '147 proyecciones radiográficas completas', pf2: 'Parámetros DR y CR por cada proyección',
-    pf3: 'Flashcard con repaso inteligente', pf4: 'Glosario RX técnico y anatómico',
+    pf3: 'Flashcard con repaso inteligente', pfq: 'Quiz de autoevaluación (120 preguntas)', pf4: 'Glosario RX técnico y anatómico',
     pf5: 'Exportación PDF de cada ficha', pf6: 'Lista ALARA interactiva',
     pf7: 'Dark mode y 3 idiomas', pf8: 'Actualizaciones incluidas',
     pf9: 'Notas personales en cada ficha', pf10: 'Favoritos para acceso rápido',
