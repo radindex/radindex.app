@@ -435,6 +435,8 @@
     }
     .form-group textarea { resize: vertical; min-height: 120px; }
     .form-group [data-fs-error] { display: none; font-size: 13px; color: #b42318; margin-top: 6px; }
+    .form-note { font-size: 13px; color: #667085; margin: -8px 0 16px; }
+    .form-note a { color: var(--blue-dk); text-decoration: underline; }
     .form-submit-btn {
       width: 100%;
       padding: 14px 16px;
@@ -856,7 +858,7 @@
               style="padding:14px 26px;background:#416DBE;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;">Avvisami</button>
     </form>
     <p id="nl-msg" style="display:none;margin-top:16px;font-size:14px;font-weight:600;"></p>
-    <p style="margin-top:10px;font-size:12px;color:#98a2b3;" data-i18n="newsletterFooter">Riceverai solo aggiornamenti importanti. Zero spam.</p>
+    <p style="margin-top:10px;font-size:12px;color:#98a2b3;" data-i18n-html="newsletterFooter">Riceverai solo aggiornamenti importanti. Zero spam. Iscrivendoti accetti che la tua email sia usata solo per questo scopo (<a href="/privacy.html" style="color:inherit;text-decoration:underline;">Privacy Policy</a>). Per disiscriverti scrivi a info@radindex.app.</p>
   </div>
 </section>
 <script>
@@ -913,6 +915,8 @@
         ></textarea>
         <span data-fs-error="message"></span>
       </div>
+
+      <p class="form-note" data-i18n-html="contactNote">Inviando il messaggio accetti che la tua email e il testo siano usati solo per risponderti (<a href="/privacy.html">Privacy Policy</a>).</p>
 
       <button type="submit" class="form-submit-btn" data-fs-submit-btn data-i18n="contactSubmit">Invia</button>
     </form>
@@ -992,7 +996,7 @@ const T = {
     newsletterTag: 'Resta aggiornato', newsletterTitle: 'Nuove funzioni e consigli per TSRM',
     newsletterSub: 'Lascia la tua email: ti avviso sugli aggiornamenti di Rad Index. Niente spam, ti disiscrivi quando vuoi.',
     newsletterPlaceholder: 'La tua email', newsletterButton: 'Avvisami',
-    newsletterFooter: 'Riceverai solo aggiornamenti importanti. Zero spam.',
+    newsletterFooter: 'Riceverai solo aggiornamenti importanti. Zero spam. Iscrivendoti accetti che la tua email sia usata solo per questo scopo (<a href="/privacy.html" style="color:inherit;text-decoration:underline;">Privacy Policy</a>). Per disiscriverti scrivi a info@radindex.app.',
     newsletterOk: 'Grazie! Ti terrò aggiornato.', newsletterErr: 'Ops, qualcosa è andato storto. Riprova tra poco.',
     faqTag: 'Domande frequenti', faqTitle: 'Tutto quello che vuoi sapere',
     faqQ1: 'È un abbonamento?', faqA1: 'No. Rad Index si paga una volta sola (€9,99) e l\'accesso è permanente. Nessun costo ricorrente, nessun rinnovo automatico. Gli aggiornamenti futuri sono inclusi.',
@@ -1002,6 +1006,7 @@ const T = {
     faqQ5: 'È disponibile per iOS e Android?', faqA5: 'Sì, è disponibile su entrambe le piattaforme, con la stessa esperienza e gli stessi contenuti. L\'acquisto è legato al singolo store.',
     contactTag: 'Contatti', contactTitle: 'Domande o suggerimenti?', contactSub: 'Scrivimi direttamente. Leggo e rispondo a tutti.',
     contactEmail: 'Email', contactMessage: 'Messaggio', contactSubmit: 'Invia',
+    contactNote: 'Inviando il messaggio accetti che la tua email e il testo siano usati solo per risponderti (<a href="/privacy.html">Privacy Policy</a>).',
     footerProj: 'Proiezioni radiografiche', footerTerms: 'Termini di utilizzo',
     footerCopy: '© 2026 Rad Index · Sviluppato da un TSRM per i TSRM'
   },
@@ -1059,7 +1064,7 @@ const T = {
     newsletterTag: 'Stay updated', newsletterTitle: 'New features and tips for radiographers',
     newsletterSub: 'Leave your email: I\'ll notify you about Rad Index updates. No spam, unsubscribe anytime.',
     newsletterPlaceholder: 'Your email', newsletterButton: 'Notify me',
-    newsletterFooter: 'You\'ll only receive important updates. Zero spam.',
+    newsletterFooter: 'You\'ll only receive important updates. Zero spam. By subscribing you agree that your email is used only for this purpose (<a href="/privacy.html" style="color:inherit;text-decoration:underline;">Privacy Policy</a>). To unsubscribe, write to info@radindex.app.',
     newsletterOk: 'Thanks! I\'ll keep you posted.', newsletterErr: 'Oops, something went wrong. Please try again shortly.',
     faqTag: 'Frequently asked questions', faqTitle: 'Everything you want to know',
     faqQ1: 'Is it a subscription?', faqA1: 'No. Rad Index is a one-time payment (€9.99) with permanent access. No recurring fees, no auto-renewal. Future updates are included.',
@@ -1069,6 +1074,7 @@ const T = {
     faqQ5: 'Is it available for iOS and Android?', faqA5: 'Yes, it is available on both platforms, with the same experience and content. The purchase is tied to the individual store.',
     contactTag: 'Contact', contactTitle: 'Questions or suggestions?', contactSub: 'Write to me directly. I read and reply to everyone.',
     contactEmail: 'Email', contactMessage: 'Message', contactSubmit: 'Send',
+    contactNote: 'By sending this message you agree that your email and text are used only to reply to you (<a href="/privacy.html">Privacy Policy</a>).',
     footerProj: 'Radiographic Projections', footerTerms: 'Terms of Use',
     footerCopy: '© 2026 Rad Index · Built by a Radiographer for Radiographers'
   },
@@ -1126,7 +1132,7 @@ const T = {
     newsletterTag: 'Mantente al día', newsletterTitle: 'Nuevas funciones y consejos para técnicos',
     newsletterSub: 'Deja tu email: te avisaré de las novedades de Rad Index. Sin spam, cancela cuando quieras.',
     newsletterPlaceholder: 'Tu correo electrónico', newsletterButton: 'Avísame',
-    newsletterFooter: 'Solo recibirás actualizaciones importantes. Cero spam.',
+    newsletterFooter: 'Solo recibirás actualizaciones importantes. Cero spam. Al suscribirte aceptas que tu correo se use solo para este fin (<a href="/privacy.html" style="color:inherit;text-decoration:underline;">Política de privacidad</a>). Para darte de baja, escribe a info@radindex.app.',
     newsletterOk: '¡Gracias! Te mantendré informado.', newsletterErr: 'Ups, algo salió mal. Inténtalo de nuevo en un momento.',
     faqTag: 'Preguntas frecuentes', faqTitle: 'Todo lo que quieres saber',
     faqQ1: '¿Es una suscripción?', faqA1: 'No. Rad Index se paga una sola vez (9,99 €) y el acceso es permanente. Sin costes recurrentes, sin renovación automática. Las actualizaciones futuras están incluidas.',
@@ -1136,6 +1142,7 @@ const T = {
     faqQ5: '¿Está disponible para iOS y Android?', faqA5: 'Sí, está disponible en ambas plataformas, con la misma experiencia y los mismos contenidos. La compra está vinculada a cada tienda.',
     contactTag: 'Contacto', contactTitle: '¿Preguntas o sugerencias?', contactSub: 'Escríbeme directamente. Leo y respondo a todos.',
     contactEmail: 'Correo electrónico', contactMessage: 'Mensaje', contactSubmit: 'Enviar',
+    contactNote: 'Al enviar este mensaje aceptas que tu correo y el texto se usen solo para responderte (<a href="/privacy.html">Política de privacidad</a>).',
     footerProj: 'Proyecciones radiográficas', footerTerms: 'Términos de uso',
     footerCopy: '© 2026 Rad Index · Desarrollado por un Técnico para Técnicos'
   }
@@ -1204,7 +1211,7 @@ document.querySelectorAll('#nav-menu a').forEach(a => {
   window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
   formspree('initForm', { formElement: '#contact-form', formId: 'mpqvwlvp' });
 </script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<script src="/assets/vendor/formspree-ajax-1.1.5.js" defer></script>
 
 </body>
 </html>
