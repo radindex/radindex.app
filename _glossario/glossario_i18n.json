@@ -200,7 +200,9 @@
     },
     "es": {
       "termine": "DR (Radiografía Digital)",
-      "definizione": "Radiografía digital directa con detector de panel plano (FPD). El detector convierte directamente los rayos X en señal eléctrica mediante materiales como el selenio amorfo (conversión directa) o centelleadores acoplados a fotodiodos (conversión indirecta). Ofrece adquisición inmediata, baja dosis y amplia latitud de exposición."
+      "definizione": "Radiografía digital directa con detector de panel plano (FPD). El detector convierte directamente los rayos X en señal eléctrica mediante materiales como el selenio amorfo (conversión directa) o centelleadores acoplados a fotodiodos (conversión indirecta). Ofrece adquisición inmediata, baja dosis y amplia latitud de exposición.",
+      "seo_title": "DR (Radiografía Digital): qué es y cómo funciona — Rad Index",
+      "seo_desc": "Radiografía digital directa con detector de panel plano (FPD)."
     }
   },
   "cr-computed-radiography": {
@@ -307,7 +309,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "EI (Exposure Index)",
-      "definizione": "Indice di esposizione nei sistemi digitali. Indica la quantità di radiazione che ha raggiunto il detettore. Valori troppo bassi indicano sottoesposizione (immagine rumorosa); valori troppo alti indicano sovraesposizione (dose eccessiva al paziente). Il valore target varia secondo il fabbricante."
+      "definizione": "Indice di esposizione nei sistemi digitali. Indica la quantità di radiazione che ha raggiunto il detettore. Valori troppo bassi indicano sottoesposizione (immagine rumorosa); valori troppo alti indicano sovraesposizione (dose eccessiva al paziente). Il valore target varia secondo il fabbricante.",
+      "seo_title": "EI (Exposure Index): cos'è e come si interpreta — Rad Index",
+      "seo_desc": "Indice di esposizione nei sistemi digitali. Indica la quantità di radiazione che ha raggiunto il detettore."
     },
     "en": {
       "termine": "EI (Exposure Index)",
@@ -467,7 +471,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "DAP (Dose-Area Product)",
-      "definizione": "Prodotto dose-area, misura la quantità totale di energia impartita al paziente. Si misura in Gy·cm². Indicatore della dose totale indipendentemente dalla distribuzione nel paziente. Strumento fondamentale per il monitoraggio della dose in radiologia."
+      "definizione": "Prodotto dose-area, misura la quantità totale di energia impartita al paziente. Si misura in Gy·cm². Indicatore della dose totale indipendentemente dalla distribuzione nel paziente. Strumento fondamentale per il monitoraggio della dose in radiologia.",
+      "seo_title": "DAP (Dose-Area Product): cos'è e come si misura — Rad Index",
+      "seo_desc": "Prodotto dose-area, misura la quantità totale di energia impartita al paziente. Si misura in Gy·cm²."
     },
     "en": {
       "termine": "DAP (Dose-Area Product)",
@@ -1037,7 +1043,9 @@
     },
     "es": {
       "termine": "Peñasco (porción petrosa)",
-      "definizione": "Porción más densa del hueso temporal, con forma de pirámide y vértice dirigido medialmente. Contiene las estructuras del oído interno (cóclea, canales semicirculares) y el conducto auditivo interno. En las proyecciones craneales puede superponerse a otras estructuras si el posicionamiento no es correcto."
+      "definizione": "Porción más densa del hueso temporal, con forma de pirámide y vértice dirigido medialmente. Contiene las estructuras del oído interno (cóclea, canales semicirculares) y el conducto auditivo interno. En las proyecciones craneales puede superponerse a otras estructuras si el posicionamiento no es correcto.",
+      "seo_title": "Peñasco (porción petrosa): anatomía y estructuras — Rad Index",
+      "seo_desc": "Porción más densa del hueso temporal, con forma de pirámide y vértice dirigido medialmente."
     }
   },
   "forame-magno": {
@@ -1054,7 +1062,9 @@
     },
     "es": {
       "termine": "Agujero magno",
-      "definizione": "Gran apertura en la base del cráneo a través de la cual el tronco encefálico se continúa con la médula espinal. Se visualiza en la proyección de Towne. Delimitado por los cóndilos occipitales, que se articulan con el atlas."
+      "definizione": "Gran apertura en la base del cráneo a través de la cual el tronco encefálico se continúa con la médula espinal. Se visualiza en la proyección de Towne. Delimitado por los cóndilos occipitales, que se articulan con el atlas.",
+      "seo_title": "Agujero magno: anatomía y proyección de Towne — Rad Index",
+      "seo_desc": "Gran apertura en la base del cráneo a través de la cual el tronco encefálico se continúa con la médula espinal. Se visualiza en la proyección de Towne."
     }
   },
   "processo-odontoide-dente-dell-epistrofeo": {
@@ -1101,7 +1111,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Interlinea articolare",
-      "definizione": "Spazio radiotrasparente visibile tra le superfici articolari nelle proiezioni radiografiche standard. Corrisponde allo spazio occupato dalla cartilagine articolare (non visibile direttamente). Il restringimento dell'interlinea è segno di artrosi o artrite."
+      "definizione": "Spazio radiotrasparente visibile tra le superfici articolari nelle proiezioni radiografiche standard. Corrisponde allo spazio occupato dalla cartilagine articolare (non visibile direttamente). Il restringimento dell'interlinea è segno di artrosi o artrite.",
+      "seo_title": "Interlinea articolare: cos'è e segno di artrosi — Rad Index",
+      "seo_desc": "Spazio radiotrasparente visibile tra le superfici articolari nelle proiezioni radiografiche standard."
     },
     "en": {
       "termine": "Joint space",
@@ -1166,7 +1178,9 @@
     },
     "es": {
       "termine": "Articulación subastragalina",
-      "definizione": "Articulación entre el astrágalo y el calcáneo, compuesta por una faceta posterior (mayor) y dos facetas anteriores. Permite la inversión y eversión del pie. No visible en las proyecciones estándar del tobillo; requiere proyecciones dedicadas (Broden, axial del calcáneo) o TC."
+      "definizione": "Articulación entre el astrágalo y el calcáneo, compuesta por una faceta posterior (mayor) y dos facetas anteriores. Permite la inversión y eversión del pie. No visible en las proyecciones estándar del tobillo; requiere proyecciones dedicadas (Broden, axial del calcáneo) o TC.",
+      "seo_title": "Articulación subastragalina: anatomía y función — Rad Index",
+      "seo_desc": "Articulación entre el astrágalo y el calcáneo, compuesta por una faceta posterior (mayor) y dos facetas anteriores. Permite la inversión y eversión del pie."
     }
   },
   "fossa-intercondiloidea": {
@@ -1221,7 +1235,9 @@
     },
     "es": {
       "termine": "Glenoides",
-      "definizione": "Superficie articular de la escápula que se articula con la cabeza humeral formando la articulación glenohumeral (hombro). Tiene una superficie relativamente pequeña respecto a la cabeza humeral, lo que otorga gran movilidad a costa de la estabilidad ósea."
+      "definizione": "Superficie articular de la escápula que se articula con la cabeza humeral formando la articulación glenohumeral (hombro). Tiene una superficie relativamente pequeña respecto a la cabeza humeral, lo que otorga gran movilidad a costa de la estabilidad ósea.",
+      "seo_title": "Glenoides: anatomía y articulación con el húmero — Rad Index",
+      "seo_desc": "Superficie articular de la escápula que se articula con la cabeza humeral formando la articulación glenohumeral (hombro)."
     }
   },
   "acromion": {
@@ -1296,7 +1312,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Sinfisi pubica",
-      "definizione": "Articolazione cartilaginea (anfiartrosi) tra le due ossa pubiche. Punto di centratura per le proiezioni del bacino. La distanza normale è < 5 mm negli adulti; allargamenti indicano instabilità pelvica."
+      "definizione": "Articolazione cartilaginea (anfiartrosi) tra le due ossa pubiche. Punto di centratura per le proiezioni del bacino. La distanza normale è < 5 mm negli adulti; allargamenti indicano instabilità pelvica.",
+      "seo_title": "Sinfisi pubica: anatomia e valore normale in radiologia — Rad Index",
+      "seo_desc": "Articolazione cartilaginea (anfiartrosi) tra le due ossa pubiche. Punto di centratura per le proiezioni del bacino."
     },
     "en": {
       "termine": "Pubic symphysis",
@@ -1391,7 +1409,9 @@
     },
     "es": {
       "termine": "Diafragma",
-      "definizione": "Músculo en forma de cúpula que separa la cavidad torácica de la abdominal. En radiografía: la cúpula derecha es más alta (hígado) que la izquierda (estómago). En las proyecciones del abdomen su posición depende de la fase respiratoria: en inspiración desciende, en espiración asciende."
+      "definizione": "Músculo en forma de cúpula que separa la cavidad torácica de la abdominal. En radiografía: la cúpula derecha es más alta (hígado) que la izquierda (estómago). En las proyecciones del abdomen su posición depende de la fase respiratoria: en inspiración desciende, en espiración asciende.",
+      "seo_title": "Diafragma: anatomía y posición según la respiración — Rad Index",
+      "seo_desc": "Músculo en forma de cúpula que separa la cavidad torácica de la abdominal. En radiografía: la cúpula derecha es más alta (hígado) que la izquierda (estómago)."
     }
   },
   "sesamoidi": {
