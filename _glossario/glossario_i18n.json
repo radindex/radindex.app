@@ -28,7 +28,9 @@
     },
     "es": {
       "termine": "kV (kilovoltio)",
-      "definizione": "Tensión aplicada al tubo de rayos X entre cátodo y ánodo. Determina la calidad (energía) del haz de rayos X: valores más altos aumentan el poder de penetración. Influye directamente en el contraste de la imagen — un kV elevado reduce el contraste pero aumenta la latitud de exposición."
+      "definizione": "Tensión aplicada al tubo de rayos X entre cátodo y ánodo. Determina la calidad (energía) del haz de rayos X: valores más altos aumentan el poder de penetración. Influye directamente en el contraste de la imagen — un kV elevado reduce el contraste pero aumenta la latitud de exposición.",
+      "seo_title": "kV (kilovoltio): qué es y cómo afecta la imagen — Rad Index",
+      "seo_desc": "Tensión aplicada al tubo de rayos X entre cátodo y ánodo."
     }
   },
   "ma-milliampere": {
@@ -186,7 +188,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "DR (Digital Radiography)",
-      "definizione": "Radiografia digitale diretta con flat panel detector (FPD). Il detettore converte direttamente i raggi X in segnale elettrico tramite materiali come il selenio amorfo (conversione diretta) o scintillatori accoppiati a fotodiodi (conversione indiretta). Offre acquisizione immediata, bassa dose e ampia latitudine di esposizione."
+      "definizione": "Radiografia digitale diretta con flat panel detector (FPD). Il detettore converte direttamente i raggi X in segnale elettrico tramite materiali come il selenio amorfo (conversione diretta) o scintillatori accoppiati a fotodiodi (conversione indiretta). Offre acquisizione immediata, bassa dose e ampia latitudine di esposizione.",
+      "seo_title": "DR (Digital Radiography): cos'è e come funziona — Rad Index",
+      "seo_desc": "Radiografia digitale diretta con flat panel detector (FPD)."
     },
     "en": {
       "termine": "DR (Digital Radiography)",
@@ -584,7 +588,9 @@
     },
     "es": {
       "termine": "Ángulo de Costa-Bertani",
-      "definizione": "Ángulo que mide la altura del arco plantar longitudinal en proyección lateral en carga. Formado entre la línea que une la tuberosidad posterior del calcáneo con la cabeza del primer metatarsiano y la línea que une la cabeza del primer metatarsiano con la tuberosidad del navicular. Valores normales: 120–130°. Valores reducidos indican pie plano."
+      "definizione": "Ángulo que mide la altura del arco plantar longitudinal en proyección lateral en carga. Formado entre la línea que une la tuberosidad posterior del calcáneo con la cabeza del primer metatarsiano y la línea que une la cabeza del primer metatarsiano con la tuberosidad del navicular. Valores normales: 120–130°. Valores reducidos indican pie plano.",
+      "seo_title": "Ángulo de Costa-Bertani: qué mide y valores normales — Rad Index",
+      "seo_desc": "Ángulo que mide la altura del arco plantar longitudinal en proyección lateral en carga."
     }
   },
   "sagittal-balance": {
@@ -737,7 +743,9 @@
     },
     "es": {
       "termine": "Medial / Lateral",
-      "definizione": "Medial: hacia la línea media del cuerpo. Lateral: alejado de la línea media. Se utiliza para describir la posición de las estructuras anatómicas y la dirección del haz."
+      "definizione": "Medial: hacia la línea media del cuerpo. Lateral: alejado de la línea media. Se utiliza para describir la posición de las estructuras anatómicas y la dirección del haz.",
+      "seo_title": "Medial y lateral: diferencia y uso en radiología — Rad Index",
+      "seo_desc": "Medial: hacia la línea media del cuerpo. Lateral: alejado de la línea media."
     }
   },
   "prossimale-distale": {
@@ -831,7 +839,9 @@
     },
     "es": {
       "termine": "Proyección AP (Anteroposterior)",
-      "definizione": "El haz entra por la parte anterior del paciente y sale posteriormente hacia el receptor. El paciente está en decúbito supino o de pie con la espalda hacia el receptor. Las estructuras anteriores aparecen magnificadas por su mayor distancia del receptor."
+      "definizione": "El haz entra por la parte anterior del paciente y sale posteriormente hacia el receptor. El paciente está en decúbito supino o de pie con la espalda hacia el receptor. Las estructuras anteriores aparecen magnificadas por su mayor distancia del receptor.",
+      "seo_title": "Proyección AP: qué es y cómo se posiciona al paciente — Rad Index",
+      "seo_desc": "El haz entra por la parte anterior del paciente y sale posteriormente hacia el receptor."
     }
   },
   "proiezione-pa-postero-anteriore": {
@@ -918,7 +928,9 @@
     },
     "es": {
       "termine": "OAI (Oblicua Anterior Izquierda)",
-      "definizione": "El paciente se rota con la parte anterior izquierda más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado derecho (contralateral)."
+      "definizione": "El paciente se rota con la parte anterior izquierda más cerca del receptor. En las proyecciones de la columna cervical permite la visualización de los agujeros de conjunción del lado derecho (contralateral).",
+      "seo_title": "OAI (Oblicua Anterior Izquierda): qué muestra — Rad Index",
+      "seo_desc": "El paciente se rota con la parte anterior izquierda más cerca del receptor."
     }
   },
   "opd-obliqua-posteriore-destra": {
@@ -933,7 +945,9 @@
     },
     "es": {
       "termine": "OPD (Oblicua Posterior Derecha)",
-      "definizione": "El paciente se rota con la parte posterior derecha más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo (pars interarticularis) y de las facetas articulares del lado derecho (ipsilateral)."
+      "definizione": "El paciente se rota con la parte posterior derecha más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo (pars interarticularis) y de las facetas articulares del lado derecho (ipsilateral).",
+      "seo_title": "OPD (Oblicua Posterior Derecha): qué muestra — Rad Index",
+      "seo_desc": "El paciente se rota con la parte posterior derecha más cerca del receptor."
     }
   },
   "ops-obliqua-posteriore-sinistra": {
@@ -978,7 +992,9 @@
     },
     "es": {
       "termine": "Plano orbitomeatal",
-      "definizione": "Plano que pasa por el margen infraorbitario y el meato acústico externo. Se utiliza como plano de referencia fundamental para el posicionamiento de la cabeza en las proyecciones craneales. En posición erecta estándar está inclinado unos 15° respecto al plano horizontal."
+      "definizione": "Plano que pasa por el margen infraorbitario y el meato acústico externo. Se utiliza como plano de referencia fundamental para el posicionamiento de la cabeza en las proyecciones craneales. En posición erecta estándar está inclinado unos 15° respecto al plano horizontal.",
+      "seo_title": "Plano orbitomeatal: qué es y para qué se usa — Rad Index",
+      "seo_desc": "Plano que pasa por el margen infraorbitario y el meato acústico externo."
     }
   },
   "rocca-petrosa": {
@@ -1237,7 +1253,9 @@
     },
     "es": {
       "termine": "Acetábulo",
-      "definizione": "Cavidad articular de la cadera formada por el ilion (pared superior), el isquion (pared posterior e inferior) y el pubis (pared anterior). Se articula con la cabeza femoral. Las fracturas del acetábulo se clasifican según Letournel y requieren las proyecciones de Judet para su valoración completa."
+      "definizione": "Cavidad articular de la cadera formada por el ilion (pared superior), el isquion (pared posterior e inferior) y el pubis (pared anterior). Se articula con la cabeza femoral. Las fracturas del acetábulo se clasifican según Letournel y requieren las proyecciones de Judet para su valoración completa.",
+      "seo_title": "Acetábulo: anatomía y clasificación de sus fracturas — Rad Index",
+      "seo_desc": "Cavidad articular de la cadera formada por el ilion (pared superior), el isquion (pared posterior e inferior) y el pubis (pared anterior)."
     }
   },
   "sinfisi-pubica": {
@@ -1386,7 +1404,9 @@
     },
     "es": {
       "termine": "Nivel hidroaéreo",
-      "definizione": "Interfaz líquido-gas visible en las proyecciones en bipedestación como una línea horizontal nítida con aire encima y líquido debajo. Indica acumulación anómala de gas y líquido en las asas intestinales u otras cavidades. Signo de obstrucción intestinal o íleo paralítico."
+      "definizione": "Interfaz líquido-gas visible en las proyecciones en bipedestación como una línea horizontal nítida con aire encima y líquido debajo. Indica acumulación anómala de gas y líquido en las asas intestinales u otras cavidades. Signo de obstrucción intestinal o íleo paralítico.",
+      "seo_title": "Nivel hidroaéreo: qué es y qué indica en la radiografía — Rad Index",
+      "seo_desc": "Interfaz líquido-gas visible en las proyecciones en bipedestación como una línea horizontal nítida con aire encima y líquido debajo."
     }
   },
   "spondilolisi": {
