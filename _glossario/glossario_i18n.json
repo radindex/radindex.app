@@ -482,7 +482,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Principio ALARA",
-      "definizione": "\"As Low As Reasonably Achievable\" — principio fondamentale di radioprotezione. La dose al paziente deve essere mantenuta al livello più basso ragionevolmente ottenibile, compatibilmente con l'ottenimento di immagini diagnosticamente valide."
+      "definizione": "\"As Low As Reasonably Achievable\" — principio fondamentale di radioprotezione. La dose al paziente deve essere mantenuta al livello più basso ragionevolmente ottenibile, compatibilmente con l'ottenimento di immagini diagnosticamente valide.",
+      "seo_title": "Principio ALARA: cosa significa in radioprotezione — Rad Index",
+      "seo_desc": "\"As Low As Reasonably Achievable\" — principio fondamentale di radioprotezione."
     },
     "en": {
       "termine": "ALARA principle",
@@ -490,7 +492,9 @@
     },
     "es": {
       "termine": "Principio ALARA",
-      "definizione": "\"As Low As Reasonably Achievable\" (tan bajo como sea razonablemente posible) — principio fundamental de radioprotección. La dosis al paciente debe mantenerse en el nivel más bajo razonablemente alcanzable, compatible con la obtención de imágenes diagnósticamente válidas."
+      "definizione": "\"As Low As Reasonably Achievable\" (tan bajo como sea razonablemente posible) — principio fundamental de radioprotección. La dosis al paciente debe mantenerse en el nivel más bajo razonablemente alcanzable, compatible con la obtención de imágenes diagnósticamente válidas.",
+      "seo_title": "Principio ALARA: qué significa en radioprotección — Rad Index",
+      "seo_desc": "\"As Low As Reasonably Achievable\" (tan bajo como sea razonablemente posible) — principio fundamental de radioprotección."
     }
   },
   "drl-diagnostic-reference-level": {
@@ -544,7 +548,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Angolo HKA (Hip-Knee-Ankle)",
-      "definizione": "Angolo che esprime l'asse meccanico dell'arto inferiore, misurato tra la testa del femore, il centro del ginocchio e il centro della caviglia. Normalmente ±3° (asse neutro). Valori positivi indicano varismo; negativi indicano valgismo. Fondamentale per la pianificazione chirurgica protesica."
+      "definizione": "Angolo che esprime l'asse meccanico dell'arto inferiore, misurato tra la testa del femore, il centro del ginocchio e il centro della caviglia. Normalmente ±3° (asse neutro). Valori positivi indicano varismo; negativi indicano valgismo. Fondamentale per la pianificazione chirurgica protesica.",
+      "seo_title": "Angolo HKA: cos'è e perché è importante in protesica — Rad Index",
+      "seo_desc": "Angolo che esprime l'asse meccanico dell'arto inferiore, misurato tra la testa del femore, il centro del ginocchio e il centro della caviglia."
     },
     "en": {
       "termine": "HKA angle (Hip-Knee-Ankle)",
@@ -656,7 +662,9 @@
     },
     "es": {
       "termine": "Plano sagital",
-      "definizione": "Plano vertical que divide el cuerpo en mitades derecha e izquierda. El plano sagital medio (mediosagital) divide el cuerpo en dos mitades simétricas. Se utiliza como referencia para el posicionamiento en las proyecciones laterales."
+      "definizione": "Plano vertical que divide el cuerpo en mitades derecha e izquierda. El plano sagital medio (mediosagital) divide el cuerpo en dos mitades simétricas. Se utiliza como referencia para el posicionamiento en las proyecciones laterales.",
+      "seo_title": "Plano sagital: qué es y para qué se usa — Rad Index",
+      "seo_desc": "Plano vertical que divide el cuerpo en mitades derecha e izquierda. El plano sagital medio (mediosagital) divide el cuerpo en dos mitades simétricas."
     }
   },
   "piano-frontale-coronale": {
@@ -673,7 +681,9 @@
     },
     "es": {
       "termine": "Plano frontal (coronal)",
-      "definizione": "Plano vertical que divide el cuerpo en una parte anterior (ventral) y una posterior (dorsal). Se utiliza como referencia para las proyecciones AP y PA."
+      "definizione": "Plano vertical que divide el cuerpo en una parte anterior (ventral) y una posterior (dorsal). Se utiliza como referencia para las proyecciones AP y PA.",
+      "seo_title": "Plano frontal (coronal): qué es y para qué se usa — Rad Index",
+      "seo_desc": "Plano vertical que divide el cuerpo en una parte anterior (ventral) y una posterior (dorsal). Se utiliza como referencia para las proyecciones AP y PA."
     }
   },
   "piano-trasversale-orizzontale": {
@@ -775,7 +785,9 @@
     },
     "es": {
       "termine": "Supinación / Pronación",
-      "definizione": "Supinación: rotación del antebrazo con la palma hacia arriba (anteriormente). Pronación: rotación del antebrazo con la palma hacia abajo (posteriormente). Fundamentales para el correcto posicionamiento en las proyecciones del miembro superior."
+      "definizione": "Supinación: rotación del antebrazo con la palma hacia arriba (anteriormente). Pronación: rotación del antebrazo con la palma hacia abajo (posteriormente). Fundamentales para el correcto posicionamiento en las proyecciones del miembro superior.",
+      "seo_title": "Supinación y pronación: diferencia y uso — Rad Index",
+      "seo_desc": "Supinación: rotación del antebrazo con la palma hacia arriba (anteriormente). Pronación: rotación del antebrazo con la palma hacia abajo (posteriormente)."
     }
   },
   "dorsiflessione-flessione-plantare": {
@@ -962,7 +974,9 @@
     },
     "es": {
       "termine": "OPI (Oblicua Posterior Izquierda)",
-      "definizione": "El paciente se rota con la parte posterior izquierda más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo y de las facetas articulares del lado izquierdo (ipsilateral)."
+      "definizione": "El paciente se rota con la parte posterior izquierda más cerca del receptor. En las proyecciones de la columna lumbar permite la visualización del istmo y de las facetas articulares del lado izquierdo (ipsilateral).",
+      "seo_title": "OPI (Oblicua Posterior Izquierda): qué muestra — Rad Index",
+      "seo_desc": "El paciente se rota con la parte posterior izquierda más cerca del receptor."
     }
   },
   "centratura": {
@@ -1206,7 +1220,9 @@
     },
     "es": {
       "termine": "Acromion",
-      "definizione": "Proceso óseo de la escápula que se prolonga lateral y anteriormente por encima de la articulación glenohumeral. Se articula con la clavícula (articulación acromioclavicular). Su morfología (tipo I plano, II curvo, III ganchoso) influye en el síndrome de pinzamiento subacromial."
+      "definizione": "Proceso óseo de la escápula que se prolonga lateral y anteriormente por encima de la articulación glenohumeral. Se articula con la clavícula (articulación acromioclavicular). Su morfología (tipo I plano, II curvo, III ganchoso) influye en el síndrome de pinzamiento subacromial.",
+      "seo_title": "Acromion: anatomía y tipos según su morfología — Rad Index",
+      "seo_desc": "Proceso óseo de la escápula que se prolonga lateral y anteriormente por encima de la articulación glenohumeral."
     }
   },
   "coracoide": {
@@ -1223,7 +1239,9 @@
     },
     "es": {
       "termine": "Apófisis coracoides",
-      "definizione": "Proceso óseo de la escápula que se proyecta anterior y lateralmente. Punto de inserción de músculos (pectoral menor, porción corta del bíceps, coracobraquial) y ligamentos (coracoclavicular, coracoacromial). Visible en las proyecciones del hombro."
+      "definizione": "Proceso óseo de la escápula que se proyecta anterior y lateralmente. Punto de inserción de músculos (pectoral menor, porción corta del bíceps, coracobraquial) y ligamentos (coracoclavicular, coracoacromial). Visible en las proyecciones del hombro.",
+      "seo_title": "Apófisis coracoides: anatomía e inserciones musculares — Rad Index",
+      "seo_desc": "Proceso óseo de la escápula que se proyecta anterior y lateralmente."
     }
   },
   "scafoide-carpale": {
@@ -1545,7 +1563,9 @@
     },
     "es": {
       "termine": "Regla del 15% de kVp",
-      "definizione": "Aumentar el kVp un 15% incrementa el poder de penetración del haz, permitiendo reducir los mAs a la mitad con una densidad óptica equivalente. Reducir el kVp un 15% tiene el efecto opuesto.\n\n+15% kVp → mAs ÷ 2\n−15% kVp → mAs × 2\n\nUso práctico: preferir kVp elevados y mAs reducidos para optimizar la dosis manteniendo un contraste aceptable (principio ALARA). La variación del kVp modifica también el contraste de la imagen."
+      "definizione": "Aumentar el kVp un 15% incrementa el poder de penetración del haz, permitiendo reducir los mAs a la mitad con una densidad óptica equivalente. Reducir el kVp un 15% tiene el efecto opuesto.\n\n+15% kVp → mAs ÷ 2\n−15% kVp → mAs × 2\n\nUso práctico: preferir kVp elevados y mAs reducidos para optimizar la dosis manteniendo un contraste aceptable (principio ALARA). La variación del kVp modifica también el contraste de la imagen.",
+      "seo_title": "Regla del 15% de kVp: qué es y cómo se aplica — Rad Index",
+      "seo_desc": "Aumentar el kVp un 15% incrementa el poder de penetración del haz, permitiendo reducir los mAs a la mitad con una densidad óptica equivalente."
     }
   },
   "calcolo-del-tempo-di-esposizione": {
