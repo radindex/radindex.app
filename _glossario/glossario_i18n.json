@@ -11,7 +11,9 @@
     },
     "es": {
       "termine": "Rayos X",
-      "definizione": "Radiación electromagnética ionizante con una longitud de onda entre 0,01 y 10 nm. Se producen en un tubo de rayos X por bremsstrahlung y radiación característica cuando electrones a alta velocidad chocan contra un ánodo metálico (habitualmente wolframio)."
+      "definizione": "Radiación electromagnética ionizante con una longitud de onda entre 0,01 y 10 nm. Se producen en un tubo de rayos X por bremsstrahlung y radiación característica cuando electrones a alta velocidad chocan contra un ánodo metálico (habitualmente wolframio).",
+      "seo_title": "Rayos X: qué son y cómo se producen — Rad Index",
+      "seo_desc": "Radiación electromagnética ionizante con una longitud de onda entre 0,01 y 10 nm."
     }
   },
   "kv-kilovolt": {
@@ -541,7 +543,9 @@
     },
     "es": {
       "termine": "Ángulo de Cobb",
-      "definizione": "Medida estándar de la curvatura escoliótica en radiografía. Se identifican las vértebras límite superior e inferior de la curva, se trazan líneas paralelas a los platillos vertebrales y se mide el ángulo entre las perpendiculares a dichas líneas. Curvas > 10° se consideran escoliosis; > 40–50° requieren valoración quirúrgica."
+      "definizione": "Medida estándar de la curvatura escoliótica en radiografía. Se identifican las vértebras límite superior e inferior de la curva, se trazan líneas paralelas a los platillos vertebrales y se mide el ángulo entre las perpendiculares a dichas líneas. Curvas > 10° se consideran escoliosis; > 40–50° requieren valoración quirúrgica.",
+      "seo_title": "Ángulo de Cobb: qué mide y cómo se calcula — Rad Index",
+      "seo_desc": "Medida estándar de la curvatura escoliótica en radiografía."
     }
   },
   "angolo-hka-hip-knee-ankle": {
@@ -567,7 +571,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Varianza ulnare",
-      "definizione": "Differenza di lunghezza tra radio e ulna a livello dell'articolazione radio-ulnare distale, valutata in proiezione PA in posizione neutra. Valori normali: da -2 a +2 mm. La varianza ulnare positiva (ulna più lunga) è associata a lesioni del TFCC e alla malattia di Kienböck."
+      "definizione": "Differenza di lunghezza tra radio e ulna a livello dell'articolazione radio-ulnare distale, valutata in proiezione PA in posizione neutra. Valori normali: da -2 a +2 mm. La varianza ulnare positiva (ulna più lunga) è associata a lesioni del TFCC e alla malattia di Kienböck.",
+      "seo_title": "Varianza ulnare: cos'è e perché si misura in PA — Rad Index",
+      "seo_desc": "Differenza di lunghezza tra radio e ulna a livello dell'articolazione radio-ulnare distale, valutata in proiezione PA in posizione neutra."
     },
     "en": {
       "termine": "Ulnar variance",
@@ -762,7 +768,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Prossimale / Distale",
-      "definizione": "Prossimale: più vicino all'origine di un arto o alla radice. Distale: più lontano dall'origine. Es: il polso è distale rispetto al gomito."
+      "definizione": "Prossimale: più vicino all'origine di un arto o alla radice. Distale: più lontano dall'origine. Es: il polso è distale rispetto al gomito.",
+      "seo_title": "Prossimale e distale: differenza con esempio — Rad Index",
+      "seo_desc": "Prossimale: più vicino all'origine di un arto o alla radice. Distale: più lontano dall'origine. Es: il polso è distale rispetto al gomito."
     },
     "en": {
       "termine": "Proximal / Distal",
@@ -770,7 +778,9 @@
     },
     "es": {
       "termine": "Proximal / Distal",
-      "definizione": "Proximal: más cerca del origen de un miembro o de la raíz. Distal: más lejos del origen. Ej.: la muñeca es distal respecto al codo."
+      "definizione": "Proximal: más cerca del origen de un miembro o de la raíz. Distal: más lejos del origen. Ej.: la muñeca es distal respecto al codo.",
+      "seo_title": "Proximal y distal: diferencia con ejemplo — Rad Index",
+      "seo_desc": "Proximal: más cerca del origen de un miembro o de la raíz. Distal: más lejos del origen. Ej.: la muñeca es distal respecto al codo."
     }
   },
   "supinazione-pronazione": {
@@ -821,7 +831,9 @@
     },
     "es": {
       "termine": "Inversión / Eversión",
-      "definizione": "Inversión: rotación de la planta del pie hacia dentro. Eversión: rotación de la planta del pie hacia fuera. Las pruebas de estrés del tobillo valoran la estabilidad en inversión (varo) y eversión (valgo)."
+      "definizione": "Inversión: rotación de la planta del pie hacia dentro. Eversión: rotación de la planta del pie hacia fuera. Las pruebas de estrés del tobillo valoran la estabilidad en inversión (varo) y eversión (valgo).",
+      "seo_title": "Inversión y eversión: diferencia y uso en el tobillo — Rad Index",
+      "seo_desc": "Inversión: rotación de la planta del pie hacia dentro. Eversión: rotación de la planta del pie hacia fuera."
     }
   },
   "abduzione-adduzione": {
@@ -836,7 +848,9 @@
     },
     "es": {
       "termine": "Abducción / Aducción",
-      "definizione": "Abducción: alejamiento de un miembro de la línea media. Aducción: acercamiento de un miembro a la línea media. Relevante para la proyección axial del hombro (brazo abducido a 90°)."
+      "definizione": "Abducción: alejamiento de un miembro de la línea media. Aducción: acercamiento de un miembro a la línea media. Relevante para la proyección axial del hombro (brazo abducido a 90°).",
+      "seo_title": "Abducción y aducción: diferencia y uso en radiología — Rad Index",
+      "seo_desc": "Abducción: alejamiento de un miembro de la línea media. Aducción: acercamiento de un miembro a la línea media."
     }
   },
   "proiezione-ap-antero-posteriore": {
@@ -1057,7 +1071,9 @@
     },
     "es": {
       "termine": "Apófisis odontoides (diente del axis)",
-      "definizione": "Proyección ósea superior del cuerpo del axis (C2) que se articula con el atlas (C1) mediante un ligamento transverso. Se visualiza en la proyección transoral. Su fractura o la rotura del ligamento transverso causa inestabilidad atloaxoidea potencialmente peligrosa para la médula."
+      "definizione": "Proyección ósea superior del cuerpo del axis (C2) que se articula con el atlas (C1) mediante un ligamento transverso. Se visualiza en la proyección transoral. Su fractura o la rotura del ligamento transverso causa inestabilidad atloaxoidea potencialmente peligrosa para la médula.",
+      "seo_title": "Apófisis odontoides: anatomía y su fractura — Rad Index",
+      "seo_desc": "Proyección ósea superior del cuerpo del axis (C2) que se articula con el atlas (C1) mediante un ligamento transverso. Se visualiza en la proyección transoral."
     }
   },
   "mortaio-tibio-peroneale-tibio-astragalico": {
@@ -1288,7 +1304,9 @@
     },
     "es": {
       "termine": "Sínfisis púbica",
-      "definizione": "Articulación cartilaginosa (anfiartrosis) entre los dos huesos púbicos. Punto de centraje para las proyecciones de la pelvis. La distancia normal es < 5 mm en adultos; su ensanchamiento indica inestabilidad pélvica."
+      "definizione": "Articulación cartilaginosa (anfiartrosis) entre los dos huesos púbicos. Punto de centraje para las proyecciones de la pelvis. La distancia normal es < 5 mm en adultos; su ensanchamiento indica inestabilidad pélvica.",
+      "seo_title": "Sínfisis púbica: anatomía y valor normal en radiología — Rad Index",
+      "seo_desc": "Articulación cartilaginosa (anfiartrosis) entre los dos huesos púbicos. Punto de centraje para las proyecciones de la pelvis."
     }
   },
   "forami-di-coniugazione": {
@@ -1548,7 +1566,9 @@
     },
     "es": {
       "termine": "Factor de Rejilla (Bucky Factor)",
-      "definizione": "El uso de la rejilla antidifusora requiere un aumento de los mAs para compensar su absorción.\n\nmAs_rejilla = mAs_sin_rejilla × BF\n\nValores típicos del Bucky Factor (BF):\n• Razón 5:1  → BF ≈ 3\n• Razón 8:1  → BF ≈ 4\n• Razón 10:1 → BF ≈ 5\n• Razón 12:1 → BF ≈ 6\n\nEl aumento de los mAs compensa la absorción de la rejilla manteniendo la densidad óptica correcta en la imagen."
+      "definizione": "El uso de la rejilla antidifusora requiere un aumento de los mAs para compensar su absorción.\n\nmAs_rejilla = mAs_sin_rejilla × BF\n\nValores típicos del Bucky Factor (BF):\n• Razón 5:1  → BF ≈ 3\n• Razón 8:1  → BF ≈ 4\n• Razón 10:1 → BF ≈ 5\n• Razón 12:1 → BF ≈ 6\n\nEl aumento de los mAs compensa la absorción de la rejilla manteniendo la densidad óptica correcta en la imagen.",
+      "seo_title": "Factor de rejilla (Bucky Factor): qué es y fórmula — Rad Index",
+      "seo_desc": "El uso de la rejilla antidifusora requiere un aumento de los mAs para compensar su absorción."
     }
   },
   "regola-del-15-kvp": {
