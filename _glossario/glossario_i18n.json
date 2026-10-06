@@ -209,7 +209,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "CR (Computed Radiography)",
-      "definizione": "Radiografia computerizzata con piastre al fosforo fotostimolabile (PSP). La piastra registra l'immagine latente che viene poi letta da un lettore laser dedicato. Tecnologia più datata rispetto alla DR; richiede generalmente mAs più elevati e ha risoluzione spaziale inferiore."
+      "definizione": "Radiografia computerizzata con piastre al fosforo fotostimolabile (PSP). La piastra registra l'immagine latente che viene poi letta da un lettore laser dedicato. Tecnologia più datata rispetto alla DR; richiede generalmente mAs più elevati e ha risoluzione spaziale inferiore.",
+      "seo_title": "CR (Computed Radiography): cos'è e come funziona — Rad Index",
+      "seo_desc": "Radiografia computerizzata con piastre al fosforo fotostimolabile (PSP)."
     },
     "en": {
       "termine": "CR (Computed Radiography)",
@@ -226,7 +228,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Griglia antidiffusione",
-      "definizione": "Dispositivo composto da lamelle di materiale radiopaco (piombo) alternate a materiale radiotrasparente (alluminio o fibra di carbonio). Posta tra il paziente e il detettore, riduce la radiazione diffusa migliorando il contrasto. Necessaria per spessori corporei superiori a 10–12 cm. Richiede un aumento dei mAs per compensare l'assorbimento."
+      "definizione": "Dispositivo composto da lamelle di materiale radiopaco (piombo) alternate a materiale radiotrasparente (alluminio o fibra di carbonio). Posta tra il paziente e il detettore, riduce la radiazione diffusa migliorando il contrasto. Necessaria per spessori corporei superiori a 10–12 cm. Richiede un aumento dei mAs per compensare l'assorbimento.",
+      "seo_title": "Griglia antidiffusione: a cosa serve e quando si usa — Rad Index",
+      "seo_desc": "Dispositivo composto da lamelle di materiale radiopaco (piombo) alternate a materiale radiotrasparente (alluminio o fibra di carbonio)."
     },
     "en": {
       "termine": "Anti-scatter grid",
@@ -260,7 +264,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Collimazione",
-      "definizione": "Limitazione del fascio di raggi X all'area anatomica di interesse tramite diaframmi regolabili. Riduce la dose al paziente, diminuisce la radiazione diffusa migliorando il contrasto e aumenta la nitidezza ai margini del campo."
+      "definizione": "Limitazione del fascio di raggi X all'area anatomica di interesse tramite diaframmi regolabili. Riduce la dose al paziente, diminuisce la radiazione diffusa migliorando il contrasto e aumenta la nitidezza ai margini del campo.",
+      "seo_title": "Collimazione: cos'è e perché riduce la dose al paziente — Rad Index",
+      "seo_desc": "Limitazione del fascio di raggi X all'area anatomica di interesse tramite diaframmi regolabili."
     },
     "en": {
       "termine": "Collimation",
@@ -415,7 +421,9 @@
     },
     "es": {
       "termine": "Latitud de exposición",
-      "definizione": "Rango de exposiciones que produce imágenes diagnósticamente aceptables. Los sistemas digitales tienen una latitud muy amplia respecto a la película, permitiendo correcciones tras la adquisición. Esto, sin embargo, no reduce la necesidad de optimizar la exposición para minimizar la dosis."
+      "definizione": "Rango de exposiciones que produce imágenes diagnósticamente aceptables. Los sistemas digitales tienen una latitud muy amplia respecto a la película, permitiendo correcciones tras la adquisición. Esto, sin embargo, no reduce la necesidad de optimizar la exposición para minimizar la dosis.",
+      "seo_title": "Latitud de exposición: qué es y por qué importa — Rad Index",
+      "seo_desc": "Rango de exposiciones que produce imágenes diagnósticamente aceptables."
     }
   },
   "post-processing": {
@@ -456,7 +464,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Dose efficace",
-      "definizione": "Grandezza dosimetrica che tiene conto sia della quantità di energia assorbita sia della radiosensibilità degli organi irradiati e del tipo di radiazione. Si misura in sievert (Sv) o millisievert (mSv). Usata per la stima del rischio stocastico."
+      "definizione": "Grandezza dosimetrica che tiene conto sia della quantità di energia assorbita sia della radiosensibilità degli organi irradiati e del tipo di radiazione. Si misura in sievert (Sv) o millisievert (mSv). Usata per la stima del rischio stocastico.",
+      "seo_title": "Dose efficace: cos'è e come si misura in radiologia — Rad Index",
+      "seo_desc": "Grandezza dosimetrica che tiene conto sia della quantità di energia assorbita sia della radiosensibilità degli organi irradiati e del tipo di radiazione."
     },
     "en": {
       "termine": "Effective dose",
@@ -464,7 +474,9 @@
     },
     "es": {
       "termine": "Dosis efectiva",
-      "definizione": "Magnitud dosimétrica que tiene en cuenta tanto la cantidad de energía absorbida como la radiosensibilidad de los órganos irradiados y el tipo de radiación. Se mide en sieverts (Sv) o milisieverts (mSv). Se utiliza para la estimación del riesgo estocástico."
+      "definizione": "Magnitud dosimétrica que tiene en cuenta tanto la cantidad de energía absorbida como la radiosensibilidad de los órganos irradiados y el tipo de radiación. Se mide en sieverts (Sv) o milisieverts (mSv). Se utiliza para la estimación del riesgo estocástico.",
+      "seo_title": "Dosis efectiva: qué es y cómo se mide en radiología — Rad Index",
+      "seo_desc": "Magnitud dosimétrica que tiene en cuenta tanto la cantidad de energía absorbida como la radiosensibilidad de los órganos irradiados y el tipo de radiación."
     }
   },
   "dap-dose-area-product": {
@@ -710,7 +722,9 @@
     },
     "es": {
       "termine": "Plano transversal (horizontal)",
-      "definizione": "Plano horizontal que divide el cuerpo en una parte superior (craneal/cefálica) y una inferior (caudal). Perpendicular al eje longitudinal del cuerpo."
+      "definizione": "Plano horizontal que divide el cuerpo en una parte superior (craneal/cefálica) y una inferior (caudal). Perpendicular al eje longitudinal del cuerpo.",
+      "seo_title": "Plano transversal: qué es y qué divide en el cuerpo — Rad Index",
+      "seo_desc": "Plano horizontal que divide el cuerpo en una parte superior (craneal/cefálica) y una inferior (caudal). Perpendicular al eje longitudinal del cuerpo."
     }
   },
   "craniale-cefalico": {
@@ -1011,7 +1025,9 @@
     },
     "es": {
       "termine": "Centraje",
-      "definizione": "Punto anatómico sobre el que se centra el haz de rayos X (centro del campo). Debe coincidir con el centro de la estructura anatómica a examinar y con el centro del receptor para evitar distorsiones y garantizar la inclusión de toda la estructura."
+      "definizione": "Punto anatómico sobre el que se centra el haz de rayos X (centro del campo). Debe coincidir con el centro de la estructura anatómica a examinar y con el centro del receptor para evitar distorsiones y garantizar la inclusión de toda la estructura.",
+      "seo_title": "Centraje: qué es y por qué debe coincidir con el campo — Rad Index",
+      "seo_desc": "Punto anatómico sobre el que se centra el haz de rayos X (centro del campo)."
     }
   },
   "piano-orbitomeatale": {
@@ -1035,7 +1051,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Rocca petrosa",
-      "definizione": "Porzione più densa dell'osso temporale, a forma di piramide con apice rivolto medialmente. Contiene le strutture dell'orecchio interno (coclea, canali semicircolari) e il condotto uditivo interno. Nelle proiezioni craniche può sovrapporsi ad altre strutture se il posizionamento non è corretto."
+      "definizione": "Porzione più densa dell'osso temporale, a forma di piramide con apice rivolto medialmente. Contiene le strutture dell'orecchio interno (coclea, canali semicircolari) e il condotto uditivo interno. Nelle proiezioni craniche può sovrapporsi ad altre strutture se il posizionamento non è corretto.",
+      "seo_title": "Rocca petrosa: anatomia e cosa contiene — Rad Index",
+      "seo_desc": "Porzione più densa dell'osso temporale, a forma di piramide con apice rivolto medialmente."
     },
     "en": {
       "termine": "Petrous ridge",
@@ -1443,7 +1461,9 @@
     },
     "es": {
       "termine": "Neumoperitoneo",
-      "definizione": "Presencia de aire libre en la cavidad abdominal, visible en la proyección del abdomen en bipedestación como una semiluna aérea subdiafragmática. Signo radiográfico de perforación de una víscera hueca (ej.: úlcera perforada). El paciente debe permanecer de pie al menos 5–10 minutos antes de la exposición."
+      "definizione": "Presencia de aire libre en la cavidad abdominal, visible en la proyección del abdomen en bipedestación como una semiluna aérea subdiafragmática. Signo radiográfico de perforación de una víscera hueca (ej.: úlcera perforada). El paciente debe permanecer de pie al menos 5–10 minutos antes de la exposición.",
+      "seo_title": "Neumoperitoneo: qué es y cómo se ve en la radiografía — Rad Index",
+      "seo_desc": "Presencia de aire libre en la cavidad abdominal, visible en la proyección del abdomen en bipedestación como una semiluna aérea subdiafragmática."
     }
   },
   "livello-idroaereo": {
