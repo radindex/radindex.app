@@ -300,7 +300,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Radiazione diffusa (scatter)",
-      "definizione": "Radiazione prodotta per effetto Compton nell'attraversamento dei tessuti. Non contribuisce alla formazione dell'immagine utile ma peggiora il contrasto e aumenta la dose. Si riduce con collimazione adeguata, griglia antidiffusione e compressione del paziente."
+      "definizione": "Radiazione prodotta per effetto Compton nell'attraversamento dei tessuti. Non contribuisce alla formazione dell'immagine utile ma peggiora il contrasto e aumenta la dose. Si riduce con collimazione adeguata, griglia antidiffusione e compressione del paziente.",
+      "seo_title": "Radiazione diffusa (scatter): cos'è e come si riduce — Rad Index",
+      "seo_desc": "Radiazione prodotta per effetto Compton nell'attraversamento dei tessuti."
     },
     "en": {
       "termine": "Scatter radiation",
@@ -344,14 +346,18 @@
     },
     "es": {
       "termine": "Stitching",
-      "definizione": "Técnica de adquisición de imágenes panorámicas obtenidas uniendo varias adquisiciones secuenciales mediante software dedicado. Se utiliza para la visualización de segmentos anatómicos largos (columna completa, miembros inferiores completos, escoliosis). Requiere que el paciente permanezca perfectamente inmóvil entre las adquisiciones."
+      "definizione": "Técnica de adquisición de imágenes panorámicas obtenidas uniendo varias adquisiciones secuenciales mediante software dedicado. Se utiliza para la visualización de segmentos anatómicos largos (columna completa, miembros inferiores completos, escoliosis). Requiere que el paciente permanezca perfectamente inmóvil entre las adquisiciones.",
+      "seo_title": "Stitching: qué es y para qué se usa en radiología — Rad Index",
+      "seo_desc": "Técnica de adquisición de imágenes panorámicas obtenidas uniendo varias adquisiciones secuenciales mediante software dedicado."
     }
   },
   "aec-automatic-exposure-control": {
     "categoria": "tecnico",
     "it": {
       "termine": "AEC (Automatic Exposure Control)",
-      "definizione": "Controllo automatico dell'esposizione. Sistema che interrompe automaticamente l'esposizione quando il detettore ha ricevuto una quantità predefinita di raggi X. Garantisce esposizioni costanti indipendentemente dallo spessore del paziente. Le camere ionizzanti sono posizionate sotto il detettore."
+      "definizione": "Controllo automatico dell'esposizione. Sistema che interrompe automaticamente l'esposizione quando il detettore ha ricevuto una quantità predefinita di raggi X. Garantisce esposizioni costanti indipendentemente dallo spessore del paziente. Le camere ionizzanti sono posizionate sotto il detettore.",
+      "seo_title": "AEC (Automatic Exposure Control): cos'è e come funziona — Rad Index",
+      "seo_desc": "Controllo automatico dell'esposizione."
     },
     "en": {
       "termine": "AEC (Automatic Exposure Control)",
@@ -368,7 +374,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "kVp (kilovolt picco)",
-      "definizione": "Valore massimo della tensione applicata al tubo radiogeno durante un'esposizione in corrente alternata. Corrisponde all'energia massima dei fotoni X prodotti. Nelle macchine moderne ad alta frequenza, kVp e kV sono praticamente equivalenti."
+      "definizione": "Valore massimo della tensione applicata al tubo radiogeno durante un'esposizione in corrente alternata. Corrisponde all'energia massima dei fotoni X prodotti. Nelle macchine moderne ad alta frequenza, kVp e kV sono praticamente equivalenti.",
+      "seo_title": "kVp (kilovolt picco): cos'è e come si usa — Rad Index",
+      "seo_desc": "Valore massimo della tensione applicata al tubo radiogeno durante un'esposizione in corrente alternata. Corrisponde all'energia massima dei fotoni X prodotti."
     },
     "en": {
       "termine": "kVp (kilovolt peak)",
@@ -402,7 +410,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Risoluzione spaziale",
-      "definizione": "Capacità di distinguere strutture adiacenti nell'immagine. Si misura in coppie di linee per millimetro (lp/mm). Nei sistemi DR è generalmente inferiore alla pellicola convenzionale ma sufficiente per la diagnostica clinica."
+      "definizione": "Capacità di distinguere strutture adiacenti nell'immagine. Si misura in coppie di linee per millimetro (lp/mm). Nei sistemi DR è generalmente inferiore alla pellicola convenzionale ma sufficiente per la diagnostica clinica.",
+      "seo_title": "Risoluzione spaziale: cos'è e come si misura — Rad Index",
+      "seo_desc": "Capacità di distinguere strutture adiacenti nell'immagine. Si misura in coppie di linee per millimetro (lp/mm)."
     },
     "en": {
       "termine": "Spatial resolution",
@@ -671,7 +681,9 @@
     },
     "en": {
       "termine": "TFCC (Triangular Fibrocartilage Complex)",
-      "definizione": "Stabilising structure of the distal radioulnar joint and the ulnar side of the carpus. Its injuries cause ulnar-sided wrist pain and instability. Assessed with dedicated stress and deviation projections."
+      "definizione": "Stabilising structure of the distal radioulnar joint and the ulnar side of the carpus. Its injuries cause ulnar-sided wrist pain and instability. Assessed with dedicated stress and deviation projections.",
+      "seo_title": "TFCC: what it is and why it causes wrist pain — Rad Index",
+      "seo_desc": "Stabilising structure of the distal radioulnar joint and the ulnar side of the carpus. Its injuries cause ulnar-sided wrist pain and instability."
     },
     "es": {
       "termine": "TFCC (Complejo Fibrocartilaginoso Triangular)",
@@ -775,7 +787,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Mediale / Laterale",
-      "definizione": "Mediale: verso la linea mediana del corpo. Laterale: lontano dalla linea mediana. Utilizzato per descrivere la posizione di strutture anatomiche e la direzione del fascio."
+      "definizione": "Mediale: verso la linea mediana del corpo. Laterale: lontano dalla linea mediana. Utilizzato per descrivere la posizione di strutture anatomiche e la direzione del fascio.",
+      "seo_title": "Mediale e laterale: differenza e uso in radiologia — Rad Index",
+      "seo_desc": "Mediale: verso la linea mediana del corpo. Laterale: lontano dalla linea mediana."
     },
     "en": {
       "termine": "Medial / Lateral",
@@ -1316,7 +1330,9 @@
     },
     "es": {
       "termine": "Escafoides carpiano",
-      "definizione": "Hueso del carpo con forma de barca, situado en la primera fila (proximal). Es el hueso carpiano que se fractura con más frecuencia. Su vascularización predominantemente distal lo hace susceptible a necrosis avascular en caso de fractura no tratada. Requiere proyecciones dedicadas (desviación cubital) para su visualización óptima."
+      "definizione": "Hueso del carpo con forma de barca, situado en la primera fila (proximal). Es el hueso carpiano que se fractura con más frecuencia. Su vascularización predominantemente distal lo hace susceptible a necrosis avascular en caso de fractura no tratada. Requiere proyecciones dedicadas (desviación cubital) para su visualización óptima.",
+      "seo_title": "Escafoides carpiano: anatomía y por qué se fractura — Rad Index",
+      "seo_desc": "Hueso del carpo con forma de barca, situado en la primera fila (proximal). Es el hueso carpiano que se fractura con más frecuencia."
     }
   },
   "acetabolo": {
@@ -1456,7 +1472,9 @@
     },
     "es": {
       "termine": "Sesamoideos",
-      "definizione": "Pequeños huesos incluidos en los tendones, situados en las zonas de mayor fricción mecánica. Los sesamoideos más relevantes clínicamente en radiología son los del primer dedo de la mano (tendones flexores) y del primer dedo del pie (tendón del flexor del hallux). Requieren proyecciones dedicadas para su visualización axial."
+      "definizione": "Pequeños huesos incluidos en los tendones, situados en las zonas de mayor fricción mecánica. Los sesamoideos más relevantes clínicamente en radiología son los del primer dedo de la mano (tendones flexores) y del primer dedo del pie (tendón del flexor del hallux). Requieren proyecciones dedicadas para su visualización axial.",
+      "seo_title": "Sesamoideos: qué son y dónde se encuentran — Rad Index",
+      "seo_desc": "Pequeños huesos incluidos en los tendones, situados en las zonas de mayor fricción mecánica."
     }
   },
   "pneumoperitoneo": {
@@ -1635,7 +1653,9 @@
     "categoria": "formula",
     "it": {
       "termine": "Regola del 15% kVp",
-      "definizione": "Aumentare il kVp del 15% incrementa il potere penetrante del fascio, permettendo di dimezzare i mAs con densità ottica equivalente. Ridurre il kVp del 15% ha l'effetto opposto.\\n\\n+15% kVp → mAs ÷ 2\\n−15% kVp → mAs × 2\\n\\nUso pratico: preferire kVp elevati e mAs ridotti per ottimizzare la dose mantenendo contrasto accettabile (principio ALARA). La variazione del kVp modifica anche il contrasto dell'immagine."
+      "definizione": "Aumentare il kVp del 15% incrementa il potere penetrante del fascio, permettendo di dimezzare i mAs con densità ottica equivalente. Ridurre il kVp del 15% ha l'effetto opposto.\\n\\n+15% kVp → mAs ÷ 2\\n−15% kVp → mAs × 2\\n\\nUso pratico: preferire kVp elevati e mAs ridotti per ottimizzare la dose mantenendo contrasto accettabile (principio ALARA). La variazione del kVp modifica anche il contrasto dell'immagine.",
+      "seo_title": "Regola del 15% kVp: cos'è e come si applica — Rad Index",
+      "seo_desc": "Aumentare il kVp del 15% incrementa il potere penetrante del fascio, permettendo di dimezzare i mAs con densità ottica equivalente."
     },
     "en": {
       "termine": "The 15% kVp Rule",
