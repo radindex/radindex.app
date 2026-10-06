@@ -92,7 +92,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "DFO (Distanza Fuoco-Oggetto)",
-      "definizione": "Distanza tra il punto focale del tubo radiogeno e l'oggetto esaminato. Insieme al DFD determina il fattore di ingrandimento geometrico dell'immagine (M = DFD/DFO)."
+      "definizione": "Distanza tra il punto focale del tubo radiogeno e l'oggetto esaminato. Insieme al DFD determina il fattore di ingrandimento geometrico dell'immagine (M = DFD/DFO).",
+      "seo_title": "DFO (Distanza Fuoco-Oggetto): cos'è e a cosa serve — Rad Index",
+      "seo_desc": "Distanza tra il punto focale del tubo radiogeno e l'oggetto esaminato."
     },
     "en": {
       "termine": "OID (Object-Image Distance)",
@@ -539,7 +541,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "DRL (Diagnostic Reference Level)",
-      "definizione": "Livello di riferimento diagnostico. Valore di dose che non dovrebbe essere superato in condizioni standard per un determinato esame radiografico. Strumento per l'ottimizzazione della dose: centri che sistematicamente superano il DRL devono rivedere le proprie procedure."
+      "definizione": "Livello di riferimento diagnostico. Valore di dose che non dovrebbe essere superato in condizioni standard per un determinato esame radiografico. Strumento per l'ottimizzazione della dose: centri che sistematicamente superano il DRL devono rivedere le proprie procedure.",
+      "seo_title": "DRL (Diagnostic Reference Level): cos'è e a cosa serve — Rad Index",
+      "seo_desc": "Livello di riferimento diagnostico. Valore di dose che non dovrebbe essere superato in condizioni standard per un determinato esame radiografico."
     },
     "en": {
       "termine": "DRL (Diagnostic Reference Level)",
@@ -833,7 +837,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Supinazione / Pronazione",
-      "definizione": "Supinazione: rotazione dell'avambraccio con il palmo rivolto verso l'alto (anteriormente). Pronazione: rotazione dell'avambraccio con il palmo rivolto verso il basso (posteriormente). Fondamentali per il corretto posizionamento nelle proiezioni dell'arto superiore."
+      "definizione": "Supinazione: rotazione dell'avambraccio con il palmo rivolto verso l'alto (anteriormente). Pronazione: rotazione dell'avambraccio con il palmo rivolto verso il basso (posteriormente). Fondamentali per il corretto posizionamento nelle proiezioni dell'arto superiore.",
+      "seo_title": "Supinazione e pronazione: differenza e uso — Rad Index",
+      "seo_desc": "Supinazione: rotazione dell'avambraccio con il palmo rivolto verso l'alto (anteriormente)."
     },
     "en": {
       "termine": "Supination / Pronation",
@@ -1055,7 +1061,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Centratura",
-      "definizione": "Punto anatomico su cui viene centrato il fascio di raggi X (centro del campo). Deve coincidere con il centro della struttura anatomica da esaminare e con il centro del detettore per evitare distorsioni e garantire l'inclusione di tutta la struttura."
+      "definizione": "Punto anatomico su cui viene centrato il fascio di raggi X (centro del campo). Deve coincidere con il centro della struttura anatomica da esaminare e con il centro del detettore per evitare distorsioni e garantire l'inclusione di tutta la struttura.",
+      "seo_title": "Centratura: cos'è e perché deve coincidere col campo — Rad Index",
+      "seo_desc": "Punto anatomico su cui viene centrato il fascio di raggi X (centro del campo)."
     },
     "en": {
       "termine": "Centring point",
@@ -1072,7 +1080,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Piano orbitomeatale",
-      "definizione": "Piano che passa per il margine infraorbitario e il meato acustico esterno. Utilizzato come piano di riferimento fondamentale per il posizionamento del capo nelle proiezioni craniche. In posizione eretta standard è inclinato di circa 15° rispetto al piano orizzontale."
+      "definizione": "Piano che passa per il margine infraorbitario e il meato acustico esterno. Utilizzato come piano di riferimento fondamentale per il posizionamento del capo nelle proiezioni craniche. In posizione eretta standard è inclinato di circa 15° rispetto al piano orizzontale.",
+      "seo_title": "Piano orbitomeatale: cos'è e a cosa serve — Rad Index",
+      "seo_desc": "Piano che passa per il margine infraorbitario e il meato acustico esterno."
     },
     "en": {
       "termine": "Orbitomeatal plane",
@@ -1467,7 +1477,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Diaframma",
-      "definizione": "Muscolo a cupola che separa la cavità toracica da quella addominale. In radiografia: la cupola destra è più alta (fegato) della sinistra (stomaco). Nelle proiezioni dell'addome la sua posizione dipende dalla fase respiratoria: in inspirazione scende, in espirazione sale."
+      "definizione": "Muscolo a cupola che separa la cavità toracica da quella addominale. In radiografia: la cupola destra è più alta (fegato) della sinistra (stomaco). Nelle proiezioni dell'addome la sua posizione dipende dalla fase respiratoria: in inspirazione scende, in espirazione sale.",
+      "seo_title": "Diaframma: anatomia e posizione secondo la respirazione — Rad Index",
+      "seo_desc": "Muscolo a cupola che separa la cavità toracica da quella addominale. In radiografia: la cupola destra è più alta (fegato) della sinistra (stomaco)."
     },
     "en": {
       "termine": "Diaphragm",
@@ -1556,7 +1568,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Spondilolistesi",
-      "definizione": "Scivolamento anteriore (anterolisi) di un corpo vertebrale rispetto al sottostante. Classificata secondo Meyerding in gradi I-IV in base all'entità dello scivolamento. Valutata nelle proiezioni laterali della colonna lombare, in particolare in quelle funzionali (flessione/estensione)."
+      "definizione": "Scivolamento anteriore (anterolisi) di un corpo vertebrale rispetto al sottostante. Classificata secondo Meyerding in gradi I-IV in base all'entità dello scivolamento. Valutata nelle proiezioni laterali della colonna lombare, in particolare in quelle funzionali (flessione/estensione).",
+      "seo_title": "Spondilolistesi: cos'è e come si classifica — Rad Index",
+      "seo_desc": "Scivolamento anteriore (anterolisi) di un corpo vertebrale rispetto al sottostante."
     },
     "en": {
       "termine": "Spondylolisthesis",
@@ -1564,7 +1578,9 @@
     },
     "es": {
       "termine": "Espondilolistesis",
-      "definizione": "Deslizamiento anterior (anterolistesis) de un cuerpo vertebral respecto al subyacente. Clasificada según Meyerding en grados I–IV según la magnitud del deslizamiento. Se valora en las proyecciones laterales de la columna lumbar, en particular en las funcionales (flexión/extensión)."
+      "definizione": "Deslizamiento anterior (anterolistesis) de un cuerpo vertebral respecto al subyacente. Clasificada según Meyerding en grados I–IV según la magnitud del deslizamiento. Se valora en las proyecciones laterales de la columna lumbar, en particular en las funcionales (flexión/extensión).",
+      "seo_title": "Espondilolistesis: qué es y cómo se clasifica — Rad Index",
+      "seo_desc": "Deslizamiento anterior (anterolistesis) de un cuerpo vertebral respecto al subyacente."
     }
   },
   "frattura-di-bennett": {
@@ -1630,7 +1646,9 @@
     },
     "es": {
       "termine": "mAs = mA × t",
-      "definizione": "El producto miliamperio-segundo expresa la carga total suministrada en una exposición.\n\nmAs = mA × t\nmA = mAs / t\nt = mAs / mA\n\nMantener el producto mAs constante al variar la corriente o el tiempo preserva la dosis y la densidad óptica. Duplicar los mAs duplica la dosis.\n\nEjemplo: 200 mA × 0,5 s = 100 mAs  ·  400 mA × 0,25 s = 100 mAs"
+      "definizione": "El producto miliamperio-segundo expresa la carga total suministrada en una exposición.\n\nmAs = mA × t\nmA = mAs / t\nt = mAs / mA\n\nMantener el producto mAs constante al variar la corriente o el tiempo preserva la dosis y la densidad óptica. Duplicar los mAs duplica la dosis.\n\nEjemplo: 200 mA × 0,5 s = 100 mAs  ·  400 mA × 0,25 s = 100 mAs",
+      "seo_title": "mAs = mA × t: qué significa y cómo se calcula — Rad Index",
+      "seo_desc": "El producto miliamperio-segundo expresa la carga total suministrada en una exposición."
     }
   },
   "legge-degli-inversi-del-quadrato": {
@@ -1692,7 +1710,9 @@
     "categoria": "formula",
     "it": {
       "termine": "Calcolo del Tempo di Esposizione",
-      "definizione": "Re-espressioni della relazione fondamentale tra mA, tempo e mAs.\\n\\nt = mAs / mA\\nmA = mAs / t\\nmAs = mA × t\\n\\nUtili per convertire tra stazioni tecniche a mAs costante o per verificare i tempi massimi ammissibili con i sistemi AEC.\\n\\nEsempio: 200 mAs a 400 mA → t = 200 / 400 = 0,5 s\\n200 mAs a 800 mA → t = 200 / 800 = 0,25 s"
+      "definizione": "Re-espressioni della relazione fondamentale tra mA, tempo e mAs.\\n\\nt = mAs / mA\\nmA = mAs / t\\nmAs = mA × t\\n\\nUtili per convertire tra stazioni tecniche a mAs costante o per verificare i tempi massimi ammissibili con i sistemi AEC.\\n\\nEsempio: 200 mAs a 400 mA → t = 200 / 400 = 0,5 s\\n200 mAs a 800 mA → t = 200 / 800 = 0,25 s",
+      "seo_title": "Calcolo del tempo di esposizione: formule ed esempi — Rad Index",
+      "seo_desc": "Re-espressioni della relazione fondamentale tra mA, tempo e mAs: utili per convertire tra tecniche a mAs costante o verificare i tempi massimi con AEC."
     },
     "en": {
       "termine": "Exposure Time Calculation",
