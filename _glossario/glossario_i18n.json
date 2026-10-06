@@ -56,7 +56,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "mAs (milliampere-secondo)",
-      "definizione": "Prodotto tra la corrente (mA) e il tempo di esposizione (s). Esprime la quantità totale di raggi X prodotti in un'esposizione. Valore fondamentale per la gestione della dose al paziente: raddoppiando i mAs si raddoppia la dose."
+      "definizione": "Prodotto tra la corrente (mA) e il tempo di esposizione (s). Esprime la quantità totale di raggi X prodotti in un'esposizione. Valore fondamentale per la gestione della dose al paziente: raddoppiando i mAs si raddoppia la dose.",
+      "seo_title": "mAs (milliampere-secondo): cos'è e come influenza la dose — Rad Index",
+      "seo_desc": "Prodotto tra la corrente (mA) e il tempo di esposizione (s). Esprime la quantità totale di raggi X prodotti in un'esposizione."
     },
     "en": {
       "termine": "mAs (milliampere-second)",
@@ -325,7 +327,9 @@
     },
     "es": {
       "termine": "EI (Índice de Exposición)",
-      "definizione": "Índice de exposición en los sistemas digitales. Indica la cantidad de radiación que ha alcanzado el receptor. Valores demasiado bajos indican subexposición (imagen ruidosa); valores demasiado altos indican sobreexposición (dosis excesiva al paciente). El valor objetivo varía según el fabricante."
+      "definizione": "Índice de exposición en los sistemas digitales. Indica la cantidad de radiación que ha alcanzado el receptor. Valores demasiado bajos indican subexposición (imagen ruidosa); valores demasiado altos indican sobreexposición (dosis excesiva al paciente). El valor objetivo varía según el fabricante.",
+      "seo_title": "EI (Índice de Exposición): qué es y cómo se interpreta — Rad Index",
+      "seo_desc": "Índice de exposición en los sistemas digitales. Indica la cantidad de radiación que ha alcanzado el receptor."
     }
   },
   "stitching": {
@@ -834,7 +838,9 @@
     },
     "es": {
       "termine": "Dorsiflexión / Flexión plantar",
-      "definizione": "Dorsiflexión: movimiento del pie hacia la pierna (punta hacia arriba). Flexión plantar: movimiento del pie alejándose de la pierna (punta hacia abajo). Relevante para el posicionamiento en las proyecciones del pie y del tobillo."
+      "definizione": "Dorsiflexión: movimiento del pie hacia la pierna (punta hacia arriba). Flexión plantar: movimiento del pie alejándose de la pierna (punta hacia abajo). Relevante para el posicionamiento en las proyecciones del pie y del tobillo.",
+      "seo_title": "Dorsiflexión y flexión plantar: diferencia y uso — Rad Index",
+      "seo_desc": "Dorsiflexión: movimiento del pie hacia la pierna (punta hacia arriba). Flexión plantar: movimiento del pie alejándose de la pierna (punta hacia abajo)."
     }
   },
   "inversione-eversione": {
@@ -860,7 +866,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Abduzione / Adduzione",
-      "definizione": "Abduzione: allontanamento di un arto dalla linea mediana. Adduzione: avvicinamento di un arto alla linea mediana. Rilevante per la proiezione assiale della spalla (braccio abdotto a 90°)."
+      "definizione": "Abduzione: allontanamento di un arto dalla linea mediana. Adduzione: avvicinamento di un arto alla linea mediana. Rilevante per la proiezione assiale della spalla (braccio abdotto a 90°).",
+      "seo_title": "Abduzione e adduzione: differenza e uso in radiologia — Rad Index",
+      "seo_desc": "Abduzione: allontanamento di un arto dalla linea mediana. Adduzione: avvicinamento di un arto alla linea mediana."
     },
     "en": {
       "termine": "Abduction / Adduction",
@@ -1000,7 +1008,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "OPS (Obliqua Posteriore Sinistra)",
-      "definizione": "Il paziente è ruotato con la parte posteriore sinistra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo e delle faccette articolari del lato sinistro (ipsilaterale)."
+      "definizione": "Il paziente è ruotato con la parte posteriore sinistra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo e delle faccette articolari del lato sinistro (ipsilaterale).",
+      "seo_title": "OPS (Obliqua Posteriore Sinistra): cosa mostra — Rad Index",
+      "seo_desc": "Il paziente è ruotato con la parte posteriore sinistra più vicina al detettore."
     },
     "en": {
       "termine": "LPO (Left Posterior Oblique)",
@@ -1383,7 +1393,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Piatto vertebrale",
-      "definizione": "Superficie superiore e inferiore del corpo vertebrale. In radiografia è la struttura di riferimento per la misurazione dell'angolo di Cobb nella scoliosi e per la valutazione dell'altezza discale. Irregolarità dei piatti vertebrali possono indicare fratture, ernie discali o infezioni."
+      "definizione": "Superficie superiore e inferiore del corpo vertebrale. In radiografia è la struttura di riferimento per la misurazione dell'angolo di Cobb nella scoliosi e per la valutazione dell'altezza discale. Irregolarità dei piatti vertebrali possono indicare fratture, ernie discali o infezioni.",
+      "seo_title": "Piatto vertebrale: cos'è e a cosa serve nell'angolo di Cobb — Rad Index",
+      "seo_desc": "Superficie superiore e inferiore del corpo vertebrale."
     },
     "en": {
       "termine": "Vertebral endplate",
@@ -1497,7 +1509,9 @@
     },
     "es": {
       "termine": "Espondilólisis",
-      "definizione": "Defecto (solución de continuidad) de la pars interarticularis vertebral, más frecuente a nivel de L5. Visible en la proyección oblicua lumbar como fractura del \"cuello del perrito de Scottie\". Puede ser congénita, por estrés o traumática."
+      "definizione": "Defecto (solución de continuidad) de la pars interarticularis vertebral, más frecuente a nivel de L5. Visible en la proyección oblicua lumbar como fractura del \"cuello del perrito de Scottie\". Puede ser congénita, por estrés o traumática.",
+      "seo_title": "Espondilólisis: qué es y dónde se ve en la columna — Rad Index",
+      "seo_desc": "Defecto (solución de continuidad) de la pars interarticularis vertebral, más frecuente a nivel de L5."
     }
   },
   "spondilolistesi": {
@@ -1519,7 +1533,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Frattura di Bennett",
-      "definizione": "Frattura-lussazione del I metacarpo con coinvolgimento dell'articolazione trapeziometacarpale. Il frammento mediale (di Bennett) rimane in sede mentre il metacarpo si disloca prossimalmente e radialmente per la trazione del muscolo abduttore lungo del pollice."
+      "definizione": "Frattura-lussazione del I metacarpo con coinvolgimento dell'articolazione trapeziometacarpale. Il frammento mediale (di Bennett) rimane in sede mentre il metacarpo si disloca prossimalmente e radialmente per la trazione del muscolo abduttore lungo del pollice.",
+      "seo_title": "Frattura di Bennett: cos'è e come si produce — Rad Index",
+      "seo_desc": "Frattura-lussazione del I metacarpo con coinvolgimento dell'articolazione trapeziometacarpale."
     },
     "en": {
       "termine": "Bennett fracture",
@@ -1527,7 +1543,9 @@
     },
     "es": {
       "termine": "Fractura de Bennett",
-      "definizione": "Fractura-luxación del primer metacarpiano con afectación de la articulación trapeciometacarpiana. El fragmento medial (de Bennett) permanece en su sitio mientras el metacarpiano se luxa proximal y radialmente por la tracción del músculo abductor largo del pulgar."
+      "definizione": "Fractura-luxación del primer metacarpiano con afectación de la articulación trapeciometacarpiana. El fragmento medial (de Bennett) permanece en su sitio mientras el metacarpiano se luxa proximal y radialmente por la tracción del músculo abductor largo del pulgar.",
+      "seo_title": "Fractura de Bennett: qué es y cómo se produce — Rad Index",
+      "seo_desc": "Fractura-luxación del primer metacarpiano con afectación de la articulación trapeciometacarpiana."
     }
   },
   "sindrome-da-conflitto-sub-acromiale": {
@@ -1591,7 +1609,9 @@
     },
     "es": {
       "termine": "Ley del Cuadrado Inverso",
-      "definizione": "La intensidad del haz es inversamente proporcional al cuadrado de la distancia a la fuente.\n\nmAs₂ = mAs₁ × (DFR₂ / DFR₁)²\n\nAl aumentar la DFR, los mAs deben corregirse proporcionalmente al cuadrado de la razón de distancias, para mantener la misma exposición en el receptor.\n\nEjemplo: DFR 100 cm → 150 cm\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25"
+      "definizione": "La intensidad del haz es inversamente proporcional al cuadrado de la distancia a la fuente.\n\nmAs₂ = mAs₁ × (DFR₂ / DFR₁)²\n\nAl aumentar la DFR, los mAs deben corregirse proporcionalmente al cuadrado de la razón de distancias, para mantener la misma exposición en el receptor.\n\nEjemplo: DFR 100 cm → 150 cm\nmAs₂ = mAs₁ × (150/100)² = mAs₁ × 2,25",
+      "seo_title": "Ley del cuadrado inverso: qué es y cómo se aplica — Rad Index",
+      "seo_desc": "La intensidad del haz es inversamente proporcional al cuadrado de la distancia a la fuente."
     }
   },
   "fattore-di-griglia-bucky-factor-formula": {
