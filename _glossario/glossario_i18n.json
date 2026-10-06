@@ -175,7 +175,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Densità ottica",
-      "definizione": "Grado di annerimento di una lastra radiografica o di luminosità in un sistema digitale. Dipende dalla quantità di raggi X che raggiunge il detettore dopo aver attraversato il paziente."
+      "definizione": "Grado di annerimento di una lastra radiografica o di luminosità in un sistema digitale. Dipende dalla quantità di raggi X che raggiunge il detettore dopo aver attraversato il paziente.",
+      "seo_title": "Densità ottica: cos'è e da cosa dipende — Rad Index",
+      "seo_desc": "Grado di annerimento di una lastra radiografica o di luminosità in un sistema digitale."
     },
     "en": {
       "termine": "Optical density",
@@ -393,7 +395,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Rumore quantistico",
-      "definizione": "Variazione casuale della densità ottica nell'immagine dovuta alla natura corpuscolare dei raggi X (fluttuazione statistica dei fotoni). Aumenta riducendo i mAs. Nei sistemi digitali si manifesta come aspetto granulare dell'immagine (quantum mottle)."
+      "definizione": "Variazione casuale della densità ottica nell'immagine dovuta alla natura corpuscolare dei raggi X (fluttuazione statistica dei fotoni). Aumenta riducendo i mAs. Nei sistemi digitali si manifesta come aspetto granulare dell'immagine (quantum mottle).",
+      "seo_title": "Rumore quantistico: cos'è e da cosa dipende — Rad Index",
+      "seo_desc": "Variazione casuale della densità ottica nell'immagine dovuta alla natura corpuscolare dei raggi X (fluttuazione statistica dei fotoni)."
     },
     "en": {
       "termine": "Quantum noise",
@@ -567,7 +571,9 @@
     "categoria": "tecnico",
     "it": {
       "termine": "Angolo di Cobb",
-      "definizione": "Misura standard della curvatura scoliotica in radiografia. Si individuano le vertebre limite superiore e inferiore della curva, si tracciano linee parallele ai piatti vertebrali e si misura l'angolo tra le perpendicolari a queste linee. Curve > 10° sono considerate scoliosi; > 40–50° richiedono valutazione chirurgica."
+      "definizione": "Misura standard della curvatura scoliotica in radiografia. Si individuano le vertebre limite superiore e inferiore della curva, si tracciano linee parallele ai piatti vertebrali e si misura l'angolo tra le perpendicolari a queste linee. Curve > 10° sono considerate scoliosi; > 40–50° richiedono valutazione chirurgica.",
+      "seo_title": "Angolo di Cobb: cosa misura e come si calcola — Rad Index",
+      "seo_desc": "Misura standard della curvatura scoliotica in radiografia."
     },
     "en": {
       "termine": "Cobb angle",
@@ -687,7 +693,9 @@
     },
     "es": {
       "termine": "TFCC (Complejo Fibrocartilaginoso Triangular)",
-      "definizione": "Estructura estabilizadora de la articulación radiocubital distal y del lado cubital del carpo. Sus lesiones causan dolor cubital de muñeca e inestabilidad. Se valora con proyecciones dedicadas en estrés y en desviación."
+      "definizione": "Estructura estabilizadora de la articulación radiocubital distal y del lado cubital del carpo. Sus lesiones causan dolor cubital de muñeca e inestabilidad. Se valora con proyecciones dedicadas en estrés y en desviación.",
+      "seo_title": "TFCC (Complejo Fibrocartilaginoso Triangular): qué es — Rad Index",
+      "seo_desc": "Estructura estabilizadora de la articulación radiocubital distal y del lado cubital del carpo. Sus lesiones causan dolor cubital de muñeca e inestabilidad."
     }
   },
   "piano-sagittale": {
@@ -899,7 +907,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Proiezione AP (Antero-posteriore)",
-      "definizione": "Il fascio entra dalla parte anteriore del paziente ed esce posteriormente verso il detettore. Il paziente è supino o in piedi con la schiena al detettore. Le strutture anteriori appaiono ingrandite per la maggiore distanza dal detettore."
+      "definizione": "Il fascio entra dalla parte anteriore del paziente ed esce posteriormente verso il detettore. Il paziente è supino o in piedi con la schiena al detettore. Le strutture anteriori appaiono ingrandite per la maggiore distanza dal detettore.",
+      "seo_title": "Proiezione AP: cos'è e come si posiziona il paziente — Rad Index",
+      "seo_desc": "Il fascio entra dalla parte anteriore del paziente ed esce posteriormente verso il detettore. Il paziente è supino o in piedi con la schiena al detettore."
     },
     "en": {
       "termine": "AP projection (Anteroposterior)",
@@ -924,7 +934,9 @@
     },
     "es": {
       "termine": "Proyección PA (Posteroanterior)",
-      "definizione": "El haz entra por la parte posterior del paciente y sale anteriormente hacia el receptor. El paciente está de pie con el tórax/estructura anterior en contacto con el receptor. Reduce la magnificación de las estructuras anteriores (ej.: el corazón en el tórax PA)."
+      "definizione": "El haz entra por la parte posterior del paciente y sale anteriormente hacia el receptor. El paciente está de pie con el tórax/estructura anterior en contacto con el receptor. Reduce la magnificación de las estructuras anteriores (ej.: el corazón en el tórax PA).",
+      "seo_title": "Proyección PA: qué es y por qué reduce la magnificación — Rad Index",
+      "seo_desc": "El haz entra por la parte posterior del paciente y sale anteriormente hacia el receptor."
     }
   },
   "proiezione-ll-latero-laterale": {
@@ -1005,7 +1017,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "OPD (Obliqua Posteriore Destra)",
-      "definizione": "Il paziente è ruotato con la parte posteriore destra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo (pars interarticularis) e delle faccette articolari del lato destro (ipsilaterale)."
+      "definizione": "Il paziente è ruotato con la parte posteriore destra più vicina al detettore. Nelle proiezioni della colonna lombare permette la visualizzazione dell'istmo (pars interarticularis) e delle faccette articolari del lato destro (ipsilaterale).",
+      "seo_title": "OPD (Obliqua Posteriore Destra): cosa mostra — Rad Index",
+      "seo_desc": "Il paziente è ruotato con la parte posteriore destra più vicina al detettore."
     },
     "en": {
       "termine": "RPO (Right Posterior Oblique)",
@@ -1203,7 +1217,9 @@
     },
     "es": {
       "termine": "Seno del tarso",
-      "definizione": "Canal óseo situado entre la superficie inferior del astrágalo y la superior del calcáneo, lateral a la articulación subastragalina posterior. Contiene el ligamento interóseo y el ligamento cervical. Visible en la proyección de Broden."
+      "definizione": "Canal óseo situado entre la superficie inferior del astrágalo y la superior del calcáneo, lateral a la articulación subastragalina posterior. Contiene el ligamento interóseo y el ligamento cervical. Visible en la proyección de Broden.",
+      "seo_title": "Seno del tarso: anatomía y en qué proyección se ve — Rad Index",
+      "seo_desc": "Canal óseo situado entre la superficie inferior del astrágalo y la superior del calcáneo, lateral a la articulación subastragalina posterior."
     }
   },
   "articolazione-sottoastragalica": {
@@ -1269,7 +1285,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Glenoide",
-      "definizione": "Superficie articolare della scapola che si articola con la testa omerale formando l'articolazione gleno-omerale (spalla). Ha una superficie relativamente piccola rispetto alla testa omerale, garantendo grande mobilità a scapito della stabilità ossea."
+      "definizione": "Superficie articolare della scapola che si articola con la testa omerale formando l'articolazione gleno-omerale (spalla). Ha una superficie relativamente piccola rispetto alla testa omerale, garantendo grande mobilità a scapito della stabilità ossea.",
+      "seo_title": "Glenoide: anatomia e articolazione con l'omero — Rad Index",
+      "seo_desc": "Superficie articolare della scapola che si articola con la testa omerale formando l'articolazione gleno-omerale (spalla)."
     },
     "en": {
       "termine": "Glenoid",
@@ -1286,7 +1304,9 @@
     "categoria": "anatomia",
     "it": {
       "termine": "Acromion",
-      "definizione": "Processo osseo della scapola che si prolunga lateralmente e anteriormente sopra l'articolazione gleno-omerale. Si articola con la clavicola (articolazione acromion-clavicolare). La sua morfologia (tipo I piatto, II curvo, III uncinato) influenza la sindrome da conflitto sub-acromiale."
+      "definizione": "Processo osseo della scapola che si prolunga lateralmente e anteriormente sopra l'articolazione gleno-omerale. Si articola con la clavicola (articolazione acromion-clavicolare). La sua morfologia (tipo I piatto, II curvo, III uncinato) influenza la sindrome da conflitto sub-acromiale.",
+      "seo_title": "Acromion: anatomia e tipi secondo la morfologia — Rad Index",
+      "seo_desc": "Processo osseo della scapola che si prolunga lateralmente e anteriormente sopra l'articolazione gleno-omerale."
     },
     "en": {
       "termine": "Acromion",
