@@ -1192,14 +1192,14 @@ function setLanguage(lang) {
   });
 }
 
-// Init: URL ?lang= → localStorage → browser language → IT
+// Init: URL ?lang= → localStorage → browser language → EN
 (function() {
   const urlLang = new URLSearchParams(window.location.search).get('lang');
   if (urlLang && T[urlLang]) { setLanguage(urlLang); return; }
   const saved = localStorage.getItem('radindex-lang');
   if (saved && T[saved]) { setLanguage(saved); return; }
-  const browser = (navigator.language || 'it').slice(0,2).toLowerCase();
-  setLanguage(T[browser] ? browser : 'it');
+  const browser = (navigator.language || 'en').slice(0,2).toLowerCase();
+  setLanguage(T[browser] ? browser : 'en');
 })();
 
 // Nav scroll
