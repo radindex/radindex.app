@@ -16,8 +16,11 @@ python3 _glossario/generator.py
 echo "== 2/3 generate_static_i18n.py (hreflang IT→statico + /en/ /es/) =="
 python3 _i18n/generate_static_i18n.py
 
-echo "== 3/3 add_analytics_beacon.py (beacon Cloudflare) =="
+echo "== 3/4 add_analytics_beacon.py (beacon Cloudflare) =="
 python3 add_analytics_beacon.py
+
+echo "== 4/4 add_cta_click_tracking.py (redirect /go/ sui badge store, per misurare i click) =="
+python3 add_cta_click_tracking.py
 
 echo "== VERIFICA ANTI-REGRESSIONE =="
 sample="glossario/acromion.html"
@@ -30,6 +33,11 @@ else echo "  ✓ hreflang statico"; fi
 if ! grep -q "cloudflareinsights.com/beacon" "$sample"; then
   echo "  ✗ beacon Cloudflare ASSENTE in $sample"; fail=1
 else echo "  ✓ beacon presente"; fi
+# badge store devono passare dal redirect /go/ (misurazione click), non puntare
+# più direttamente ad apps.apple.com/play.google.com
+if grep -q "apps.apple.com\|play.google.com" "$sample"; then
+  echo "  ✗ badge store puntano ANCORA diretti allo store in $sample (redirect /go/ non applicato)"; fail=1
+else echo "  ✓ badge store instradati su /go/ (click misurabili)"; fi
 # le 8 pagine SEO devono avere il title ottimizzato (non il suffisso generico)
 if grep -q "<title>Angolo di Louis (angolo sternale) — Glossario di radiologia" glossario/angolo-di-louis-angolo-sternale.html; then
   echo "  ✗ seo_title NON applicato (title generico) — controlla i campi seo_ nel JSON"; fail=1
