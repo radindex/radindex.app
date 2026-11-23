@@ -1,0 +1,20 @@
+# Rad Index
+
+> Rad Index is a mobile app (iOS and Android) that works as a pocket manual of radiographic projections for radiographers (TSRM) and radiology students. It has 147 projections, each with positioning, centering, separate DR and CR parameters, quality criteria, common errors and practical notes, plus flashcards, quizzes and a radiology glossary. It works offline, is available in Italian, English and Spanish, and is written by a practising radiographer. It is a study and reference tool, not a medical device. One-time purchase, 14-day free trial, no subscription.
+
+## Website
+
+- [Home (Italiano)](https://radindex.app/): overview of the app
+- [Home (English)](https://radindex.app/en/): overview of the app
+- [Home (Español)](https://radindex.app/es/): overview of the app
+- [Radiographic projections](https://radindex.app/en/proiezioni-radiografiche/): index of the projection pages (also in [Italian](https://radindex.app/proiezioni-radiografiche/) and [Spanish](https://radindex.app/es/proiezioni-radiografiche/))
+- [Radiology glossary](https://radindex.app/en/glossario/): technical and anatomical terms (also in [Italian](https://radindex.app/glossario/) and [Spanish](https://radindex.app/es/glossario/))
+
+## Optional
+
+- [Privacy policy](https://radindex.app/privacy.html)
+- [Terms of service](https://radindex.app/terms.html)
+- [Sitemap](https://radindex.app/sitemap.xml)
+- Contact: info@radindex.app
+- App Store: https://apps.apple.com/app/id6770671896
+- Google Play: https://play.google.com/store/apps/details?id=com.radindex.app

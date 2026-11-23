@@ -5,12 +5,12 @@
   <meta name="apple-itunes-app" content="app-id=6770671896">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rad Index — Proiezioni radiografiche per TSRM</title>
-  <meta name="description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità, errori comuni e note pratiche. L'app professionale per TSRM e studenti di radiologia.">
+  <meta name="description" content="147 proiezioni radiografiche con parametri DR/CR, posizionamento, criteri di qualità ed errori comuni. L'app professionale per TSRM e studenti di radiologia.">
   <meta name="google-site-verification" content="ueZbxEd9cg4XKGRWozkoi58KaOCwOJu8zWR0-j7Y8EA" />
   <link rel="canonical" href="https://radindex.app/">
-  <link rel="alternate" hreflang="it" href="https://radindex.app/?lang=it" />
-  <link rel="alternate" hreflang="en" href="https://radindex.app/?lang=en" />
-  <link rel="alternate" hreflang="es" href="https://radindex.app/?lang=es" />
+  <link rel="alternate" hreflang="it" href="https://radindex.app/" />
+  <link rel="alternate" hreflang="en" href="https://radindex.app/en/" />
+  <link rel="alternate" hreflang="es" href="https://radindex.app/es/" />
   <link rel="alternate" hreflang="x-default" href="https://radindex.app/" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="icon" type="image/png" href="assets/logo_icona.png">
@@ -810,8 +810,8 @@
     </ul>
     <div class="price-trial" data-i18n="priceTrial">14 giorni di prova gratuita — nessuna carta richiesta</div>
     <div class="price-cta-badges" style="display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:16px;">
-      <a href="/go/it/app-store.html" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Scarica su App Store" data-i18n-alt="badgeApple" loading="lazy" style="height:52px;width:auto;display:block;"></a>
-      <a href="/go/it/play-store.html" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponibile su Google Play" data-i18n-alt="badgeGoogle" loading="lazy" style="height:52px;width:auto;display:block;"></a>
+      <a href="/go/it/app-store.html" target="_blank" rel="noopener"><img src="assets/badges/app-store.svg" alt="Scarica su App Store" data-i18n-alt="badgeApple" loading="lazy" width="156" height="52" style="height:52px;width:auto;display:block;"></a>
+      <a href="/go/it/play-store.html" target="_blank" rel="noopener"><img src="assets/badges/google-play.png" alt="Disponibile su Google Play" data-i18n-alt="badgeGoogle" loading="lazy" width="134" height="52" style="height:52px;width:auto;display:block;"></a>
     </div>
   </div>
 </section>
@@ -1192,8 +1192,10 @@ function setLanguage(lang) {
   });
 }
 
-// Init: URL ?lang= → localStorage → browser language → EN
+// Init: path /en/ o /es/ (pagine statiche) → URL ?lang= → localStorage → browser language → EN
 (function() {
+  const pathLang = (location.pathname.match(/^\/(en|es)\//) || [])[1];
+  if (pathLang && T[pathLang]) { setLanguage(pathLang); return; }
   const urlLang = new URLSearchParams(window.location.search).get('lang');
   if (urlLang && T[urlLang]) { setLanguage(urlLang); return; }
   const saved = localStorage.getItem('radindex-lang');
